@@ -1,4 +1,4 @@
-bookName, totalChapters, lastChapter_totalVerses
+bookName,shortCode, totalChapters, lastChapter_totalVerses
 Genesis,Ge,  50,26
 Exodus,Ex, 40, 38
 Leviticus, Le,27, 34
