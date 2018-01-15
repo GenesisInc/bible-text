@@ -1,4 +1,4 @@
-bookNumber,chapterNumber,totalVerses
+bookName,bookNumber,chapterNumber,totalVerses
 Genesis,01,001,031
 Genesis,01,002,025
 Genesis,01,003,024
