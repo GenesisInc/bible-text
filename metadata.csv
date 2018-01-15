@@ -1,13 +1,13 @@
 bookNumber,bookName,shortCode,totalChapters,lastChapter_totalVerses
-1,Genesis,Ge,50,26
-2,Exodus,Ex,40,38
-3,Leviticus,Le,27,34
-4,Numbers,Nu,36,13
-5,Deuteronomy,De,34,12
-6,Joshua,Jos,24,33
-7,Judges,Jg,21,25
-8,Ruth,Ru,4,22
-9,1 Samuel,1Sa,31,13
+01,Genesis,Ge,50,26
+02,Exodus,Ex,40,38
+03,Leviticus,Le,27,34
+04,Numbers,Nu,36,13
+05,Deuteronomy,De,34,12
+06,Joshua,Jos,24,33
+07,Judges,Jg,21,25
+08,Ruth,Ru,4,22
+09,1 Samuel,1Sa,31,13
 10,2 Samuel,2Sa,24,25
 11,1 Kings,1Ki,22,53
 12,2 Kings,2Ki,25,29
