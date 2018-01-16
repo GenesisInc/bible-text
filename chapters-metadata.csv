@@ -1,6 +1,5 @@
 lines/Paragraphs,wordsCount,charecterCount,bookNumber,bookName,chapterNumber
-17361,809924,4391342,total
---------------------------------
+total_lines-17361,total_words809924,total_chars-4391342,,,
 205,2479,14034,19,Psalms,119
 16,2207,11717,11,1
 22,1984,10585,05,Deuteronomy,028
