@@ -1,2 +1,2 @@
-# bible-characters
-Lets put all bible character in a timeline. Requests your help to make it success and useful to everyone lean bible
+# bible-test
+# bible in text format. 
