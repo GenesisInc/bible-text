@@ -14,6 +14,17 @@ vars:
 
 tasks:
   default: task -a
+  run: task -p tag lifespan
+
+  tag:
+    parellel: true
+    cmds:
+      - uv run main.py --tag-entities
+
+  lifespan:
+    parellel: true
+    cmds:
+      - uv run main.py --extract-lifespan
 
   wc:
     cmds:

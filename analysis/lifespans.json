@@ -1,0 +1,2140 @@
+{
+  "01-Genesis": {
+    "005": {
+      "Adam": [
+        {
+          "Explicit Lifespan": 130,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 5:3",
+            "Text": "Adam lived for 130 years and then became father to a son in his likeness, in his image, and he named him Seth."
+          }
+        },
+        {
+          "Explicit Lifespan": 800,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 5:4",
+            "Text": "After becoming father to Seth, Adam lived for 800 years. And he became father to sons and daughters."
+          }
+        },
+        {
+          "Explicit Lifespan": 930,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 5:5",
+            "Text": "So all the days of Adam's life amounted to 930 years, and then he died."
+          }
+        }
+      ],
+      "Seth": [
+        {
+          "Explicit Lifespan": 105,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 5:6",
+            "Text": "Seth lived for 105 years and then became father to Enosh."
+          }
+        },
+        {
+          "Explicit Lifespan": 807,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 5:7",
+            "Text": "After becoming father to Enosh, Seth lived for 807 years. And he became father to sons and daughters."
+          }
+        },
+        {
+          "Explicit Lifespan": 912,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 5:8",
+            "Text": "So all the days of Seth amounted to 912 years, and then he died."
+          }
+        }
+      ],
+      "Enosh": [
+        {
+          "Explicit Lifespan": 815,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 5:10",
+            "Text": "After becoming father to Kenan, Enosh lived for 815 years. And he became father to sons and daughters."
+          }
+        }
+      ],
+      "Mahalalel": [
+        {
+          "Explicit Lifespan": 65,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 5:15",
+            "Text": "Mahalalel lived for 65 years and then became father to Jared."
+          }
+        },
+        {
+          "Explicit Lifespan": 830,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 5:16",
+            "Text": "After becoming father to Jared, Mahalalel lived for 830 years. And he became father to sons and daughters."
+          }
+        }
+      ],
+      "Enoch": [
+        {
+          "Explicit Lifespan": 800,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 5:19",
+            "Text": "After becoming father to Enoch, Jared lived for 800 years. And he became father to sons and daughters."
+          }
+        },
+        {
+          "Explicit Lifespan": 65,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 5:21",
+            "Text": "Enoch lived for 65 years and then became father to Methuselah."
+          }
+        },
+        {
+          "Explicit Lifespan": 365,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 5:23",
+            "Text": "So all the days of Enoch amounted to 365 years."
+          }
+        }
+      ],
+      "Methuselah": [
+        {
+          "Explicit Lifespan": 782,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 5:26",
+            "Text": "After becoming father to Lamech, Methuselah lived for 782 years. And he became father to sons and daughters."
+          }
+        }
+      ],
+      "Noah": [
+        {
+          "Explicit Lifespan": 595,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 5:30",
+            "Text": "After becoming father to Noah, Lamech lived for 595 years. And he became father to sons and daughters."
+          }
+        }
+      ]
+    },
+    "007": {
+      "Noah": [
+        {
+          "Explicit Lifespan": 600,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 7:6",
+            "Text": "Noah was 600 years old when the floodwaters came upon the earth."
+          }
+        },
+        {
+          "Explicit Lifespan": 17,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 7:11",
+            "Text": "In the 600th year of Noah's life, in the second month, on the 17th day of the month, on that day all the springs of the vast watery deep burst open and the floodgates of the heavens were opened."
+          }
+        }
+      ]
+    },
+    "009": {
+      "Noah": [
+        {
+          "Explicit Lifespan": 950,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 9:29",
+            "Text": "So all the days of Noah amounted to 950 years, and he died."
+          }
+        }
+      ]
+    },
+    "011": {
+      "Shem": [
+        {
+          "Explicit Lifespan": 100,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 11:10",
+            "Text": "This is the history of Shem. Shem was 100 years old when he became father to Arpachshad two years after the Flood."
+          }
+        }
+      ],
+      "Eber": [
+        {
+          "Explicit Lifespan": 34,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 11:16",
+            "Text": "Eber lived for 34 years and then became father to Peleg."
+          }
+        }
+      ],
+      "Peleg": [
+        {
+          "Explicit Lifespan": 30,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 11:18",
+            "Text": "Peleg lived for 30 years and then became father to Reu."
+          }
+        }
+      ],
+      "Terah": [
+        {
+          "Explicit Lifespan": 70,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 11:26",
+            "Text": "Terah lived for 70 years, after which he became father to Abram, Nahor, and Haran."
+          }
+        }
+      ]
+    },
+    "012": {
+      "Jehovah": [
+        {
+          "Explicit Lifespan": 75,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 12:4",
+            "Text": "So Abram went just as Jehovah had told him, and Lot went with him. Abram was 75 years old when he left Haran."
+          }
+        }
+      ]
+    },
+    "017": {
+      "Abraham": [
+        {
+          "Explicit Lifespan": 99,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 17:24",
+            "Text": "Abraham was 99 years old when he had the flesh of his foreskin circumcised."
+          }
+        }
+      ],
+      "Ishmael": [
+        {
+          "Explicit Lifespan": 13,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 17:25",
+            "Text": "And Ishmael his son was 13 years old when he had the flesh of his foreskin circumcised."
+          }
+        }
+      ]
+    },
+    "018": {
+      "Jehovah": [
+        {
+          "Explicit Lifespan": 30,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 18:30",
+            "Text": "But he continued: Jehovah, please, do not become hot with anger, but let me go on speaking: Suppose only 30 are found there. He answered: I will not do it if I find 30 there."
+          }
+        },
+        {
+          "Explicit Lifespan": 30,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 18:30",
+            "Text": "But he continued: Jehovah, please, do not become hot with anger, but let me go on speaking: Suppose only 30 are found there. He answered: I will not do it if I find 30 there."
+          }
+        },
+        {
+          "Explicit Lifespan": 20,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 18:31",
+            "Text": "But he continued: Please, here I have presumed to speak to Jehovah: Suppose only 20 are found there. He answered: I will not destroy it for the sake of the 20."
+          }
+        },
+        {
+          "Explicit Lifespan": 20,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 18:31",
+            "Text": "But he continued: Please, here I have presumed to speak to Jehovah: Suppose only 20 are found there. He answered: I will not destroy it for the sake of the 20."
+          }
+        }
+      ]
+    },
+    "021": {
+      "Abraham": [
+        {
+          "Explicit Lifespan": 100,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 21:5",
+            "Text": "Abraham was 100 years old when his son Isaac was born to him."
+          }
+        }
+      ]
+    },
+    "023": {
+      "Sarah": [
+        {
+          "Explicit Lifespan": 127,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "Genesis 23:1",
+            "Text": "And Sarah lived for 127 years; these were the years of Sarah's life."
+          }
+        }
+      ]
+    },
+    "025": {
+      "Abraham": [
+        {
+          "Explicit Lifespan": 175,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 25:7",
+            "Text": "The years of Abraham's life were 175 years."
+          }
+        }
+      ],
+      "Isaac": [
+        {
+          "Explicit Lifespan": 40,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 25:20",
+            "Text": "Isaac was 40 years old when he married Rebekah, the daughter of Bethuel the Aramaean of Paddan-aram, the sister of Laban the Aramaean."
+          }
+        },
+        {
+          "Explicit Lifespan": 60,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 25:26",
+            "Text": "After that his brother came out and his hand was holding onto the heel of Esau, so he named him Jacob. Isaac was 60 years old when she gave birth to them."
+          }
+        }
+      ]
+    },
+    "026": {
+      "Isaac": [
+        {
+          "Explicit Lifespan": 100,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 26:12",
+            "Text": "And Isaac began to sow seed in that land, and in that year he reaped 100 times what he sowed, for Jehovah was blessing him."
+          }
+        }
+      ]
+    },
+    "033": {
+      "Jacob": [
+        {
+          "Explicit Lifespan": 400,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 33:1",
+            "Text": "Now Jacob raised his eyes and saw Esau coming, and 400 men were with him. So he divided the children among Leah, Rachel, and the two female servants."
+          }
+        }
+      ]
+    },
+    "035": {
+      "Bilhah": [
+        {
+          "Explicit Lifespan": 12,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "Genesis 35:22",
+            "Text": "Once while Israel was dwelling in that land, Reuben went and lay down with Bilhah his father's concubine, and Israel heard about it. So there were 12 sons of Jacob."
+          }
+        }
+      ],
+      "Isaac": [
+        {
+          "Explicit Lifespan": 180,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 35:28",
+            "Text": "Isaac lived to be 180 years old."
+          }
+        }
+      ]
+    },
+    "037": {
+      "Joseph": [
+        {
+          "Explicit Lifespan": 17,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 37:2",
+            "Text": "This is the history of Jacob. When Joseph was 17 years old, the young man was tending the flock with the sons of Bilhah and the sons of Zilpah, the wives of his father. And Joseph brought a bad report about them to their father."
+          }
+        },
+        {
+          "Explicit Lifespan": 20,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 37:28",
+            "Text": "And when the Midianite merchants were passing by, they lifted Joseph up out of the waterpit and sold him to the Ishmaelites for 20 pieces of silver. These men took Joseph into Egypt."
+          }
+        }
+      ]
+    },
+    "041": {
+      "Joseph": [
+        {
+          "Explicit Lifespan": 30,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 41:46",
+            "Text": "Joseph was 30 years old when he stood before Pharaoh king of Egypt. Then Joseph went out from before Pharaoh and traveled throughout all the land of Egypt."
+          }
+        }
+      ]
+    },
+    "045": {
+      "Benjamin": [
+        {
+          "Explicit Lifespan": 300,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 45:22",
+            "Text": "To each of them he gave individual changes of clothing, but to Benjamin he gave 300 silver pieces and five changes of clothing."
+          }
+        }
+      ]
+    },
+    "046": {
+      "Jacob": [
+        {
+          "Explicit Lifespan": 14,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 46:22",
+            "Text": "These are the sons of Rachel who were born to Jacob: 14 persons in all."
+          }
+        },
+        {
+          "Explicit Lifespan": 66,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 46:26",
+            "Text": "All those who descended from Jacob and went into Egypt with him, aside from the wives of Jacob's sons, were 66."
+          }
+        }
+      ],
+      "Joseph": [
+        {
+          "Explicit Lifespan": 70,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 46:27",
+            "Text": "Joseph's sons who were born to him in Egypt were two. All the people of the house of Jacob who came into Egypt were 70."
+          }
+        }
+      ]
+    },
+    "047": {
+      "Jacob": [
+        {
+          "Explicit Lifespan": 17,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 47:28",
+            "Text": "And Jacob lived on in the land of Egypt for 17 years, so that the days of Jacob's life came to be 147 years."
+          }
+        },
+        {
+          "Explicit Lifespan": 147,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 47:28",
+            "Text": "And Jacob lived on in the land of Egypt for 17 years, so that the days of Jacob's life came to be 147 years."
+          }
+        }
+      ]
+    },
+    "050": {
+      "Joseph": [
+        {
+          "Explicit Lifespan": 110,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 50:22",
+            "Text": "And Joseph continued to dwell in Egypt, he and the household of his father, and Joseph lived for 110 years."
+          }
+        },
+        {
+          "Explicit Lifespan": 110,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Genesis 50:26",
+            "Text": "And Joseph died at the age of 110, and they had him embalmed, and he was put in a coffin in Egypt."
+          }
+        }
+      ]
+    }
+  },
+  "02-Exodus": {
+    "007": {
+      "Aaron": [
+        {
+          "Explicit Lifespan": 83,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Exodus 7:7",
+            "Text": "Moses was 80 years old and Aaron was 83 years old when they spoke to Pharaoh."
+          }
+        }
+      ]
+    },
+    "015": {
+      "Elim": [
+        {
+          "Explicit Lifespan": 12,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Exodus 15:27",
+            "Text": "After that they came to Elim, where there were 12 springs of water and 70 palm trees. So they camped there by the water."
+          }
+        },
+        {
+          "Explicit Lifespan": 70,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Exodus 15:27",
+            "Text": "After that they came to Elim, where there were 12 springs of water and 70 palm trees. So they camped there by the water."
+          }
+        }
+      ]
+    }
+  },
+  "04-Numbers": {
+    "001": {
+      "Zebulun": [
+        {
+          "Explicit Lifespan": 20,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Numbers 1:30",
+            "Text": "The descendants of Zebulun were listed by name, by family, and by their paternal houses. All the males from 20 years old and up who could serve in the army were counted,"
+          }
+        }
+      ],
+      "Ephraim": [
+        {
+          "Explicit Lifespan": 20,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Numbers 1:32",
+            "Text": "The descendants of Joseph through Ephraim were listed by name, by family, and by their paternal houses. All the males from 20 years old and up who could serve in the army were counted,"
+          }
+        },
+        {
+          "Explicit Lifespan": 40500,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Numbers 1:33",
+            "Text": "and the number registered of the tribe of Ephraim was 40,500."
+          }
+        }
+      ],
+      "Benjamin": [
+        {
+          "Explicit Lifespan": 35400,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Numbers 1:37",
+            "Text": "and the number registered of the tribe of Benjamin was 35,400."
+          }
+        }
+      ],
+      "Dan": [
+        {
+          "Explicit Lifespan": 20,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Numbers 1:38",
+            "Text": "The descendants of Dan were listed by name, by family, and by their paternal houses. All the males from 20 years old and up who could serve in the army were counted,"
+          }
+        },
+        {
+          "Explicit Lifespan": 62700,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Numbers 1:39",
+            "Text": "and the number registered of the tribe of Dan was 62,700."
+          }
+        }
+      ],
+      "Aaron": [
+        {
+          "Explicit Lifespan": 12,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Numbers 1:44",
+            "Text": "These were registered by Moses together with Aaron and the 12 chieftains of Israel, each representing his paternal house."
+          }
+        }
+      ]
+    },
+    "003": {
+      "Aaron": [
+        {
+          "Explicit Lifespan": 22000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Numbers 3:39",
+            "Text": "All the Levite males from a month old and up, whom Moses and Aaron registered by their families at the order of Jehovah, were 22,000."
+          }
+        }
+      ]
+    },
+    "011": {
+      "Jehovah": [
+        {
+          "Explicit Lifespan": 70,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "Numbers 11:25",
+            "Text": "Then Jehovah came down in a cloud and spoke to him and took away some of the spirit that was on him and put it on each of the 70 elders. And as soon as the spirit settled down on them, they began to behave as prophets, but they did not do it again."
+          }
+        }
+      ]
+    },
+    "026": {
+      "Ephraim": [
+        {
+          "Explicit Lifespan": 32500,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Numbers 26:37",
+            "Text": "These were the families of the sons of Ephraim, and their registered ones were 32,500. These were the sons of Joseph by their families."
+          }
+        }
+      ],
+      "Benjamin": [
+        {
+          "Explicit Lifespan": 45600,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Numbers 26:41",
+            "Text": "These were the sons of Benjamin by their families, and their registered ones were 45,600."
+          }
+        }
+      ],
+      "Shuhamites": [
+        {
+          "Explicit Lifespan": 64400,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Numbers 26:43",
+            "Text": "All the families of the Shuhamites, of their registered ones, were 64,400."
+          }
+        }
+      ]
+    },
+    "031": {
+      "Jehovah": [
+        {
+          "Explicit Lifespan": 675,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Numbers 31:37",
+            "Text": "The tax for Jehovah from the flock amounted to 675."
+          }
+        },
+        {
+          "Explicit Lifespan": 72,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "Numbers 31:38",
+            "Text": "And there were 36,000 of the herd, and the tax on them for Jehovah was 72."
+          }
+        },
+        {
+          "Explicit Lifespan": 61,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "Numbers 31:39",
+            "Text": "And there were 30,500 donkeys, and the tax on them for Jehovah was 61."
+          }
+        },
+        {
+          "Explicit Lifespan": 32,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "Numbers 31:40",
+            "Text": "And there were 16,000 humans, and the tax on them for Jehovah was 32 persons."
+          }
+        },
+        {
+          "Explicit Lifespan": 16750,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Numbers 31:52",
+            "Text": "All the gold of the contribution that they made to Jehovah amounted to 16,750 shekels, from the chiefs of the thousands and the chiefs of the hundreds."
+          }
+        }
+      ]
+    },
+    "032": {
+      "Jehovah": [
+        {
+          "Explicit Lifespan": 40,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Numbers 32:13",
+            "Text": "So Jehovah's anger blazed against Israel and he made them wander about in the wilderness for 40 years, until all the generation that was doing evil in the eyes of Jehovah came to its end."
+          }
+        }
+      ]
+    },
+    "033": {
+      "Aaron": [
+        {
+          "Explicit Lifespan": 123,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Numbers 33:39",
+            "Text": "Aaron was 123 years old at his death on Mount Hor."
+          }
+        }
+      ]
+    }
+  },
+  "05-Deuteronomy": {
+    "008": {
+      "Jehovah": [
+        {
+          "Explicit Lifespan": 40,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Deuteronomy 8:2",
+            "Text": "Remember the long road that Jehovah your God made you walk these 40 years in the wilderness, to humble you and to put you to the test so as to know what was in your heart, whether you would keep his commandments or not."
+          }
+        }
+      ]
+    },
+    "009": {
+      "Jehovah": [
+        {
+          "Explicit Lifespan": 40,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Deuteronomy 9:18",
+            "Text": "Then I prostrated myself before Jehovah, as at first, for 40 days and 40 nights. I neither ate food nor drank water, because of all the sins that you had committed by your doing what was evil in Jehovah's eyes and offending him."
+          }
+        }
+      ]
+    },
+    "034": {
+      "Moab": [
+        {
+          "Explicit Lifespan": 30,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Deuteronomy 34:8",
+            "Text": "The people of Israel wept for Moses on the desert plains of Moab for 30 days. Then the days of weeping and mourning for Moses were completed."
+          }
+        }
+      ]
+    }
+  },
+  "06-Joshua": {
+    "021": {
+      "Aaron": [
+        {
+          "Explicit Lifespan": 13,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Joshua 21:4",
+            "Text": "The lot came out for the families of the Kohathites, and the Levites who were descendants of Aaron the priest were given by lot 13 cities out of the tribe of Judah, the tribe of Simeon, and the tribe of Benjamin."
+          }
+        },
+        {
+          "Explicit Lifespan": 13,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Joshua 21:19",
+            "Text": "All the cities given to the descendants of Aaron, the priests, were 13 cities with their pastures."
+          }
+        }
+      ]
+    },
+    "024": {
+      "Jacob": [
+        {
+          "Explicit Lifespan": 100,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Joshua 24:32",
+            "Text": "The bones of Joseph, which the Israelites had brought up out of Egypt, were buried in Shechem in the portion of the field that Jacob had acquired from the sons of Hamor, Shechem's father, for 100 pieces of money; and it became the inheritance of the sons of Joseph."
+          }
+        }
+      ]
+    }
+  },
+  "07-Judges": {
+    "003": {
+      "Moab": [
+        {
+          "Explicit Lifespan": 80,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Judges 3:30",
+            "Text": "So Moab was subdued on that day under Israel's hand; and the land had rest for 80 years."
+          }
+        }
+      ]
+    },
+    "008": {
+      "Zalmunna": [
+        {
+          "Explicit Lifespan": 15000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Judges 8:10",
+            "Text": "Now Zebah and Zalmunna were in Karkor with their armies, about 15,000 men. These were all who remained of the entire army of the Easterners, for 120,000 men armed with swords had fallen."
+          }
+        },
+        {
+          "Explicit Lifespan": 120000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Judges 8:10",
+            "Text": "Now Zebah and Zalmunna were in Karkor with their armies, about 15,000 men. These were all who remained of the entire army of the Easterners, for 120,000 men armed with swords had fallen."
+          }
+        }
+      ],
+      "Midian": [
+        {
+          "Explicit Lifespan": 40,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Judges 8:28",
+            "Text": "Thus Midian was subdued before the Israelites, and they did not challenge them again; and the land had rest for 40 years in the days of Gideon."
+          }
+        }
+      ]
+    },
+    "009": {
+      "Jerubbaal": [
+        {
+          "Explicit Lifespan": 70,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Judges 9:5",
+            "Text": "After that he went to his father's house at Ophrah and killed his brothers, the sons of Jerubbaal, 70 men, on one stone. The only survivor was Jotham, the youngest son of Jerubbaal, because he hid."
+          }
+        }
+      ]
+    },
+    "012": {
+      "Sibboleth": [
+        {
+          "Explicit Lifespan": 42000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Judges 12:6",
+            "Text": "they would say to him, Please say Shibboleth. But he would say, Sibboleth, as he was unable to say the word correctly. Then they would seize him and slay him at the fords of the Jordan. So 42,000 Ephraimites fell at that time."
+          }
+        }
+      ]
+    },
+    "013": {
+      "Jehovah": [
+        {
+          "Explicit Lifespan": 40,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Judges 13:1",
+            "Text": "Again the Israelites did what was bad in Jehovah's eyes, and Jehovah gave them into the hand of the Philistines for 40 years."
+          }
+        }
+      ]
+    },
+    "014": {
+      "Jehovah": [
+        {
+          "Explicit Lifespan": 30,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "Judges 14:19",
+            "Text": "Then Jehovah's spirit empowered him, and he went down to Ashkelon and struck down 30 of their men and took their clothing and gave the outfits to those who had answered the riddle. He was furious as he went back up to his father's house."
+          }
+        }
+      ]
+    },
+    "020": {
+      "Bethel": [
+        {
+          "Explicit Lifespan": 30,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "Judges 20:31",
+            "Text": "When the Benjaminites went out to meet the army, they were drawn away from the city. Then, as at the other times, they started to attack and kill some of the men on the highways, one of which goes up to Bethel and the other to Gibeah, leaving about 30 men of Israel dead in the open field."
+          }
+        }
+      ],
+      "Benjamin": [
+        {
+          "Explicit Lifespan": 25000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Judges 20:46",
+            "Text": "All those of Benjamin who fell on that day amounted to 25,000 men armed with swords, all mighty warriors."
+          }
+        }
+      ]
+    }
+  },
+  "09-1 Samuel": {
+    "004": {
+      "Eli": [
+        {
+          "Explicit Lifespan": 98,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Samuel 4:15",
+            "Text": "(Now Eli was 98 years old, and his eyes stared straight ahead, and he could not see.)"
+          }
+        }
+      ]
+    },
+    "009": {
+      "Saul": [
+        {
+          "Explicit Lifespan": 30,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Samuel 9:22",
+            "Text": "Then Samuel took Saul and his attendant and brought them to the dining hall and gave them a place at the head of those invited; there were about 30 men."
+          }
+        }
+      ]
+    },
+    "013": {
+      "Michmash": [
+        {
+          "Explicit Lifespan": 1000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Samuel 13:2",
+            "Text": "Saul chose 3,000 men out of Israel; 2,000 of these were with Saul at Michmash and in the mountainous region of Bethel and 1,000 were with Jonathan at Gibeah of Benjamin. He sent the rest of the people away, each one to his tent."
+          }
+        }
+      ],
+      "Saul": [
+        {
+          "Explicit Lifespan": 600,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Samuel 13:15",
+            "Text": "Then Samuel rose and went his way up from Gilgal to Gibeah of Benjamin, and Saul took the count of the people; those still with him were about 600 men."
+          }
+        }
+      ]
+    },
+    "014": {
+      "Migron": [
+        {
+          "Explicit Lifespan": 600,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "1 Samuel 14:2",
+            "Text": "Saul was staying on the outskirts of Gibeah under the pomegranate tree in Migron, and there were about 600 men with him."
+          }
+        }
+      ]
+    },
+    "015": {
+      "Saul": [
+        {
+          "Explicit Lifespan": 10000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Samuel 15:4",
+            "Text": "Saul summoned the people and counted them in Telaim: There were 200,000 foot soldiers and 10,000 men of Judah."
+          }
+        }
+      ]
+    },
+    "018": {
+      "David": [
+        {
+          "Explicit Lifespan": 100,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Samuel 18:25",
+            "Text": "At that Saul said: This is what you should say to David, The king does not want any bride price except 100 foreskins of the Philistines, to take revenge on the enemies of the king.' For Saul was scheming to have David fall by the hand of the Philistines."
+          }
+        }
+      ]
+    },
+    "023": {
+      "David": [
+        {
+          "Explicit Lifespan": 600,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Samuel 23:13",
+            "Text": "At once David rose up with his men, about 600 in number, and they left Keilah and moved about wherever they could. When Saul was told that David had escaped from Keilah, he did not go out after him."
+          }
+        }
+      ]
+    },
+    "027": {
+      "David": [
+        {
+          "Explicit Lifespan": 600,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Samuel 27:2",
+            "Text": "So David rose up with the 600 men who were with him and went over to Achish the son of Maoch, the king of Gath."
+          }
+        }
+      ]
+    },
+    "030": {
+      "David": [
+        {
+          "Explicit Lifespan": 600,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Samuel 30:9",
+            "Text": "David immediately set out with the 600 men who were with him, and they went on as far as the Wadi Besor, where some of the men stayed behind."
+          }
+        },
+        {
+          "Explicit Lifespan": 400,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Samuel 30:10",
+            "Text": "David kept up the chase with 400 men, but the 200 men who were too tired to cross the Wadi Besor stayed behind."
+          }
+        },
+        {
+          "Explicit Lifespan": 200,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Samuel 30:10",
+            "Text": "David kept up the chase with 400 men, but the 200 men who were too tired to cross the Wadi Besor stayed behind."
+          }
+        },
+        {
+          "Explicit Lifespan": 200,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Samuel 30:21",
+            "Text": "Then David came to the 200 men who had been too tired to go along with David and who had stayed behind by the Wadi Besor, and they came out to meet David and the people with him. When David came near to the men, he asked them how they were."
+          }
+        }
+      ]
+    }
+  },
+  "10-2 Samuel": {
+    "002": {
+      "David": [
+        {
+          "Explicit Lifespan": 19,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Samuel 2:30",
+            "Text": "After Joab turned back from pursuing Abner, he gathered all the people together. Of David's servants, 19 were missing, in addition to Asahel."
+          }
+        }
+      ]
+    },
+    "016": {
+      "Mephibosheth": [
+        {
+          "Explicit Lifespan": 200,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "2 Samuel 16:1",
+            "Text": "When David had passed a little beyond the summit, Ziba, the attendant of Mephibosheth, was there to meet him with a couple of saddled donkeys, and on them were 200 loaves of bread, 100 cakes of raisins, 100 cakes of summer fruit, and a large jar of wine."
+          }
+        },
+        {
+          "Explicit Lifespan": 100,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "2 Samuel 16:1",
+            "Text": "When David had passed a little beyond the summit, Ziba, the attendant of Mephibosheth, was there to meet him with a couple of saddled donkeys, and on them were 200 loaves of bread, 100 cakes of raisins, 100 cakes of summer fruit, and a large jar of wine."
+          }
+        },
+        {
+          "Explicit Lifespan": 100,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "2 Samuel 16:1",
+            "Text": "When David had passed a little beyond the summit, Ziba, the attendant of Mephibosheth, was there to meet him with a couple of saddled donkeys, and on them were 200 loaves of bread, 100 cakes of raisins, 100 cakes of summer fruit, and a large jar of wine."
+          }
+        }
+      ]
+    },
+    "018": {
+      "Joab": [
+        {
+          "Explicit Lifespan": 1000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Samuel 18:12",
+            "Text": "But the man said to Joab: Even if I were handed 1,000 pieces of silver, I could not lift my hand against the king's son, for we heard the king order you and Abishai and Ittai, Whoever you are, watch over the young man Absalom.'"
+          }
+        }
+      ]
+    },
+    "019": {
+      "Saul": [
+        {
+          "Explicit Lifespan": 15,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Samuel 19:17",
+            "Text": "and there were 1,000 men from Benjamin with him. Also Ziba, the attendant of the house of Saul, with his 15 sons and 20 servants, rushed down to the Jordan ahead of the king."
+          }
+        },
+        {
+          "Explicit Lifespan": 20,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Samuel 19:17",
+            "Text": "and there were 1,000 men from Benjamin with him. Also Ziba, the attendant of the house of Saul, with his 15 sons and 20 servants, rushed down to the Jordan ahead of the king."
+          }
+        }
+      ]
+    },
+    "021": {
+      "Ishbi": [
+        {
+          "Explicit Lifespan": 300,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Samuel 21:16",
+            "Text": "A descendant of the Rephaim named Ishbi-benob, whose copper spear weighed 300 shekels and who was armed with a new sword, intended to strike David down."
+          }
+        }
+      ]
+    },
+    "023": {
+      "Zeruiah": [
+        {
+          "Explicit Lifespan": 300,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Samuel 23:18",
+            "Text": "Abishai the brother of Joab the son of Zeruiah was the head of another three; he brandished his spear over 300 slain, and he had a reputation like the three."
+          }
+        }
+      ]
+    },
+    "024": {
+      "Joab": [
+        {
+          "Explicit Lifespan": 800000,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "2 Samuel 24:9",
+            "Text": "Joab now gave to the king the number of the people who were registered. Israel amounted to 800,000 warriors armed with swords, and the men of Judah were 500,000."
+          }
+        },
+        {
+          "Explicit Lifespan": 500000,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "2 Samuel 24:9",
+            "Text": "Joab now gave to the king the number of the people who were registered. Israel amounted to 800,000 warriors armed with swords, and the men of Judah were 500,000."
+          }
+        }
+      ],
+      "Jehovah": [
+        {
+          "Explicit Lifespan": 70000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Samuel 24:15",
+            "Text": "Then Jehovah sent a pestilence on Israel from the morning until the designated time, so that 70,000 of the people from Dan to Beer-sheba died."
+          }
+        }
+      ]
+    }
+  },
+  "11-1 Kings": {
+    "001": {
+      "Haggith": [
+        {
+          "Explicit Lifespan": 50,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "1 Kings 1:5",
+            "Text": "Meanwhile, Adonijah the son of Haggith was exalting himself, saying: I am going to be king! He had a chariot made for himself with horsemen and 50 men to run before him."
+          }
+        }
+      ]
+    },
+    "003": {
+      "Solomon": [
+        {
+          "Explicit Lifespan": 1000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 3:4",
+            "Text": "The king went to Gibeon to sacrifice there, for that was the most prominent high place. Solomon offered 1,000 burnt sacrifices on that altar."
+          }
+        }
+      ]
+    },
+    "004": {
+      "Solomon": [
+        {
+          "Explicit Lifespan": 12,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 4:7",
+            "Text": "Solomon had 12 deputies in charge of all Israel who provided the king and his household with food. Each one was responsible for providing the food for one month of the year."
+          }
+        },
+        {
+          "Explicit Lifespan": 30,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 4:22",
+            "Text": "Solomon's food for each day was 30 cor measures of fine flour and 60 cor measures of flour,"
+          }
+        },
+        {
+          "Explicit Lifespan": 60,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 4:22",
+            "Text": "Solomon's food for each day was 30 cor measures of fine flour and 60 cor measures of flour,"
+          }
+        }
+      ]
+    },
+    "005": {
+      "Solomon": [
+        {
+          "Explicit Lifespan": 20000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 5:11",
+            "Text": "And Solomon gave Hiram 20,000 cor measures of wheat as food supplies for his household and 20 cor measures of very fine olive oil. That was what Solomon gave Hiram year after year."
+          }
+        },
+        {
+          "Explicit Lifespan": 20,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 5:11",
+            "Text": "And Solomon gave Hiram 20,000 cor measures of wheat as food supplies for his household and 20 cor measures of very fine olive oil. That was what Solomon gave Hiram year after year."
+          }
+        },
+        {
+          "Explicit Lifespan": 30000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 5:13",
+            "Text": "King Solomon conscripted men for forced labor out of all Israel; 30,000 men were conscripted."
+          }
+        }
+      ]
+    },
+    "006": {
+      "Jehovah": [
+        {
+          "Explicit Lifespan": 60,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 6:2",
+            "Text": "The house that King Solomon built for Jehovah was 60 cubits long, 20 cubits wide, and 30 cubits high."
+          }
+        },
+        {
+          "Explicit Lifespan": 20,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 6:2",
+            "Text": "The house that King Solomon built for Jehovah was 60 cubits long, 20 cubits wide, and 30 cubits high."
+          }
+        },
+        {
+          "Explicit Lifespan": 30,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 6:2",
+            "Text": "The house that King Solomon built for Jehovah was 60 cubits long, 20 cubits wide, and 30 cubits high."
+          }
+        }
+      ]
+    },
+    "007": {
+      "Solomon": [
+        {
+          "Explicit Lifespan": 13,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 7:1",
+            "Text": "And it took Solomon 13 years to build his own house, until his whole house was completed."
+          }
+        }
+      ]
+    },
+    "010": {
+      "Solomon": [
+        {
+          "Explicit Lifespan": 666,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 10:14",
+            "Text": "And the weight of the gold that came to Solomon in one year amounted to 666 talents of gold,"
+          }
+        }
+      ]
+    },
+    "018": {
+      "Obadiah": [
+        {
+          "Explicit Lifespan": 100,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 18:4",
+            "Text": "and when Jezebel was doing away with Jehovah's prophets, Obadiah took 100 prophets and hid them 50 to a cave, and he supplied them with bread and water.)"
+          }
+        },
+        {
+          "Explicit Lifespan": 50,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 18:4",
+            "Text": "and when Jezebel was doing away with Jehovah's prophets, Obadiah took 100 prophets and hid them 50 to a cave, and he supplied them with bread and water.)"
+          }
+        }
+      ],
+      "Jezebel": [
+        {
+          "Explicit Lifespan": 100,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 18:13",
+            "Text": "Has my lord not been told what I did when Jezebel was killing the prophets of Jehovah, how I hid 100 of the prophets of Jehovah by groups of 50 in a cave and kept supplying them bread and water?"
+          }
+        }
+      ],
+      "Jehovah": [
+        {
+          "Explicit Lifespan": 50,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 18:13",
+            "Text": "Has my lord not been told what I did when Jezebel was killing the prophets of Jehovah, how I hid 100 of the prophets of Jehovah by groups of 50 in a cave and kept supplying them bread and water?"
+          }
+        }
+      ]
+    },
+    "019": {
+      "Shaphat": [
+        {
+          "Explicit Lifespan": 12,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 19:19",
+            "Text": "So he went from there and found Elisha the son of Shaphat while he was plowing with 12 pairs of bulls ahead of him, and he was with the 12th pair. So Elijah went over to him and threw his official garment on him."
+          }
+        }
+      ]
+    },
+    "020": {
+      "Ahab": [
+        {
+          "Explicit Lifespan": 232,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 20:15",
+            "Text": "Ahab then counted the attendants of the princes of the provinces, and they were 232; after that, he counted all the Israelite men, 7,000."
+          }
+        },
+        {
+          "Explicit Lifespan": 7000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 20:15",
+            "Text": "Ahab then counted the attendants of the princes of the provinces, and they were 232; after that, he counted all the Israelite men, 7,000."
+          }
+        }
+      ],
+      "Ben": [
+        {
+          "Explicit Lifespan": 32,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "1 Kings 20:16",
+            "Text": "They went out at noon while Ben-hadad was drinking himself drunk in the tents along with the 32 kings who were helping him."
+          }
+        }
+      ],
+      "Aphek": [
+        {
+          "Explicit Lifespan": 27000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Kings 20:30",
+            "Text": "And the rest fled to Aphek, into the city. But the wall fell down on 27,000 of the men who were left. Ben-hadad also fled and came into the city, and he hid in an inner room."
+          }
+        }
+      ]
+    }
+  },
+  "12-2 Kings": {
+    "003": {
+      "Moab": [
+        {
+          "Explicit Lifespan": 100000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Kings 3:4",
+            "Text": "Now Mesha the king of Moab was a sheep raiser, and he used to pay 100,000 lambs and 100,000 unshorn rams as tribute to the king of Israel."
+          }
+        },
+        {
+          "Explicit Lifespan": 100000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Kings 3:4",
+            "Text": "Now Mesha the king of Moab was a sheep raiser, and he used to pay 100,000 lambs and 100,000 unshorn rams as tribute to the king of Israel."
+          }
+        },
+        {
+          "Explicit Lifespan": 700,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "2 Kings 3:26",
+            "Text": "When the king of Moab saw that the battle was lost, he took with him 700 men armed with swords to break through to the king of Edom; but they were not able to."
+          }
+        }
+      ]
+    },
+    "014": {
+      "Judah": [
+        {
+          "Explicit Lifespan": 15,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Kings 14:17",
+            "Text": "Amaziah the son of Jehoash the king of Judah lived for 15 years after the death of Jehoash the son of Jehoahaz the king of Israel."
+          }
+        }
+      ]
+    },
+    "024": {
+      "metalworkerhe": [
+        {
+          "Explicit Lifespan": 10000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Kings 24:14",
+            "Text": "He took into exile all Jerusalem, all the princes, all the mighty warriors, and every craftsman and metalworkerhe took 10,000 into exile. No one was left behind except the poorest people of the land."
+          }
+        }
+      ]
+    }
+  },
+  "13-1 Chronicles": {
+    "002": {
+      "Machir": [
+        {
+          "Explicit Lifespan": 60,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Chronicles 2:21",
+            "Text": "Afterward Hezron had relations with the daughter of Machir the father of Gilead. He married her when he was 60 years old, and she bore Segub to him."
+          }
+        }
+      ],
+      "Kenath": [
+        {
+          "Explicit Lifespan": 60,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Chronicles 2:23",
+            "Text": "Later Geshur and Syria took Havvoth-jair from them, along with Kenath and its dependent towns, 60 cities. All of these were the descendants of Machir the father of Gilead."
+          }
+        }
+      ]
+    },
+    "006": {
+      "Alemeth": [
+        {
+          "Explicit Lifespan": 13,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Chronicles 6:60",
+            "Text": "and from the tribe of Benjamin, Geba with its pastures, Alemeth with its pastures, and Anathoth with its pastures. All their cities for their families were 13 cities."
+          }
+        }
+      ]
+    },
+    "007": {
+      "David": [
+        {
+          "Explicit Lifespan": 22600,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "1 Chronicles 7:2",
+            "Text": "And the sons of Tola were Uzzi, Rephaiah, Jeriel, Jahmai, Ibsam, and Shemuel, the heads of their paternal houses. Descended from Tola were mighty warriors, whose number in the days of David was 22,600."
+          }
+        }
+      ],
+      "Jediael": [
+        {
+          "Explicit Lifespan": 17200,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Chronicles 7:11",
+            "Text": "All of these were the sons of Jediael, according to the heads of their forefathers, 17,200 mighty warriors ready to go out to the army for war."
+          }
+        }
+      ]
+    },
+    "012": {
+      "Aaron": [
+        {
+          "Explicit Lifespan": 3700,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "1 Chronicles 12:27",
+            "Text": "Jehoiada was the leader of the sons of Aaron, and with him were 3,700,"
+          }
+        }
+      ],
+      "Zebulun": [
+        {
+          "Explicit Lifespan": 50000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Chronicles 12:33",
+            "Text": "Of Zebulun, there were 50,000 who could serve in the army, drawing up in battle formation with all the weapons of war, all joining David with undivided loyalty."
+          }
+        }
+      ]
+    },
+    "021": {
+      "David": [
+        {
+          "Explicit Lifespan": 1100000,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "1 Chronicles 21:5",
+            "Text": "Joab now gave to David the number of the people who were registered. All Israel amounted to 1,100,000 men armed with swords, and Judah, 470,000 men armed with swords."
+          }
+        },
+        {
+          "Explicit Lifespan": 470000,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "1 Chronicles 21:5",
+            "Text": "Joab now gave to David the number of the people who were registered. All Israel amounted to 1,100,000 men armed with swords, and Judah, 470,000 men armed with swords."
+          }
+        }
+      ]
+    },
+    "023": {
+      "Jehovah": [
+        {
+          "Explicit Lifespan": 6000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Chronicles 23:4",
+            "Text": "Of these, 24,000 served as supervisors over the work of Jehovah's house, and there were 6,000 officers and judges,"
+          }
+        }
+      ],
+      "Levi": [
+        {
+          "Explicit Lifespan": 20,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Chronicles 23:24",
+            "Text": "These were the sons of Levi according to their paternal houses, the heads of the paternal houses, by those registered who were counted and listed by their names and who carried out the work for the service of the house of Jehovah, from 20 years old and up."
+          }
+        }
+      ],
+      "David": [
+        {
+          "Explicit Lifespan": 20,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Chronicles 23:27",
+            "Text": "For according to the last instructions of David, the Levites from 20 years old and up were numbered."
+          }
+        }
+      ]
+    },
+    "025": {
+      "Gedaliah": [
+        {
+          "Explicit Lifespan": 12,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Chronicles 25:9",
+            "Text": "The first lot to come out belonged to Asaph for Joseph, the second for Gedaliah (he and his brothers and his sons were 12);"
+          }
+        }
+      ]
+    },
+    "026": {
+      "Tebaliah": [
+        {
+          "Explicit Lifespan": 13,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Chronicles 26:11",
+            "Text": "Hilkiah the second, Tebaliah the third, Zechariah the fourth. All the sons and brothers of Hosah were 13."
+          }
+        }
+      ],
+      "Hashabiah": [
+        {
+          "Explicit Lifespan": 1700,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "1 Chronicles 26:30",
+            "Text": "Of the Hebronites, Hashabiah and his brothers, 1,700 capable men, were over the administration of Israel in the region west of the Jordan for all the work of Jehovah and for the king's service."
+          }
+        }
+      ]
+    },
+    "027": {
+      "Zabdiel": [
+        {
+          "Explicit Lifespan": 24000,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "1 Chronicles 27:2",
+            "Text": "Over the first division of the first month was Jashobeam the son of Zabdiel, and 24,000 were in his division."
+          }
+        }
+      ],
+      "Benaiah": [
+        {
+          "Explicit Lifespan": 24000,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "1 Chronicles 27:5",
+            "Text": "The chief of the third group assigned to serve during the third month was Benaiah the son of Jehoiada the chief priest, and 24,000 were in his division."
+          }
+        }
+      ],
+      "Zebadiah": [
+        {
+          "Explicit Lifespan": 24000,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "1 Chronicles 27:7",
+            "Text": "The fourth for the fourth month was Asahel, Joab's brother, and his son Zebadiah after him, and 24,000 were in his division."
+          }
+        }
+      ],
+      "Anathothite": [
+        {
+          "Explicit Lifespan": 24000,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "1 Chronicles 27:12",
+            "Text": "The ninth for the ninth month was Abi-ezer the Anathothite of the Benjaminites, and 24,000 were in his division."
+          }
+        }
+      ],
+      "Maharai": [
+        {
+          "Explicit Lifespan": 24000,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "1 Chronicles 27:13",
+            "Text": "The tenth for the tenth month was Maharai the Netophathite of the Zerahites, and 24,000 were in his division."
+          }
+        }
+      ],
+      "Ephraim": [
+        {
+          "Explicit Lifespan": 24000,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "1 Chronicles 27:14",
+            "Text": "The 11th for the 11th month was Benaiah the Pirathonite of the sons of Ephraim, and 24,000 were in his division."
+          }
+        }
+      ],
+      "Othniel": [
+        {
+          "Explicit Lifespan": 24000,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "1 Chronicles 27:15",
+            "Text": "The 12th for the 12th month was Heldai the Netophathite, of Othniel, and 24,000 were in his division."
+          }
+        }
+      ]
+    }
+  },
+  "14-2 Chronicles": {
+    "002": {
+      "David": [
+        {
+          "Explicit Lifespan": 153600,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Chronicles 2:17",
+            "Text": "Solomon then took a count of all the men who were foreign residents in the land of Israel, after the census taken by David his father, and there were found 153,600."
+          }
+        }
+      ]
+    },
+    "003": {
+      "Solomon": [
+        {
+          "Explicit Lifespan": 60,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Chronicles 3:3",
+            "Text": "And the foundation that Solomon laid for building the house of the true God was 60 cubits long and 20 cubits wide, according to the former measurement."
+          }
+        },
+        {
+          "Explicit Lifespan": 20,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Chronicles 3:3",
+            "Text": "And the foundation that Solomon laid for building the house of the true God was 60 cubits long and 20 cubits wide, according to the former measurement."
+          }
+        }
+      ]
+    },
+    "005": {
+      "Heman": [
+        {
+          "Explicit Lifespan": 120,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Chronicles 5:12",
+            "Text": "all the Levite singers who belonged to Asaph, to Heman, to Jeduthun, and to their sons and their brothers were clothed in fine fabric, holding cymbals, stringed instruments, and harps; they were standing east of the altar, and along with them 120 priests were sounding the trumpets."
+          }
+        }
+      ]
+    },
+    "009": {
+      "Solomon": [
+        {
+          "Explicit Lifespan": 666,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Chronicles 9:13",
+            "Text": "And the weight of the gold that came to Solomon in one year amounted to 666 talents of gold,"
+          }
+        }
+      ]
+    },
+    "014": {
+      "Benjamin": [
+        {
+          "Explicit Lifespan": 280000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Chronicles 14:8",
+            "Text": "Asa had an army of 300,000 men from Judah, equipped with large shields and lances. And out of Benjamin were 280,000 mighty warriors who carried bucklers and were armed with bows."
+          }
+        }
+      ]
+    },
+    "017": {
+      "Jehohanan": [
+        {
+          "Explicit Lifespan": 280000,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "2 Chronicles 17:15",
+            "Text": "And under his command was Jehohanan the chief, and with him were 280,000."
+          }
+        }
+      ],
+      "Jehovah": [
+        {
+          "Explicit Lifespan": 200000,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "2 Chronicles 17:16",
+            "Text": "And also under his command was Amasiah the son of Zichri, who volunteered for Jehovah's service, and with him were 200,000 mighty warriors."
+          }
+        }
+      ],
+      "Benjamin": [
+        {
+          "Explicit Lifespan": 200000,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "2 Chronicles 17:17",
+            "Text": "And out of Benjamin was Eliada, a mighty warrior, and with him were 200,000 men equipped with the bow and shield."
+          }
+        }
+      ],
+      "Jehozabad": [
+        {
+          "Explicit Lifespan": 180000,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "2 Chronicles 17:18",
+            "Text": "And under his command was Jehozabad, and with him were 180,000 men equipped for the army."
+          }
+        }
+      ]
+    },
+    "025": {
+      "Benjamin": [
+        {
+          "Explicit Lifespan": 20,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Chronicles 25:5",
+            "Text": "And Amaziah gathered Judah together and had them stand according to the paternal houses, by the chiefs of thousands and by the chiefs of hundreds for all Judah and Benjamin. He registered them from 20 years old and up, and he found them to be 300,000 trained warriors to serve in the army, able to handle the lance and the large shield."
+          }
+        },
+        {
+          "Explicit Lifespan": 300000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Chronicles 25:5",
+            "Text": "And Amaziah gathered Judah together and had them stand according to the paternal houses, by the chiefs of thousands and by the chiefs of hundreds for all Judah and Benjamin. He registered them from 20 years old and up, and he found them to be 300,000 trained warriors to serve in the army, able to handle the lance and the large shield."
+          }
+        }
+      ],
+      "Beth-horon": [
+        {
+          "Explicit Lifespan": 3000,
+          "Confidence": 0.67,
+          "Context": {
+            "Reference": "2 Chronicles 25:13",
+            "Text": "But the members of the troop whom Amaziah had sent back from accompanying him to the war were making raids on the cities of Judah, from Samaria clear to Beth-horon; they struck down 3,000 of them and took much spoil."
+          }
+        }
+      ],
+      "Judah": [
+        {
+          "Explicit Lifespan": 15,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Chronicles 25:25",
+            "Text": "Amaziah the son of Jehoash the king of Judah lived for 15 years after the death of Jehoash the son of Jehoahaz the king of Israel."
+          }
+        }
+      ]
+    },
+    "026": {
+      "Uzziah": [
+        {
+          "Explicit Lifespan": 16,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Chronicles 26:1",
+            "Text": "Then all the people of Judah took Uzziah, who was 16 years old, and made him king in place of his father Amaziah."
+          }
+        }
+      ]
+    },
+    "030": {
+      "King Hezekiah": [
+        {
+          "Explicit Lifespan": 1000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Chronicles 30:24",
+            "Text": "And King Hezekiah of Judah contributed for the congregation 1,000 bulls and 7,000 sheep, and the princes contributed for the congregation 1,000 bulls and 10,000 sheep; and priests were sanctifying themselves in great number."
+          }
+        },
+        {
+          "Explicit Lifespan": 7000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Chronicles 30:24",
+            "Text": "And King Hezekiah of Judah contributed for the congregation 1,000 bulls and 7,000 sheep, and the princes contributed for the congregation 1,000 bulls and 10,000 sheep; and priests were sanctifying themselves in great number."
+          }
+        },
+        {
+          "Explicit Lifespan": 1000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Chronicles 30:24",
+            "Text": "And King Hezekiah of Judah contributed for the congregation 1,000 bulls and 7,000 sheep, and the princes contributed for the congregation 1,000 bulls and 10,000 sheep; and priests were sanctifying themselves in great number."
+          }
+        },
+        {
+          "Explicit Lifespan": 10000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Chronicles 30:24",
+            "Text": "And King Hezekiah of Judah contributed for the congregation 1,000 bulls and 7,000 sheep, and the princes contributed for the congregation 1,000 bulls and 10,000 sheep; and priests were sanctifying themselves in great number."
+          }
+        }
+      ]
+    },
+    "034": {
+      "David": [
+        {
+          "Explicit Lifespan": 12,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "2 Chronicles 34:3",
+            "Text": "In the 8th year of his reign, while he was still a boy, he started to search for the God of David his forefather; and in the 12th year, he started to cleanse Judah and Jerusalem of the high places and the sacred poles, the graven images, and the metal statues."
+          }
+        }
+      ]
+    }
+  },
+  "15-Ezra": {
+    "002": {
+      "Solomon": [
+        {
+          "Explicit Lifespan": 392,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Ezra 2:58",
+            "Text": "All the temple servants and the sons of the servants of Solomon were 392."
+          }
+        }
+      ]
+    },
+    "008": {
+      "Sherebiah": [
+        {
+          "Explicit Lifespan": 18,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Ezra 8:18",
+            "Text": "Since the good hand of our God was upon us, they brought a discreet man from the sons of Mahli the grandson of Levi the son of Israel, namely, Sherebiah, and his sons and his brothers, 18 men;"
+          }
+        }
+      ],
+      "Ahava": [
+        {
+          "Explicit Lifespan": 12,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Ezra 8:31",
+            "Text": "Finally we pulled away from the river Ahava on the 12th day of the first month to go to Jerusalem, and the hand of our God was over us, and he rescued us from the hand of the enemy and from ambush along the way."
+          }
+        }
+      ]
+    }
+  },
+  "16-Nehemiah": {
+    "001": {
+      "Hacaliah": [
+        {
+          "Explicit Lifespan": 20,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Nehemiah 1:1",
+            "Text": "The words of Nehemiah the son of Hacaliah: Now in the month of Chislev, in the 20th year, I was in Shushan the citadel."
+          }
+        }
+      ]
+    },
+    "002": {
+      "Nisan": [
+        {
+          "Explicit Lifespan": 20,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Nehemiah 2:1",
+            "Text": "In the month of Nisan, in the 20th year of King Artaxerxes, wine was set before him, and as usual I took up the wine and gave it to the king. But I had never been gloomy in his presence."
+          }
+        }
+      ]
+    },
+    "007": {
+      "Solomon": [
+        {
+          "Explicit Lifespan": 392,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Nehemiah 7:60",
+            "Text": "All the temple servants and the sons of the servants of Solomon were 392."
+          }
+        }
+      ]
+    },
+    "011": {
+      "Perez": [
+        {
+          "Explicit Lifespan": 468,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Nehemiah 11:6",
+            "Text": "All the sons of Perez who were dwelling in Jerusalem were 468 capable men."
+          }
+        }
+      ]
+    }
+  },
+  "17-Esther": {
+    "002": {
+      "King Ahasuerus": [
+        {
+          "Explicit Lifespan": 12,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Esther 2:12",
+            "Text": "Each young woman had her turn to go in to King Ahasuerus after completing the 12-month treatment that was prescribed for the women, for this was the way they had to fulfill their beauty treatmentsix months with oil of myrrh and six months with balsam oil and various ointments for beauty treatment."
+          }
+        }
+      ]
+    },
+    "008": {
+      "King Ahasuerus": [
+        {
+          "Explicit Lifespan": 1312,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Esther 8:12",
+            "Text": "This was to occur on the same day in all the provinces of King Ahasuerus, on the 13th day of the 12th month, that is, the month of Adar."
+          }
+        }
+      ]
+    }
+  },
+  "27-Daniel": {
+    "005": {
+      "Darius": [
+        {
+          "Explicit Lifespan": 62,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Daniel 5:31",
+            "Text": "And Darius the Mede received the kingdom; he was about 62 years old."
+          }
+        }
+      ]
+    }
+  },
+  "40-Matthew": {
+    "001": {
+      "David": [
+        {
+          "Explicit Lifespan": 14,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Matthew 1:17",
+            "Text": "All the generations, then, from Abraham until David were 14 generations; from David until the deportation to Babylon, 14 generations; from the deportation to Babylon until the Christ, 14 generations."
+          }
+        },
+        {
+          "Explicit Lifespan": 14,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Matthew 1:17",
+            "Text": "All the generations, then, from Abraham until David were 14 generations; from David until the deportation to Babylon, 14 generations; from the deportation to Babylon until the Christ, 14 generations."
+          }
+        },
+        {
+          "Explicit Lifespan": 14,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Matthew 1:17",
+            "Text": "All the generations, then, from Abraham until David were 14 generations; from David until the deportation to Babylon, 14 generations; from the deportation to Babylon until the Christ, 14 generations."
+          }
+        }
+      ]
+    }
+  },
+  "42-Luke": {
+    "003": {
+      "Jesus": [
+        {
+          "Explicit Lifespan": 30,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Luke 3:23",
+            "Text": "When Jesus began his work, he was about 30 years old, being the son, as the opinion was,of Joseph,son of Heli,"
+          }
+        }
+      ]
+    }
+  },
+  "43-John": {
+    "006": {
+      "Jesus": [
+        {
+          "Explicit Lifespan": 5000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "John 6:10",
+            "Text": "Jesus said: Have the men sit down. As there was a lot of grass in that place, the men sat down there, about 5,000 in number."
+          }
+        }
+      ]
+    },
+    "021": {
+      "Simon Peter": [
+        {
+          "Explicit Lifespan": 153,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "John 21:11",
+            "Text": "So Simon Peter went on board and hauled the net ashore full of big fish, 153 of them. And though there were so many, the net did not burst."
+          }
+        }
+      ]
+    }
+  },
+  "44-Acts": {
+    "001": {
+      "Peter": [
+        {
+          "Explicit Lifespan": 120,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Acts 1:15",
+            "Text": "During those days Peter stood up in the midst of the brothers (the number of people was altogether about 120) and said:"
+          }
+        }
+      ],
+      "Matthias": [
+        {
+          "Explicit Lifespan": 11,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Acts 1:26",
+            "Text": "So they cast lots over them, and the lot fell to Matthias, and he was counted along with the 11 apostles."
+          }
+        }
+      ]
+    }
+  },
+  "66-Revelation": {
+    "020": {
+      "Jesus": [
+        {
+          "Explicit Lifespan": 1000,
+          "Confidence": 0.5,
+          "Context": {
+            "Reference": "Revelation 20:4",
+            "Text": "And I saw thrones, and those who sat on them were given authority to judge. Yes, I saw the souls of those executed for the witness they gave about Jesus and for speaking about God, and those who had not worshipped the wild beast or its image and had not received the mark on their forehead and on their hand. And they came to life and ruled as kings with the Christ for 1,000 years."
+          }
+        }
+      ]
+    }
+  }
+}
