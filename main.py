@@ -51,7 +51,7 @@ def process_large_text(text, book, chapter, results):
 
         for start_idx, verse_num, end_idx in verse_boundaries:
             verse_text = line[start_idx:end_idx].strip()
-            extract_entities_from_verse(verse_text, verse_num, entities)
+            extract_entities_from_verse(verse_text, verse_num, entities, book, chapter)
 
     # Store results
     if book not in results:
@@ -73,12 +73,29 @@ def find_verse_boundaries(line, pattern):
     ]
 
 
-def extract_entities_from_verse(verse_text, verse_num, entities):
+def extract_entities_from_verse(verse_text, verse_num, entities, book, chapter):
     """Extracts entities from verse text, captures context, and updates the entities dictionary."""
     doc = nlp(verse_text)
+    bk = book.split("-")[1]
+    ch = int(chapter)
+    reference = f"{bk} {ch}:{verse_num}"
+
     for ent in doc.ents:
         if ent.label_ in entities:
-            update_entity_context(ent, verse_num, entities[ent.label_])
+            entity_name = normalize_unicode(ent.text)
+
+            if entity_name not in entities[ent.label_]:
+                entities[ent.label_][entity_name] = {"Count": 0, "Context": []}
+
+            entities[ent.label_][entity_name]["Count"] += 1
+            context_text = extract_context(
+                [token.text for token in doc], ent.start, ent.end
+            )
+            normalized_context_text = normalize_unicode(context_text)
+
+            entities[ent.label_][entity_name]["Context"].append(
+                {"Reference": reference, "Text": normalized_context_text}
+            )
 
 
 def update_entity_context(ent, verse_num, entity_dict):
@@ -158,7 +175,7 @@ def save_to_csv(results, output_path):
                                     entity_type,
                                     name,
                                     data["Count"],
-                                    context["Verse"],
+                                    context["Reference"],
                                     context["Text"],
                                 ]
                             )
