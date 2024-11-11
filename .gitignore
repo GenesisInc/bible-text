@@ -5,3 +5,4 @@ useful-links
 metadata.csv.orig
 list
 python
+__pycache__/
