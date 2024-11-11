@@ -111,6 +111,13 @@ tasks:
         # Combine both lists: numbers first, then words
         cat tmp/words-counts.list tmp/numeric-counts.list > analysis/word-counts.list
 
+  fix-verse-separator:
+    cmds:
+      - |
+        for file in newWorldTranslation/english/2013-release/*/*; do
+          sed -E -i '' 's/^1 /1 /' "$file"
+        done
+
   split-2:
     cmds:
       - |
