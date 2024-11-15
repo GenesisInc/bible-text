@@ -16,10 +16,112 @@ tasks:
   default: task -a
   run: task -p tag lifespan
 
-  tag:
+  # newer version
+
+  generate-json:
+    cmds:
+      - |
+        uv run bible.py --generate
+
+  extract-sample:
+    cmds:
+      - |
+        uv run bible.py \
+          --extract \
+          --bible-json "bible_data.json" \
+          --output-json "bible_entities.json" \
+          --output-csv "bible_entities.csv" \
+          --books john
+
+  extract:
+    cmds:
+      - |
+        uv run bible.py \
+          --extract \
+          --bible-json "bible_data.json" \
+          --output-json "bible_entities.json" \
+          --output-csv "bible_entities.csv"
+
+  summary:
+    cmds:
+      - |
+        mlr --csv --from bible_entities.csv count-distinct -f Type
+
+  org:
+    cmds:
+      - |
+        mlr --csv --from bible_entities.csv \
+          filter '$Type == "ORG"' \
+            then cut -f Text \
+            | sort \
+            | uniq -c
+
+  occupation:
+    cmds:
+      - |
+        mlr --c2p --barred --from bible_entities.csv \
+          filter '$Type == "OCCUPATION"' \
+            then count-distinct -f Text
+
+  gpe:
+    cmds:
+      - |
+        mlr --csv --from bible_entities.csv \
+          filter '$Type == "GPE"' \
+            then cut -f Text \
+            | sort \
+            | uniq -c
+
+  norp:
+    cmds:
+      - |
+        mlr --csv --from bible_entities.csv \
+          filter '$Type == "NORP"' \
+            then cut -f Text \
+            | sort \
+            | uniq -c
+
+  names:
+    cmds:
+      - |
+        mlr --csv --from bible_entities.csv \
+          filter '$Type == "PERSON"' \
+            then cut -f Text \
+            | sort \
+            | uniq -c
+
+  date:
+    cmds:
+      - |
+        mlr --csv --from bible_entities.csv \
+          filter '$Type == "DATE"' \
+            then cut -f Text \
+            | sort \
+            | uniq -c
+
+  # older version
+
+  tag2:
     parellel: true
     cmds:
       - uv run main.py --tag-entities
+
+  names2:
+    aliases:
+      - persons
+    cmds:
+      - |
+        mlr --csv --from analysis/entities.csv \
+          filter '$Entity_Type=="PERSON"' \
+            then cut -f Entity_Name \
+
+  time2:
+    cmds:
+      - |
+        mlr --csv --from analysis/entities.csv \
+          filter '$Entity_Type=="TIME"' \
+            then cut -f Entity_Name \
+          | sort | uniq -c | sort -k1 -n
 
   lifespan:
     parellel: true
