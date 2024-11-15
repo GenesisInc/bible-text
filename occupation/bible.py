@@ -221,7 +221,7 @@ def main():
         "--base-path",
         type=str,
         help="Base path of Bible text files",
-        default="newWorldTranslation/english/2013-release",
+        default="../newWorldTranslation/english/2013-release",
     )
     parser.add_argument(
         "--bible-json",

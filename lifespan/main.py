@@ -16,7 +16,7 @@ nlp = spacy.load("en_core_web_sm")
 # Constants
 OUTPUT_DIR = Path("analysis")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-BASE_PATH = "newWorldTranslation/english/2013-release"
+BASE_PATH = "../newWorldTranslation/english/2013-release"
 
 LIFESPAN_INDICATORS = {"lived for", "was", "amounted to", "were", "to be"}
 EXCLUSION_KEYWORDS = {"reigned", "gathered to", "length of", "satisfied with years"}
