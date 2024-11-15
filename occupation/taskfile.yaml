@@ -31,50 +31,52 @@ tasks:
   summary:
     cmds:
       - |
-        mlr --csv --from bible_entities.csv count-distinct -f Type
+        mlr --c2p --barred --from bible_entities.csv \
+          count-distinct -f Type
 
   org:
     cmds:
       - |
-        mlr --csv --from bible_entities.csv \
+        mlr --c2p --barred --from bible_entities.csv \
           filter '$Type == "ORG"' \
-            then cut -f Text \
-            | sort \
-            | uniq -c
+            then count-distinct -f Text \
+            then label ORG_organization_or_groups,Count \
+            then head
 
   occupation:
     cmds:
       - |
         mlr --c2p --barred --from bible_entities.csv \
           filter '$Type == "OCCUPATION"' \
-            then count-distinct -f Text
+            then count-distinct -f Text \
+            then label occupation,count
 
   gpe:
     cmds:
       - |
-        mlr --csv --from bible_entities.csv \
+        mlr --c2p --barred --from bible_entities.csv \
           filter '$Type == "GPE"' \
-            then cut -f Text \
-            | sort \
-            | uniq -c
+            then count-distinct -f Text \
+            then label GPE_GeoPoliticalEntity,Count \
+            then head
 
   norp:
     cmds:
       - |
-        mlr --csv --from bible_entities.csv \
+        mlr --c2p --barred --from bible_entities.csv \
           filter '$Type == "NORP"' \
-            then cut -f Text \
-            | sort \
-            | uniq -c
+            then count-distinct -f Text \
+            then label NORP_Nationalities_Religions_or_Political_Groups,Count \
+            then head
 
   names:
     cmds:
       - |
-        mlr --csv --from bible_entities.csv \
+        mlr --c2p --barred --from bible_entities.csv \
           filter '$Type == "PERSON"' \
-            then cut -f Text \
-            | sort \
-            | uniq -c
+            then count-distinct -f Text \
+            then label Names,Count \
+            then head
 
   date:
     cmds:
