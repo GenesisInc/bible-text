@@ -15,19 +15,22 @@ nlp = spacy.load("en_core_web_sm", disable=["parser"])
 
 # Occupation keywords for matching
 occupation_keywords = {
+    "carpenter",
+    "chief of army",
+    "elder",
+    "fisherman",
+    "high priest",
+    "king",
     "metalworker",
     "priest",
-    "scribe",
     "prophet",
-    "shepherd",
-    "king",
     "queen",
+    "servant",
+    "scribe",
+    "shepherd",
+    "slave",
+    "slavegirl",
     "soldier",
-    "fisherman",
-    "carpenter",
-    "high priest",
-    "chief carpenter",
-    "elder",
 }
 
 

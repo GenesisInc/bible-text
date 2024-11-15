@@ -266,11 +266,14 @@ genesis,9,22,PERSON,Canaan
 genesis,9,23,PERSON,Shem
 genesis,9,23,PERSON,Japheth
 genesis,9,24,PERSON,Noah
+genesis,9,25,OCCUPATION,slave
 genesis,9,26,PERSON,Shem
 genesis,9,26,PERSON,Canaan
+genesis,9,26,OCCUPATION,slave
 genesis,9,27,PERSON,Japheth
 genesis,9,27,PERSON,Shem
 genesis,9,27,PERSON,Canaan
+genesis,9,27,OCCUPATION,slave
 genesis,9,28,PERSON,Noah
 genesis,9,28,DATE,350 years
 genesis,9,29,PERSON,Noah
@@ -479,6 +482,7 @@ genesis,12,14,NORP,Egyptians
 genesis,12,15,GPE,Pharaoh
 genesis,12,15,GPE,Pharaoh
 genesis,12,15,GPE,Pharaoh
+genesis,12,16,OCCUPATION,servant
 genesis,12,17,PERSON,Jehovah
 genesis,12,17,PERSON,Pharaoh
 genesis,12,17,GPE,Sarai
@@ -570,8 +574,10 @@ genesis,14,12,PERSON,Abrams
 genesis,14,12,GPE,Sodom
 genesis,14,13,ORG,Mamre the Amorite
 genesis,14,14,PERSON,Dan
+genesis,14,14,OCCUPATION,servant
 genesis,14,15,GPE,Hobah
 genesis,14,15,GPE,Damascus
+genesis,14,15,OCCUPATION,servant
 genesis,14,17,GPE,Shaveh
 genesis,14,17,OCCUPATION,king
 genesis,14,17,OCCUPATION,king
@@ -613,23 +619,29 @@ genesis,15,21,ORG,Girgashites
 genesis,16,1,PERSON,Sarai
 genesis,16,1,PERSON,Hagar
 genesis,16,1,NORP,Egyptian
+genesis,16,1,OCCUPATION,servant
 genesis,16,2,PERSON,Sarai
 genesis,16,2,PERSON,Jehovah
 genesis,16,2,PERSON,Sarai
+genesis,16,2,OCCUPATION,servant
 genesis,16,3,PERSON,Sarai
 genesis,16,3,PERSON,Hagar
 genesis,16,3,DATE,ten years
 genesis,16,3,GPE,Canaan
 genesis,16,3,NORP,Egyptian
+genesis,16,3,OCCUPATION,servant
 genesis,16,4,PERSON,Hagar
 genesis,16,5,PERSON,Jehovah
 genesis,16,5,GPE,Sarai
+genesis,16,5,OCCUPATION,servant
 genesis,16,6,GPE,Sarai
+genesis,16,6,OCCUPATION,servant
 genesis,16,7,DATE,the spring
 genesis,16,7,GPE,Shur
 genesis,16,8,PERSON,Hagar
 genesis,16,8,GPE,Sarai
 genesis,16,8,GPE,Sarai
+genesis,16,8,OCCUPATION,servant
 genesis,16,11,PERSON,Ishmael
 genesis,16,11,PERSON,Jehovah
 genesis,16,13,PERSON,Jehovah
@@ -682,6 +694,8 @@ genesis,18,1,PERSON,Jehovah
 genesis,18,1,DATE,the day
 genesis,18,1,GPE,Mamre
 genesis,18,3,PERSON,Jehovah
+genesis,18,3,OCCUPATION,servant
+genesis,18,5,OCCUPATION,servant
 genesis,18,6,PERSON,Abraham
 genesis,18,6,PERSON,Sarah
 genesis,18,7,PERSON,Abraham
@@ -728,6 +742,7 @@ genesis,18,33,PERSON,Abraham
 genesis,18,33,PERSON,Abraham
 genesis,19,1,ORG,Sodom
 genesis,19,1,ORG,Sodom
+genesis,19,2,OCCUPATION,servant
 genesis,19,4,ORG,Sodom
 genesis,19,13,PERSON,Jehovah
 genesis,19,13,PERSON,Jehovah
@@ -735,6 +750,7 @@ genesis,19,14,PERSON,Jehovah
 genesis,19,17,PERSON,Escape
 genesis,19,17,PERSON,Escape
 genesis,19,18,PERSON,Jehovah
+genesis,19,19,OCCUPATION,servant
 genesis,19,22,PERSON,Escape
 genesis,19,22,GPE,Zoar
 genesis,19,23,GPE,Zoar
@@ -770,6 +786,7 @@ genesis,20,4,PERSON,Jehovah
 genesis,20,7,NORP,mans
 genesis,20,7,OCCUPATION,prophet
 genesis,20,8,ORG,Abimelech
+genesis,20,8,OCCUPATION,servant
 genesis,20,9,PERSON,Abraham
 genesis,20,9,ORG,Abimelech
 genesis,20,10,PERSON,Abimelech
@@ -778,11 +795,13 @@ genesis,20,11,PERSON,Abraham
 genesis,20,14,PERSON,Abraham
 genesis,20,14,PERSON,Sarah
 genesis,20,14,ORG,Abimelech
+genesis,20,14,OCCUPATION,servant
 genesis,20,15,PERSON,Dwell
 genesis,20,15,ORG,Abimelech
 genesis,20,16,PERSON,Sarah
 genesis,20,17,PERSON,Abraham
 genesis,20,17,PERSON,Abimelech
+genesis,20,17,OCCUPATION,slave
 genesis,20,18,PERSON,Jehovah
 genesis,20,18,PERSON,Sarah
 genesis,20,18,ORG,Abimelech
@@ -814,10 +833,14 @@ genesis,21,9,ORG,Hagar
 genesis,21,9,NORP,Egyptian
 genesis,21,10,PERSON,Abraham
 genesis,21,10,PERSON,Isaac
+genesis,21,10,OCCUPATION,slave
+genesis,21,10,OCCUPATION,slave
 genesis,21,11,PERSON,Abraham
 genesis,21,12,PERSON,Abraham
 genesis,21,12,PERSON,Sarah
 genesis,21,12,PERSON,Isaac
+genesis,21,12,OCCUPATION,slave
+genesis,21,13,OCCUPATION,slave
 genesis,21,14,PERSON,Abraham
 genesis,21,14,PERSON,Hagar
 genesis,21,17,PERSON,Hagar
@@ -830,6 +853,7 @@ genesis,21,24,PERSON,Abraham
 genesis,21,25,PERSON,Abraham
 genesis,21,25,PERSON,Abimelech
 genesis,21,25,ORG,Abimelech
+genesis,21,25,OCCUPATION,servant
 genesis,21,26,DATE,today
 genesis,21,26,ORG,Abimelech
 genesis,21,27,PERSON,Abraham
@@ -845,9 +869,11 @@ genesis,22,1,PERSON,Abraham
 genesis,22,2,PERSON,Isaac
 genesis,22,3,PERSON,Abraham
 genesis,22,3,PERSON,Isaac
+genesis,22,3,OCCUPATION,servant
 genesis,22,4,PERSON,Abraham
 genesis,22,4,DATE,the third day
 genesis,22,5,PERSON,Abraham
+genesis,22,5,OCCUPATION,servant
 genesis,22,6,PERSON,Abraham
 genesis,22,6,PERSON,Isaac
 genesis,22,7,PERSON,Isaac
@@ -868,6 +894,7 @@ genesis,22,15,PERSON,Abraham
 genesis,22,16,PERSON,Jehovah
 genesis,22,19,PERSON,Abraham
 genesis,22,19,PERSON,Abraham
+genesis,22,19,OCCUPATION,servant
 genesis,22,20,PERSON,Abraham
 genesis,22,20,GPE,Milcah
 genesis,22,20,ORG,Nahor
@@ -932,25 +959,31 @@ genesis,24,1,PERSON,Jehovah
 genesis,24,1,PERSON,Abraham
 genesis,24,1,DATE,years
 genesis,24,2,PERSON,Abraham
+genesis,24,2,OCCUPATION,servant
 genesis,24,3,PERSON,Jehovah
 genesis,24,3,ORG,Canaanites
 genesis,24,4,PERSON,Isaac
+genesis,24,5,OCCUPATION,servant
 genesis,24,6,PERSON,Abraham
 genesis,24,9,PERSON,Abraham
+genesis,24,9,OCCUPATION,servant
 genesis,24,10,GPE,Mesopotamia
 genesis,24,10,GPE,Nahor
+genesis,24,10,OCCUPATION,servant
 genesis,24,12,PERSON,Jehovah
 genesis,24,12,PERSON,Abraham
 genesis,24,12,PERSON,Abraham
 genesis,24,12,DATE,this day
 genesis,24,13,DATE,a spring
 genesis,24,14,PERSON,Isaac
+genesis,24,14,OCCUPATION,servant
 genesis,24,15,PERSON,Rebekah
 genesis,24,15,PERSON,Bethuel
 genesis,24,15,GPE,Milcah
 genesis,24,15,GPE,Nahor
 genesis,24,15,ORG,Abrahams
 genesis,24,16,DATE,the spring
+genesis,24,17,OCCUPATION,servant
 genesis,24,21,PERSON,Jehovah
 genesis,24,24,PERSON,Bethuel
 genesis,24,24,GPE,Milcah
@@ -967,7 +1000,9 @@ genesis,24,30,PERSON,Rebekah
 genesis,24,30,DATE,the spring
 genesis,24,31,PERSON,Jehovah
 genesis,24,33,ORG,Laban
+genesis,24,34,OCCUPATION,servant
 genesis,24,35,PERSON,Jehovah
+genesis,24,35,OCCUPATION,servant
 genesis,24,36,PERSON,Sarah
 genesis,24,37,ORG,Canaanites
 genesis,24,40,PERSON,Jehovah
@@ -989,17 +1024,24 @@ genesis,24,50,GPE,Jehovah
 genesis,24,51,PERSON,Rebekah
 genesis,24,51,PERSON,Jehovah
 genesis,24,52,GPE,Jehovah
+genesis,24,52,OCCUPATION,servant
 genesis,24,53,PERSON,Rebekah
+genesis,24,53,OCCUPATION,servant
 genesis,24,55,DATE,at least ten days
 genesis,24,56,PERSON,Jehovah
 genesis,24,59,PERSON,Rebekah
 genesis,24,59,ORG,Abrahams
+genesis,24,59,OCCUPATION,servant
+genesis,24,61,OCCUPATION,servant
 genesis,24,62,PERSON,Isaac
 genesis,24,62,NORP,Beer
 genesis,24,63,PERSON,Isaac
 genesis,24,64,PERSON,Rebekah
 genesis,24,64,PERSON,Isaac
+genesis,24,65,OCCUPATION,servant
+genesis,24,65,OCCUPATION,servant
 genesis,24,66,PERSON,Isaac
+genesis,24,66,OCCUPATION,servant
 genesis,24,67,PERSON,Isaac
 genesis,24,67,PERSON,Sarah
 genesis,24,67,PERSON,Rebekah
@@ -1051,6 +1093,7 @@ genesis,25,12,PERSON,Sarah
 genesis,25,12,PERSON,Abraham
 genesis,25,12,NORP,Ishmael
 genesis,25,12,NORP,Egyptian
+genesis,25,12,OCCUPATION,servant
 genesis,25,13,PERSON,Kedar
 genesis,25,13,PERSON,Mibsam
 genesis,25,13,GPE,Ishmael
@@ -1124,9 +1167,11 @@ genesis,26,12,PERSON,Isaac
 genesis,26,12,PERSON,Jehovah
 genesis,26,12,DATE,that year
 genesis,26,14,ORG,Philistines
+genesis,26,14,OCCUPATION,servant
 genesis,26,15,PERSON,Abraham
 genesis,26,15,DATE,the days
 genesis,26,15,ORG,Philistines
+genesis,26,15,OCCUPATION,servant
 genesis,26,16,PERSON,Isaac
 genesis,26,16,ORG,Abimelech
 genesis,26,17,PERSON,Isaac
@@ -1137,6 +1182,7 @@ genesis,26,18,DATE,the days
 genesis,26,18,ORG,Philistines
 genesis,26,18,ORG,Abrahams
 genesis,26,19,PERSON,Isaac
+genesis,26,19,OCCUPATION,servant
 genesis,26,20,PERSON,Isaac
 genesis,26,20,GPE,Esek
 genesis,26,20,ORG,Gerar
@@ -1148,8 +1194,10 @@ genesis,26,22,PERSON,Jehovah
 genesis,26,24,PERSON,Jehovah
 genesis,26,24,PERSON,Abraham
 genesis,26,24,PERSON,Abraham
+genesis,26,24,OCCUPATION,servant
 genesis,26,25,PERSON,Isaac
 genesis,26,25,GPE,Jehovah
+genesis,26,25,OCCUPATION,servant
 genesis,26,26,PERSON,Abimelech
 genesis,26,26,ORG,Gerar
 genesis,26,27,PERSON,Isaac
@@ -1158,6 +1206,7 @@ genesis,26,29,GPE,Jehovah
 genesis,26,31,PERSON,Isaac
 genesis,26,32,PERSON,Isaac
 genesis,26,32,DATE,that day
+genesis,26,32,OCCUPATION,servant
 genesis,26,33,DATE,this day
 genesis,26,33,GPE,Shibah
 genesis,26,34,PERSON,Judith
@@ -1196,6 +1245,7 @@ genesis,27,32,PERSON,Isaac
 genesis,27,33,PERSON,Isaac
 genesis,27,36,PERSON,Jacob
 genesis,27,37,PERSON,Isaac
+genesis,27,37,OCCUPATION,servant
 genesis,27,39,PERSON,Isaac
 genesis,27,41,PERSON,Jacob
 genesis,27,41,PERSON,Jacob
@@ -1291,6 +1341,8 @@ genesis,29,22,ORG,Laban
 genesis,29,23,ORG,Leah
 genesis,29,24,ORG,Laban
 genesis,29,24,ORG,Leah
+genesis,29,24,OCCUPATION,servant
+genesis,29,24,OCCUPATION,servant
 genesis,29,25,PERSON,Jacob
 genesis,29,25,PERSON,Rachel
 genesis,29,25,ORG,Laban
@@ -1303,6 +1355,8 @@ genesis,29,28,DATE,the week
 genesis,29,29,PERSON,Bilhah
 genesis,29,29,PERSON,Rachel
 genesis,29,29,ORG,Laban
+genesis,29,29,OCCUPATION,servant
+genesis,29,29,OCCUPATION,servant
 genesis,29,30,PERSON,Jacob
 genesis,29,30,PERSON,Rachel
 genesis,29,30,PERSON,Rachel
@@ -1324,22 +1378,28 @@ genesis,30,1,PERSON,Jacob
 genesis,30,2,PERSON,Rachel
 genesis,30,2,ORG,Jacobs
 genesis,30,3,PERSON,Bilhah
+genesis,30,3,OCCUPATION,slave
 genesis,30,4,PERSON,Bilhah
 genesis,30,4,PERSON,Jacob
+genesis,30,4,OCCUPATION,servant
 genesis,30,5,PERSON,Jacob
 genesis,30,6,PERSON,Rachel
 genesis,30,6,PERSON,Dan
 genesis,30,7,PERSON,Bilhah
 genesis,30,7,PERSON,Rachels
 genesis,30,7,PERSON,Jacob
+genesis,30,7,OCCUPATION,servant
 genesis,30,8,PERSON,Rachel
 genesis,30,8,GPE,Naphtali
 genesis,30,9,PERSON,Jacob
+genesis,30,9,OCCUPATION,servant
 genesis,30,10,ORG,Leahs
 genesis,30,10,ORG,Jacob
+genesis,30,10,OCCUPATION,servant
 genesis,30,11,ORG,Leah
 genesis,30,12,PERSON,Jacob
 genesis,30,12,ORG,Leahs
+genesis,30,12,OCCUPATION,servant
 genesis,30,13,ORG,Leah
 genesis,30,14,PERSON,Reuben
 genesis,30,14,PERSON,Rachel
@@ -1350,6 +1410,7 @@ genesis,30,16,PERSON,Jacob
 genesis,30,17,PERSON,Jacob
 genesis,30,17,ORG,Leah
 genesis,30,18,ORG,Leah
+genesis,30,18,OCCUPATION,servant
 genesis,30,19,PERSON,Jacob
 genesis,30,20,PERSON,Zebulun
 genesis,30,20,ORG,Leah
@@ -1382,6 +1443,7 @@ genesis,30,40,NORP,Labans
 genesis,30,41,PERSON,Jacob
 genesis,30,42,ORG,Jacobs
 genesis,30,42,NORP,Labans
+genesis,30,43,OCCUPATION,servant
 genesis,31,1,PERSON,Jacob
 genesis,31,1,ORG,Laban
 genesis,31,2,PERSON,Jacob
@@ -1426,6 +1488,7 @@ genesis,31,33,PERSON,Jacob
 genesis,31,33,GPE,Rachels
 genesis,31,33,ORG,Leah
 genesis,31,33,ORG,Leahs
+genesis,31,33,OCCUPATION,slave
 genesis,31,34,PERSON,Rachel
 genesis,31,34,ORG,Laban
 genesis,31,34,NORP,womans
@@ -1466,16 +1529,24 @@ genesis,32,2,PERSON,Mahanaim
 genesis,32,3,PERSON,Jacob
 genesis,32,4,PERSON,Jacob
 genesis,32,4,ORG,Laban
+genesis,32,4,OCCUPATION,servant
+genesis,32,5,OCCUPATION,servant
 genesis,32,6,PERSON,Jacob
 genesis,32,7,PERSON,Jacob
 genesis,32,9,PERSON,Jacob
 genesis,32,9,PERSON,Abraham
 genesis,32,9,PERSON,Isaac
 genesis,32,10,GPE,Jordan
+genesis,32,10,OCCUPATION,servant
+genesis,32,16,OCCUPATION,servant
+genesis,32,16,OCCUPATION,servant
 genesis,32,18,PERSON,Jacob
+genesis,32,18,OCCUPATION,servant
 genesis,32,20,PERSON,Jacob
+genesis,32,20,OCCUPATION,servant
 genesis,32,22,ORG,ford
 genesis,32,22,ORG,Jabbok
+genesis,32,22,OCCUPATION,servant
 genesis,32,24,PERSON,Jacob
 genesis,32,25,ORG,Jacobs
 genesis,32,27,PERSON,Jacob
@@ -1491,15 +1562,20 @@ genesis,32,32,ORG,Jacobs
 genesis,33,1,PERSON,Jacob
 genesis,33,1,PERSON,Rachel
 genesis,33,1,ORG,Leah
+genesis,33,1,OCCUPATION,servant
 genesis,33,2,PERSON,Rachel
 genesis,33,2,PERSON,Joseph
 genesis,33,2,ORG,Leah
+genesis,33,2,OCCUPATION,servant
+genesis,33,5,OCCUPATION,servant
+genesis,33,6,OCCUPATION,servant
 genesis,33,7,PERSON,Joseph
 genesis,33,7,PERSON,Rachel
 genesis,33,7,ORG,Leah
 genesis,33,10,PERSON,Jacob
 genesis,33,12,ORG,Later Esau
 genesis,33,13,DATE,one day
+genesis,33,14,OCCUPATION,servant
 genesis,33,17,PERSON,Jacob
 genesis,33,17,PERSON,Succoth
 genesis,33,17,ORG,Succoth
@@ -1610,11 +1686,13 @@ genesis,35,25,PERSON,Bilhah
 genesis,35,25,PERSON,Rachels
 genesis,35,25,PERSON,Dan
 genesis,35,25,GPE,Naphtali
+genesis,35,25,OCCUPATION,servant
 genesis,35,26,GPE,Paddan
 genesis,35,26,ORG,Zilpah
 genesis,35,26,ORG,Leahs
 genesis,35,26,ORG,Gad and Asher
 genesis,35,26,ORG,Jacobs
+genesis,35,26,OCCUPATION,servant
 genesis,35,27,PERSON,Jacob
 genesis,35,27,PERSON,Isaac
 genesis,35,27,PERSON,Kiriath arba
@@ -1862,6 +1940,9 @@ genesis,39,6,PERSON,Josephs
 genesis,39,6,PERSON,Joseph
 genesis,39,7,PERSON,Joseph
 genesis,39,10,PERSON,Joseph
+genesis,39,11,OCCUPATION,servant
+genesis,39,17,OCCUPATION,servant
+genesis,39,19,OCCUPATION,servant
 genesis,39,20,PERSON,Josephs
 genesis,39,20,OCCUPATION,king
 genesis,39,21,PERSON,Jehovah
@@ -1898,6 +1979,8 @@ genesis,40,18,DATE,three days
 genesis,40,19,DATE,Three days
 genesis,40,19,ORG,Pharaoh
 genesis,40,20,DATE,the third day
+genesis,40,20,OCCUPATION,servant
+genesis,40,20,OCCUPATION,servant
 genesis,40,21,GPE,Pharaoh
 genesis,40,22,PERSON,Joseph
 genesis,40,23,PERSON,Joseph
@@ -1913,6 +1996,8 @@ genesis,41,8,OCCUPATION,priest
 genesis,41,9,DATE,today
 genesis,41,9,GPE,Pharaoh
 genesis,41,10,PERSON,Pharaoh
+genesis,41,10,OCCUPATION,servant
+genesis,41,12,OCCUPATION,servant
 genesis,41,14,PERSON,Pharaoh
 genesis,41,14,PERSON,Joseph
 genesis,41,14,GPE,Pharaoh
@@ -1949,7 +2034,9 @@ genesis,41,35,DATE,these coming good years
 genesis,41,36,DATE,the seven years
 genesis,41,36,GPE,Egypt
 genesis,41,37,GPE,Pharaoh
+genesis,41,37,OCCUPATION,servant
 genesis,41,38,PERSON,Pharaoh
+genesis,41,38,OCCUPATION,servant
 genesis,41,39,PERSON,Joseph
 genesis,41,39,ORG,Pharaoh
 genesis,41,40,OCCUPATION,king
@@ -2019,7 +2106,10 @@ genesis,42,7,PERSON,Joseph
 genesis,42,7,GPE,Canaan
 genesis,42,8,PERSON,Joseph
 genesis,42,9,PERSON,Joseph
+genesis,42,10,OCCUPATION,servant
+genesis,42,11,OCCUPATION,servant
 genesis,42,13,GPE,Canaan
+genesis,42,13,OCCUPATION,servant
 genesis,42,14,PERSON,Joseph
 genesis,42,15,NORP,Pharaoh
 genesis,42,16,NORP,Pharaoh
@@ -2053,11 +2143,13 @@ genesis,43,16,PERSON,Benjamin
 genesis,43,17,PERSON,Joseph
 genesis,43,17,PERSON,Josephs
 genesis,43,18,PERSON,Josephs
+genesis,43,18,OCCUPATION,slave
 genesis,43,19,PERSON,Josephs
 genesis,43,23,ORG,Simeon
 genesis,43,24,PERSON,Josephs
 genesis,43,25,PERSON,Josephs
 genesis,43,26,PERSON,Joseph
+genesis,43,28,OCCUPATION,servant
 genesis,43,29,PERSON,Benjamin
 genesis,43,30,PERSON,Joseph
 genesis,43,32,PERSON,Hebrews
@@ -2068,13 +2160,33 @@ genesis,43,34,PERSON,Benjamins
 genesis,44,2,PERSON,Joseph
 genesis,44,4,PERSON,Joseph
 genesis,44,4,ORG,Chase
+genesis,44,7,OCCUPATION,servant
 genesis,44,8,GPE,Canaan
+genesis,44,9,OCCUPATION,slave
+genesis,44,9,OCCUPATION,slave
+genesis,44,10,OCCUPATION,slave
 genesis,44,14,PERSON,Judah
 genesis,44,14,PERSON,Josephs
 genesis,44,15,PERSON,Joseph
 genesis,44,16,GPE,Judah
+genesis,44,16,OCCUPATION,slave
+genesis,44,16,OCCUPATION,slave
+genesis,44,17,OCCUPATION,slave
 genesis,44,18,PERSON,Pharaoh
+genesis,44,18,OCCUPATION,slave
+genesis,44,18,OCCUPATION,slave
+genesis,44,19,OCCUPATION,slave
+genesis,44,21,OCCUPATION,slave
+genesis,44,23,OCCUPATION,slave
+genesis,44,24,OCCUPATION,slave
 genesis,44,26,NORP,mans
+genesis,44,27,OCCUPATION,slave
+genesis,44,30,OCCUPATION,slave
+genesis,44,31,OCCUPATION,slave
+genesis,44,31,OCCUPATION,slave
+genesis,44,32,OCCUPATION,slave
+genesis,44,33,OCCUPATION,slave
+genesis,44,33,OCCUPATION,slave
 genesis,45,1,PERSON,Joseph
 genesis,45,1,PERSON,Joseph
 genesis,45,2,NORP,Egyptians
@@ -2098,6 +2210,7 @@ genesis,45,14,PERSON,Benjamin
 genesis,45,16,PERSON,Josephs
 genesis,45,16,GPE,Pharaoh
 genesis,45,16,GPE,Pharaoh
+genesis,45,16,OCCUPATION,servant
 genesis,45,17,PERSON,Pharaoh
 genesis,45,17,PERSON,Joseph
 genesis,45,17,GPE,Canaan
@@ -2239,6 +2352,7 @@ genesis,46,32,OCCUPATION,shepherd
 genesis,46,33,PERSON,Pharaoh
 genesis,46,34,GPE,Goshen
 genesis,46,34,NORP,Egyptians
+genesis,46,34,OCCUPATION,servant
 genesis,47,1,PERSON,Joseph
 genesis,47,1,GPE,Pharaoh
 genesis,47,1,GPE,Canaan
@@ -2246,9 +2360,12 @@ genesis,47,1,GPE,Goshen
 genesis,47,2,GPE,Pharaoh
 genesis,47,3,PERSON,Pharaoh
 genesis,47,3,ORG,Pharaoh
+genesis,47,3,OCCUPATION,servant
 genesis,47,4,PERSON,Pharaoh
 genesis,47,4,GPE,Canaan
 genesis,47,4,GPE,Goshen
+genesis,47,4,OCCUPATION,servant
+genesis,47,4,OCCUPATION,servant
 genesis,47,5,PERSON,Pharaoh
 genesis,47,5,PERSON,Joseph
 genesis,47,6,GPE,Egypt
@@ -2288,6 +2405,7 @@ genesis,47,17,DATE,that year
 genesis,47,18,DATE,that year
 genesis,47,18,DATE,the next year
 genesis,47,19,GPE,Pharaoh
+genesis,47,19,OCCUPATION,slave
 genesis,47,20,PERSON,Joseph
 genesis,47,20,GPE,Pharaoh
 genesis,47,20,NORP,Egyptians
@@ -2302,6 +2420,7 @@ genesis,47,23,DATE,today
 genesis,47,23,GPE,Pharaoh
 genesis,47,24,GPE,Pharaoh
 genesis,47,25,GPE,Pharaoh
+genesis,47,25,OCCUPATION,slave
 genesis,47,26,PERSON,Joseph
 genesis,47,26,DATE,today
 genesis,47,26,GPE,Egypt
@@ -2411,6 +2530,7 @@ genesis,49,33,PERSON,Jacob
 genesis,50,1,PERSON,Joseph
 genesis,50,2,PERSON,Joseph
 genesis,50,2,GPE,Israel
+genesis,50,2,OCCUPATION,servant
 genesis,50,3,DATE,the full 40 days
 genesis,50,3,DATE,70 days
 genesis,50,3,NORP,Egyptians
@@ -2421,6 +2541,7 @@ genesis,50,5,GPE,Canaan
 genesis,50,6,ORG,Pharaoh
 genesis,50,7,PERSON,Joseph
 genesis,50,7,GPE,Egypt
+genesis,50,7,OCCUPATION,servant
 genesis,50,7,OCCUPATION,elder
 genesis,50,7,OCCUPATION,elder
 genesis,50,8,PERSON,Josephs
@@ -2446,6 +2567,8 @@ genesis,50,15,PERSON,Joseph
 genesis,50,16,PERSON,Joseph
 genesis,50,17,PERSON,Joseph
 genesis,50,17,PERSON,Joseph
+genesis,50,17,OCCUPATION,servant
+genesis,50,18,OCCUPATION,slave
 genesis,50,19,PERSON,Joseph
 genesis,50,20,DATE,today
 genesis,50,22,PERSON,Joseph
@@ -2504,6 +2627,7 @@ exodus,1,22,ORG,Hebrews
 exodus,2,1,PERSON,Levi
 exodus,2,1,PERSON,Levi
 exodus,2,2,DATE,three months
+exodus,2,5,OCCUPATION,slave
 exodus,2,6,ORG,Hebrews
 exodus,2,7,ORG,Hebrews
 exodus,2,11,DATE,those days
@@ -2588,6 +2712,7 @@ exodus,4,5,PERSON,Isaac
 exodus,4,6,PERSON,Jehovah
 exodus,4,10,PERSON,Jehovah
 exodus,4,10,PERSON,Jehovah
+exodus,4,10,OCCUPATION,servant
 exodus,4,11,PERSON,Jehovah
 exodus,4,11,PERSON,Jehovah
 exodus,4,13,PERSON,Jehovah
@@ -2641,12 +2766,16 @@ exodus,5,13,DATE,every day
 exodus,5,14,DATE,yesterday
 exodus,5,14,DATE,today
 exodus,5,15,GPE,Pharaoh
+exodus,5,15,OCCUPATION,servant
+exodus,5,16,OCCUPATION,servant
+exodus,5,16,OCCUPATION,servant
 exodus,5,17,PERSON,Jehovah
 exodus,5,19,DATE,daily
 exodus,5,20,PERSON,Aaron
 exodus,5,20,GPE,Pharaoh
 exodus,5,21,PERSON,Jehovah
 exodus,5,21,GPE,Pharaoh
+exodus,5,21,OCCUPATION,servant
 exodus,5,22,PERSON,Jehovah
 exodus,5,22,PERSON,Jehovah
 exodus,5,23,GPE,Pharaoh
@@ -2786,6 +2915,7 @@ exodus,7,10,PERSON,Jehovah
 exodus,7,10,PERSON,Aaron
 exodus,7,10,GPE,Pharaoh
 exodus,7,10,GPE,Pharaoh
+exodus,7,10,OCCUPATION,servant
 exodus,7,11,PERSON,Pharaoh
 exodus,7,11,GPE,Egypt
 exodus,7,11,OCCUPATION,priest
@@ -2804,6 +2934,7 @@ exodus,7,19,GPE,Egypt
 exodus,7,20,PERSON,Aaron
 exodus,7,20,PERSON,Jehovah
 exodus,7,20,GPE,Pharaoh
+exodus,7,20,OCCUPATION,servant
 exodus,7,21,GPE,Egypt
 exodus,7,21,NORP,Egyptians
 exodus,7,22,PERSON,Jehovah
@@ -2816,6 +2947,8 @@ exodus,7,25,DATE,seven full days
 exodus,8,1,PERSON,Jehovah
 exodus,8,1,PERSON,Jehovah
 exodus,8,1,GPE,Pharaoh
+exodus,8,3,OCCUPATION,servant
+exodus,8,4,OCCUPATION,servant
 exodus,8,5,PERSON,Aaron
 exodus,8,5,PERSON,Stretch
 exodus,8,5,GPE,Egypt
@@ -2830,8 +2963,10 @@ exodus,8,8,PERSON,Jehovah
 exodus,8,8,PERSON,Jehovah
 exodus,8,8,ORG,Pharaoh
 exodus,8,9,PERSON,Pharaoh
+exodus,8,9,OCCUPATION,servant
 exodus,8,10,PERSON,Jehovah
 exodus,8,10,DATE,Tomorrow
+exodus,8,11,OCCUPATION,servant
 exodus,8,12,PERSON,Aaron
 exodus,8,12,PERSON,Jehovah
 exodus,8,12,GPE,Pharaoh
@@ -2853,6 +2988,7 @@ exodus,8,20,PERSON,Jehovah
 exodus,8,20,PERSON,Jehovah
 exodus,8,20,GPE,Pharaoh
 exodus,8,21,GPE,Egypt
+exodus,8,21,OCCUPATION,servant
 exodus,8,22,PERSON,Jehovah
 exodus,8,22,DATE,that day
 exodus,8,22,GPE,Goshen
@@ -2860,6 +2996,7 @@ exodus,8,23,DATE,Tomorrow
 exodus,8,24,PERSON,Jehovah
 exodus,8,24,GPE,Pharaoh
 exodus,8,24,GPE,Egypt
+exodus,8,24,OCCUPATION,servant
 exodus,8,25,PERSON,Pharaoh
 exodus,8,25,PERSON,Aaron
 exodus,8,26,PERSON,Jehovah
@@ -2874,10 +3011,12 @@ exodus,8,29,PERSON,Jehovah
 exodus,8,29,DATE,tomorrow
 exodus,8,29,GPE,Pharaoh
 exodus,8,29,GPE,Pharaoh
+exodus,8,29,OCCUPATION,servant
 exodus,8,30,PERSON,Jehovah
 exodus,8,30,GPE,Pharaoh
 exodus,8,31,PERSON,Jehovah
 exodus,8,31,GPE,Pharaoh
+exodus,8,31,OCCUPATION,servant
 exodus,8,32,GPE,Pharaoh
 exodus,9,1,PERSON,Jehovah
 exodus,9,1,PERSON,Jehovah
@@ -2907,9 +3046,13 @@ exodus,9,13,PERSON,Jehovah
 exodus,9,13,PERSON,Jehovah
 exodus,9,13,GPE,Pharaoh
 exodus,9,13,ORG,Hebrews
+exodus,9,14,OCCUPATION,servant
 exodus,9,18,DATE,tomorrow
 exodus,9,18,DATE,the day
 exodus,9,18,GPE,Egypt
+exodus,9,20,OCCUPATION,servant
+exodus,9,20,OCCUPATION,servant
+exodus,9,21,OCCUPATION,servant
 exodus,9,22,PERSON,Jehovah
 exodus,9,22,GPE,Egypt
 exodus,9,22,GPE,Egypt
@@ -2926,14 +3069,17 @@ exodus,9,28,PERSON,Jehovah
 exodus,9,29,PERSON,Jehovah
 exodus,9,29,GPE,Jehovah
 exodus,9,30,PERSON,Jehovah
+exodus,9,30,OCCUPATION,servant
 exodus,9,33,PERSON,Jehovah
 exodus,9,33,GPE,Pharaoh
 exodus,9,34,PERSON,Pharaoh
+exodus,9,34,OCCUPATION,servant
 exodus,9,35,PERSON,Israelites
 exodus,9,35,PERSON,Jehovah
 exodus,9,35,NORP,Moses
 exodus,10,1,PERSON,Jehovah
 exodus,10,1,GPE,Pharaoh
+exodus,10,1,OCCUPATION,servant
 exodus,10,2,PERSON,Jehovah
 exodus,10,2,GPE,Egypt
 exodus,10,3,PERSON,Aaron
@@ -2944,8 +3090,10 @@ exodus,10,4,DATE,tomorrow
 exodus,10,6,DATE,today
 exodus,10,6,GPE,Egypt
 exodus,10,6,GPE,Pharaoh
+exodus,10,6,OCCUPATION,servant
 exodus,10,7,PERSON,Jehovah
 exodus,10,7,GPE,Egypt
+exodus,10,7,OCCUPATION,servant
 exodus,10,8,PERSON,Aaron
 exodus,10,8,PERSON,Jehovah
 exodus,10,8,GPE,Pharaoh
@@ -2992,15 +3140,18 @@ exodus,11,1,GPE,Egypt
 exodus,11,3,PERSON,Jehovah
 exodus,11,3,GPE,Egypt
 exodus,11,3,NORP,Egyptians
+exodus,11,3,OCCUPATION,servant
 exodus,11,4,PERSON,Jehovah
 exodus,11,4,GPE,Egypt
 exodus,11,5,GPE,Egypt
 exodus,11,5,GPE,Pharaoh
+exodus,11,5,OCCUPATION,slave
 exodus,11,6,GPE,Egypt
 exodus,11,7,PERSON,Israelites
 exodus,11,7,PERSON,Jehovah
 exodus,11,7,NORP,Egyptians
 exodus,11,8,GPE,Pharaoh
+exodus,11,8,OCCUPATION,servant
 exodus,11,9,PERSON,Jehovah
 exodus,11,9,PERSON,Pharaoh
 exodus,11,9,GPE,Egypt
@@ -3059,6 +3210,7 @@ exodus,12,29,GPE,Pharaoh
 exodus,12,30,ORG,Pharaoh
 exodus,12,30,NORP,Egyptians
 exodus,12,30,NORP,Egyptians
+exodus,12,30,OCCUPATION,servant
 exodus,12,31,PERSON,Aaron
 exodus,12,31,PERSON,Jehovah
 exodus,12,33,NORP,Egyptians
@@ -3081,6 +3233,7 @@ exodus,12,42,GPE,Egypt
 exodus,12,42,GPE,Israel
 exodus,12,43,PERSON,Jehovah
 exodus,12,43,PERSON,Aaron
+exodus,12,44,OCCUPATION,slave
 exodus,12,47,GPE,Israel
 exodus,12,48,PERSON,Jehovah
 exodus,12,50,PERSON,Jehovah
@@ -3146,6 +3299,8 @@ exodus,14,5,GPE,Egypt
 exodus,14,5,GPE,Pharaoh
 exodus,14,5,GPE,Israel
 exodus,14,5,OCCUPATION,king
+exodus,14,5,OCCUPATION,servant
+exodus,14,5,OCCUPATION,slave
 exodus,14,7,GPE,Egypt
 exodus,14,8,PERSON,Jehovah
 exodus,14,8,PERSON,Israelites
@@ -3204,6 +3359,7 @@ exodus,14,31,PERSON,Jehovah
 exodus,14,31,GPE,Israel
 exodus,14,31,GPE,Jehovah
 exodus,14,31,NORP,Egyptians
+exodus,14,31,OCCUPATION,servant
 exodus,15,1,PERSON,Jehovah
 exodus,15,1,PERSON,Jehovah
 exodus,15,2,PERSON,Jah
@@ -3406,6 +3562,8 @@ exodus,20,7,PERSON,Jehovah
 exodus,20,9,DATE,six days
 exodus,20,10,PERSON,Jehovah
 exodus,20,10,DATE,the seventh day
+exodus,20,10,OCCUPATION,slave
+exodus,20,10,OCCUPATION,slave
 exodus,20,11,PERSON,Jehovah
 exodus,20,11,PERSON,Jehovah
 exodus,20,11,DATE,six days
@@ -3413,10 +3571,28 @@ exodus,20,11,DATE,the seventh day
 exodus,20,12,PERSON,Jehovah
 exodus,20,17,NORP,mans
 exodus,20,17,NORP,mans
+exodus,20,17,OCCUPATION,slave
+exodus,20,17,OCCUPATION,slave
 exodus,20,22,PERSON,Jehovah
 exodus,21,2,DATE,six years
 exodus,21,2,DATE,the seventh year
+exodus,21,2,OCCUPATION,slave
+exodus,21,2,OCCUPATION,slave
+exodus,21,5,OCCUPATION,slave
+exodus,21,6,OCCUPATION,slave
+exodus,21,7,OCCUPATION,slave
+exodus,21,7,OCCUPATION,slave
+exodus,21,20,OCCUPATION,slave
+exodus,21,20,OCCUPATION,slave
 exodus,21,21,DATE,one or two days
+exodus,21,26,OCCUPATION,slave
+exodus,21,26,OCCUPATION,slave
+exodus,21,26,OCCUPATION,slave
+exodus,21,27,OCCUPATION,slave
+exodus,21,27,OCCUPATION,slave
+exodus,21,27,OCCUPATION,slave
+exodus,21,32,OCCUPATION,slave
+exodus,21,32,OCCUPATION,slave
 exodus,21,35,NORP,mans
 exodus,22,7,NORP,mans
 exodus,22,11,PERSON,Jehovah
@@ -3429,6 +3605,7 @@ exodus,23,10,DATE,six years
 exodus,23,11,DATE,the seventh year
 exodus,23,12,DATE,Six days
 exodus,23,12,DATE,the seventh day
+exodus,23,12,OCCUPATION,slave
 exodus,23,15,DATE,seven days
 exodus,23,15,DATE,the month of
 exodus,23,15,GPE,Egypt
@@ -3629,6 +3806,7 @@ exodus,32,12,NORP,Egyptians
 exodus,32,13,PERSON,Abraham
 exodus,32,13,PERSON,Isaac
 exodus,32,13,GPE,Israel
+exodus,32,13,OCCUPATION,servant
 exodus,32,14,PERSON,Jehovah
 exodus,32,17,PERSON,Joshua
 exodus,32,21,PERSON,Aaron
@@ -4318,6 +4496,7 @@ leviticus,19,12,PERSON,Jehovah
 leviticus,19,14,PERSON,Jehovah
 leviticus,19,16,PERSON,Jehovah
 leviticus,19,18,PERSON,Jehovah
+leviticus,19,20,OCCUPATION,servant
 leviticus,19,21,PERSON,Jehovah
 leviticus,19,22,PERSON,Jehovah
 leviticus,19,22,OCCUPATION,priest
@@ -4371,6 +4550,7 @@ leviticus,22,8,PERSON,Jehovah
 leviticus,22,9,PERSON,Jehovah
 leviticus,22,10,OCCUPATION,priest
 leviticus,22,11,OCCUPATION,priest
+leviticus,22,11,OCCUPATION,slave
 leviticus,22,12,OCCUPATION,priest
 leviticus,22,12,OCCUPATION,priest
 leviticus,22,13,OCCUPATION,priest
@@ -4517,6 +4697,7 @@ leviticus,25,3,DATE,six years
 leviticus,25,4,PERSON,Jehovah
 leviticus,25,4,DATE,the seventh year
 leviticus,25,5,DATE,a year
+leviticus,25,6,OCCUPATION,slave
 leviticus,25,8,DATE,seven years
 leviticus,25,8,DATE,the days
 leviticus,25,8,DATE,49 years
@@ -4551,8 +4732,14 @@ leviticus,25,33,PERSON,Jubilee
 leviticus,25,38,PERSON,Jehovah
 leviticus,25,38,GPE,Egypt
 leviticus,25,38,GPE,Canaan
+leviticus,25,39,OCCUPATION,slave
 leviticus,25,40,DATE,the Jubilee year
 leviticus,25,42,GPE,Egypt
+leviticus,25,42,OCCUPATION,slave
+leviticus,25,42,OCCUPATION,slave
+leviticus,25,44,OCCUPATION,slave
+leviticus,25,44,OCCUPATION,slave
+leviticus,25,45,OCCUPATION,slave
 leviticus,25,46,ORG,Israelite
 leviticus,25,50,DATE,the year
 leviticus,25,50,DATE,the Jubilee year
@@ -4565,12 +4752,15 @@ leviticus,25,54,PERSON,Jubilee
 leviticus,25,54,DATE,the year of
 leviticus,25,55,PERSON,Jehovah
 leviticus,25,55,GPE,Egypt
+leviticus,25,55,OCCUPATION,slave
+leviticus,25,55,OCCUPATION,slave
 leviticus,26,1,PERSON,Jehovah
 leviticus,26,2,PERSON,Jehovah
 leviticus,26,5,DATE,season
 leviticus,26,10,DATE,the preceding year
 leviticus,26,13,PERSON,Jehovah
 leviticus,26,13,GPE,Egypt
+leviticus,26,13,OCCUPATION,slave
 leviticus,26,34,DATE,all the days
 leviticus,26,42,PERSON,Jacob
 leviticus,26,42,PERSON,Isaac
@@ -5196,6 +5386,7 @@ numbers,11,3,PERSON,Jehovah
 numbers,11,5,GPE,Egypt
 numbers,11,10,PERSON,Jehovah
 numbers,11,11,PERSON,Jehovah
+numbers,11,11,OCCUPATION,servant
 numbers,11,16,PERSON,Jehovah
 numbers,11,16,GPE,Israel
 numbers,11,16,OCCUPATION,elder
@@ -5253,7 +5444,9 @@ numbers,12,5,PERSON,Aaron
 numbers,12,5,PERSON,Miriam
 numbers,12,6,PERSON,Jehovah
 numbers,12,6,OCCUPATION,prophet
+numbers,12,7,OCCUPATION,servant
 numbers,12,8,PERSON,Jehovah
+numbers,12,8,OCCUPATION,servant
 numbers,12,9,ORG,Jehovahs
 numbers,12,10,PERSON,Miriam
 numbers,12,10,PERSON,Aaron
@@ -5354,6 +5547,7 @@ numbers,14,19,GPE,Egypt
 numbers,14,20,PERSON,Jehovah
 numbers,14,21,GPE,Jehovah
 numbers,14,22,GPE,Egypt
+numbers,14,24,OCCUPATION,servant
 numbers,14,25,DATE,tomorrow
 numbers,14,25,ORG,Canaanites
 numbers,14,25,NORP,Amalekites
@@ -5743,6 +5937,7 @@ numbers,22,18,PERSON,Balaam
 numbers,22,18,PERSON,Balak
 numbers,22,18,PERSON,Balak
 numbers,22,18,PERSON,Jehovah
+numbers,22,18,OCCUPATION,servant
 numbers,22,19,PERSON,Jehovah
 numbers,22,20,GPE,Balaam
 numbers,22,21,PERSON,Balaam
@@ -6292,6 +6487,7 @@ numbers,31,41,PERSON,Jehovah
 numbers,31,41,GPE,Eleazar
 numbers,31,41,OCCUPATION,priest
 numbers,31,47,PERSON,Jehovah
+numbers,31,49,OCCUPATION,servant
 numbers,31,50,PERSON,Jehovah
 numbers,31,50,ORG,Jehovahs
 numbers,31,51,OCCUPATION,priest
@@ -6315,7 +6511,9 @@ numbers,32,3,GPE,Dibon
 numbers,32,3,ORG,Elealeh
 numbers,32,4,PERSON,Jehovah
 numbers,32,4,GPE,Israel
+numbers,32,4,OCCUPATION,servant
 numbers,32,5,GPE,Jordan
+numbers,32,5,OCCUPATION,servant
 numbers,32,6,NORP,Reuben
 numbers,32,7,PERSON,Jehovah
 numbers,32,7,GPE,Israel
@@ -6350,8 +6548,10 @@ numbers,32,22,GPE,Jehovah
 numbers,32,22,GPE,Israel
 numbers,32,23,PERSON,Jehovah
 numbers,32,25,ORG,Reuben
+numbers,32,25,OCCUPATION,servant
 numbers,32,26,ORG,Gilead
 numbers,32,27,PERSON,Jehovah
+numbers,32,27,OCCUPATION,servant
 numbers,32,28,PERSON,Joshua
 numbers,32,28,PERSON,Nun
 numbers,32,28,GPE,Eleazar
@@ -6364,6 +6564,7 @@ numbers,32,29,NORP,Reuben
 numbers,32,30,GPE,Canaan
 numbers,32,31,PERSON,Jehovah
 numbers,32,31,NORP,Reuben
+numbers,32,31,OCCUPATION,servant
 numbers,32,32,PERSON,Jehovah
 numbers,32,32,GPE,Canaan
 numbers,32,32,GPE,Jordan
@@ -6814,6 +7015,7 @@ deuteronomy,3,21,OCCUPATION,king
 deuteronomy,3,22,PERSON,Jehovah
 deuteronomy,3,23,PERSON,Jehovah
 deuteronomy,3,24,PERSON,Jehovah
+deuteronomy,3,24,OCCUPATION,servant
 deuteronomy,3,25,GPE,Jordan
 deuteronomy,3,25,GPE,Lebanon
 deuteronomy,3,26,PERSON,Jehovah
@@ -6915,14 +7117,21 @@ deuteronomy,5,12,PERSON,Jehovah
 deuteronomy,5,13,DATE,six days
 deuteronomy,5,14,PERSON,Jehovah
 deuteronomy,5,14,DATE,the seventh day
+deuteronomy,5,14,OCCUPATION,slave
+deuteronomy,5,14,OCCUPATION,slave
+deuteronomy,5,14,OCCUPATION,slave
+deuteronomy,5,14,OCCUPATION,slave
 deuteronomy,5,15,PERSON,Jehovah
 deuteronomy,5,15,PERSON,Jehovah
 deuteronomy,5,15,DATE,the Sabbath day
 deuteronomy,5,15,GPE,Egypt
+deuteronomy,5,15,OCCUPATION,slave
 deuteronomy,5,16,PERSON,Jehovah
 deuteronomy,5,16,PERSON,Jehovah
 deuteronomy,5,21,NORP,mans
 deuteronomy,5,21,NORP,mans
+deuteronomy,5,21,OCCUPATION,slave
+deuteronomy,5,21,OCCUPATION,slave
 deuteronomy,5,22,PERSON,Jehovah
 deuteronomy,5,23,OCCUPATION,elder
 deuteronomy,5,24,PERSON,Jehovah
@@ -6962,6 +7171,7 @@ deuteronomy,6,21,PERSON,Jehovah
 deuteronomy,6,21,GPE,Pharaoh
 deuteronomy,6,21,GPE,Egypt
 deuteronomy,6,21,GPE,Egypt
+deuteronomy,6,21,OCCUPATION,slave
 deuteronomy,6,22,PERSON,Jehovah
 deuteronomy,6,22,GPE,Egypt
 deuteronomy,6,22,GPE,Pharaoh
@@ -7079,6 +7289,7 @@ deuteronomy,9,26,GPE,Egypt
 deuteronomy,9,27,PERSON,Abraham
 deuteronomy,9,27,PERSON,Isaac
 deuteronomy,9,27,PERSON,Jacob
+deuteronomy,9,27,OCCUPATION,servant
 deuteronomy,9,28,PERSON,Jehovah
 deuteronomy,10,1,PERSON,Jehovah
 deuteronomy,10,2,GPE,ark
@@ -7177,11 +7388,13 @@ deuteronomy,12,10,GPE,Jordan
 deuteronomy,12,11,PERSON,Jehovah
 deuteronomy,12,11,PERSON,Jehovah
 deuteronomy,12,12,PERSON,Jehovah
+deuteronomy,12,12,OCCUPATION,slave
 deuteronomy,12,14,PERSON,Jehovah
 deuteronomy,12,15,PERSON,Jehovah
 deuteronomy,12,18,PERSON,Jehovah
 deuteronomy,12,18,PERSON,Jehovah
 deuteronomy,12,18,PERSON,Jehovah
+deuteronomy,12,18,OCCUPATION,servant
 deuteronomy,12,20,PERSON,Jehovah
 deuteronomy,12,21,PERSON,Jehovah
 deuteronomy,12,21,PERSON,Jehovah
@@ -7245,6 +7458,9 @@ deuteronomy,15,14,PERSON,Jehovah
 deuteronomy,15,15,PERSON,Jehovah
 deuteronomy,15,15,DATE,today
 deuteronomy,15,15,GPE,Egypt
+deuteronomy,15,15,OCCUPATION,slave
+deuteronomy,15,17,OCCUPATION,slave
+deuteronomy,15,17,OCCUPATION,slave
 deuteronomy,15,18,PERSON,Jehovah
 deuteronomy,15,18,DATE,six years
 deuteronomy,15,19,PERSON,Jehovah
@@ -7279,8 +7495,13 @@ deuteronomy,16,10,PERSON,Jehovah
 deuteronomy,16,10,PERSON,Jehovah
 deuteronomy,16,11,PERSON,Jehovah
 deuteronomy,16,11,PERSON,Jehovah
+deuteronomy,16,11,OCCUPATION,slave
+deuteronomy,16,11,OCCUPATION,slave
 deuteronomy,16,12,GPE,Egypt
+deuteronomy,16,12,OCCUPATION,slave
 deuteronomy,16,13,DATE,seven days
+deuteronomy,16,14,OCCUPATION,slave
+deuteronomy,16,14,OCCUPATION,slave
 deuteronomy,16,15,PERSON,Jehovah
 deuteronomy,16,15,PERSON,Jehovah
 deuteronomy,16,15,PERSON,Jehovah
@@ -7426,6 +7647,7 @@ deuteronomy,23,6,DATE,days
 deuteronomy,23,7,NORP,Egyptian
 deuteronomy,23,8,GPE,Jehovah
 deuteronomy,23,14,PERSON,Jehovah
+deuteronomy,23,15,OCCUPATION,slave
 deuteronomy,23,17,GPE,Israel
 deuteronomy,23,17,GPE,Israel
 deuteronomy,23,18,PERSON,Jehovah
@@ -7448,8 +7670,10 @@ deuteronomy,24,15,PERSON,Jehovah
 deuteronomy,24,15,DATE,that very day
 deuteronomy,24,18,PERSON,Jehovah
 deuteronomy,24,18,GPE,Egypt
+deuteronomy,24,18,OCCUPATION,slave
 deuteronomy,24,19,PERSON,Jehovah
 deuteronomy,24,22,GPE,Egypt
+deuteronomy,24,22,OCCUPATION,slave
 deuteronomy,25,6,GPE,Israel
 deuteronomy,25,7,GPE,Israel
 deuteronomy,25,7,OCCUPATION,elder
@@ -7578,6 +7802,7 @@ deuteronomy,28,64,PERSON,Jehovah
 deuteronomy,28,65,PERSON,Jehovah
 deuteronomy,28,68,PERSON,Jehovah
 deuteronomy,28,68,GPE,Egypt
+deuteronomy,28,68,OCCUPATION,slave
 deuteronomy,29,1,PERSON,Jehovah
 deuteronomy,29,1,PERSON,Moab
 deuteronomy,29,1,GPE,Israel
@@ -7586,6 +7811,7 @@ deuteronomy,29,2,PERSON,Jehovah
 deuteronomy,29,2,GPE,Israel
 deuteronomy,29,2,GPE,Egypt
 deuteronomy,29,2,GPE,Pharaoh
+deuteronomy,29,2,OCCUPATION,servant
 deuteronomy,29,4,PERSON,Jehovah
 deuteronomy,29,4,DATE,this day
 deuteronomy,29,5,DATE,40 years
@@ -7731,6 +7957,8 @@ deuteronomy,32,32,GPE,Gomorrah
 deuteronomy,32,32,ORG,Sodom
 deuteronomy,32,35,DATE,the day
 deuteronomy,32,36,PERSON,Jehovah
+deuteronomy,32,36,OCCUPATION,servant
+deuteronomy,32,43,OCCUPATION,servant
 deuteronomy,32,44,PERSON,Nun
 deuteronomy,32,45,GPE,Israel
 deuteronomy,32,46,DATE,today
@@ -7810,6 +8038,7 @@ deuteronomy,34,4,PERSON,Jacob
 deuteronomy,34,5,PERSON,Jehovah
 deuteronomy,34,5,PERSON,Moab
 deuteronomy,34,5,PERSON,Jehovah
+deuteronomy,34,5,OCCUPATION,servant
 deuteronomy,34,6,PERSON,Moab
 deuteronomy,34,6,PERSON,Beth
 deuteronomy,34,6,DATE,this day
@@ -7827,14 +8056,18 @@ deuteronomy,34,10,OCCUPATION,prophet
 deuteronomy,34,11,PERSON,Jehovah
 deuteronomy,34,11,GPE,Egypt
 deuteronomy,34,11,GPE,Pharaoh
+deuteronomy,34,11,OCCUPATION,servant
 deuteronomy,34,12,GPE,Israel
 joshua,1,1,PERSON,Joshua
 joshua,1,1,PERSON,Nun
 joshua,1,1,ORG,"Jehovah, Jehovah"
+joshua,1,1,OCCUPATION,servant
 joshua,1,2,GPE,Jordan
 joshua,1,2,GPE,Israel
+joshua,1,2,OCCUPATION,servant
 joshua,1,4,GPE,Lebanon
 joshua,1,4,ORG,Euphrates
+joshua,1,7,OCCUPATION,servant
 joshua,1,8,PERSON,Law
 joshua,1,8,DATE,an undertone day
 joshua,1,9,PERSON,Jehovah
@@ -7847,11 +8080,13 @@ joshua,1,12,ORG,Gadites
 joshua,1,12,ORG,Manasseh
 joshua,1,13,PERSON,Jehovah
 joshua,1,13,PERSON,Jehovah
+joshua,1,13,OCCUPATION,servant
 joshua,1,14,GPE,Jordan
 joshua,1,15,PERSON,Jehovah
 joshua,1,15,PERSON,Jehovah
 joshua,1,15,PERSON,Jehovah
 joshua,1,15,GPE,Jordan
+joshua,1,15,OCCUPATION,servant
 joshua,1,16,PERSON,Joshua
 joshua,1,17,PERSON,Moses
 joshua,1,17,PERSON,Jehovah
@@ -8033,6 +8268,7 @@ joshua,5,13,PERSON,Joshua
 joshua,5,13,PERSON,Joshua
 joshua,5,13,GPE,Jericho
 joshua,5,14,PERSON,Joshua
+joshua,5,14,OCCUPATION,servant
 joshua,5,15,PERSON,Joshua
 joshua,5,15,PERSON,Joshua
 joshua,6,1,PERSON,Jericho
@@ -8212,12 +8448,14 @@ joshua,8,30,PERSON,Jehovah
 joshua,8,30,GPE,Israel
 joshua,8,31,PERSON,Jehovah
 joshua,8,31,PERSON,Jehovah
+joshua,8,31,OCCUPATION,servant
 joshua,8,33,PERSON,Jehovah
 joshua,8,33,GPE,Israel
 joshua,8,33,GPE,Jehovah
 joshua,8,33,GPE,Israel
 joshua,8,33,OCCUPATION,elder
 joshua,8,33,OCCUPATION,priest
+joshua,8,33,OCCUPATION,servant
 joshua,8,34,PERSON,Law
 joshua,8,35,PERSON,Joshua
 joshua,8,35,GPE,Israel
@@ -8240,14 +8478,17 @@ joshua,9,6,GPE,Israel
 joshua,9,7,GPE,Israel
 joshua,9,8,PERSON,Joshua
 joshua,9,8,PERSON,Joshua
+joshua,9,8,OCCUPATION,servant
 joshua,9,9,PERSON,Jehovah
 joshua,9,9,GPE,Egypt
+joshua,9,9,OCCUPATION,servant
 joshua,9,10,PERSON,Ashtaroth
 joshua,9,10,GPE,Jordan
 joshua,9,10,GPE,Bashan
 joshua,9,10,ORG,Amorites
 joshua,9,10,OCCUPATION,king
 joshua,9,11,OCCUPATION,elder
+joshua,9,11,OCCUPATION,servant
 joshua,9,12,DATE,the day
 joshua,9,14,GPE,Jehovah
 joshua,9,15,PERSON,Joshua
@@ -8262,8 +8503,11 @@ joshua,9,18,GPE,Israel
 joshua,9,19,PERSON,Jehovah
 joshua,9,19,GPE,Israel
 joshua,9,22,PERSON,Joshua
+joshua,9,23,OCCUPATION,slave
 joshua,9,24,PERSON,Joshua
 joshua,9,24,PERSON,Jehovah
+joshua,9,24,OCCUPATION,servant
+joshua,9,24,OCCUPATION,servant
 joshua,9,27,PERSON,Joshua
 joshua,9,27,DATE,this day
 joshua,10,1,PERSON,King Adoni
@@ -8307,6 +8551,7 @@ joshua,10,6,PERSON,Gibeon
 joshua,10,6,PERSON,Joshua
 joshua,10,6,GPE,Gilgal
 joshua,10,6,ORG,Amorites
+joshua,10,6,OCCUPATION,slave
 joshua,10,6,OCCUPATION,king
 joshua,10,7,PERSON,Joshua
 joshua,10,7,GPE,Gilgal
@@ -8486,6 +8731,7 @@ joshua,11,12,PERSON,Joshua
 joshua,11,12,PERSON,Jehovah
 joshua,11,12,OCCUPATION,king
 joshua,11,12,OCCUPATION,king
+joshua,11,12,OCCUPATION,servant
 joshua,11,13,PERSON,Hazor
 joshua,11,13,PERSON,Joshua
 joshua,11,13,GPE,Israel
@@ -8493,6 +8739,7 @@ joshua,11,15,PERSON,Jehovah
 joshua,11,15,PERSON,Joshua
 joshua,11,15,PERSON,Joshua
 joshua,11,15,PERSON,Jehovah
+joshua,11,15,OCCUPATION,servant
 joshua,11,16,PERSON,Joshua
 joshua,11,16,PERSON,Arabah
 joshua,11,16,GPE,Goshen
@@ -8546,6 +8793,8 @@ joshua,12,6,PERSON,Jehovah
 joshua,12,6,PERSON,Jehovah
 joshua,12,6,ORG,Gadites
 joshua,12,6,ORG,Manasseh
+joshua,12,6,OCCUPATION,servant
+joshua,12,6,OCCUPATION,servant
 joshua,12,7,PERSON,Joshua
 joshua,12,7,PERSON,Joshua
 joshua,12,7,GPE,Jordan
@@ -8649,6 +8898,7 @@ joshua,13,7,ORG,Manasseh
 joshua,13,8,PERSON,Jehovah
 joshua,13,8,GPE,Jordan
 joshua,13,8,ORG,Gadites
+joshua,13,8,OCCUPATION,servant
 joshua,13,9,GPE,the Arnon Valley
 joshua,13,9,GPE,Medeba
 joshua,13,9,ORG,Aroer
@@ -8747,6 +8997,7 @@ joshua,14,6,GPE,Jephunneh
 joshua,14,7,PERSON,Jehovah
 joshua,14,7,DATE,40 years old
 joshua,14,7,NORP,Kadesh
+joshua,14,7,OCCUPATION,servant
 joshua,14,8,PERSON,Jehovah
 joshua,14,9,PERSON,Jehovah
 joshua,14,9,DATE,that day
@@ -9049,6 +9300,7 @@ joshua,18,7,PERSON,Jehovah
 joshua,18,7,GPE,Jordan
 joshua,18,7,ORG,Manasseh
 joshua,18,7,NORP,Reuben
+joshua,18,7,OCCUPATION,servant
 joshua,18,8,PERSON,Joshua
 joshua,18,8,PERSON,Jehovah
 joshua,18,8,GPE,Shiloh
@@ -9344,13 +9596,16 @@ joshua,21,45,GPE,Israel
 joshua,22,1,PERSON,Joshua
 joshua,22,1,ORG,Gadites
 joshua,22,2,PERSON,Jehovah
+joshua,22,2,OCCUPATION,servant
 joshua,22,3,PERSON,Jehovah
 joshua,22,3,DATE,this day
 joshua,22,4,PERSON,Jehovah
 joshua,22,4,PERSON,Jehovah
 joshua,22,4,GPE,Jordan
+joshua,22,4,OCCUPATION,servant
 joshua,22,5,PERSON,Jehovah
 joshua,22,5,PERSON,Jehovah
+joshua,22,5,OCCUPATION,servant
 joshua,22,6,PERSON,Joshua
 joshua,22,7,PERSON,Joshua
 joshua,22,7,PERSON,Joshua
@@ -9552,6 +9807,7 @@ joshua,24,29,PERSON,Joshua
 joshua,24,29,PERSON,Nun
 joshua,24,29,DATE,the age of 110
 joshua,24,29,GPE,Jehovah
+joshua,24,29,OCCUPATION,servant
 joshua,24,30,PERSON,Ephraim
 joshua,24,30,GPE,Timnath serah
 joshua,24,31,PERSON,Jehovah
@@ -9696,6 +9952,7 @@ judges,2,8,PERSON,Joshua
 judges,2,8,PERSON,Nun
 judges,2,8,DATE,the age of 110
 judges,2,8,GPE,Jehovah
+judges,2,8,OCCUPATION,servant
 judges,2,9,PERSON,Ephraim
 judges,2,9,GPE,Timnath
 judges,2,10,PERSON,Jehovah
@@ -9792,6 +10049,7 @@ judges,3,20,PERSON,Ehud
 judges,3,20,ORG,Ehud
 judges,3,21,ORG,Ehud
 judges,3,23,ORG,Ehud
+judges,3,24,OCCUPATION,servant
 judges,3,26,PERSON,Seirah
 judges,3,26,ORG,Ehud
 judges,3,27,PERSON,Ephraim
@@ -10012,6 +10270,7 @@ judges,6,26,PERSON,Jehovah
 judges,6,26,PERSON,bull
 judges,6,27,PERSON,Jehovah
 judges,6,27,ORG,Gideon
+judges,6,27,OCCUPATION,servant
 judges,6,28,PERSON,bull
 judges,6,29,GPE,Joash
 judges,6,31,PERSON,Baal
@@ -10207,6 +10466,7 @@ judges,9,17,NORP,Midians
 judges,9,18,PERSON,Abimelech
 judges,9,18,DATE,today
 judges,9,18,ORG,Shechem
+judges,9,18,OCCUPATION,slave
 judges,9,18,OCCUPATION,king
 judges,9,19,PERSON,Jerubbaal
 judges,9,19,PERSON,Abimelech
@@ -10599,6 +10859,7 @@ judges,15,14,ORG,Jehovahs
 judges,15,16,ORG,Samson
 judges,15,17,PERSON,Ramath
 judges,15,18,PERSON,Jehovah
+judges,15,18,OCCUPATION,servant
 judges,15,19,DATE,this day
 judges,15,19,ORG,Lehi
 judges,15,19,ORG,Lehi
@@ -10989,6 +11250,8 @@ ruth,2,8,PERSON,Ruth
 ruth,2,12,PERSON,Jehovah
 ruth,2,12,PERSON,Jehovah
 ruth,2,12,GPE,Israel
+ruth,2,13,OCCUPATION,servant
+ruth,2,13,OCCUPATION,servant
 ruth,2,15,PERSON,Boaz
 ruth,2,18,PERSON,Ruth
 ruth,2,19,PERSON,Boaz
@@ -11003,6 +11266,8 @@ ruth,2,23,PERSON,Boaz
 ruth,3,2,PERSON,Boaz
 ruth,3,7,PERSON,Boaz
 ruth,3,9,PERSON,Ruth
+ruth,3,9,OCCUPATION,servant
+ruth,3,9,OCCUPATION,servant
 ruth,3,10,PERSON,Jehovah
 ruth,3,13,PERSON,Jehovah
 ruth,3,18,DATE,today
@@ -11100,6 +11365,9 @@ ruth,4,22,PERSON,David
 1 samuel,1,10,PERSON,Jehovah
 1 samuel,1,11,PERSON,Jehovah
 1 samuel,1,11,DATE,all the days
+1 samuel,1,11,OCCUPATION,servant
+1 samuel,1,11,OCCUPATION,servant
+1 samuel,1,11,OCCUPATION,servant
 1 samuel,1,12,PERSON,Jehovah
 1 samuel,1,12,ORG,Eli
 1 samuel,1,13,PERSON,Hannah
@@ -11107,8 +11375,10 @@ ruth,4,22,PERSON,David
 1 samuel,1,14,ORG,Eli
 1 samuel,1,15,PERSON,Hannah
 1 samuel,1,15,GPE,Jehovah
+1 samuel,1,16,OCCUPATION,servant
 1 samuel,1,17,GPE,Israel
 1 samuel,1,17,ORG,Eli
+1 samuel,1,18,OCCUPATION,servant
 1 samuel,1,19,PERSON,Jehovah
 1 samuel,1,19,PERSON,Hannah
 1 samuel,1,19,PERSON,Jehovah
@@ -11175,6 +11445,7 @@ ruth,4,22,PERSON,David
 1 samuel,2,27,GPE,Egypt
 1 samuel,2,27,GPE,Pharaoh
 1 samuel,2,27,ORG,Eli
+1 samuel,2,27,OCCUPATION,slave
 1 samuel,2,28,GPE,Israel
 1 samuel,2,28,OCCUPATION,priest
 1 samuel,2,29,GPE,Israel
@@ -11212,10 +11483,12 @@ ruth,4,22,PERSON,David
 1 samuel,3,9,PERSON,Samuel
 1 samuel,3,9,GPE,Speak
 1 samuel,3,9,ORG,Eli
+1 samuel,3,9,OCCUPATION,servant
 1 samuel,3,10,PERSON,Jehovah
 1 samuel,3,10,PERSON,Samuel
 1 samuel,3,10,PERSON,Samuel
 1 samuel,3,10,PERSON,Samuel
+1 samuel,3,10,OCCUPATION,servant
 1 samuel,3,11,PERSON,Jehovah
 1 samuel,3,11,PERSON,Samuel
 1 samuel,3,11,GPE,Israel
@@ -11463,6 +11736,10 @@ ruth,4,22,PERSON,David
 1 samuel,8,10,GPE,Jehovah
 1 samuel,8,10,OCCUPATION,king
 1 samuel,8,11,OCCUPATION,king
+1 samuel,8,14,OCCUPATION,servant
+1 samuel,8,15,OCCUPATION,servant
+1 samuel,8,16,OCCUPATION,servant
+1 samuel,8,17,OCCUPATION,servant
 1 samuel,8,18,PERSON,Jehovah
 1 samuel,8,18,DATE,The day
 1 samuel,8,18,DATE,that day
@@ -11699,6 +11976,7 @@ ruth,4,22,PERSON,David
 1 samuel,12,18,DATE,that day
 1 samuel,12,19,PERSON,Samuel
 1 samuel,12,19,PERSON,Jehovah
+1 samuel,12,19,OCCUPATION,servant
 1 samuel,12,19,OCCUPATION,king
 1 samuel,12,20,PERSON,Samuel
 1 samuel,12,20,PERSON,Jehovah
@@ -12092,7 +12370,10 @@ ruth,4,22,PERSON,David
 1 samuel,16,14,PERSON,Jehovah
 1 samuel,16,14,ORG,Saul
 1 samuel,16,15,ORG,Saul
+1 samuel,16,15,OCCUPATION,servant
+1 samuel,16,16,OCCUPATION,servant
 1 samuel,16,17,PERSON,Saul
+1 samuel,16,17,OCCUPATION,servant
 1 samuel,16,18,PERSON,Jehovah
 1 samuel,16,19,PERSON,Saul
 1 samuel,16,19,PERSON,Jesse
@@ -12123,6 +12404,9 @@ ruth,4,22,PERSON,David
 1 samuel,17,8,PERSON,Saul
 1 samuel,17,8,GPE,Israel
 1 samuel,17,8,GPE,Philistine
+1 samuel,17,8,OCCUPATION,servant
+1 samuel,17,9,OCCUPATION,servant
+1 samuel,17,9,OCCUPATION,servant
 1 samuel,17,10,DATE,this day
 1 samuel,17,10,GPE,Israel
 1 samuel,17,11,PERSON,Saul
@@ -12170,12 +12454,15 @@ ruth,4,22,PERSON,David
 1 samuel,17,32,PERSON,David
 1 samuel,17,32,PERSON,Saul
 1 samuel,17,32,GPE,Philistine
+1 samuel,17,32,OCCUPATION,servant
 1 samuel,17,33,PERSON,Saul
 1 samuel,17,33,PERSON,David
 1 samuel,17,33,OCCUPATION,soldier
 1 samuel,17,34,PERSON,David
 1 samuel,17,34,PERSON,Saul
+1 samuel,17,34,OCCUPATION,servant
 1 samuel,17,34,OCCUPATION,shepherd
+1 samuel,17,36,OCCUPATION,servant
 1 samuel,17,37,PERSON,David
 1 samuel,17,37,PERSON,Jehovah
 1 samuel,17,37,PERSON,Saul
@@ -12237,6 +12524,7 @@ ruth,4,22,PERSON,David
 1 samuel,17,58,PERSON,Saul
 1 samuel,17,58,PERSON,David
 1 samuel,17,58,PERSON,Jesse the Bethlehemite
+1 samuel,17,58,OCCUPATION,servant
 1 samuel,18,1,PERSON,David
 1 samuel,18,1,PERSON,Saul
 1 samuel,18,1,PERSON,Jonathan
@@ -12253,6 +12541,7 @@ ruth,4,22,PERSON,David
 1 samuel,18,5,PERSON,Saul
 1 samuel,18,5,ORG,Saul
 1 samuel,18,5,ORG,Saul
+1 samuel,18,5,OCCUPATION,servant
 1 samuel,18,6,PERSON,David
 1 samuel,18,6,GPE,Philistines
 1 samuel,18,6,GPE,Israel
@@ -12304,13 +12593,17 @@ ruth,4,22,PERSON,David
 1 samuel,18,21,GPE,Philistines
 1 samuel,18,22,PERSON,Saul
 1 samuel,18,22,PERSON,David
+1 samuel,18,22,OCCUPATION,servant
 1 samuel,18,22,OCCUPATION,king
+1 samuel,18,22,OCCUPATION,servant
 1 samuel,18,22,OCCUPATION,king
 1 samuel,18,23,PERSON,Sauls
 1 samuel,18,23,PERSON,David
 1 samuel,18,23,PERSON,David
+1 samuel,18,23,OCCUPATION,servant
 1 samuel,18,23,OCCUPATION,king
 1 samuel,18,24,PERSON,David
+1 samuel,18,24,OCCUPATION,servant
 1 samuel,18,25,PERSON,Saul
 1 samuel,18,25,PERSON,David
 1 samuel,18,25,PERSON,Saul
@@ -12320,6 +12613,7 @@ ruth,4,22,PERSON,David
 1 samuel,18,25,OCCUPATION,king
 1 samuel,18,26,PERSON,David
 1 samuel,18,26,PERSON,David
+1 samuel,18,26,OCCUPATION,servant
 1 samuel,18,26,OCCUPATION,king
 1 samuel,18,27,PERSON,David
 1 samuel,18,27,PERSON,David
@@ -12338,8 +12632,10 @@ ruth,4,22,PERSON,David
 1 samuel,18,30,PERSON,David
 1 samuel,18,30,ORG,Philistines
 1 samuel,18,30,ORG,Saul
+1 samuel,18,30,OCCUPATION,servant
 1 samuel,19,1,PERSON,Jonathan
 1 samuel,19,1,PERSON,David
+1 samuel,19,1,OCCUPATION,servant
 1 samuel,19,2,PERSON,Sauls
 1 samuel,19,2,PERSON,Jonathan
 1 samuel,19,2,PERSON,David
@@ -12351,6 +12647,7 @@ ruth,4,22,PERSON,David
 1 samuel,19,4,PERSON,Saul
 1 samuel,19,4,PERSON,David
 1 samuel,19,4,OCCUPATION,king
+1 samuel,19,4,OCCUPATION,servant
 1 samuel,19,5,PERSON,Jehovah
 1 samuel,19,5,PERSON,David
 1 samuel,19,5,GPE,Philistine
@@ -12427,6 +12724,9 @@ ruth,4,22,PERSON,David
 1 samuel,20,5,OCCUPATION,king
 1 samuel,20,6,PERSON,David
 1 samuel,20,6,ORG,Bethlehem
+1 samuel,20,7,OCCUPATION,servant
+1 samuel,20,8,OCCUPATION,servant
+1 samuel,20,8,OCCUPATION,servant
 1 samuel,20,9,PERSON,Jonathan
 1 samuel,20,10,PERSON,David
 1 samuel,20,10,PERSON,Jonathan
@@ -12532,6 +12832,7 @@ ruth,4,22,PERSON,David
 1 samuel,21,7,DATE,that day
 1 samuel,21,7,ORG,Sauls
 1 samuel,21,7,ORG,Doeg the Edomite
+1 samuel,21,7,OCCUPATION,servant
 1 samuel,21,7,OCCUPATION,shepherd
 1 samuel,21,8,PERSON,David
 1 samuel,21,8,NORP,Ahimelech
@@ -12545,9 +12846,11 @@ ruth,4,22,PERSON,David
 1 samuel,21,11,PERSON,Saul
 1 samuel,21,11,PERSON,David
 1 samuel,21,11,NORP,Achish
+1 samuel,21,11,OCCUPATION,servant
 1 samuel,21,11,OCCUPATION,king
 1 samuel,21,12,PERSON,David
 1 samuel,21,12,ORG,King Achish
+1 samuel,21,14,OCCUPATION,servant
 1 samuel,22,1,PERSON,David
 1 samuel,22,1,ORG,Adullam
 1 samuel,22,3,PERSON,David
@@ -12567,14 +12870,18 @@ ruth,4,22,PERSON,David
 1 samuel,22,6,PERSON,David
 1 samuel,22,6,PERSON,Saul
 1 samuel,22,6,GPE,Gibeah
+1 samuel,22,6,OCCUPATION,servant
 1 samuel,22,7,PERSON,Saul
 1 samuel,22,7,PERSON,Benjaminites
 1 samuel,22,7,PERSON,Jesse
+1 samuel,22,7,OCCUPATION,servant
 1 samuel,22,8,PERSON,Jesse
+1 samuel,22,8,OCCUPATION,servant
 1 samuel,22,9,PERSON,Ahitub
 1 samuel,22,9,GPE,Nob
 1 samuel,22,9,ORG,Saul
 1 samuel,22,9,ORG,Ahimelech
+1 samuel,22,9,OCCUPATION,servant
 1 samuel,22,10,PERSON,Jehovah
 1 samuel,22,11,PERSON,Ahitub
 1 samuel,22,11,GPE,Nob
@@ -12590,9 +12897,12 @@ ruth,4,22,PERSON,David
 1 samuel,22,14,PERSON,David
 1 samuel,22,14,ORG,Ahimelech
 1 samuel,22,14,OCCUPATION,king
+1 samuel,22,14,OCCUPATION,servant
 1 samuel,22,14,OCCUPATION,king
 1 samuel,22,15,DATE,today
 1 samuel,22,15,OCCUPATION,king
+1 samuel,22,15,OCCUPATION,servant
+1 samuel,22,15,OCCUPATION,servant
 1 samuel,22,16,ORG,Ahimelech
 1 samuel,22,16,OCCUPATION,king
 1 samuel,22,17,PERSON,Jehovah
@@ -12601,6 +12911,7 @@ ruth,4,22,PERSON,David
 1 samuel,22,17,OCCUPATION,king
 1 samuel,22,17,OCCUPATION,priest
 1 samuel,22,17,OCCUPATION,king
+1 samuel,22,17,OCCUPATION,servant
 1 samuel,22,17,OCCUPATION,priest
 1 samuel,22,18,DATE,that day 85
 1 samuel,22,18,OCCUPATION,king
@@ -12660,10 +12971,13 @@ ruth,4,22,PERSON,David
 1 samuel,23,10,PERSON,Saul
 1 samuel,23,10,GPE,Israel
 1 samuel,23,10,GPE,Keilah
+1 samuel,23,10,OCCUPATION,servant
 1 samuel,23,11,PERSON,Will Saul
 1 samuel,23,11,PERSON,Jehovah
 1 samuel,23,11,GPE,Keilah
 1 samuel,23,11,GPE,Israel
+1 samuel,23,11,OCCUPATION,servant
+1 samuel,23,11,OCCUPATION,servant
 1 samuel,23,12,PERSON,David
 1 samuel,23,12,PERSON,Sauls
 1 samuel,23,12,PERSON,Jehovah
@@ -12801,38 +13115,49 @@ ruth,4,22,PERSON,David
 1 samuel,25,7,GPE,Carmel
 1 samuel,25,7,OCCUPATION,shepherd
 1 samuel,25,8,PERSON,David
+1 samuel,25,8,OCCUPATION,servant
 1 samuel,25,9,GPE,Davids
 1 samuel,25,9,ORG,Davids
 1 samuel,25,9,ORG,Nabal
 1 samuel,25,10,PERSON,David
 1 samuel,25,10,PERSON,Jesse
 1 samuel,25,10,ORG,Davids
+1 samuel,25,10,OCCUPATION,servant
+1 samuel,25,10,OCCUPATION,servant
 1 samuel,25,12,ORG,Davids
 1 samuel,25,13,PERSON,David
 1 samuel,25,13,PERSON,David
 1 samuel,25,13,PERSON,David
 1 samuel,25,14,PERSON,Abigail
 1 samuel,25,14,PERSON,David
+1 samuel,25,14,OCCUPATION,servant
 1 samuel,25,16,OCCUPATION,shepherd
 1 samuel,25,18,PERSON,Abigail
 1 samuel,25,19,PERSON,Nabal
+1 samuel,25,19,OCCUPATION,servant
 1 samuel,25,20,PERSON,David
 1 samuel,25,21,PERSON,David
 1 samuel,25,22,PERSON,David
 1 samuel,25,23,PERSON,Abigail
 1 samuel,25,23,PERSON,David
 1 samuel,25,23,PERSON,David
+1 samuel,25,24,OCCUPATION,servant
+1 samuel,25,24,OCCUPATION,servant
 1 samuel,25,25,PERSON,Nabal
+1 samuel,25,25,OCCUPATION,servant
 1 samuel,25,26,PERSON,Jehovah
 1 samuel,25,26,PERSON,Jehovah
 1 samuel,25,26,ORG,Nabal
+1 samuel,25,27,OCCUPATION,servant
 1 samuel,25,28,PERSON,Jehovah
 1 samuel,25,28,PERSON,Jehovah
 1 samuel,25,28,DATE,days
+1 samuel,25,28,OCCUPATION,servant
 1 samuel,25,29,PERSON,Jehovah
 1 samuel,25,30,PERSON,Jehovah
 1 samuel,25,30,GPE,Israel
 1 samuel,25,31,PERSON,Jehovah
+1 samuel,25,31,OCCUPATION,servant
 1 samuel,25,32,PERSON,David
 1 samuel,25,32,PERSON,Abigail
 1 samuel,25,32,DATE,this day
@@ -12858,12 +13183,18 @@ ruth,4,22,PERSON,David
 1 samuel,25,39,PERSON,Abigail
 1 samuel,25,39,ORG,Nabal
 1 samuel,25,39,ORG,Nabal
+1 samuel,25,39,OCCUPATION,servant
 1 samuel,25,40,PERSON,Abigail
 1 samuel,25,40,PERSON,David
 1 samuel,25,40,ORG,Davids
 1 samuel,25,40,ORG,Carmel
+1 samuel,25,40,OCCUPATION,servant
+1 samuel,25,41,OCCUPATION,slave
+1 samuel,25,41,OCCUPATION,servant
+1 samuel,25,41,OCCUPATION,servant
 1 samuel,25,42,PERSON,Abigail
 1 samuel,25,42,PERSON,David
+1 samuel,25,42,OCCUPATION,servant
 1 samuel,25,43,PERSON,David
 1 samuel,25,43,ORG,Ahinoam
 1 samuel,25,43,ORG,Jezreel
@@ -12938,11 +13269,13 @@ ruth,4,22,PERSON,David
 1 samuel,26,17,PERSON,David
 1 samuel,26,17,PERSON,David
 1 samuel,26,17,OCCUPATION,king
+1 samuel,26,18,OCCUPATION,servant
 1 samuel,26,19,PERSON,Jehovah
 1 samuel,26,19,PERSON,Jehovah
 1 samuel,26,19,DATE,today
 1 samuel,26,19,ORG,Jehovahs
 1 samuel,26,19,OCCUPATION,king
+1 samuel,26,19,OCCUPATION,servant
 1 samuel,26,20,PERSON,Jehovah
 1 samuel,26,20,GPE,Israel
 1 samuel,26,20,OCCUPATION,king
@@ -12980,6 +13313,7 @@ ruth,4,22,PERSON,David
 1 samuel,27,4,PERSON,David
 1 samuel,27,4,ORG,Gath
 1 samuel,27,5,PERSON,David
+1 samuel,27,5,OCCUPATION,servant
 1 samuel,27,6,DATE,that day
 1 samuel,27,6,DATE,this day
 1 samuel,27,6,GPE,Judah
@@ -13007,12 +13341,14 @@ ruth,4,22,PERSON,David
 1 samuel,27,11,ORG,Gath
 1 samuel,27,12,PERSON,David
 1 samuel,27,12,GPE,Israel
+1 samuel,27,12,OCCUPATION,servant
 1 samuel,28,1,PERSON,David
 1 samuel,28,1,DATE,those days
 1 samuel,28,1,GPE,Israel
 1 samuel,28,1,ORG,Philistines
 1 samuel,28,2,PERSON,David
 1 samuel,28,2,PERSON,David
+1 samuel,28,2,OCCUPATION,servant
 1 samuel,28,3,PERSON,Samuel
 1 samuel,28,3,PERSON,Saul
 1 samuel,28,3,GPE,Israel
@@ -13028,6 +13364,8 @@ ruth,4,22,PERSON,David
 1 samuel,28,6,ORG,Urim
 1 samuel,28,6,OCCUPATION,prophet
 1 samuel,28,7,PERSON,Saul
+1 samuel,28,7,OCCUPATION,servant
+1 samuel,28,7,OCCUPATION,servant
 1 samuel,28,8,PERSON,Saul
 1 samuel,28,9,PERSON,Saul
 1 samuel,28,10,PERSON,Saul
@@ -13066,7 +13404,11 @@ ruth,4,22,PERSON,David
 1 samuel,28,20,DATE,all day
 1 samuel,28,20,GPE,Samuels
 1 samuel,28,21,PERSON,Saul
+1 samuel,28,21,OCCUPATION,servant
+1 samuel,28,22,OCCUPATION,servant
+1 samuel,28,23,OCCUPATION,servant
 1 samuel,28,25,PERSON,Saul
+1 samuel,28,25,OCCUPATION,servant
 1 samuel,29,1,PERSON,Aphek
 1 samuel,29,1,DATE,the spring
 1 samuel,29,1,ORG,Philistines
@@ -13081,6 +13423,7 @@ ruth,4,22,PERSON,David
 1 samuel,29,3,DATE,today
 1 samuel,29,3,GPE,Israel
 1 samuel,29,3,ORG,Philistines
+1 samuel,29,3,OCCUPATION,servant
 1 samuel,29,5,PERSON,David
 1 samuel,29,5,PERSON,Saul
 1 samuel,29,5,PERSON,David
@@ -13091,9 +13434,11 @@ ruth,4,22,PERSON,David
 1 samuel,29,8,PERSON,David
 1 samuel,29,8,DATE,the day
 1 samuel,29,8,DATE,today
+1 samuel,29,8,OCCUPATION,servant
 1 samuel,29,8,OCCUPATION,king
 1 samuel,29,9,PERSON,David
 1 samuel,29,9,ORG,Philistines
+1 samuel,29,10,OCCUPATION,servant
 1 samuel,29,11,PERSON,David
 1 samuel,29,11,GPE,Philistines
 1 samuel,29,11,ORG,Jezreel
@@ -13127,6 +13472,7 @@ ruth,4,22,PERSON,David
 1 samuel,30,13,DATE,three days ago
 1 samuel,30,13,NORP,Egyptian
 1 samuel,30,13,NORP,Amalekite
+1 samuel,30,13,OCCUPATION,slave
 1 samuel,30,14,GPE,Judah
 1 samuel,30,14,NORP,Cherethites
 1 samuel,30,15,PERSON,David
@@ -13297,21 +13643,25 @@ ruth,4,22,PERSON,David
 2 samuel,2,12,PERSON,Sauls
 2 samuel,2,12,PERSON,Mahanaim
 2 samuel,2,12,PERSON,Gibeon
+2 samuel,2,12,OCCUPATION,servant
 2 samuel,2,13,PERSON,Joab
 2 samuel,2,13,PERSON,David
 2 samuel,2,13,PERSON,Gibeon
 2 samuel,2,13,GPE,Zeruiah
+2 samuel,2,13,OCCUPATION,servant
 2 samuel,2,14,PERSON,Joab
 2 samuel,2,14,PERSON,Joab
 2 samuel,2,15,PERSON,Sauls
 2 samuel,2,15,PERSON,David
 2 samuel,2,15,ORG,Benjamin
+2 samuel,2,15,OCCUPATION,servant
 2 samuel,2,16,GPE,Gibeon
 2 samuel,2,16,ORG,Helkath
 2 samuel,2,17,PERSON,David
 2 samuel,2,17,DATE,that day
 2 samuel,2,17,GPE,Israel
 2 samuel,2,17,ORG,Abner
+2 samuel,2,17,OCCUPATION,servant
 2 samuel,2,18,PERSON,Zeruiah
 2 samuel,2,18,PERSON,Joab
 2 samuel,2,18,PERSON,Abishai
@@ -13349,9 +13699,11 @@ ruth,4,22,PERSON,David
 2 samuel,2,30,ORG,Abner
 2 samuel,2,30,ORG,Davids
 2 samuel,2,30,ORG,Asahel
+2 samuel,2,30,OCCUPATION,servant
 2 samuel,2,31,PERSON,David
 2 samuel,2,31,GPE,Benjaminites
 2 samuel,2,31,ORG,Abner
+2 samuel,2,31,OCCUPATION,servant
 2 samuel,2,32,PERSON,Asahel
 2 samuel,2,32,PERSON,Joab
 2 samuel,2,32,GPE,Bethlehem
@@ -13422,6 +13774,7 @@ ruth,4,22,PERSON,David
 2 samuel,3,18,PERSON,David
 2 samuel,3,18,PERSON,David
 2 samuel,3,18,GPE,Israel
+2 samuel,3,18,OCCUPATION,servant
 2 samuel,3,19,PERSON,David
 2 samuel,3,19,PERSON,Benjamin
 2 samuel,3,19,GPE,Hebron
@@ -13442,6 +13795,7 @@ ruth,4,22,PERSON,David
 2 samuel,3,22,PERSON,David
 2 samuel,3,22,GPE,Hebron
 2 samuel,3,22,ORG,Davids
+2 samuel,3,22,OCCUPATION,servant
 2 samuel,3,23,PERSON,Joab
 2 samuel,3,23,PERSON,Joab
 2 samuel,3,23,PERSON,Ner
@@ -13491,6 +13845,7 @@ ruth,4,22,PERSON,David
 2 samuel,3,38,DATE,this day
 2 samuel,3,38,GPE,Israel
 2 samuel,3,38,OCCUPATION,king
+2 samuel,3,38,OCCUPATION,servant
 2 samuel,3,39,PERSON,Jehovah
 2 samuel,3,39,DATE,Today
 2 samuel,3,39,GPE,Zeruiah
@@ -13692,12 +14047,15 @@ ruth,4,22,PERSON,David
 2 samuel,6,20,DATE,today
 2 samuel,6,20,GPE,Israel
 2 samuel,6,20,OCCUPATION,king
+2 samuel,6,20,OCCUPATION,slave
+2 samuel,6,20,OCCUPATION,servant
 2 samuel,6,21,PERSON,David
 2 samuel,6,21,PERSON,Michal
 2 samuel,6,21,PERSON,Jehovah
 2 samuel,6,21,PERSON,Jehovahs
 2 samuel,6,21,GPE,Israel
 2 samuel,6,21,GPE,Jehovah
+2 samuel,6,22,OCCUPATION,slave
 2 samuel,6,23,PERSON,Sauls
 2 samuel,6,23,PERSON,Michal
 2 samuel,6,23,DATE,the day
@@ -13712,6 +14070,7 @@ ruth,4,22,PERSON,David
 2 samuel,7,4,GPE,Nathan
 2 samuel,7,5,PERSON,David
 2 samuel,7,5,PERSON,Jehovah
+2 samuel,7,5,OCCUPATION,servant
 2 samuel,7,6,DATE,the day
 2 samuel,7,6,DATE,this day
 2 samuel,7,6,GPE,Israel
@@ -13722,6 +14081,7 @@ ruth,4,22,PERSON,David
 2 samuel,7,8,PERSON,David
 2 samuel,7,8,PERSON,Jehovah
 2 samuel,7,8,GPE,Israel
+2 samuel,7,8,OCCUPATION,servant
 2 samuel,7,10,GPE,Israel
 2 samuel,7,11,PERSON,Jehovah
 2 samuel,7,11,PERSON,Jehovah
@@ -13735,23 +14095,34 @@ ruth,4,22,PERSON,David
 2 samuel,7,18,PERSON,Jehovah
 2 samuel,7,18,PERSON,Jehovah
 2 samuel,7,19,PERSON,Jehovah
+2 samuel,7,19,OCCUPATION,servant
 2 samuel,7,20,PERSON,David
 2 samuel,7,20,PERSON,Jehovah
+2 samuel,7,20,OCCUPATION,servant
+2 samuel,7,21,OCCUPATION,servant
 2 samuel,7,23,GPE,Israel
 2 samuel,7,23,GPE,Egypt
 2 samuel,7,24,GPE,Israel
+2 samuel,7,25,OCCUPATION,servant
 2 samuel,7,26,PERSON,Jehovah
 2 samuel,7,26,PERSON,David
 2 samuel,7,26,GPE,Israel
+2 samuel,7,26,OCCUPATION,servant
 2 samuel,7,27,PERSON,Jehovah
 2 samuel,7,27,GPE,Israel
+2 samuel,7,27,OCCUPATION,servant
+2 samuel,7,27,OCCUPATION,servant
 2 samuel,7,28,PERSON,Jehovah
+2 samuel,7,28,OCCUPATION,servant
+2 samuel,7,29,OCCUPATION,servant
+2 samuel,7,29,OCCUPATION,servant
 2 samuel,8,1,PERSON,David
 2 samuel,8,1,PERSON,David
 2 samuel,8,1,ORG,Metheg
 2 samuel,8,2,PERSON,Moabites
 2 samuel,8,2,GPE,Moabites
 2 samuel,8,2,ORG,Davids
+2 samuel,8,2,OCCUPATION,servant
 2 samuel,8,3,PERSON,David
 2 samuel,8,3,GPE,Rehob
 2 samuel,8,3,OCCUPATION,king
@@ -13770,9 +14141,11 @@ ruth,4,22,PERSON,David
 2 samuel,8,6,GPE,Damascus
 2 samuel,8,6,ORG,Davids
 2 samuel,8,6,NORP,Syrians
+2 samuel,8,6,OCCUPATION,servant
 2 samuel,8,7,PERSON,David
 2 samuel,8,7,GPE,Jerusalem
 2 samuel,8,7,ORG,Hadadezer
+2 samuel,8,7,OCCUPATION,servant
 2 samuel,8,8,PERSON,King David
 2 samuel,8,8,GPE,Betah
 2 samuel,8,8,GPE,Berothai
@@ -13798,6 +14171,7 @@ ruth,4,22,PERSON,David
 2 samuel,8,14,PERSON,David
 2 samuel,8,14,GPE,Edom
 2 samuel,8,14,ORG,Davids
+2 samuel,8,14,OCCUPATION,servant
 2 samuel,8,15,PERSON,David
 2 samuel,8,15,PERSON,David
 2 samuel,8,15,GPE,Israel
@@ -13818,7 +14192,9 @@ ruth,4,22,PERSON,David
 2 samuel,9,2,PERSON,David
 2 samuel,9,2,PERSON,Ziba
 2 samuel,9,2,ORG,Saul
+2 samuel,9,2,OCCUPATION,servant
 2 samuel,9,2,OCCUPATION,king
+2 samuel,9,2,OCCUPATION,servant
 2 samuel,9,3,PERSON,Saul
 2 samuel,9,3,PERSON,Jonathan
 2 samuel,9,3,ORG,Ziba
@@ -13840,25 +14216,32 @@ ruth,4,22,PERSON,David
 2 samuel,9,6,PERSON,David
 2 samuel,9,6,PERSON,David
 2 samuel,9,6,PERSON,Mephibosheth
+2 samuel,9,6,OCCUPATION,servant
 2 samuel,9,7,PERSON,David
 2 samuel,9,7,PERSON,Jonathan
 2 samuel,9,7,PERSON,Saul
+2 samuel,9,8,OCCUPATION,servant
 2 samuel,9,9,PERSON,Sauls
 2 samuel,9,9,PERSON,Saul
 2 samuel,9,9,ORG,Ziba
 2 samuel,9,9,OCCUPATION,king
 2 samuel,9,10,PERSON,Mephibosheth
 2 samuel,9,10,ORG,Ziba
+2 samuel,9,10,OCCUPATION,servant
+2 samuel,9,10,OCCUPATION,servant
 2 samuel,9,11,PERSON,Mephibosheth
 2 samuel,9,11,ORG,Ziba
 2 samuel,9,11,ORG,Davids
 2 samuel,9,11,OCCUPATION,king
+2 samuel,9,11,OCCUPATION,servant
 2 samuel,9,11,OCCUPATION,king
+2 samuel,9,11,OCCUPATION,servant
 2 samuel,9,11,OCCUPATION,king
 2 samuel,9,12,PERSON,Mephibosheth
 2 samuel,9,12,PERSON,Mica
 2 samuel,9,12,PERSON,Zibas
 2 samuel,9,12,PERSON,Mephibosheth
+2 samuel,9,12,OCCUPATION,servant
 2 samuel,9,13,PERSON,Mephibosheth
 2 samuel,9,13,GPE,Jerusalem
 2 samuel,9,13,OCCUPATION,king
@@ -13872,12 +14255,16 @@ ruth,4,22,PERSON,David
 2 samuel,10,2,ORG,Hanun
 2 samuel,10,2,ORG,Davids
 2 samuel,10,2,ORG,Ammonites
+2 samuel,10,2,OCCUPATION,servant
+2 samuel,10,2,OCCUPATION,servant
 2 samuel,10,3,PERSON,David
 2 samuel,10,3,PERSON,David
 2 samuel,10,3,ORG,Ammonites
 2 samuel,10,3,ORG,Hanun
+2 samuel,10,3,OCCUPATION,servant
 2 samuel,10,4,PERSON,Hanun
 2 samuel,10,4,PERSON,David
+2 samuel,10,4,OCCUPATION,servant
 2 samuel,10,5,PERSON,David
 2 samuel,10,5,GPE,Jericho
 2 samuel,10,5,OCCUPATION,king
@@ -13936,6 +14323,7 @@ ruth,4,22,PERSON,David
 2 samuel,10,19,ORG,Ammonites
 2 samuel,10,19,NORP,Syrians
 2 samuel,10,19,OCCUPATION,king
+2 samuel,10,19,OCCUPATION,servant
 2 samuel,11,1,PERSON,David
 2 samuel,11,1,PERSON,Joab
 2 samuel,11,1,PERSON,David
@@ -13944,6 +14332,7 @@ ruth,4,22,PERSON,David
 2 samuel,11,1,GPE,Rabbah
 2 samuel,11,1,GPE,Jerusalem
 2 samuel,11,1,OCCUPATION,king
+2 samuel,11,1,OCCUPATION,servant
 2 samuel,11,2,PERSON,David
 2 samuel,11,2,OCCUPATION,king
 2 samuel,11,3,PERSON,David
@@ -13966,6 +14355,7 @@ ruth,4,22,PERSON,David
 2 samuel,11,8,OCCUPATION,king
 2 samuel,11,9,PERSON,Uriah
 2 samuel,11,9,OCCUPATION,king
+2 samuel,11,9,OCCUPATION,servant
 2 samuel,11,10,PERSON,David
 2 samuel,11,10,PERSON,Uriah
 2 samuel,11,10,PERSON,David
@@ -13976,6 +14366,7 @@ ruth,4,22,PERSON,David
 2 samuel,11,11,PERSON,Joab
 2 samuel,11,11,GPE,Israel
 2 samuel,11,11,GPE,Judah
+2 samuel,11,11,OCCUPATION,servant
 2 samuel,11,12,PERSON,David
 2 samuel,11,12,PERSON,Uriah
 2 samuel,11,12,PERSON,Uriah
@@ -13984,6 +14375,7 @@ ruth,4,22,PERSON,David
 2 samuel,11,12,DATE,that day
 2 samuel,11,12,GPE,Jerusalem
 2 samuel,11,13,PERSON,David
+2 samuel,11,13,OCCUPATION,servant
 2 samuel,11,14,PERSON,David
 2 samuel,11,14,PERSON,Joab
 2 samuel,11,14,PERSON,Uriah
@@ -13993,6 +14385,7 @@ ruth,4,22,PERSON,David
 2 samuel,11,17,PERSON,Joab
 2 samuel,11,17,PERSON,Uriah
 2 samuel,11,17,ORG,Davids
+2 samuel,11,17,OCCUPATION,servant
 2 samuel,11,18,PERSON,Joab
 2 samuel,11,18,PERSON,David
 2 samuel,11,19,OCCUPATION,king
@@ -14000,11 +14393,15 @@ ruth,4,22,PERSON,David
 2 samuel,11,21,PERSON,Jerubbesheth
 2 samuel,11,21,PERSON,Uriah
 2 samuel,11,21,ORG,Abimelech
+2 samuel,11,21,OCCUPATION,servant
 2 samuel,11,22,PERSON,David
 2 samuel,11,22,PERSON,Joab
 2 samuel,11,23,PERSON,David
 2 samuel,11,24,PERSON,Uriah
+2 samuel,11,24,OCCUPATION,servant
+2 samuel,11,24,OCCUPATION,servant
 2 samuel,11,24,OCCUPATION,king
+2 samuel,11,24,OCCUPATION,servant
 2 samuel,11,25,PERSON,David
 2 samuel,11,25,PERSON,Joab
 2 samuel,11,26,PERSON,Uriahs
@@ -14046,10 +14443,14 @@ ruth,4,22,PERSON,David
 2 samuel,12,17,OCCUPATION,elder
 2 samuel,12,18,DATE,the seventh day
 2 samuel,12,18,ORG,Davids
+2 samuel,12,18,OCCUPATION,servant
 2 samuel,12,19,PERSON,David
 2 samuel,12,19,PERSON,David
+2 samuel,12,19,OCCUPATION,servant
+2 samuel,12,19,OCCUPATION,servant
 2 samuel,12,20,PERSON,David
 2 samuel,12,20,PERSON,Jehovah
+2 samuel,12,21,OCCUPATION,servant
 2 samuel,12,22,PERSON,Jehovah
 2 samuel,12,24,PERSON,David
 2 samuel,12,24,PERSON,Bath
@@ -14122,7 +14523,9 @@ ruth,4,22,PERSON,David
 2 samuel,13,23,ORG,Absaloms
 2 samuel,13,23,OCCUPATION,king
 2 samuel,13,24,OCCUPATION,king
+2 samuel,13,24,OCCUPATION,servant
 2 samuel,13,24,OCCUPATION,king
+2 samuel,13,24,OCCUPATION,servant
 2 samuel,13,25,OCCUPATION,king
 2 samuel,13,26,PERSON,Amnon
 2 samuel,13,26,OCCUPATION,king
@@ -14135,6 +14538,7 @@ ruth,4,22,PERSON,David
 2 samuel,13,30,PERSON,David
 2 samuel,13,30,OCCUPATION,king
 2 samuel,13,31,OCCUPATION,king
+2 samuel,13,31,OCCUPATION,servant
 2 samuel,13,32,PERSON,Jehonadab
 2 samuel,13,32,PERSON,Absalom
 2 samuel,13,32,DATE,the day
@@ -14150,8 +14554,10 @@ ruth,4,22,PERSON,David
 2 samuel,13,35,PERSON,Jehonadab
 2 samuel,13,35,OCCUPATION,king
 2 samuel,13,35,OCCUPATION,king
+2 samuel,13,35,OCCUPATION,servant
 2 samuel,13,36,OCCUPATION,king
 2 samuel,13,36,OCCUPATION,king
+2 samuel,13,36,OCCUPATION,servant
 2 samuel,13,37,PERSON,Ammihud
 2 samuel,13,37,PERSON,Geshur
 2 samuel,13,37,PERSON,David
@@ -14173,6 +14579,8 @@ ruth,4,22,PERSON,David
 2 samuel,14,4,OCCUPATION,king
 2 samuel,14,4,OCCUPATION,king
 2 samuel,14,5,OCCUPATION,king
+2 samuel,14,6,OCCUPATION,servant
+2 samuel,14,7,OCCUPATION,servant
 2 samuel,14,8,OCCUPATION,king
 2 samuel,14,9,OCCUPATION,king
 2 samuel,14,9,OCCUPATION,king
@@ -14181,15 +14589,20 @@ ruth,4,22,PERSON,David
 2 samuel,14,11,PERSON,Jehovah
 2 samuel,14,11,PERSON,Jehovah
 2 samuel,14,11,OCCUPATION,king
+2 samuel,14,12,OCCUPATION,servant
 2 samuel,14,12,OCCUPATION,king
 2 samuel,14,13,OCCUPATION,king
 2 samuel,14,13,OCCUPATION,king
 2 samuel,14,15,OCCUPATION,king
+2 samuel,14,15,OCCUPATION,servant
 2 samuel,14,15,OCCUPATION,king
 2 samuel,14,15,OCCUPATION,king
+2 samuel,14,15,OCCUPATION,slave
 2 samuel,14,16,OCCUPATION,king
+2 samuel,14,16,OCCUPATION,slave
 2 samuel,14,17,PERSON,Jehovah
 2 samuel,14,17,DATE,May
+2 samuel,14,17,OCCUPATION,servant
 2 samuel,14,17,OCCUPATION,king
 2 samuel,14,17,OCCUPATION,king
 2 samuel,14,18,OCCUPATION,king
@@ -14199,7 +14612,10 @@ ruth,4,22,PERSON,David
 2 samuel,14,19,OCCUPATION,king
 2 samuel,14,19,OCCUPATION,king
 2 samuel,14,19,OCCUPATION,king
+2 samuel,14,19,OCCUPATION,servant
+2 samuel,14,19,OCCUPATION,servant
 2 samuel,14,20,PERSON,Joab
+2 samuel,14,20,OCCUPATION,servant
 2 samuel,14,21,PERSON,Joab
 2 samuel,14,21,PERSON,Absalom
 2 samuel,14,21,OCCUPATION,king
@@ -14207,8 +14623,10 @@ ruth,4,22,PERSON,David
 2 samuel,14,22,PERSON,Joab
 2 samuel,14,22,DATE,Today
 2 samuel,14,22,OCCUPATION,king
+2 samuel,14,22,OCCUPATION,servant
 2 samuel,14,22,OCCUPATION,king
 2 samuel,14,22,OCCUPATION,king
+2 samuel,14,22,OCCUPATION,servant
 2 samuel,14,23,PERSON,Joab
 2 samuel,14,23,PERSON,Geshur
 2 samuel,14,23,GPE,Jerusalem
@@ -14228,8 +14646,11 @@ ruth,4,22,PERSON,David
 2 samuel,14,29,OCCUPATION,king
 2 samuel,14,30,PERSON,Absalom
 2 samuel,14,30,NORP,Joabs
+2 samuel,14,30,OCCUPATION,servant
+2 samuel,14,30,OCCUPATION,servant
 2 samuel,14,31,PERSON,Joab
 2 samuel,14,31,ORG,Absaloms
+2 samuel,14,31,OCCUPATION,servant
 2 samuel,14,32,PERSON,Joab
 2 samuel,14,32,PERSON,Geshur
 2 samuel,14,32,OCCUPATION,king
@@ -14243,6 +14664,7 @@ ruth,4,22,PERSON,David
 2 samuel,15,2,PERSON,Absalom
 2 samuel,15,2,GPE,Israel
 2 samuel,15,2,OCCUPATION,king
+2 samuel,15,2,OCCUPATION,servant
 2 samuel,15,3,OCCUPATION,king
 2 samuel,15,5,PERSON,Absalom
 2 samuel,15,6,GPE,Israel
@@ -14257,6 +14679,7 @@ ruth,4,22,PERSON,David
 2 samuel,15,8,PERSON,Jehovah
 2 samuel,15,8,GPE,Syria
 2 samuel,15,8,GPE,Jerusalem
+2 samuel,15,8,OCCUPATION,servant
 2 samuel,15,9,GPE,Hebron
 2 samuel,15,9,OCCUPATION,king
 2 samuel,15,10,PERSON,Absalom
@@ -14273,14 +14696,18 @@ ruth,4,22,PERSON,David
 2 samuel,15,14,PERSON,David
 2 samuel,15,14,PERSON,Hurry
 2 samuel,15,14,GPE,Jerusalem
+2 samuel,15,14,OCCUPATION,servant
+2 samuel,15,15,OCCUPATION,king
+2 samuel,15,15,OCCUPATION,servant
 2 samuel,15,15,OCCUPATION,king
 2 samuel,15,15,OCCUPATION,king
-2 samuel,15,15,OCCUPATION,king
+2 samuel,15,15,OCCUPATION,servant
 2 samuel,15,16,OCCUPATION,king
 2 samuel,15,16,OCCUPATION,king
 2 samuel,15,17,PERSON,Beth
 2 samuel,15,17,OCCUPATION,king
 2 samuel,15,18,ORG,Gath
+2 samuel,15,18,OCCUPATION,servant
 2 samuel,15,18,OCCUPATION,king
 2 samuel,15,19,ORG,Ittai
 2 samuel,15,19,OCCUPATION,king
@@ -14292,6 +14719,7 @@ ruth,4,22,PERSON,David
 2 samuel,15,21,OCCUPATION,king
 2 samuel,15,21,OCCUPATION,king
 2 samuel,15,21,OCCUPATION,king
+2 samuel,15,21,OCCUPATION,servant
 2 samuel,15,22,PERSON,David
 2 samuel,15,22,PERSON,Ittai
 2 samuel,15,22,ORG,Ittai
@@ -14316,7 +14744,10 @@ ruth,4,22,PERSON,David
 2 samuel,15,32,PERSON,David
 2 samuel,15,33,PERSON,David
 2 samuel,15,34,PERSON,Absalom
+2 samuel,15,34,OCCUPATION,servant
 2 samuel,15,34,OCCUPATION,king
+2 samuel,15,34,OCCUPATION,servant
+2 samuel,15,34,OCCUPATION,servant
 2 samuel,15,35,PERSON,Zadok
 2 samuel,15,35,PERSON,Abiathar
 2 samuel,15,35,PERSON,Abiathar
@@ -14356,6 +14787,7 @@ ruth,4,22,PERSON,David
 2 samuel,16,5,ORG,Shimei
 2 samuel,16,6,PERSON,David
 2 samuel,16,6,PERSON,King David
+2 samuel,16,6,OCCUPATION,servant
 2 samuel,16,7,ORG,Shimei
 2 samuel,16,8,PERSON,Jehovah
 2 samuel,16,8,PERSON,Saul
@@ -14372,6 +14804,7 @@ ruth,4,22,PERSON,David
 2 samuel,16,11,PERSON,David
 2 samuel,16,11,PERSON,Abishai
 2 samuel,16,11,PERSON,Jehovah
+2 samuel,16,11,OCCUPATION,servant
 2 samuel,16,12,PERSON,Jehovah
 2 samuel,16,12,PERSON,Jehovah
 2 samuel,16,12,DATE,this day
@@ -14437,12 +14870,14 @@ ruth,4,22,PERSON,David
 2 samuel,17,17,PERSON,Jonathan
 2 samuel,17,17,PERSON,Ahimaaz
 2 samuel,17,17,PERSON,King David
+2 samuel,17,17,OCCUPATION,servant
 2 samuel,17,18,PERSON,Absalom
 2 samuel,17,18,GPE,Bahurim
 2 samuel,17,19,NORP,mans
 2 samuel,17,20,PERSON,Ahimaaz
 2 samuel,17,20,PERSON,Jonathan
 2 samuel,17,20,GPE,Jerusalem
+2 samuel,17,20,OCCUPATION,servant
 2 samuel,17,21,PERSON,King David
 2 samuel,17,21,NORP,Ahithophel
 2 samuel,17,22,PERSON,David
@@ -14497,8 +14932,10 @@ ruth,4,22,PERSON,David
 2 samuel,18,7,PERSON,David
 2 samuel,18,7,DATE,"that day 20,000"
 2 samuel,18,7,GPE,Israel
+2 samuel,18,7,OCCUPATION,servant
 2 samuel,18,8,DATE,that day
 2 samuel,18,9,PERSON,David
+2 samuel,18,9,OCCUPATION,servant
 2 samuel,18,10,PERSON,Joab
 2 samuel,18,11,PERSON,Joab
 2 samuel,18,12,PERSON,Joab
@@ -14555,6 +14992,8 @@ ruth,4,22,PERSON,David
 2 samuel,18,29,PERSON,Joab
 2 samuel,18,29,OCCUPATION,king
 2 samuel,18,29,OCCUPATION,king
+2 samuel,18,29,OCCUPATION,servant
+2 samuel,18,29,OCCUPATION,servant
 2 samuel,18,30,OCCUPATION,king
 2 samuel,18,31,PERSON,Cushite
 2 samuel,18,31,PERSON,Cushite
@@ -14578,9 +15017,12 @@ ruth,4,22,PERSON,David
 2 samuel,19,5,DATE,Today
 2 samuel,19,5,DATE,this day
 2 samuel,19,5,OCCUPATION,king
+2 samuel,19,5,OCCUPATION,servant
 2 samuel,19,6,DATE,today
 2 samuel,19,6,DATE,today
+2 samuel,19,6,OCCUPATION,servant
 2 samuel,19,7,PERSON,Jehovah
+2 samuel,19,7,OCCUPATION,servant
 2 samuel,19,8,GPE,Israel
 2 samuel,19,8,OCCUPATION,king
 2 samuel,19,8,OCCUPATION,king
@@ -14602,6 +15044,7 @@ ruth,4,22,PERSON,David
 2 samuel,19,13,ORG,Amasa
 2 samuel,19,14,GPE,Judah
 2 samuel,19,14,OCCUPATION,king
+2 samuel,19,14,OCCUPATION,servant
 2 samuel,19,15,GPE,Jordan
 2 samuel,19,15,GPE,Judah
 2 samuel,19,15,GPE,Gilgal
@@ -14616,6 +15059,7 @@ ruth,4,22,PERSON,David
 2 samuel,19,17,PERSON,Saul
 2 samuel,19,17,GPE,Jordan
 2 samuel,19,17,ORG,Ziba
+2 samuel,19,17,OCCUPATION,servant
 2 samuel,19,17,OCCUPATION,king
 2 samuel,19,18,PERSON,Gera
 2 samuel,19,18,GPE,Jordan
@@ -14626,10 +15070,12 @@ ruth,4,22,PERSON,David
 2 samuel,19,19,DATE,the day
 2 samuel,19,19,GPE,Jerusalem
 2 samuel,19,19,OCCUPATION,king
+2 samuel,19,19,OCCUPATION,servant
 2 samuel,19,19,OCCUPATION,king
 2 samuel,19,19,OCCUPATION,king
 2 samuel,19,20,PERSON,Joseph
 2 samuel,19,20,DATE,today
+2 samuel,19,20,OCCUPATION,servant
 2 samuel,19,20,OCCUPATION,king
 2 samuel,19,21,PERSON,Abishai
 2 samuel,19,21,PERSON,Zeruiah
@@ -14656,10 +15102,15 @@ ruth,4,22,PERSON,David
 2 samuel,19,25,OCCUPATION,king
 2 samuel,19,25,OCCUPATION,king
 2 samuel,19,26,OCCUPATION,king
+2 samuel,19,26,OCCUPATION,servant
+2 samuel,19,26,OCCUPATION,servant
 2 samuel,19,26,OCCUPATION,king
+2 samuel,19,26,OCCUPATION,servant
+2 samuel,19,27,OCCUPATION,servant
 2 samuel,19,27,OCCUPATION,king
 2 samuel,19,27,OCCUPATION,king
 2 samuel,19,28,OCCUPATION,king
+2 samuel,19,28,OCCUPATION,servant
 2 samuel,19,28,OCCUPATION,king
 2 samuel,19,29,ORG,Ziba
 2 samuel,19,29,OCCUPATION,king
@@ -14682,11 +15133,16 @@ ruth,4,22,PERSON,David
 2 samuel,19,34,OCCUPATION,king
 2 samuel,19,35,DATE,80 years old
 2 samuel,19,35,DATE,today
+2 samuel,19,35,OCCUPATION,servant
+2 samuel,19,35,OCCUPATION,servant
 2 samuel,19,35,OCCUPATION,king
 2 samuel,19,36,GPE,Jordan
+2 samuel,19,36,OCCUPATION,servant
 2 samuel,19,36,OCCUPATION,king
 2 samuel,19,36,OCCUPATION,king
 2 samuel,19,37,PERSON,Chimham
+2 samuel,19,37,OCCUPATION,servant
+2 samuel,19,37,OCCUPATION,servant
 2 samuel,19,37,OCCUPATION,king
 2 samuel,19,38,PERSON,Chimham
 2 samuel,19,38,OCCUPATION,king
@@ -14743,6 +15199,7 @@ ruth,4,22,PERSON,David
 2 samuel,20,6,PERSON,David
 2 samuel,20,6,PERSON,Abishai
 2 samuel,20,6,PERSON,Bichri
+2 samuel,20,6,OCCUPATION,servant
 2 samuel,20,7,PERSON,Joab
 2 samuel,20,7,PERSON,Bichri
 2 samuel,20,7,GPE,Jerusalem
@@ -14779,6 +15236,7 @@ ruth,4,22,PERSON,David
 2 samuel,20,15,PERSON,Joab
 2 samuel,20,16,PERSON,Joab
 2 samuel,20,17,PERSON,Joab
+2 samuel,20,17,OCCUPATION,servant
 2 samuel,20,18,PERSON,Abel
 2 samuel,20,19,PERSON,Jehovah
 2 samuel,20,19,GPE,Israel
@@ -14877,6 +15335,7 @@ ruth,4,22,PERSON,David
 2 samuel,21,15,GPE,Philistines
 2 samuel,21,15,GPE,Israel
 2 samuel,21,15,ORG,Philistines
+2 samuel,21,15,OCCUPATION,servant
 2 samuel,21,16,PERSON,Ishbi
 2 samuel,21,16,PERSON,David
 2 samuel,21,17,PERSON,Abishai
@@ -14893,6 +15352,7 @@ ruth,4,22,PERSON,David
 2 samuel,21,21,ORG,Davids
 2 samuel,21,22,PERSON,David
 2 samuel,21,22,GPE,Gath
+2 samuel,21,22,OCCUPATION,servant
 2 samuel,22,1,PERSON,David
 2 samuel,22,1,PERSON,Jehovah
 2 samuel,22,1,PERSON,Jehovah
@@ -15035,6 +15495,7 @@ ruth,4,22,PERSON,David
 2 samuel,24,10,PERSON,Jehovah
 2 samuel,24,10,PERSON,Jehovah
 2 samuel,24,10,ORG,Davids
+2 samuel,24,10,OCCUPATION,servant
 2 samuel,24,11,PERSON,David
 2 samuel,24,11,ORG,Davids
 2 samuel,24,11,OCCUPATION,prophet
@@ -15060,10 +15521,12 @@ ruth,4,22,PERSON,David
 2 samuel,24,19,PERSON,Jehovah
 2 samuel,24,20,PERSON,Araunah
 2 samuel,24,20,OCCUPATION,king
+2 samuel,24,20,OCCUPATION,servant
 2 samuel,24,20,OCCUPATION,king
 2 samuel,24,21,PERSON,David
 2 samuel,24,21,PERSON,Jehovah
 2 samuel,24,21,OCCUPATION,king
+2 samuel,24,21,OCCUPATION,servant
 2 samuel,24,22,PERSON,Araunah
 2 samuel,24,22,PERSON,David
 2 samuel,24,22,OCCUPATION,king
@@ -15081,6 +15544,7 @@ ruth,4,22,PERSON,David
 2 samuel,24,25,GPE,Israel
 1 kings,1,1,PERSON,David
 1 kings,1,1,DATE,years
+1 kings,1,2,OCCUPATION,servant
 1 kings,1,2,OCCUPATION,king
 1 kings,1,2,OCCUPATION,king
 1 kings,1,2,OCCUPATION,king
@@ -15109,6 +15573,7 @@ ruth,4,22,PERSON,David
 1 kings,1,9,GPE,Judah
 1 kings,1,9,OCCUPATION,king
 1 kings,1,9,OCCUPATION,king
+1 kings,1,9,OCCUPATION,servant
 1 kings,1,10,PERSON,Nathan
 1 kings,1,10,PERSON,Benaiah
 1 kings,1,10,PERSON,Solomon
@@ -15121,6 +15586,7 @@ ruth,4,22,PERSON,David
 1 kings,1,13,PERSON,King David
 1 kings,1,13,PERSON,Solomon
 1 kings,1,13,OCCUPATION,king
+1 kings,1,13,OCCUPATION,servant
 1 kings,1,13,OCCUPATION,king
 1 kings,1,13,OCCUPATION,king
 1 kings,1,14,OCCUPATION,king
@@ -15132,6 +15598,7 @@ ruth,4,22,PERSON,David
 1 kings,1,16,OCCUPATION,king
 1 kings,1,17,PERSON,Jehovah
 1 kings,1,17,PERSON,Solomon
+1 kings,1,17,OCCUPATION,servant
 1 kings,1,17,OCCUPATION,king
 1 kings,1,18,OCCUPATION,king
 1 kings,1,18,OCCUPATION,king
@@ -15140,6 +15607,7 @@ ruth,4,22,PERSON,David
 1 kings,1,19,PERSON,Solomon
 1 kings,1,19,OCCUPATION,king
 1 kings,1,19,OCCUPATION,priest
+1 kings,1,19,OCCUPATION,servant
 1 kings,1,20,GPE,Israel
 1 kings,1,20,OCCUPATION,king
 1 kings,1,20,OCCUPATION,king
@@ -15162,8 +15630,11 @@ ruth,4,22,PERSON,David
 1 kings,1,26,PERSON,Benaiah
 1 kings,1,26,PERSON,Solomon
 1 kings,1,26,GPE,Jehoiada
+1 kings,1,26,OCCUPATION,servant
 1 kings,1,26,OCCUPATION,priest
+1 kings,1,26,OCCUPATION,servant
 1 kings,1,27,OCCUPATION,king
+1 kings,1,27,OCCUPATION,servant
 1 kings,1,27,OCCUPATION,king
 1 kings,1,28,PERSON,David
 1 kings,1,28,OCCUPATION,king
@@ -15185,6 +15656,7 @@ ruth,4,22,PERSON,David
 1 kings,1,32,OCCUPATION,king
 1 kings,1,33,PERSON,Solomon
 1 kings,1,33,OCCUPATION,king
+1 kings,1,33,OCCUPATION,servant
 1 kings,1,34,PERSON,Solomon
 1 kings,1,34,GPE,Nathan
 1 kings,1,34,GPE,Israel
@@ -15235,6 +15707,7 @@ ruth,4,22,PERSON,David
 1 kings,1,45,OCCUPATION,king
 1 kings,1,46,PERSON,Solomon
 1 kings,1,47,PERSON,King David
+1 kings,1,47,OCCUPATION,servant
 1 kings,1,47,OCCUPATION,king
 1 kings,1,47,OCCUPATION,king
 1 kings,1,48,PERSON,May Jehovah
@@ -15245,6 +15718,7 @@ ruth,4,22,PERSON,David
 1 kings,1,50,PERSON,Solomon
 1 kings,1,51,PERSON,Solomon
 1 kings,1,51,PERSON,King Solomon
+1 kings,1,51,OCCUPATION,servant
 1 kings,1,52,PERSON,Solomon
 1 kings,1,53,PERSON,Solomon
 1 kings,1,53,PERSON,King Solomon
@@ -15367,18 +15841,23 @@ ruth,4,22,PERSON,David
 1 kings,2,38,ORG,Shimei
 1 kings,2,38,ORG,Shimei
 1 kings,2,38,OCCUPATION,king
+1 kings,2,38,OCCUPATION,servant
 1 kings,2,38,OCCUPATION,king
 1 kings,2,39,PERSON,Shimei
 1 kings,2,39,DATE,the end of three years
 1 kings,2,39,GPE,Gath
 1 kings,2,39,ORG,Shimeis
 1 kings,2,39,ORG,Maacah
+1 kings,2,39,OCCUPATION,slave
 1 kings,2,39,OCCUPATION,king
+1 kings,2,39,OCCUPATION,slave
 1 kings,2,40,PERSON,Shimei
 1 kings,2,40,GPE,Gath
 1 kings,2,40,ORG,Shimei
 1 kings,2,40,ORG,Gath
 1 kings,2,40,NORP,Achish
+1 kings,2,40,OCCUPATION,slave
+1 kings,2,40,OCCUPATION,slave
 1 kings,2,41,PERSON,Solomon
 1 kings,2,41,GPE,Jerusalem
 1 kings,2,41,GPE,Gath
@@ -15416,9 +15895,13 @@ ruth,4,22,PERSON,David
 1 kings,3,6,PERSON,Solomon
 1 kings,3,6,PERSON,David
 1 kings,3,6,DATE,this day
+1 kings,3,6,OCCUPATION,servant
 1 kings,3,7,PERSON,Jehovah
 1 kings,3,7,PERSON,David
+1 kings,3,7,OCCUPATION,servant
 1 kings,3,7,OCCUPATION,king
+1 kings,3,8,OCCUPATION,servant
+1 kings,3,9,OCCUPATION,servant
 1 kings,3,10,PERSON,Jehovah
 1 kings,3,10,PERSON,Solomon
 1 kings,3,13,OCCUPATION,king
@@ -15426,9 +15909,11 @@ ruth,4,22,PERSON,David
 1 kings,3,15,PERSON,Solomon
 1 kings,3,15,PERSON,Jehovah
 1 kings,3,15,GPE,Jerusalem
+1 kings,3,15,OCCUPATION,servant
 1 kings,3,16,OCCUPATION,king
 1 kings,3,18,DATE,the third day
 1 kings,3,19,NORP,womans
+1 kings,3,20,OCCUPATION,slave
 1 kings,3,22,OCCUPATION,king
 1 kings,3,23,OCCUPATION,king
 1 kings,3,24,OCCUPATION,king
@@ -15544,6 +16029,7 @@ ruth,4,22,PERSON,David
 1 kings,5,1,ORG,Hiram
 1 kings,5,1,OCCUPATION,king
 1 kings,5,1,OCCUPATION,king
+1 kings,5,1,OCCUPATION,servant
 1 kings,5,2,PERSON,Solomon
 1 kings,5,2,PERSON,Hiram
 1 kings,5,3,PERSON,David
@@ -15555,12 +16041,16 @@ ruth,4,22,PERSON,David
 1 kings,5,5,PERSON,David
 1 kings,5,6,GPE,Lebanon
 1 kings,5,6,NORP,Sidonians
+1 kings,5,6,OCCUPATION,servant
+1 kings,5,6,OCCUPATION,servant
+1 kings,5,6,OCCUPATION,servant
 1 kings,5,7,PERSON,Jehovah
 1 kings,5,7,PERSON,David
 1 kings,5,7,DATE,today
 1 kings,5,8,PERSON,Hiram
 1 kings,5,8,PERSON,Solomon
 1 kings,5,9,GPE,Lebanon
+1 kings,5,9,OCCUPATION,servant
 1 kings,5,10,PERSON,Hiram
 1 kings,5,10,PERSON,Solomon
 1 kings,5,11,PERSON,Solomon
@@ -15712,35 +16202,49 @@ ruth,4,22,PERSON,David
 1 kings,8,22,GPE,Jehovah
 1 kings,8,22,GPE,Israel
 1 kings,8,23,GPE,Israel
+1 kings,8,23,OCCUPATION,servant
 1 kings,8,24,PERSON,David
 1 kings,8,24,DATE,this day
+1 kings,8,24,OCCUPATION,servant
 1 kings,8,25,PERSON,David
 1 kings,8,25,GPE,Israel
 1 kings,8,25,GPE,Israel
+1 kings,8,25,OCCUPATION,servant
 1 kings,8,26,PERSON,David
 1 kings,8,26,GPE,Israel
+1 kings,8,26,OCCUPATION,servant
 1 kings,8,28,DATE,today
+1 kings,8,28,OCCUPATION,servant
+1 kings,8,28,OCCUPATION,servant
+1 kings,8,29,OCCUPATION,servant
 1 kings,8,30,GPE,Israel
+1 kings,8,30,OCCUPATION,servant
+1 kings,8,32,OCCUPATION,servant
 1 kings,8,33,GPE,Israel
 1 kings,8,34,GPE,Israel
 1 kings,8,36,GPE,Israel
+1 kings,8,36,OCCUPATION,servant
 1 kings,8,38,GPE,Israel
 1 kings,8,41,GPE,Israel
 1 kings,8,43,GPE,Israel
 1 kings,8,44,PERSON,Jehovah
 1 kings,8,51,GPE,Egypt
 1 kings,8,52,GPE,Israel
+1 kings,8,52,OCCUPATION,servant
 1 kings,8,53,GPE,Egypt
+1 kings,8,53,OCCUPATION,servant
 1 kings,8,54,PERSON,Solomon
 1 kings,8,54,PERSON,Jehovah
 1 kings,8,54,GPE,Jehovah
 1 kings,8,55,GPE,Israel
 1 kings,8,56,GPE,Israel
+1 kings,8,56,OCCUPATION,servant
 1 kings,8,57,PERSON,Jehovah
 1 kings,8,59,PERSON,Jehovah
 1 kings,8,59,PERSON,Jehovah
 1 kings,8,59,DATE,each day
 1 kings,8,59,GPE,Israel
+1 kings,8,59,OCCUPATION,servant
 1 kings,8,60,PERSON,Jehovah
 1 kings,8,61,PERSON,Jehovah
 1 kings,8,61,DATE,this day
@@ -15767,6 +16271,7 @@ ruth,4,22,PERSON,David
 1 kings,8,66,DATE,the following day
 1 kings,8,66,GPE,Israel
 1 kings,8,66,OCCUPATION,king
+1 kings,8,66,OCCUPATION,servant
 1 kings,9,1,PERSON,Solomon
 1 kings,9,1,PERSON,Solomon
 1 kings,9,1,GPE,Jehovah
@@ -15828,7 +16333,10 @@ ruth,4,22,PERSON,David
 1 kings,9,21,PERSON,Israelites
 1 kings,9,21,PERSON,Solomon
 1 kings,9,21,DATE,this day
+1 kings,9,21,OCCUPATION,slave
 1 kings,9,22,PERSON,Solomon
+1 kings,9,22,OCCUPATION,slave
+1 kings,9,22,OCCUPATION,servant
 1 kings,9,23,PERSON,Solomon
 1 kings,9,24,GPE,the City of David
 1 kings,9,25,PERSON,Solomon
@@ -15836,6 +16344,8 @@ ruth,4,22,PERSON,David
 1 kings,9,25,PERSON,Jehovah
 1 kings,9,26,PERSON,Solomon
 1 kings,9,27,PERSON,Solomon
+1 kings,9,27,OCCUPATION,servant
+1 kings,9,27,OCCUPATION,servant
 1 kings,9,28,PERSON,King Solomon
 1 kings,9,28,GPE,Ophir
 1 kings,10,1,PERSON,Solomon
@@ -15850,7 +16360,9 @@ ruth,4,22,PERSON,David
 1 kings,10,4,GPE,Sheba
 1 kings,10,4,OCCUPATION,queen
 1 kings,10,5,ORG,the house of Jehovah
+1 kings,10,5,OCCUPATION,servant
 1 kings,10,6,OCCUPATION,king
+1 kings,10,8,OCCUPATION,servant
 1 kings,10,9,PERSON,Jehovah
 1 kings,10,9,GPE,Israel
 1 kings,10,9,GPE,Israel
@@ -15869,6 +16381,7 @@ ruth,4,22,PERSON,David
 1 kings,10,13,PERSON,Solomon
 1 kings,10,13,GPE,Sheba
 1 kings,10,13,OCCUPATION,queen
+1 kings,10,13,OCCUPATION,servant
 1 kings,10,14,PERSON,Solomon
 1 kings,10,14,DATE,one year
 1 kings,10,15,NORP,Arabs
@@ -15933,9 +16446,11 @@ ruth,4,22,PERSON,David
 1 kings,11,10,PERSON,Jehovah
 1 kings,11,11,PERSON,Jehovah
 1 kings,11,11,PERSON,Solomon
+1 kings,11,11,OCCUPATION,servant
 1 kings,11,12,PERSON,David
 1 kings,11,13,PERSON,David
 1 kings,11,13,GPE,Jerusalem
+1 kings,11,13,OCCUPATION,servant
 1 kings,11,14,PERSON,Jehovah
 1 kings,11,14,PERSON,Solomon
 1 kings,11,15,PERSON,David
@@ -15947,6 +16462,7 @@ ruth,4,22,PERSON,David
 1 kings,11,16,GPE,Edom
 1 kings,11,17,GPE,Egypt
 1 kings,11,17,GPE,Hadad
+1 kings,11,17,OCCUPATION,servant
 1 kings,11,18,PERSON,Midian
 1 kings,11,18,GPE,Paran
 1 kings,11,18,GPE,Paran
@@ -15987,6 +16503,7 @@ ruth,4,22,PERSON,David
 1 kings,11,26,PERSON,Jeroboam
 1 kings,11,26,PERSON,Nebat
 1 kings,11,26,PERSON,Zeruah
+1 kings,11,26,OCCUPATION,servant
 1 kings,11,26,OCCUPATION,king
 1 kings,11,27,PERSON,Solomon
 1 kings,11,27,PERSON,David
@@ -16005,6 +16522,7 @@ ruth,4,22,PERSON,David
 1 kings,11,32,PERSON,David
 1 kings,11,32,GPE,Jerusalem
 1 kings,11,32,GPE,Israel
+1 kings,11,32,OCCUPATION,servant
 1 kings,11,33,PERSON,Ashtoreth
 1 kings,11,33,PERSON,Chemosh
 1 kings,11,33,PERSON,Moab
@@ -16014,13 +16532,16 @@ ruth,4,22,PERSON,David
 1 kings,11,33,NORP,Sidonians
 1 kings,11,34,PERSON,David
 1 kings,11,34,DATE,all the days
+1 kings,11,34,OCCUPATION,servant
 1 kings,11,36,PERSON,David
 1 kings,11,36,GPE,Jerusalem
+1 kings,11,36,OCCUPATION,servant
 1 kings,11,37,GPE,Israel
 1 kings,11,37,OCCUPATION,king
 1 kings,11,38,PERSON,David
 1 kings,11,38,PERSON,David
 1 kings,11,38,GPE,Israel
+1 kings,11,38,OCCUPATION,servant
 1 kings,11,39,PERSON,David
 1 kings,11,40,PERSON,Solomon
 1 kings,11,40,PERSON,Jeroboam
@@ -16053,6 +16574,8 @@ ruth,4,22,PERSON,David
 1 kings,12,5,DATE,three days
 1 kings,12,6,PERSON,Solomon
 1 kings,12,7,DATE,today
+1 kings,12,7,OCCUPATION,servant
+1 kings,12,7,OCCUPATION,servant
 1 kings,12,12,PERSON,Jeroboam
 1 kings,12,12,PERSON,Rehoboam
 1 kings,12,12,DATE,the third day
@@ -16205,6 +16728,7 @@ ruth,4,22,PERSON,David
 1 kings,14,7,GPE,Israel
 1 kings,14,8,PERSON,David
 1 kings,14,8,PERSON,David
+1 kings,14,8,OCCUPATION,servant
 1 kings,14,10,GPE,Jeroboam
 1 kings,14,10,GPE,Jeroboam
 1 kings,14,10,GPE,Israel
@@ -16231,6 +16755,7 @@ ruth,4,22,PERSON,David
 1 kings,14,17,PERSON,Tirzah
 1 kings,14,17,GPE,Jeroboams
 1 kings,14,18,GPE,Israel
+1 kings,14,18,OCCUPATION,servant
 1 kings,14,18,OCCUPATION,prophet
 1 kings,14,19,GPE,Jeroboam
 1 kings,14,19,GPE,Israel
@@ -16325,6 +16850,7 @@ ruth,4,22,PERSON,David
 1 kings,15,18,GPE,Damascus
 1 kings,15,18,ORG,Tabrimmon
 1 kings,15,18,OCCUPATION,king
+1 kings,15,18,OCCUPATION,servant
 1 kings,15,18,OCCUPATION,king
 1 kings,15,19,PERSON,King Baasha
 1 kings,15,19,GPE,Israel
@@ -16372,6 +16898,7 @@ ruth,4,22,PERSON,David
 1 kings,15,29,GPE,Jeroboam
 1 kings,15,29,NORP,Shilonite
 1 kings,15,29,OCCUPATION,king
+1 kings,15,29,OCCUPATION,servant
 1 kings,15,30,PERSON,Jeroboam
 1 kings,15,30,PERSON,Jehovah
 1 kings,15,30,GPE,Israel
@@ -16426,6 +16953,7 @@ ruth,4,22,PERSON,David
 1 kings,16,9,GPE,Tirzah
 1 kings,16,9,GPE,Arza
 1 kings,16,9,GPE,Tirzah
+1 kings,16,9,OCCUPATION,servant
 1 kings,16,10,DATE,the 27th year
 1 kings,16,10,ORG,King Asa of Judah
 1 kings,16,10,OCCUPATION,king
@@ -16579,10 +17107,12 @@ ruth,4,22,PERSON,David
 1 kings,18,7,PERSON,Elijah
 1 kings,18,8,PERSON,I. Go
 1 kings,18,9,PERSON,Ahab
+1 kings,18,9,OCCUPATION,servant
 1 kings,18,10,PERSON,Jehovah
 1 kings,18,12,PERSON,Jehovah
 1 kings,18,12,PERSON,Ahab
 1 kings,18,12,PERSON,Jehovah
+1 kings,18,12,OCCUPATION,servant
 1 kings,18,13,PERSON,Jezebel
 1 kings,18,13,PERSON,Jehovah
 1 kings,18,13,GPE,Jehovah
@@ -16624,6 +17154,7 @@ ruth,4,22,PERSON,David
 1 kings,18,36,GPE,Israel
 1 kings,18,36,GPE,Israel
 1 kings,18,36,OCCUPATION,prophet
+1 kings,18,36,OCCUPATION,servant
 1 kings,18,37,PERSON,Jehovah
 1 kings,18,38,GPE,Jehovah
 1 kings,18,39,PERSON,Jehovah
@@ -16698,17 +17229,21 @@ ruth,4,22,PERSON,David
 1 kings,20,4,OCCUPATION,king
 1 kings,20,5,PERSON,Ben
 1 kings,20,6,DATE,tomorrow
+1 kings,20,6,OCCUPATION,servant
+1 kings,20,6,OCCUPATION,servant
 1 kings,20,7,GPE,Israel
 1 kings,20,7,OCCUPATION,king
 1 kings,20,7,OCCUPATION,elder
 1 kings,20,8,OCCUPATION,elder
 1 kings,20,9,PERSON,Ben
 1 kings,20,9,OCCUPATION,king
+1 kings,20,9,OCCUPATION,servant
 1 kings,20,10,PERSON,Ben
 1 kings,20,10,GPE,Samaria
 1 kings,20,11,GPE,Israel
 1 kings,20,11,OCCUPATION,king
 1 kings,20,12,OCCUPATION,king
+1 kings,20,12,OCCUPATION,servant
 1 kings,20,13,PERSON,King Ahab
 1 kings,20,13,PERSON,Jehovah
 1 kings,20,13,PERSON,Jehovah
@@ -16737,6 +17272,7 @@ ruth,4,22,PERSON,David
 1 kings,20,22,OCCUPATION,king
 1 kings,20,22,OCCUPATION,king
 1 kings,20,23,GPE,Syria
+1 kings,20,23,OCCUPATION,servant
 1 kings,20,23,OCCUPATION,king
 1 kings,20,24,OCCUPATION,king
 1 kings,20,26,PERSON,Ben
@@ -16762,12 +17298,14 @@ ruth,4,22,PERSON,David
 1 kings,20,30,PERSON,Ben
 1 kings,20,31,GPE,Israel
 1 kings,20,31,GPE,Israel
+1 kings,20,31,OCCUPATION,servant
 1 kings,20,31,OCCUPATION,king
 1 kings,20,31,OCCUPATION,king
 1 kings,20,31,OCCUPATION,king
 1 kings,20,32,PERSON,Ben
 1 kings,20,32,GPE,Israel
 1 kings,20,32,OCCUPATION,king
+1 kings,20,32,OCCUPATION,servant
 1 kings,20,33,PERSON,Ben
 1 kings,20,33,PERSON,Ben
 1 kings,20,34,PERSON,Ben
@@ -16781,7 +17319,9 @@ ruth,4,22,PERSON,David
 1 kings,20,38,OCCUPATION,king
 1 kings,20,39,OCCUPATION,king
 1 kings,20,39,OCCUPATION,king
+1 kings,20,39,OCCUPATION,servant
 1 kings,20,40,GPE,Israel
+1 kings,20,40,OCCUPATION,servant
 1 kings,20,40,OCCUPATION,king
 1 kings,20,41,GPE,Israel
 1 kings,20,41,OCCUPATION,king
@@ -16870,6 +17410,7 @@ ruth,4,22,PERSON,David
 1 kings,22,3,GPE,Israel
 1 kings,22,3,GPE,Syria
 1 kings,22,3,OCCUPATION,king
+1 kings,22,3,OCCUPATION,servant
 1 kings,22,3,OCCUPATION,king
 1 kings,22,4,GPE,Israel
 1 kings,22,4,OCCUPATION,king
@@ -17001,6 +17542,8 @@ ruth,4,22,PERSON,David
 1 kings,22,48,NORP,Tarshish
 1 kings,22,49,PERSON,Ahaziah
 1 kings,22,49,PERSON,Ahab
+1 kings,22,49,OCCUPATION,servant
+1 kings,22,49,OCCUPATION,servant
 1 kings,22,50,PERSON,Jehoram
 1 kings,22,50,GPE,the City of David
 1 kings,22,50,OCCUPATION,king
@@ -17039,6 +17582,7 @@ ruth,4,22,PERSON,David
 2 kings,1,11,OCCUPATION,king
 2 kings,1,11,OCCUPATION,king
 2 kings,1,13,OCCUPATION,king
+2 kings,1,13,OCCUPATION,servant
 2 kings,1,15,PERSON,Jehovah
 2 kings,1,15,OCCUPATION,king
 2 kings,1,16,PERSON,Jehovah
@@ -17097,6 +17641,7 @@ ruth,4,22,PERSON,David
 2 kings,2,15,GPE,Elijah
 2 kings,2,15,OCCUPATION,prophet
 2 kings,2,16,GPE,Jehovah
+2 kings,2,16,OCCUPATION,servant
 2 kings,2,17,DATE,three days
 2 kings,2,18,GPE,Jericho
 2 kings,2,19,PERSON,Elisha
@@ -17154,6 +17699,7 @@ ruth,4,22,PERSON,David
 2 kings,3,11,GPE,Israel
 2 kings,3,11,GPE,Elijah
 2 kings,3,11,OCCUPATION,prophet
+2 kings,3,11,OCCUPATION,servant
 2 kings,3,11,OCCUPATION,king
 2 kings,3,12,PERSON,Jehovah
 2 kings,3,12,GPE,Israel
@@ -17195,7 +17741,11 @@ ruth,4,22,PERSON,David
 2 kings,4,1,PERSON,Elisha
 2 kings,4,1,PERSON,Jehovah
 2 kings,4,1,OCCUPATION,prophet
+2 kings,4,1,OCCUPATION,servant
+2 kings,4,1,OCCUPATION,servant
+2 kings,4,1,OCCUPATION,slave
 2 kings,4,2,PERSON,Elisha
+2 kings,4,2,OCCUPATION,servant
 2 kings,4,8,PERSON,Elisha
 2 kings,4,8,PERSON,Shunem
 2 kings,4,8,DATE,One day
@@ -17206,6 +17756,7 @@ ruth,4,22,PERSON,David
 2 kings,4,13,OCCUPATION,king
 2 kings,4,14,PERSON,Gehazi
 2 kings,4,16,DATE,next year
+2 kings,4,16,OCCUPATION,servant
 2 kings,4,17,PERSON,Elisha
 2 kings,4,17,DATE,the next year
 2 kings,4,18,DATE,one day
@@ -17238,6 +17789,7 @@ ruth,4,22,PERSON,David
 2 kings,5,2,GPE,Israel
 2 kings,5,2,NORP,Syrians
 2 kings,5,2,NORP,Naamans
+2 kings,5,2,OCCUPATION,servant
 2 kings,5,3,GPE,Samaria
 2 kings,5,3,OCCUPATION,prophet
 2 kings,5,4,GPE,Israel
@@ -17248,6 +17800,7 @@ ruth,4,22,PERSON,David
 2 kings,5,6,PERSON,Naaman
 2 kings,5,6,GPE,Israel
 2 kings,5,6,OCCUPATION,king
+2 kings,5,6,OCCUPATION,servant
 2 kings,5,7,GPE,Israel
 2 kings,5,7,OCCUPATION,king
 2 kings,5,8,PERSON,Elisha
@@ -17266,18 +17819,24 @@ ruth,4,22,PERSON,David
 2 kings,5,12,GPE,Damascus
 2 kings,5,12,GPE,Israel
 2 kings,5,13,PERSON,Wash
+2 kings,5,13,OCCUPATION,servant
 2 kings,5,13,OCCUPATION,prophet
 2 kings,5,14,GPE,Jordan
 2 kings,5,15,GPE,Israel
+2 kings,5,15,OCCUPATION,servant
 2 kings,5,16,PERSON,Elisha
 2 kings,5,16,PERSON,Jehovah
 2 kings,5,17,PERSON,Naaman
 2 kings,5,17,GPE,Jehovah
+2 kings,5,17,OCCUPATION,servant
+2 kings,5,17,OCCUPATION,servant
 2 kings,5,18,PERSON,Jehovah
 2 kings,5,18,PERSON,Rimmon
 2 kings,5,18,PERSON,Rimmon
 2 kings,5,18,PERSON,Rimmon
 2 kings,5,18,PERSON,Jehovah
+2 kings,5,18,OCCUPATION,servant
+2 kings,5,18,OCCUPATION,servant
 2 kings,5,20,PERSON,Elisha
 2 kings,5,20,PERSON,Naaman
 2 kings,5,20,PERSON,Jehovah
@@ -17291,16 +17850,20 @@ ruth,4,22,PERSON,David
 2 kings,5,24,PERSON,Ophel
 2 kings,5,25,PERSON,Elisha
 2 kings,5,25,PERSON,Gehazi
+2 kings,5,25,OCCUPATION,servant
 2 kings,5,26,PERSON,Elisha
+2 kings,5,26,OCCUPATION,servant
 2 kings,5,27,NORP,Naamans
 2 kings,6,1,PERSON,Elisha
 2 kings,6,1,OCCUPATION,prophet
 2 kings,6,2,GPE,Jordan
+2 kings,6,3,OCCUPATION,servant
 2 kings,6,4,GPE,Jordan
 2 kings,6,7,PERSON,Lift
 2 kings,6,8,GPE,Syria
 2 kings,6,8,GPE,Israel
 2 kings,6,8,OCCUPATION,king
+2 kings,6,8,OCCUPATION,servant
 2 kings,6,9,GPE,Israel
 2 kings,6,9,NORP,Syrians
 2 kings,6,9,OCCUPATION,king
@@ -17309,10 +17872,12 @@ ruth,4,22,PERSON,David
 2 kings,6,11,GPE,Syria
 2 kings,6,11,GPE,Israel
 2 kings,6,11,OCCUPATION,king
+2 kings,6,11,OCCUPATION,servant
 2 kings,6,11,OCCUPATION,king
 2 kings,6,12,PERSON,Elisha
 2 kings,6,12,GPE,Israel
 2 kings,6,12,GPE,Israel
+2 kings,6,12,OCCUPATION,servant
 2 kings,6,12,OCCUPATION,king
 2 kings,6,12,OCCUPATION,prophet
 2 kings,6,12,OCCUPATION,king
@@ -17384,8 +17949,10 @@ ruth,4,22,PERSON,David
 2 kings,7,11,OCCUPATION,king
 2 kings,7,12,NORP,Syrians
 2 kings,7,12,OCCUPATION,king
+2 kings,7,12,OCCUPATION,servant
 2 kings,7,13,GPE,Israel
 2 kings,7,13,GPE,Israel
+2 kings,7,13,OCCUPATION,servant
 2 kings,7,14,NORP,Syrians
 2 kings,7,14,OCCUPATION,king
 2 kings,7,15,GPE,Jordan
@@ -17438,6 +18005,7 @@ ruth,4,22,PERSON,David
 2 kings,8,13,PERSON,Elisha
 2 kings,8,13,PERSON,Jehovah
 2 kings,8,13,GPE,Syria
+2 kings,8,13,OCCUPATION,servant
 2 kings,8,13,OCCUPATION,king
 2 kings,8,14,PERSON,Elisha
 2 kings,8,14,PERSON,Elisha
@@ -17466,6 +18034,7 @@ ruth,4,22,PERSON,David
 2 kings,8,19,PERSON,Jehovah
 2 kings,8,19,PERSON,David
 2 kings,8,19,GPE,Judah
+2 kings,8,19,OCCUPATION,servant
 2 kings,8,20,PERSON,Judah
 2 kings,8,20,OCCUPATION,king
 2 kings,8,21,PERSON,Jehoram
@@ -17532,7 +18101,9 @@ ruth,4,22,PERSON,David
 2 kings,9,7,PERSON,Ahab
 2 kings,9,7,PERSON,Jezebel
 2 kings,9,7,GPE,Jehovah
+2 kings,9,7,OCCUPATION,servant
 2 kings,9,7,OCCUPATION,prophet
+2 kings,9,7,OCCUPATION,servant
 2 kings,9,8,PERSON,Ahab
 2 kings,9,8,PERSON,Ahab
 2 kings,9,8,GPE,Israel
@@ -17544,6 +18115,7 @@ ruth,4,22,PERSON,David
 2 kings,9,10,PERSON,Jezebel
 2 kings,9,10,ORG,Jezreel
 2 kings,9,11,PERSON,Jehu
+2 kings,9,11,OCCUPATION,servant
 2 kings,9,12,PERSON,Jehovah
 2 kings,9,12,GPE,Israel
 2 kings,9,12,OCCUPATION,king
@@ -17606,6 +18178,7 @@ ruth,4,22,PERSON,David
 2 kings,9,27,GPE,Megiddo
 2 kings,9,28,GPE,Jerusalem
 2 kings,9,28,GPE,the City of David
+2 kings,9,28,OCCUPATION,servant
 2 kings,9,29,DATE,the 11th year
 2 kings,9,29,GPE,Jehoram
 2 kings,9,29,GPE,Judah
@@ -17620,6 +18193,7 @@ ruth,4,22,PERSON,David
 2 kings,9,36,PERSON,Elijah the Tishbite
 2 kings,9,36,PERSON,Jezebel
 2 kings,9,36,ORG,Jezreel
+2 kings,9,36,OCCUPATION,servant
 2 kings,9,37,PERSON,Jezebel
 2 kings,9,37,PERSON,Jezebel
 2 kings,9,37,ORG,Jezreel
@@ -17633,6 +18207,7 @@ ruth,4,22,PERSON,David
 2 kings,10,4,OCCUPATION,king
 2 kings,10,5,PERSON,Jehu
 2 kings,10,5,OCCUPATION,elder
+2 kings,10,5,OCCUPATION,servant
 2 kings,10,5,OCCUPATION,king
 2 kings,10,6,DATE,tomorrow
 2 kings,10,6,ORG,Jezreel
@@ -17644,6 +18219,7 @@ ruth,4,22,PERSON,David
 2 kings,10,10,PERSON,Ahab
 2 kings,10,10,PERSON,Jehovah
 2 kings,10,10,ORG,Jehovahs
+2 kings,10,10,OCCUPATION,servant
 2 kings,10,11,PERSON,Jehu
 2 kings,10,11,PERSON,Ahab
 2 kings,10,11,ORG,Jezreel
@@ -17840,10 +18416,12 @@ ruth,4,22,PERSON,David
 2 kings,12,19,GPE,Judah
 2 kings,12,19,OCCUPATION,king
 2 kings,12,20,PERSON,Silla
+2 kings,12,20,OCCUPATION,servant
 2 kings,12,21,PERSON,Jozacar
 2 kings,12,21,PERSON,Shomer
 2 kings,12,21,PERSON,Amaziah
 2 kings,12,21,GPE,the City of David
+2 kings,12,21,OCCUPATION,servant
 2 kings,12,21,OCCUPATION,king
 2 kings,13,1,PERSON,Jehu
 2 kings,13,1,DATE,the 23rd year
@@ -17961,6 +18539,7 @@ ruth,4,22,PERSON,David
 2 kings,14,2,GPE,Jerusalem
 2 kings,14,2,OCCUPATION,king
 2 kings,14,3,PERSON,David
+2 kings,14,5,OCCUPATION,servant
 2 kings,14,5,OCCUPATION,king
 2 kings,14,6,ORG,Jehovahs
 2 kings,14,7,DATE,this day
@@ -18044,6 +18623,7 @@ ruth,4,22,PERSON,David
 2 kings,14,25,GPE,Israel
 2 kings,14,25,GPE,Israel
 2 kings,14,25,ORG,Lebo
+2 kings,14,25,OCCUPATION,servant
 2 kings,14,25,OCCUPATION,prophet
 2 kings,14,26,PERSON,Jehovah
 2 kings,14,26,GPE,Israel
@@ -18241,6 +18821,7 @@ ruth,4,22,PERSON,David
 2 kings,16,7,GPE,Assyria
 2 kings,16,7,GPE,Syria
 2 kings,16,7,GPE,Israel
+2 kings,16,7,OCCUPATION,servant
 2 kings,16,7,OCCUPATION,king
 2 kings,16,7,OCCUPATION,king
 2 kings,16,8,GPE,Assyria
@@ -18292,6 +18873,7 @@ ruth,4,22,PERSON,David
 2 kings,17,2,GPE,Israel
 2 kings,17,2,OCCUPATION,king
 2 kings,17,3,GPE,Assyria
+2 kings,17,3,OCCUPATION,servant
 2 kings,17,4,PERSON,Hoshea
 2 kings,17,4,DATE,former years
 2 kings,17,4,GPE,Assyria
@@ -18331,6 +18913,7 @@ ruth,4,22,PERSON,David
 2 kings,17,13,GPE,Israel
 2 kings,17,13,GPE,Judah
 2 kings,17,13,OCCUPATION,prophet
+2 kings,17,13,OCCUPATION,servant
 2 kings,17,13,OCCUPATION,prophet
 2 kings,17,14,PERSON,Jehovah
 2 kings,17,15,PERSON,Jehovah
@@ -18359,6 +18942,7 @@ ruth,4,22,PERSON,David
 2 kings,17,23,GPE,Israel
 2 kings,17,23,GPE,Israel
 2 kings,17,23,GPE,Assyria
+2 kings,17,23,OCCUPATION,servant
 2 kings,17,23,OCCUPATION,prophet
 2 kings,17,24,PERSON,Cuthah
 2 kings,17,24,PERSON,Avva
@@ -18457,6 +19041,7 @@ ruth,4,22,PERSON,David
 2 kings,18,11,OCCUPATION,king
 2 kings,18,12,PERSON,Jehovah
 2 kings,18,12,PERSON,Jehovah
+2 kings,18,12,OCCUPATION,servant
 2 kings,18,13,PERSON,King Hezekiah
 2 kings,18,13,DATE,the 14th year
 2 kings,18,13,GPE,Sennacherib
@@ -18507,6 +19092,7 @@ ruth,4,22,PERSON,David
 2 kings,18,23,GPE,Assyria
 2 kings,18,23,OCCUPATION,king
 2 kings,18,24,GPE,Egypt
+2 kings,18,24,OCCUPATION,servant
 2 kings,18,25,PERSON,Jehovah
 2 kings,18,25,PERSON,Jehovah
 2 kings,18,26,PERSON,Eliakim
@@ -18514,6 +19100,7 @@ ruth,4,22,PERSON,David
 2 kings,18,26,GPE,Hilkiah
 2 kings,18,26,GPE,Shebnah
 2 kings,18,26,NORP,Jews
+2 kings,18,26,OCCUPATION,servant
 2 kings,18,27,ORG,Rabshakeh
 2 kings,18,28,GPE,Assyria
 2 kings,18,28,ORG,Rabshakeh
@@ -18564,6 +19151,7 @@ ruth,4,22,PERSON,David
 2 kings,19,4,OCCUPATION,king
 2 kings,19,5,PERSON,Isaiah
 2 kings,19,5,ORG,King Hezekiah
+2 kings,19,5,OCCUPATION,servant
 2 kings,19,6,PERSON,Isaiah
 2 kings,19,6,PERSON,Jehovah
 2 kings,19,6,GPE,Assyria
@@ -18629,6 +19217,7 @@ ruth,4,22,PERSON,David
 2 kings,19,32,OCCUPATION,king
 2 kings,19,33,GPE,Jehovah
 2 kings,19,34,PERSON,David
+2 kings,19,34,OCCUPATION,servant
 2 kings,19,35,PERSON,Jehovah
 2 kings,19,35,NORP,Assyrians
 2 kings,19,36,PERSON,Nineveh
@@ -18657,6 +19246,7 @@ ruth,4,22,PERSON,David
 2 kings,20,6,DATE,15 years
 2 kings,20,6,GPE,Assyria
 2 kings,20,6,OCCUPATION,king
+2 kings,20,6,OCCUPATION,servant
 2 kings,20,7,PERSON,Isaiah
 2 kings,20,8,PERSON,Hezekiah
 2 kings,20,8,PERSON,Isaiah
@@ -18719,8 +19309,10 @@ ruth,4,22,PERSON,David
 2 kings,21,7,GPE,Israel
 2 kings,21,8,PERSON,Law
 2 kings,21,8,GPE,Israel
+2 kings,21,8,OCCUPATION,servant
 2 kings,21,9,PERSON,Jehovah
 2 kings,21,9,ORG,Manasseh
+2 kings,21,10,OCCUPATION,servant
 2 kings,21,10,OCCUPATION,prophet
 2 kings,21,11,GPE,Judah
 2 kings,21,11,GPE,Judah
@@ -18757,6 +19349,7 @@ ruth,4,22,PERSON,David
 2 kings,21,22,PERSON,Jehovah
 2 kings,21,22,GPE,Jehovah
 2 kings,21,23,ORG,Eventually Amons
+2 kings,21,23,OCCUPATION,servant
 2 kings,21,23,OCCUPATION,king
 2 kings,21,24,PERSON,King Amon
 2 kings,21,24,PERSON,Josiah
@@ -18792,6 +19385,7 @@ ruth,4,22,PERSON,David
 2 kings,22,9,PERSON,Shaphan
 2 kings,22,9,GPE,Jehovah
 2 kings,22,9,OCCUPATION,king
+2 kings,22,9,OCCUPATION,servant
 2 kings,22,10,PERSON,Shaphan
 2 kings,22,10,OCCUPATION,king
 2 kings,22,10,OCCUPATION,priest
@@ -18805,6 +19399,7 @@ ruth,4,22,PERSON,David
 2 kings,22,12,OCCUPATION,king
 2 kings,22,12,OCCUPATION,priest
 2 kings,22,12,OCCUPATION,king
+2 kings,22,12,OCCUPATION,servant
 2 kings,22,13,PERSON,Judah
 2 kings,22,13,GPE,Jehovah
 2 kings,22,14,PERSON,Hilkiah
@@ -18949,6 +19544,7 @@ ruth,4,22,PERSON,David
 2 kings,23,30,GPE,Megiddo
 2 kings,23,30,GPE,Jerusalem
 2 kings,23,30,ORG,Josiahs
+2 kings,23,30,OCCUPATION,servant
 2 kings,23,30,OCCUPATION,king
 2 kings,23,31,PERSON,Hamutal
 2 kings,23,31,PERSON,Libnah
@@ -18982,12 +19578,14 @@ ruth,4,22,PERSON,David
 2 kings,24,1,PERSON,Jehoiakim
 2 kings,24,1,DATE,Jehoiakims days
 2 kings,24,1,DATE,three years
+2 kings,24,1,OCCUPATION,servant
 2 kings,24,2,PERSON,Jehovah
 2 kings,24,2,PERSON,Moabites
 2 kings,24,2,PERSON,Ammonites
 2 kings,24,2,GPE,Judah
 2 kings,24,2,NORP,Chaldeans
 2 kings,24,2,NORP,Syrians
+2 kings,24,2,OCCUPATION,servant
 2 kings,24,2,OCCUPATION,prophet
 2 kings,24,3,PERSON,Jehovah
 2 kings,24,3,GPE,Judah
@@ -19016,8 +19614,11 @@ ruth,4,22,PERSON,David
 2 kings,24,8,OCCUPATION,king
 2 kings,24,10,GPE,Jerusalem
 2 kings,24,10,ORG,King Nebuchadnezzar of Babylon
+2 kings,24,10,OCCUPATION,servant
+2 kings,24,11,OCCUPATION,servant
 2 kings,24,12,DATE,the eighth year
 2 kings,24,12,OCCUPATION,king
+2 kings,24,12,OCCUPATION,servant
 2 kings,24,12,OCCUPATION,king
 2 kings,24,13,PERSON,Jehovah
 2 kings,24,13,PERSON,Solomon
@@ -19080,6 +19681,7 @@ ruth,4,22,PERSON,David
 2 kings,25,8,GPE,Jerusalem
 2 kings,25,8,ORG,King Nebuchadnezzar
 2 kings,25,8,OCCUPATION,king
+2 kings,25,8,OCCUPATION,servant
 2 kings,25,8,OCCUPATION,king
 2 kings,25,9,GPE,Jehovah
 2 kings,25,9,GPE,Jerusalem
@@ -19116,6 +19718,7 @@ ruth,4,22,PERSON,David
 2 kings,25,23,NORP,Ishmael
 2 kings,25,23,OCCUPATION,king
 2 kings,25,24,NORP,Chaldeans
+2 kings,25,24,OCCUPATION,servant
 2 kings,25,24,OCCUPATION,king
 2 kings,25,25,PERSON,Gedaliah
 2 kings,25,25,DATE,the seventh month
@@ -19463,9 +20066,11 @@ ruth,4,22,PERSON,David
 1 chronicles,2,34,GPE,Sheshan
 1 chronicles,2,34,ORG,Jarha
 1 chronicles,2,34,NORP,Egyptian
+1 chronicles,2,34,OCCUPATION,servant
 1 chronicles,2,35,PERSON,Jarha
 1 chronicles,2,35,PERSON,Attai
 1 chronicles,2,35,GPE,Sheshan
+1 chronicles,2,35,OCCUPATION,servant
 1 chronicles,2,36,PERSON,Attai
 1 chronicles,2,36,GPE,Nathan
 1 chronicles,2,36,GPE,Zabad
@@ -20022,6 +20627,7 @@ ruth,4,22,PERSON,David
 1 chronicles,6,47,ORG,Merari
 1 chronicles,6,49,PERSON,Aaron
 1 chronicles,6,49,GPE,Israel
+1 chronicles,6,49,OCCUPATION,servant
 1 chronicles,6,50,PERSON,Aaron
 1 chronicles,6,50,ORG,Abishua
 1 chronicles,6,51,PERSON,Zerahiah
@@ -20379,6 +20985,7 @@ ruth,4,22,PERSON,David
 1 chronicles,9,1,GPE,Israel
 1 chronicles,9,1,OCCUPATION,king
 1 chronicles,9,2,OCCUPATION,priest
+1 chronicles,9,2,OCCUPATION,servant
 1 chronicles,9,3,PERSON,Benjamin
 1 chronicles,9,3,PERSON,Ephraim
 1 chronicles,9,3,GPE,Judah
@@ -20945,6 +21552,7 @@ ruth,4,22,PERSON,David
 1 chronicles,16,10,PERSON,Jehovah
 1 chronicles,16,13,PERSON,Jacob
 1 chronicles,16,13,GPE,Israel
+1 chronicles,16,13,OCCUPATION,servant
 1 chronicles,16,14,PERSON,Jehovah
 1 chronicles,16,16,PERSON,Abraham
 1 chronicles,16,16,PERSON,Isaac
@@ -20998,6 +21606,7 @@ ruth,4,22,PERSON,David
 1 chronicles,17,3,GPE,Nathan
 1 chronicles,17,4,PERSON,David
 1 chronicles,17,4,PERSON,Jehovah
+1 chronicles,17,4,OCCUPATION,servant
 1 chronicles,17,5,DATE,the day
 1 chronicles,17,5,DATE,this day
 1 chronicles,17,5,GPE,Israel
@@ -21007,6 +21616,7 @@ ruth,4,22,PERSON,David
 1 chronicles,17,7,PERSON,David
 1 chronicles,17,7,PERSON,Jehovah
 1 chronicles,17,7,GPE,Israel
+1 chronicles,17,7,OCCUPATION,servant
 1 chronicles,17,9,GPE,Israel
 1 chronicles,17,10,PERSON,Jehovah
 1 chronicles,17,10,DATE,the day
@@ -21016,19 +21626,30 @@ ruth,4,22,PERSON,David
 1 chronicles,17,15,PERSON,David
 1 chronicles,17,16,PERSON,King David
 1 chronicles,17,16,PERSON,Jehovah
+1 chronicles,17,17,OCCUPATION,servant
 1 chronicles,17,18,PERSON,David
+1 chronicles,17,18,OCCUPATION,servant
+1 chronicles,17,18,OCCUPATION,servant
+1 chronicles,17,19,OCCUPATION,servant
 1 chronicles,17,21,GPE,Israel
 1 chronicles,17,21,GPE,Egypt
 1 chronicles,17,22,GPE,Israel
+1 chronicles,17,23,OCCUPATION,servant
 1 chronicles,17,24,PERSON,Jehovah
 1 chronicles,17,24,PERSON,David
 1 chronicles,17,24,GPE,Israel
 1 chronicles,17,24,GPE,Israel
+1 chronicles,17,24,OCCUPATION,servant
+1 chronicles,17,25,OCCUPATION,servant
+1 chronicles,17,25,OCCUPATION,servant
+1 chronicles,17,26,OCCUPATION,servant
+1 chronicles,17,27,OCCUPATION,servant
 1 chronicles,18,1,PERSON,David
 1 chronicles,18,1,PERSON,Gath
 1 chronicles,18,2,PERSON,Moab
 1 chronicles,18,2,PERSON,Moabites
 1 chronicles,18,2,ORG,Davids
+1 chronicles,18,2,OCCUPATION,servant
 1 chronicles,18,3,PERSON,David
 1 chronicles,18,4,PERSON,David
 1 chronicles,18,4,PERSON,David hamstrung
@@ -21045,9 +21666,11 @@ ruth,4,22,PERSON,David
 1 chronicles,18,6,GPE,Damascus
 1 chronicles,18,6,ORG,Davids
 1 chronicles,18,6,NORP,Syrians
+1 chronicles,18,6,OCCUPATION,servant
 1 chronicles,18,7,PERSON,David
 1 chronicles,18,7,GPE,Jerusalem
 1 chronicles,18,7,ORG,Hadadezer
+1 chronicles,18,7,OCCUPATION,servant
 1 chronicles,18,8,PERSON,Cun
 1 chronicles,18,8,PERSON,David
 1 chronicles,18,8,PERSON,Solomon
@@ -21072,6 +21695,7 @@ ruth,4,22,PERSON,David
 1 chronicles,18,13,PERSON,David
 1 chronicles,18,13,GPE,Edom
 1 chronicles,18,13,ORG,Davids
+1 chronicles,18,13,OCCUPATION,servant
 1 chronicles,18,14,PERSON,David
 1 chronicles,18,14,GPE,Israel
 1 chronicles,18,15,PERSON,Joab
@@ -21094,11 +21718,14 @@ ruth,4,22,PERSON,David
 1 chronicles,19,2,ORG,Hanun
 1 chronicles,19,2,ORG,Davids
 1 chronicles,19,2,ORG,Hanun
+1 chronicles,19,2,OCCUPATION,servant
 1 chronicles,19,3,PERSON,Hanun
 1 chronicles,19,3,PERSON,David
 1 chronicles,19,3,ORG,Ammonites
+1 chronicles,19,3,OCCUPATION,servant
 1 chronicles,19,4,PERSON,Hanun
 1 chronicles,19,4,PERSON,David
+1 chronicles,19,4,OCCUPATION,servant
 1 chronicles,19,5,PERSON,David
 1 chronicles,19,5,GPE,Jericho
 1 chronicles,19,5,OCCUPATION,king
@@ -21151,6 +21778,7 @@ ruth,4,22,PERSON,David
 1 chronicles,19,19,GPE,Syria
 1 chronicles,19,19,ORG,Hadadezer
 1 chronicles,19,19,ORG,Ammonites
+1 chronicles,19,19,OCCUPATION,servant
 1 chronicles,20,1,PERSON,Joab
 1 chronicles,20,1,PERSON,David
 1 chronicles,20,1,PERSON,Joab
@@ -21182,6 +21810,7 @@ ruth,4,22,PERSON,David
 1 chronicles,20,7,ORG,Davids
 1 chronicles,20,8,PERSON,David
 1 chronicles,20,8,GPE,Gath
+1 chronicles,20,8,OCCUPATION,servant
 1 chronicles,21,1,PERSON,David
 1 chronicles,21,1,GPE,Israel
 1 chronicles,21,1,GPE,Israel
@@ -21193,6 +21822,7 @@ ruth,4,22,PERSON,David
 1 chronicles,21,3,PERSON,Jehovah
 1 chronicles,21,3,GPE,Israel
 1 chronicles,21,3,OCCUPATION,king
+1 chronicles,21,3,OCCUPATION,servant
 1 chronicles,21,4,PERSON,Joab
 1 chronicles,21,4,PERSON,Joab
 1 chronicles,21,4,GPE,Israel
@@ -21208,6 +21838,7 @@ ruth,4,22,PERSON,David
 1 chronicles,21,6,OCCUPATION,king
 1 chronicles,21,7,GPE,Israel
 1 chronicles,21,8,PERSON,David
+1 chronicles,21,8,OCCUPATION,servant
 1 chronicles,21,9,PERSON,Jehovah
 1 chronicles,21,9,ORG,Davids
 1 chronicles,21,10,PERSON,David
@@ -21877,6 +22508,7 @@ ruth,4,22,PERSON,David
 2 chronicles,1,3,PERSON,Solomon
 2 chronicles,1,3,PERSON,Gibeon
 2 chronicles,1,3,PERSON,Jehovah
+2 chronicles,1,3,OCCUPATION,servant
 2 chronicles,1,4,PERSON,David
 2 chronicles,1,4,PERSON,David
 2 chronicles,1,4,GPE,Kiriath
@@ -21926,6 +22558,10 @@ ruth,4,22,PERSON,David
 2 chronicles,2,7,GPE,Jerusalem
 2 chronicles,2,8,GPE,Lebanon
 2 chronicles,2,8,GPE,Lebanon
+2 chronicles,2,8,OCCUPATION,servant
+2 chronicles,2,8,OCCUPATION,servant
+2 chronicles,2,8,OCCUPATION,servant
+2 chronicles,2,10,OCCUPATION,servant
 2 chronicles,2,11,PERSON,Hiram
 2 chronicles,2,11,PERSON,Solomon
 2 chronicles,2,11,PERSON,Jehovah
@@ -21940,6 +22576,7 @@ ruth,4,22,PERSON,David
 2 chronicles,2,14,PERSON,David
 2 chronicles,2,14,GPE,Tyre
 2 chronicles,2,14,ORG,Danite
+2 chronicles,2,15,OCCUPATION,servant
 2 chronicles,2,16,PERSON,Joppa
 2 chronicles,2,16,GPE,Lebanon
 2 chronicles,2,16,GPE,Jerusalem
@@ -22046,23 +22683,34 @@ ruth,4,22,PERSON,David
 2 chronicles,6,13,PERSON,Solomon
 2 chronicles,6,13,GPE,Israel
 2 chronicles,6,14,GPE,Israel
+2 chronicles,6,14,OCCUPATION,servant
 2 chronicles,6,15,PERSON,David
 2 chronicles,6,15,DATE,this day
+2 chronicles,6,15,OCCUPATION,servant
 2 chronicles,6,16,PERSON,David
 2 chronicles,6,16,GPE,Israel
 2 chronicles,6,16,GPE,Israel
+2 chronicles,6,16,OCCUPATION,servant
 2 chronicles,6,17,PERSON,David
 2 chronicles,6,17,GPE,Israel
+2 chronicles,6,17,OCCUPATION,servant
+2 chronicles,6,19,OCCUPATION,servant
+2 chronicles,6,19,OCCUPATION,servant
 2 chronicles,6,20,DATE,this house day
+2 chronicles,6,20,OCCUPATION,servant
 2 chronicles,6,21,GPE,Israel
+2 chronicles,6,21,OCCUPATION,servant
+2 chronicles,6,23,OCCUPATION,servant
 2 chronicles,6,24,GPE,Israel
 2 chronicles,6,25,GPE,Israel
 2 chronicles,6,27,GPE,Israel
+2 chronicles,6,27,OCCUPATION,servant
 2 chronicles,6,29,GPE,Israel
 2 chronicles,6,32,GPE,Israel
 2 chronicles,6,33,GPE,Israel
 2 chronicles,6,41,OCCUPATION,priest
 2 chronicles,6,42,PERSON,David
+2 chronicles,6,42,OCCUPATION,servant
 2 chronicles,7,1,PERSON,Solomon
 2 chronicles,7,1,ORG,Jehovahs
 2 chronicles,7,2,GPE,Jehovah
@@ -22130,6 +22778,7 @@ ruth,4,22,PERSON,David
 2 chronicles,8,8,PERSON,Solomon
 2 chronicles,8,8,DATE,this day
 2 chronicles,8,9,PERSON,Solomon
+2 chronicles,8,9,OCCUPATION,slave
 2 chronicles,8,10,PERSON,King Solomon
 2 chronicles,8,11,PERSON,Solomon
 2 chronicles,8,11,GPE,the City of David
@@ -22152,6 +22801,8 @@ ruth,4,22,PERSON,David
 2 chronicles,8,17,PERSON,Solomon
 2 chronicles,8,18,PERSON,King Solomon
 2 chronicles,8,18,GPE,Ophir
+2 chronicles,8,18,OCCUPATION,servant
+2 chronicles,8,18,OCCUPATION,servant
 2 chronicles,9,1,PERSON,Solomon
 2 chronicles,9,1,PERSON,Solomon
 2 chronicles,9,1,PERSON,Solomon
@@ -22163,7 +22814,9 @@ ruth,4,22,PERSON,David
 2 chronicles,9,3,GPE,Sheba
 2 chronicles,9,3,OCCUPATION,queen
 2 chronicles,9,4,ORG,the house of Jehovah
+2 chronicles,9,4,OCCUPATION,servant
 2 chronicles,9,5,OCCUPATION,king
+2 chronicles,9,7,OCCUPATION,servant
 2 chronicles,9,8,PERSON,Jehovah
 2 chronicles,9,8,PERSON,Jehovah
 2 chronicles,9,8,GPE,Israel
@@ -22176,6 +22829,8 @@ ruth,4,22,PERSON,David
 2 chronicles,9,10,PERSON,Solomon
 2 chronicles,9,10,GPE,Ophir
 2 chronicles,9,10,ORG,Hiram
+2 chronicles,9,10,OCCUPATION,servant
+2 chronicles,9,10,OCCUPATION,servant
 2 chronicles,9,11,GPE,Judah
 2 chronicles,9,11,ORG,the house of Jehovah
 2 chronicles,9,11,OCCUPATION,king
@@ -22184,6 +22839,7 @@ ruth,4,22,PERSON,David
 2 chronicles,9,12,GPE,Sheba
 2 chronicles,9,12,OCCUPATION,queen
 2 chronicles,9,12,OCCUPATION,king
+2 chronicles,9,12,OCCUPATION,servant
 2 chronicles,9,13,PERSON,Solomon
 2 chronicles,9,13,DATE,one year
 2 chronicles,9,14,PERSON,Solomon
@@ -22200,6 +22856,7 @@ ruth,4,22,PERSON,David
 2 chronicles,9,21,GPE,Hiram
 2 chronicles,9,21,NORP,Tarshish
 2 chronicles,9,21,OCCUPATION,king
+2 chronicles,9,21,OCCUPATION,servant
 2 chronicles,9,22,PERSON,Solomon
 2 chronicles,9,22,OCCUPATION,king
 2 chronicles,9,23,PERSON,Solomon
@@ -22248,6 +22905,7 @@ ruth,4,22,PERSON,David
 2 chronicles,10,3,GPE,Israel
 2 chronicles,10,5,DATE,three days
 2 chronicles,10,6,PERSON,Solomon
+2 chronicles,10,7,OCCUPATION,servant
 2 chronicles,10,12,PERSON,Jeroboam
 2 chronicles,10,12,PERSON,Rehoboam
 2 chronicles,10,12,DATE,the third day
@@ -22382,6 +23040,7 @@ ruth,4,22,PERSON,David
 2 chronicles,12,7,PERSON,Shemaiah
 2 chronicles,12,7,GPE,Jerusalem
 2 chronicles,12,7,GPE,Shishak
+2 chronicles,12,8,OCCUPATION,servant
 2 chronicles,12,8,OCCUPATION,king
 2 chronicles,12,9,PERSON,Jehovah
 2 chronicles,12,9,PERSON,Solomon
@@ -22439,6 +23098,7 @@ ruth,4,22,PERSON,David
 2 chronicles,13,6,PERSON,Nebat
 2 chronicles,13,6,PERSON,Solomon
 2 chronicles,13,6,ORG,Davids
+2 chronicles,13,6,OCCUPATION,servant
 2 chronicles,13,7,PERSON,Rehoboam
 2 chronicles,13,7,PERSON,Solomon
 2 chronicles,13,7,PERSON,Rehoboam
@@ -23076,6 +23736,7 @@ ruth,4,22,PERSON,David
 2 chronicles,24,6,GPE,Israel
 2 chronicles,24,6,ORG,Jehoiada
 2 chronicles,24,6,OCCUPATION,king
+2 chronicles,24,6,OCCUPATION,servant
 2 chronicles,24,7,GPE,Athaliah
 2 chronicles,24,7,ORG,Baals
 2 chronicles,24,8,GPE,Jehovah
@@ -23084,6 +23745,7 @@ ruth,4,22,PERSON,David
 2 chronicles,24,9,GPE,Judah
 2 chronicles,24,9,GPE,Jerusalem
 2 chronicles,24,9,GPE,Israel
+2 chronicles,24,9,OCCUPATION,servant
 2 chronicles,24,11,DATE,from day to day
 2 chronicles,24,11,OCCUPATION,king
 2 chronicles,24,11,OCCUPATION,king
@@ -23133,6 +23795,7 @@ ruth,4,22,PERSON,David
 2 chronicles,24,24,NORP,Syrian
 2 chronicles,24,25,GPE,Jehoiada
 2 chronicles,24,25,GPE,the City of David
+2 chronicles,24,25,OCCUPATION,servant
 2 chronicles,24,25,OCCUPATION,priest
 2 chronicles,24,25,OCCUPATION,king
 2 chronicles,24,26,PERSON,Jehozabad
@@ -23148,6 +23811,7 @@ ruth,4,22,PERSON,David
 2 chronicles,25,1,GPE,Jerusalem
 2 chronicles,25,1,GPE,Jerusalem
 2 chronicles,25,1,OCCUPATION,king
+2 chronicles,25,3,OCCUPATION,servant
 2 chronicles,25,3,OCCUPATION,king
 2 chronicles,25,4,PERSON,Law
 2 chronicles,25,4,PERSON,Jehovah
@@ -23365,6 +24029,7 @@ ruth,4,22,PERSON,David
 2 chronicles,28,10,PERSON,Jehovah
 2 chronicles,28,10,GPE,Judah
 2 chronicles,28,10,GPE,Jerusalem
+2 chronicles,28,10,OCCUPATION,servant
 2 chronicles,28,12,GPE,Jehohanan
 2 chronicles,28,12,GPE,Meshillemoth
 2 chronicles,28,12,ORG,Ephraimites
@@ -23681,6 +24346,7 @@ ruth,4,22,PERSON,David
 2 chronicles,32,9,GPE,Jerusalem
 2 chronicles,32,9,GPE,Jerusalem
 2 chronicles,32,9,NORP,Judeans
+2 chronicles,32,9,OCCUPATION,servant
 2 chronicles,32,10,PERSON,King Sennacherib
 2 chronicles,32,10,GPE,Jerusalem
 2 chronicles,32,11,PERSON,Hezekiah
@@ -23693,6 +24359,8 @@ ruth,4,22,PERSON,David
 2 chronicles,32,15,PERSON,Hezekiah
 2 chronicles,32,16,PERSON,Jehovah
 2 chronicles,32,16,PERSON,Hezekiah
+2 chronicles,32,16,OCCUPATION,servant
+2 chronicles,32,16,OCCUPATION,servant
 2 chronicles,32,17,PERSON,Jehovah
 2 chronicles,32,17,PERSON,Hezekiah
 2 chronicles,32,17,GPE,Israel
@@ -23800,6 +24468,7 @@ ruth,4,22,PERSON,David
 2 chronicles,33,22,ORG,Manasseh
 2 chronicles,33,23,PERSON,Jehovah
 2 chronicles,33,23,PERSON,Amon
+2 chronicles,33,24,OCCUPATION,servant
 2 chronicles,33,25,PERSON,King Amon
 2 chronicles,33,25,PERSON,Josiah
 2 chronicles,33,25,OCCUPATION,king
@@ -23854,6 +24523,7 @@ ruth,4,22,PERSON,David
 2 chronicles,34,15,GPE,Jehovah
 2 chronicles,34,16,PERSON,Shaphan
 2 chronicles,34,16,OCCUPATION,king
+2 chronicles,34,16,OCCUPATION,servant
 2 chronicles,34,18,PERSON,Shaphan
 2 chronicles,34,18,OCCUPATION,king
 2 chronicles,34,18,OCCUPATION,priest
@@ -23868,6 +24538,7 @@ ruth,4,22,PERSON,David
 2 chronicles,34,20,ORG,Ahikam
 2 chronicles,34,20,OCCUPATION,king
 2 chronicles,34,20,OCCUPATION,king
+2 chronicles,34,20,OCCUPATION,servant
 2 chronicles,34,21,PERSON,Jehovah
 2 chronicles,34,21,GPE,Jehovah
 2 chronicles,34,21,GPE,Israel
@@ -23989,10 +24660,12 @@ ruth,4,22,PERSON,David
 2 chronicles,35,22,ORG,Necho
 2 chronicles,35,23,GPE,King Josiah
 2 chronicles,35,23,OCCUPATION,king
+2 chronicles,35,23,OCCUPATION,servant
 2 chronicles,35,24,PERSON,Josiah
 2 chronicles,35,24,GPE,Jerusalem
 2 chronicles,35,24,GPE,Judah
 2 chronicles,35,24,GPE,Jerusalem
+2 chronicles,35,24,OCCUPATION,servant
 2 chronicles,35,25,PERSON,Jeremiah
 2 chronicles,35,25,PERSON,Josiah
 2 chronicles,35,25,PERSON,Josiah
@@ -24075,6 +24748,7 @@ ruth,4,22,PERSON,David
 2 chronicles,36,18,OCCUPATION,king
 2 chronicles,36,19,GPE,Jerusalem
 2 chronicles,36,20,GPE,Persia
+2 chronicles,36,20,OCCUPATION,servant
 2 chronicles,36,21,PERSON,Jeremiah
 2 chronicles,36,21,DATE,70 years
 2 chronicles,36,22,PERSON,Jehovahs
@@ -24184,6 +24858,7 @@ ezra,2,42,ORG,Talmon
 ezra,2,43,PERSON,Ziha
 ezra,2,43,GPE,Tabbaoth
 ezra,2,43,ORG,Hasupha
+ezra,2,43,OCCUPATION,servant
 ezra,2,44,PERSON,Keros
 ezra,2,44,GPE,Siaha
 ezra,2,44,GPE,Padon
@@ -24218,6 +24893,7 @@ ezra,2,54,PERSON,Hatipha
 ezra,2,55,PERSON,Solomon
 ezra,2,55,PERSON,Sophereth
 ezra,2,55,NORP,Peruda
+ezra,2,55,OCCUPATION,servant
 ezra,2,56,PERSON,Jaalah
 ezra,2,56,PERSON,Giddel
 ezra,2,56,ORG,Darkon
@@ -24226,6 +24902,8 @@ ezra,2,57,GPE,Shephatiah
 ezra,2,57,GPE,Hattil
 ezra,2,57,NORP,Pochereth
 ezra,2,58,PERSON,Solomon
+ezra,2,58,OCCUPATION,servant
+ezra,2,58,OCCUPATION,servant
 ezra,2,59,PERSON,Tel harsha
 ezra,2,59,GPE,Tel melah
 ezra,2,59,GPE,Cherub
@@ -24240,11 +24918,13 @@ ezra,2,61,OCCUPATION,priest
 ezra,2,63,GPE,Thummim
 ezra,2,63,ORG,Urim
 ezra,2,63,OCCUPATION,priest
+ezra,2,65,OCCUPATION,slave
 ezra,2,68,GPE,Jerusalem
 ezra,2,68,ORG,the house of Jehovah
 ezra,2,69,OCCUPATION,priest
 ezra,2,70,GPE,Israel
 ezra,2,70,OCCUPATION,priest
+ezra,2,70,OCCUPATION,servant
 ezra,3,1,DATE,the seventh month
 ezra,3,1,GPE,Jerusalem
 ezra,3,2,PERSON,Jeshua
@@ -24333,6 +25013,7 @@ ezra,4,9,NORP,Babylonians
 ezra,4,9,OCCUPATION,scribe
 ezra,4,10,PERSON,Asenappar
 ezra,4,10,GPE,Samaria
+ezra,4,11,OCCUPATION,servant
 ezra,4,12,GPE,Jerusalem
 ezra,4,12,NORP,Jews
 ezra,4,12,OCCUPATION,king
@@ -24385,6 +25066,7 @@ ezra,5,8,OCCUPATION,king
 ezra,5,9,OCCUPATION,elder
 ezra,5,11,DATE,many years ago
 ezra,5,11,GPE,Israel
+ezra,5,11,OCCUPATION,servant
 ezra,5,11,OCCUPATION,king
 ezra,5,12,ORG,King Nebuchadnezzar of Babylon
 ezra,5,12,ORG,Babylon
@@ -24482,6 +25164,7 @@ ezra,7,7,DATE,the seventh year
 ezra,7,7,GPE,Jerusalem
 ezra,7,7,GPE,King Artaxerxes
 ezra,7,7,OCCUPATION,priest
+ezra,7,7,OCCUPATION,servant
 ezra,7,8,PERSON,Ezra
 ezra,7,8,DATE,the fifth month
 ezra,7,8,DATE,the seventh year
@@ -24521,6 +25204,7 @@ ezra,7,21,OCCUPATION,priest
 ezra,7,22,ORG,cor
 ezra,7,23,OCCUPATION,king
 ezra,7,24,OCCUPATION,priest
+ezra,7,24,OCCUPATION,servant
 ezra,7,25,PERSON,Ezra
 ezra,7,26,OCCUPATION,king
 ezra,7,27,PERSON,Jehovah
@@ -24585,12 +25269,14 @@ ezra,8,17,GPE,Iddo
 ezra,8,17,GPE,Casiphia
 ezra,8,17,GPE,Iddo
 ezra,8,17,GPE,Casiphia
+ezra,8,17,OCCUPATION,servant
 ezra,8,18,PERSON,Levi
 ezra,8,18,PERSON,Sherebiah
 ezra,8,18,GPE,Israel
 ezra,8,19,PERSON,Hashabiah
 ezra,8,19,PERSON,Jeshaiah
 ezra,8,20,PERSON,David
+ezra,8,20,OCCUPATION,servant
 ezra,8,21,PERSON,Ahava
 ezra,8,22,OCCUPATION,king
 ezra,8,22,OCCUPATION,soldier
@@ -24644,7 +25330,9 @@ ezra,9,8,PERSON,Jehovah
 ezra,9,9,GPE,Persia
 ezra,9,9,GPE,Judah
 ezra,9,9,GPE,Jerusalem
+ezra,9,9,OCCUPATION,slave
 ezra,9,9,OCCUPATION,king
+ezra,9,11,OCCUPATION,servant
 ezra,9,11,OCCUPATION,prophet
 ezra,9,15,DATE,this day
 ezra,9,15,GPE,Israel
@@ -24806,7 +25494,15 @@ nehemiah,1,3,GPE,Jerusalem
 nehemiah,1,4,DATE,days
 nehemiah,1,6,DATE,"today, day"
 nehemiah,1,6,GPE,Israel
+nehemiah,1,6,OCCUPATION,servant
+nehemiah,1,6,OCCUPATION,servant
+nehemiah,1,7,OCCUPATION,servant
+nehemiah,1,8,OCCUPATION,servant
+nehemiah,1,10,OCCUPATION,servant
 nehemiah,1,11,DATE,today
+nehemiah,1,11,OCCUPATION,servant
+nehemiah,1,11,OCCUPATION,servant
+nehemiah,1,11,OCCUPATION,servant
 nehemiah,1,11,OCCUPATION,king
 nehemiah,2,1,PERSON,Nisan
 nehemiah,2,1,DATE,the month
@@ -24820,6 +25516,7 @@ nehemiah,2,4,OCCUPATION,king
 nehemiah,2,5,PERSON,Judah
 nehemiah,2,5,OCCUPATION,king
 nehemiah,2,5,OCCUPATION,king
+nehemiah,2,5,OCCUPATION,servant
 nehemiah,2,6,OCCUPATION,king
 nehemiah,2,6,OCCUPATION,king
 nehemiah,2,7,OCCUPATION,king
@@ -24850,6 +25547,7 @@ nehemiah,2,19,ORG,Ammonite
 nehemiah,2,19,NORP,Arabian
 nehemiah,2,19,OCCUPATION,king
 nehemiah,2,20,GPE,Jerusalem
+nehemiah,2,20,OCCUPATION,servant
 nehemiah,3,1,ORG,Hananel
 nehemiah,3,1,OCCUPATION,priest
 nehemiah,3,1,OCCUPATION,priest
@@ -24933,6 +25631,7 @@ nehemiah,3,25,ORG,the Kings House
 nehemiah,3,25,ORG,the Courtyard of the Guard
 nehemiah,3,25,NORP,Buttress
 nehemiah,3,26,PERSON,Ophel
+nehemiah,3,26,OCCUPATION,servant
 nehemiah,3,27,PERSON,Ophel
 nehemiah,3,28,ORG,the Horse Gate
 nehemiah,3,28,OCCUPATION,priest
@@ -24946,6 +25645,7 @@ nehemiah,3,30,ORG,Hanun
 nehemiah,3,30,ORG,Zalaph
 nehemiah,3,30,ORG,Berechiah
 nehemiah,3,31,ORG,the Inspection Gate
+nehemiah,3,31,OCCUPATION,servant
 nehemiah,3,32,ORG,the Sheep Gate
 nehemiah,4,1,ORG,Sanballat
 nehemiah,4,1,NORP,Jews
@@ -25092,6 +25792,7 @@ nehemiah,7,45,ORG,Talmon
 nehemiah,7,46,PERSON,Ziha
 nehemiah,7,46,GPE,Tabbaoth
 nehemiah,7,46,ORG,Hasupha
+nehemiah,7,46,OCCUPATION,servant
 nehemiah,7,47,PERSON,Keros
 nehemiah,7,47,GPE,Sia
 nehemiah,7,47,GPE,Padon
@@ -25123,6 +25824,7 @@ nehemiah,7,56,PERSON,Hatipha
 nehemiah,7,57,PERSON,Solomon
 nehemiah,7,57,PERSON,Sophereth
 nehemiah,7,57,GPE,Perida
+nehemiah,7,57,OCCUPATION,servant
 nehemiah,7,58,PERSON,Giddel
 nehemiah,7,58,GPE,Jaala
 nehemiah,7,58,ORG,Darkon
@@ -25131,6 +25833,8 @@ nehemiah,7,59,GPE,Shephatiah
 nehemiah,7,59,GPE,Hattil
 nehemiah,7,59,NORP,Pochereth
 nehemiah,7,60,PERSON,Solomon
+nehemiah,7,60,OCCUPATION,servant
+nehemiah,7,60,OCCUPATION,servant
 nehemiah,7,61,PERSON,Tel harsha
 nehemiah,7,61,GPE,Tel melah
 nehemiah,7,61,GPE,Cherub
@@ -25145,12 +25849,14 @@ nehemiah,7,63,OCCUPATION,priest
 nehemiah,7,65,GPE,Thummim
 nehemiah,7,65,ORG,Urim
 nehemiah,7,65,OCCUPATION,priest
+nehemiah,7,67,OCCUPATION,slave
 nehemiah,7,70,OCCUPATION,priest
 nehemiah,7,72,OCCUPATION,priest
 nehemiah,7,73,PERSON,Israelites
 nehemiah,7,73,DATE,the seventh month
 nehemiah,7,73,GPE,Israel
 nehemiah,7,73,OCCUPATION,priest
+nehemiah,7,73,OCCUPATION,servant
 nehemiah,8,1,PERSON,Ezra
 nehemiah,8,1,PERSON,Jehovah
 nehemiah,8,1,GPE,Israel
@@ -25239,7 +25945,9 @@ nehemiah,9,8,ORG,Girgashites
 nehemiah,9,9,GPE,Egypt
 nehemiah,9,10,DATE,this day
 nehemiah,9,10,GPE,Pharaoh
+nehemiah,9,10,OCCUPATION,servant
 nehemiah,9,14,PERSON,Sabbath
+nehemiah,9,14,OCCUPATION,servant
 nehemiah,9,17,GPE,Egypt
 nehemiah,9,18,GPE,Egypt
 nehemiah,9,21,DATE,40 years
@@ -25265,6 +25973,8 @@ nehemiah,9,34,PERSON,Law
 nehemiah,9,34,OCCUPATION,king
 nehemiah,9,34,OCCUPATION,priest
 nehemiah,9,36,DATE,today
+nehemiah,9,36,OCCUPATION,slave
+nehemiah,9,36,OCCUPATION,slave
 nehemiah,9,37,OCCUPATION,king
 nehemiah,9,38,OCCUPATION,priest
 nehemiah,10,1,PERSON,Hacaliah
@@ -25332,7 +26042,9 @@ nehemiah,10,26,GPE,Anan
 nehemiah,10,27,GPE,Baanah
 nehemiah,10,27,ORG,Harim
 nehemiah,10,28,OCCUPATION,priest
+nehemiah,10,28,OCCUPATION,servant
 nehemiah,10,29,PERSON,Jehovah
+nehemiah,10,29,OCCUPATION,servant
 nehemiah,10,31,PERSON,Sabbath
 nehemiah,10,31,DATE,the Sabbath day
 nehemiah,10,31,DATE,a holy day
@@ -25359,6 +26071,8 @@ nehemiah,11,3,GPE,Jerusalem
 nehemiah,11,3,GPE,Israel
 nehemiah,11,3,GPE,Judah
 nehemiah,11,3,OCCUPATION,priest
+nehemiah,11,3,OCCUPATION,servant
+nehemiah,11,3,OCCUPATION,servant
 nehemiah,11,4,PERSON,Benjamin
 nehemiah,11,4,PERSON,Athaiah
 nehemiah,11,4,PERSON,Amariah
@@ -25429,6 +26143,8 @@ nehemiah,11,20,GPE,Judah
 nehemiah,11,20,OCCUPATION,priest
 nehemiah,11,21,PERSON,Ziha
 nehemiah,11,21,GPE,Ophel
+nehemiah,11,21,OCCUPATION,servant
+nehemiah,11,21,OCCUPATION,servant
 nehemiah,11,22,PERSON,Bani
 nehemiah,11,22,PERSON,Mica
 nehemiah,11,22,GPE,Levites
@@ -25710,6 +26426,7 @@ esther,1,2,GPE,Shushan
 esther,1,3,DATE,the third year
 esther,1,3,GPE,Persia
 esther,1,3,GPE,Media
+esther,1,3,OCCUPATION,servant
 esther,1,4,DATE,many days
 esther,1,4,DATE,180 days
 esther,1,5,DATE,these days
@@ -25829,6 +26546,7 @@ esther,2,17,OCCUPATION,king
 esther,2,17,OCCUPATION,queen
 esther,2,18,PERSON,Esther
 esther,2,18,OCCUPATION,king
+esther,2,18,OCCUPATION,servant
 esther,2,18,OCCUPATION,king
 esther,2,19,PERSON,Mordecai
 esther,2,19,OCCUPATION,king
@@ -25851,9 +26569,11 @@ esther,3,1,GPE,Hammedatha
 esther,3,2,PERSON,Haman
 esther,3,2,PERSON,Mordecai
 esther,3,2,OCCUPATION,king
+esther,3,2,OCCUPATION,servant
 esther,3,2,OCCUPATION,king
 esther,3,2,OCCUPATION,king
 esther,3,3,OCCUPATION,king
+esther,3,3,OCCUPATION,servant
 esther,3,3,OCCUPATION,king
 esther,3,3,OCCUPATION,king
 esther,3,4,PERSON,Haman
@@ -25926,6 +26646,7 @@ esther,4,10,PERSON,Esther
 esther,4,10,ORG,Hathach
 esther,4,11,DATE,30 days
 esther,4,11,OCCUPATION,king
+esther,4,11,OCCUPATION,servant
 esther,4,11,OCCUPATION,king
 esther,4,11,OCCUPATION,king
 esther,4,11,OCCUPATION,king
@@ -25981,6 +26702,7 @@ esther,5,10,PERSON,Haman
 esther,5,10,GPE,Zeresh
 esther,5,11,PERSON,Haman
 esther,5,11,OCCUPATION,king
+esther,5,11,OCCUPATION,servant
 esther,5,11,OCCUPATION,king
 esther,5,12,PERSON,Haman
 esther,5,12,PERSON,Queen Esther
@@ -26049,6 +26771,7 @@ esther,7,2,OCCUPATION,king
 esther,7,3,PERSON,Queen Esther
 esther,7,3,OCCUPATION,king
 esther,7,3,OCCUPATION,king
+esther,7,4,OCCUPATION,slave
 esther,7,4,OCCUPATION,king
 esther,7,5,PERSON,King Ahasuerus
 esther,7,5,PERSON,Queen Esther
@@ -26239,6 +26962,7 @@ esther,10,2,OCCUPATION,king
 esther,10,2,OCCUPATION,king
 esther,10,3,PERSON,King Ahasuerus
 esther,10,3,NORP,Jews
+job,1,3,OCCUPATION,servant
 job,1,5,DATE,days
 job,1,5,ORG,Job
 job,1,5,ORG,Job
@@ -26246,6 +26970,7 @@ job,1,6,PERSON,Jehovah
 job,1,7,PERSON,Jehovah
 job,1,7,PERSON,Jehovah
 job,1,8,PERSON,Jehovah
+job,1,8,OCCUPATION,servant
 job,1,9,PERSON,Jehovah
 job,1,9,ORG,Job
 job,1,12,PERSON,Jehovah
@@ -26253,7 +26978,10 @@ job,1,12,GPE,Jehovah
 job,1,13,DATE,the day
 job,1,14,ORG,Job
 job,1,15,NORP,Sabeans
+job,1,15,OCCUPATION,servant
+job,1,16,OCCUPATION,servant
 job,1,17,NORP,Chaldeans
+job,1,17,OCCUPATION,servant
 job,1,21,PERSON,Jehovah
 job,1,21,PERSON,Jehovah
 job,1,21,PERSON,Jehovah
@@ -26263,6 +26991,7 @@ job,2,1,PERSON,Jehovah
 job,2,2,PERSON,Jehovah
 job,2,2,PERSON,Jehovah
 job,2,3,PERSON,Jehovah
+job,2,3,OCCUPATION,servant
 job,2,4,PERSON,Jehovah
 job,2,6,PERSON,Jehovah
 job,2,7,PERSON,Jehovah
@@ -26280,8 +27009,10 @@ job,3,6,DATE,the months
 job,3,8,DATE,the day
 job,3,8,GPE,Leviathan
 job,3,14,OCCUPATION,king
+job,3,19,OCCUPATION,slave
 job,4,14,PERSON,Filling
 job,4,17,NORP,Maker
+job,4,18,OCCUPATION,servant
 job,5,14,DATE,the day
 job,5,26,DATE,their season
 job,6,15,DATE,winter
@@ -26290,6 +27021,7 @@ job,6,17,DATE,season
 job,6,19,GPE,Sheba
 job,6,19,ORG,Tema
 job,6,26,NORP,mans
+job,7,2,OCCUPATION,slave
 job,7,3,DATE,months
 job,7,4,DATE,the day
 job,7,6,DATE,My days
@@ -26319,6 +27051,8 @@ job,18,14,OCCUPATION,king
 job,18,15,PERSON,Sulfur
 job,18,20,DATE,his day
 job,19,1,ORG,Job
+job,19,15,OCCUPATION,slave
+job,19,16,OCCUPATION,servant
 job,19,22,PERSON,God
 job,19,27,PERSON,Whom
 job,20,1,PERSON,Zophar
@@ -26350,6 +27084,7 @@ job,29,23,DATE,the spring
 job,29,25,OCCUPATION,king
 job,30,16,DATE,Days
 job,30,27,DATE,Days
+job,31,13,OCCUPATION,servant
 job,32,2,PERSON,Ram
 job,32,2,ORG,Barachel the Buzite of the family
 job,32,4,PERSON,Elihu
@@ -26387,6 +27122,7 @@ job,40,21,ORG,lotus
 job,40,22,ORG,lotus
 job,40,23,GPE,Jordan
 job,41,1,PERSON,Leviathan
+job,41,4,OCCUPATION,slave
 job,41,15,ORG,Tightly
 job,41,19,ORG,Fiery
 job,41,20,NORP,Smoke
@@ -26396,7 +27132,11 @@ job,42,1,ORG,Job
 job,42,7,PERSON,Jehovah
 job,42,7,PERSON,Job
 job,42,7,ORG,"Job, Jehovah"
+job,42,7,OCCUPATION,servant
 job,42,8,PERSON,Job
+job,42,8,OCCUPATION,servant
+job,42,8,OCCUPATION,servant
+job,42,8,OCCUPATION,servant
 job,42,9,PERSON,Zophar
 job,42,9,PERSON,Jehovah
 job,42,9,PERSON,Jehovah
@@ -26501,6 +27241,8 @@ psalms,19,8,PERSON,Jehovah
 psalms,19,8,GPE,Jehovah
 psalms,19,9,PERSON,Jehovah
 psalms,19,9,PERSON,Jehovah
+psalms,19,11,OCCUPATION,servant
+psalms,19,13,OCCUPATION,servant
 psalms,19,14,GPE,Redeemer
 psalms,20,3,PERSON,Selah
 psalms,20,3,DATE,May
@@ -26556,6 +27298,7 @@ psalms,27,4,DATE,all the days
 psalms,27,5,DATE,the day
 psalms,27,6,PERSON,Jehovah
 psalms,27,8,PERSON,Seek
+psalms,27,9,OCCUPATION,servant
 psalms,27,10,PERSON,Jehovah
 psalms,27,13,PERSON,Jehovahs
 psalms,27,14,PERSON,Jehovah
@@ -26587,6 +27330,7 @@ psalms,30,8,PERSON,Jehovah
 psalms,31,6,GPE,Jehovah
 psalms,31,9,PERSON,Anguish
 psalms,31,15,DATE,My days
+psalms,31,16,OCCUPATION,servant
 psalms,31,17,DATE,May
 psalms,31,21,PERSON,Jehovah
 psalms,31,23,PERSON,Jehovah
@@ -26628,6 +27372,7 @@ psalms,34,17,PERSON,Jehovah
 psalms,34,18,PERSON,Jehovah
 psalms,34,19,PERSON,Jehovah
 psalms,34,22,PERSON,Jehovah
+psalms,34,22,OCCUPATION,servant
 psalms,35,5,PERSON,May Jehovahs
 psalms,35,8,DATE,May
 psalms,35,8,DATE,May
@@ -26636,6 +27381,7 @@ psalms,35,22,PERSON,Jehovah
 psalms,35,23,PERSON,Jehovah
 psalms,35,27,PERSON,Jehovah
 psalms,35,27,DATE,May
+psalms,35,27,OCCUPATION,servant
 psalms,35,28,DATE,all day
 psalms,37,3,GPE,Jehovah
 psalms,37,4,GPE,Jehovah
@@ -26822,10 +27568,12 @@ psalms,68,34,GPE,Israel
 psalms,68,35,GPE,Israel
 psalms,69,6,PERSON,Jehovah
 psalms,69,6,GPE,Israel
+psalms,69,17,OCCUPATION,servant
 psalms,69,20,ORG,Reproach
 psalms,69,31,PERSON,Jehovah
 psalms,69,33,PERSON,Jehovah
 psalms,69,35,GPE,Judah
+psalms,69,36,OCCUPATION,servant
 psalms,70,4,PERSON,Exult
 psalms,70,5,PERSON,Jehovah
 psalms,71,5,PERSON,Jehovah
@@ -26904,13 +27652,16 @@ psalms,78,67,PERSON,Joseph
 psalms,78,67,PERSON,Ephraim
 psalms,78,68,GPE,Judah
 psalms,78,70,PERSON,David
+psalms,78,70,OCCUPATION,servant
 psalms,78,71,PERSON,Jacob
 psalms,78,71,GPE,Israel
 psalms,78,71,OCCUPATION,shepherd
 psalms,78,72,OCCUPATION,shepherd
+psalms,79,2,OCCUPATION,servant
 psalms,79,3,GPE,Jerusalem
 psalms,79,7,PERSON,Jacob
 psalms,79,9,ORG,Rescue us
+psalms,79,10,OCCUPATION,servant
 psalms,80,2,PERSON,Benjamin
 psalms,80,2,ORG,Manasseh
 psalms,80,8,GPE,Egypt
@@ -26960,9 +27711,13 @@ psalms,85,2,PERSON,Selah
 psalms,85,8,PERSON,Jehovah
 psalms,85,10,ORG,Loyal
 psalms,85,12,PERSON,Jehovah
+psalms,86,2,OCCUPATION,servant
 psalms,86,3,DATE,all day
+psalms,86,4,OCCUPATION,servant
 psalms,86,7,DATE,the day
 psalms,86,15,ORG,Slow
+psalms,86,16,OCCUPATION,servant
+psalms,86,16,OCCUPATION,slave
 psalms,87,2,PERSON,Jehovah
 psalms,87,2,GPE,Jacob
 psalms,87,3,PERSON,Selah
@@ -26979,6 +27734,7 @@ psalms,88,9,DATE,all day
 psalms,88,10,PERSON,Selah
 psalms,89,2,ORG,Loyal
 psalms,89,3,PERSON,David
+psalms,89,3,OCCUPATION,servant
 psalms,89,4,PERSON,Selah
 psalms,89,6,PERSON,Jehovah
 psalms,89,6,PERSON,Jehovah
@@ -26991,21 +27747,26 @@ psalms,89,18,PERSON,Jehovah
 psalms,89,18,GPE,Israel
 psalms,89,18,OCCUPATION,king
 psalms,89,20,PERSON,David
+psalms,89,20,OCCUPATION,servant
 psalms,89,27,OCCUPATION,king
 psalms,89,35,PERSON,David
 psalms,89,37,PERSON,Selah
+psalms,89,39,OCCUPATION,servant
 psalms,89,45,PERSON,Selah
 psalms,89,45,DATE,the days
 psalms,89,48,PERSON,Selah
 psalms,89,49,PERSON,David
+psalms,89,50,OCCUPATION,servant
 psalms,89,51,PERSON,Jehovah
 psalms,89,52,PERSON,Jehovah
 psalms,90,4,DATE,a thousand years
 psalms,90,4,DATE,yesterday
 psalms,90,9,DATE,years
 psalms,90,10,DATE,70 years
+psalms,90,13,OCCUPATION,servant
 psalms,90,15,DATE,the days
 psalms,90,15,DATE,as many years
+psalms,90,16,OCCUPATION,servant
 psalms,90,17,PERSON,Jehovah
 psalms,90,17,DATE,May
 psalms,91,2,PERSON,Jehovah
@@ -27077,6 +27838,7 @@ psalms,101,8,GPE,Jehovah
 psalms,102,3,DATE,my days
 psalms,102,8,DATE,All day
 psalms,102,11,DATE,My days
+psalms,102,14,OCCUPATION,servant
 psalms,102,15,GPE,Jehovah
 psalms,102,15,OCCUPATION,king
 psalms,102,16,PERSON,Jehovah
@@ -27087,6 +27849,7 @@ psalms,102,22,PERSON,Gather
 psalms,102,22,PERSON,Jehovah
 psalms,102,24,DATE,years
 psalms,102,27,DATE,years
+psalms,102,28,OCCUPATION,servant
 psalms,103,2,PERSON,Jehovah
 psalms,103,6,PERSON,Jehovah
 psalms,103,7,GPE,Israel
@@ -27116,6 +27879,7 @@ psalms,105,1,PERSON,Jehovah
 psalms,105,3,PERSON,Jehovah
 psalms,105,6,PERSON,Abraham
 psalms,105,6,PERSON,Jacob
+psalms,105,6,OCCUPATION,servant
 psalms,105,7,PERSON,Jehovah
 psalms,105,9,PERSON,Abraham
 psalms,105,9,PERSON,Isaac
@@ -27125,6 +27889,7 @@ psalms,105,11,PERSON,Canaan
 psalms,105,14,OCCUPATION,king
 psalms,105,15,OCCUPATION,prophet
 psalms,105,17,PERSON,Joseph
+psalms,105,17,OCCUPATION,slave
 psalms,105,19,PERSON,Jehovah
 psalms,105,20,OCCUPATION,king
 psalms,105,21,PERSON,Ruler
@@ -27132,10 +27897,13 @@ psalms,105,22,OCCUPATION,elder
 psalms,105,23,PERSON,Jacob
 psalms,105,23,GPE,Israel
 psalms,105,23,GPE,Egypt
+psalms,105,25,OCCUPATION,servant
 psalms,105,26,PERSON,Aaron
+psalms,105,26,OCCUPATION,servant
 psalms,105,38,GPE,Egypt
 psalms,105,38,GPE,Israel
 psalms,105,42,PERSON,Abraham
+psalms,105,42,OCCUPATION,servant
 psalms,106,1,PERSON,Jehovah
 psalms,106,7,GPE,Egypt
 psalms,106,16,PERSON,Aaron
@@ -27178,6 +27946,7 @@ psalms,109,14,PERSON,Jehovah
 psalms,109,15,PERSON,Jehovah
 psalms,109,20,PERSON,Jehovah
 psalms,109,21,PERSON,Jehovah
+psalms,109,28,OCCUPATION,servant
 psalms,109,29,DATE,May
 psalms,109,30,PERSON,Jehovah
 psalms,110,2,PERSON,Jehovah
@@ -27196,6 +27965,7 @@ psalms,112,1,PERSON,Jehovah
 psalms,112,7,GPE,Jehovah
 psalms,113,1,PERSON,Jehovah
 psalms,113,1,GPE,Jehovah
+psalms,113,1,OCCUPATION,servant
 psalms,113,2,PERSON,Jehovahs
 psalms,113,3,PERSON,Jehovahs
 psalms,113,4,PERSON,Jehovah
@@ -27231,6 +28001,9 @@ psalms,116,12,PERSON,Jehovah
 psalms,116,13,GPE,Jehovah
 psalms,116,14,PERSON,Jehovah
 psalms,116,15,PERSON,Jehovah
+psalms,116,16,OCCUPATION,servant
+psalms,116,16,OCCUPATION,servant
+psalms,116,16,OCCUPATION,slave
 psalms,116,17,GPE,Jehovah
 psalms,116,18,PERSON,Jehovah
 psalms,116,19,GPE,Jehovah
@@ -27267,18 +28040,32 @@ psalms,118,26,GPE,Jehovah
 psalms,118,27,PERSON,Jehovah
 psalms,118,29,PERSON,Jehovah
 psalms,119,1,GPE,Jehovah
+psalms,119,17,OCCUPATION,servant
+psalms,119,23,OCCUPATION,servant
 psalms,119,31,PERSON,Jehovah
 psalms,119,38,PERSON,Fulfill
+psalms,119,38,OCCUPATION,servant
 psalms,119,46,OCCUPATION,king
+psalms,119,49,OCCUPATION,servant
 psalms,119,57,PERSON,Jehovah
+psalms,119,65,OCCUPATION,servant
+psalms,119,76,OCCUPATION,servant
+psalms,119,84,OCCUPATION,servant
 psalms,119,91,DATE,today
+psalms,119,91,OCCUPATION,servant
 psalms,119,107,PERSON,Jehovah
 psalms,119,122,DATE,May
+psalms,119,122,OCCUPATION,servant
+psalms,119,124,OCCUPATION,servant
+psalms,119,125,OCCUPATION,servant
 psalms,119,126,PERSON,Jehovah
 psalms,119,133,DATE,May
+psalms,119,135,OCCUPATION,servant
+psalms,119,140,OCCUPATION,servant
 psalms,119,154,PERSON,Preserve
 psalms,119,155,ORG,Salvation
 psalms,119,175,DATE,May
+psalms,119,176,OCCUPATION,servant
 psalms,120,5,GPE,Meshech
 psalms,120,5,ORG,Kedar
 psalms,121,2,GPE,Jehovah
@@ -27297,6 +28084,8 @@ psalms,122,5,ORG,Thrones
 psalms,122,6,GPE,Jerusalem
 psalms,122,8,DATE,May
 psalms,123,2,PERSON,Jehovah
+psalms,123,2,OCCUPATION,servant
+psalms,123,2,OCCUPATION,servant
 psalms,124,2,PERSON,Jehovah
 psalms,124,6,PERSON,Jehovah
 psalms,124,8,GPE,Jehovah
@@ -27329,6 +28118,7 @@ psalms,132,5,GPE,Jacob
 psalms,132,6,GPE,Ephrathah
 psalms,132,9,OCCUPATION,priest
 psalms,132,10,PERSON,David
+psalms,132,10,OCCUPATION,servant
 psalms,132,11,PERSON,Jehovah
 psalms,132,11,PERSON,David
 psalms,132,13,PERSON,Jehovah
@@ -27340,6 +28130,7 @@ psalms,134,3,PERSON,Jehovah
 psalms,134,3,PERSON,Bless
 psalms,135,1,GPE,Jehovah
 psalms,135,1,GPE,Jehovah
+psalms,135,1,OCCUPATION,servant
 psalms,135,2,GPE,Jehovah
 psalms,135,3,PERSON,Praise Jah
 psalms,135,3,PERSON,Jehovah
@@ -27351,6 +28142,7 @@ psalms,135,6,PERSON,Jehovah
 psalms,135,8,GPE,Egypt
 psalms,135,9,PERSON,Pharaoh
 psalms,135,9,GPE,Egypt
+psalms,135,9,OCCUPATION,servant
 psalms,135,10,OCCUPATION,king
 psalms,135,11,GPE,Bashan
 psalms,135,11,GPE,Canaan
@@ -27360,6 +28152,7 @@ psalms,135,11,OCCUPATION,king
 psalms,135,12,GPE,Israel
 psalms,135,13,PERSON,Jehovah
 psalms,135,14,PERSON,Jehovah
+psalms,135,14,OCCUPATION,servant
 psalms,135,16,ORG,Eyes
 psalms,135,19,PERSON,Jehovah
 psalms,135,19,PERSON,Aaron
@@ -27385,6 +28178,7 @@ psalms,136,19,OCCUPATION,king
 psalms,136,20,GPE,Bashan
 psalms,136,20,OCCUPATION,king
 psalms,136,22,GPE,Israel
+psalms,136,22,OCCUPATION,servant
 psalms,137,4,ORG,Jehovah On foreign soil
 psalms,137,5,GPE,Jerusalem
 psalms,137,6,GPE,Jerusalem
@@ -27408,14 +28202,17 @@ psalms,140,7,DATE,the day
 psalms,140,8,PERSON,Selah
 psalms,140,10,DATE,May
 psalms,140,12,PERSON,Jehovah
+psalms,143,2,OCCUPATION,servant
 psalms,143,5,DATE,the days of old
 psalms,143,6,PERSON,Selah
 psalms,143,10,DATE,May
 psalms,143,12,PERSON,Destroy
+psalms,143,12,OCCUPATION,servant
 psalms,144,4,DATE,days
 psalms,144,6,PERSON,Shoot
 psalms,144,10,PERSON,David
 psalms,144,10,OCCUPATION,king
+psalms,144,10,OCCUPATION,servant
 psalms,144,15,PERSON,Jehovah
 psalms,145,2,DATE,All day
 psalms,145,3,PERSON,Jehovah
@@ -27496,6 +28293,7 @@ proverbs,8,15,OCCUPATION,king
 proverbs,8,18,ORG,Riches
 proverbs,8,22,PERSON,Jehovah
 proverbs,8,35,GPE,Jehovah
+proverbs,9,3,OCCUPATION,servant
 proverbs,9,10,PERSON,Jehovah
 proverbs,9,11,DATE,days
 proverbs,9,11,DATE,years
@@ -27509,6 +28307,8 @@ proverbs,10,29,PERSON,Jehovah
 proverbs,11,1,PERSON,Jehovah
 proverbs,11,4,DATE,the day of fury
 proverbs,11,20,PERSON,Jehovah
+proverbs,11,29,OCCUPATION,servant
+proverbs,12,9,OCCUPATION,servant
 proverbs,12,20,GPE,Deceit
 proverbs,12,22,PERSON,Jehovah
 proverbs,12,25,NORP,mans
@@ -27521,6 +28321,7 @@ proverbs,14,27,PERSON,Jehovah
 proverbs,14,28,OCCUPATION,king
 proverbs,14,31,NORP,Maker
 proverbs,14,35,OCCUPATION,king
+proverbs,14,35,OCCUPATION,servant
 proverbs,15,3,PERSON,Jehovah
 proverbs,15,3,GPE,Watching
 proverbs,15,8,PERSON,Jehovah
@@ -27553,6 +28354,7 @@ proverbs,16,15,OCCUPATION,king
 proverbs,16,20,GPE,Jehovah
 proverbs,16,24,PERSON,Sweet
 proverbs,16,33,GPE,Jehovah
+proverbs,17,2,OCCUPATION,servant
 proverbs,17,3,PERSON,Jehovah
 proverbs,17,5,NORP,Maker
 proverbs,17,13,PERSON,Bad
@@ -27565,6 +28367,7 @@ proverbs,18,20,NORP,mans
 proverbs,18,22,PERSON,Jehovahs
 proverbs,19,3,GPE,Jehovah
 proverbs,19,3,NORP,mans
+proverbs,19,10,OCCUPATION,servant
 proverbs,19,12,OCCUPATION,king
 proverbs,19,14,GPE,Jehovah
 proverbs,19,17,PERSON,Jehovah
@@ -27600,6 +28403,7 @@ proverbs,21,31,GPE,Jehovah
 proverbs,22,2,PERSON,Jehovah
 proverbs,22,4,PERSON,Jehovah
 proverbs,22,5,NORP,mans
+proverbs,22,7,OCCUPATION,slave
 proverbs,22,10,PERSON,Disputes
 proverbs,22,11,OCCUPATION,king
 proverbs,22,12,PERSON,Jehovah
@@ -27636,13 +28440,17 @@ proverbs,27,13,ORG,Seize
 proverbs,27,13,NORP,mans
 proverbs,27,15,DATE,a rainy day
 proverbs,27,20,NORP,mans
+proverbs,27,27,OCCUPATION,servant
 proverbs,28,5,PERSON,Jehovah
 proverbs,28,8,GPE,Amasses
 proverbs,28,25,PERSON,Jehovah
 proverbs,29,4,OCCUPATION,king
 proverbs,29,10,ORG,Bloodthirsty
+proverbs,29,12,OCCUPATION,servant
 proverbs,29,13,PERSON,Jehovah
 proverbs,29,14,OCCUPATION,king
+proverbs,29,19,OCCUPATION,servant
+proverbs,29,21,OCCUPATION,servant
 proverbs,29,25,GPE,Jehovah
 proverbs,29,26,GPE,Jehovah
 proverbs,30,1,PERSON,Ithiel
@@ -27650,7 +28458,10 @@ proverbs,30,1,PERSON,Ithiel
 proverbs,30,1,ORG,Agur
 proverbs,30,1,ORG,Jakeh
 proverbs,30,9,PERSON,Jehovah
+proverbs,30,10,OCCUPATION,servant
+proverbs,30,22,OCCUPATION,slave
 proverbs,30,22,OCCUPATION,king
+proverbs,30,23,OCCUPATION,servant
 proverbs,30,25,DATE,the summer
 proverbs,30,27,OCCUPATION,king
 proverbs,30,28,OCCUPATION,king
@@ -27659,6 +28470,7 @@ proverbs,31,1,PERSON,King Lemuel
 proverbs,31,3,OCCUPATION,king
 proverbs,31,4,OCCUPATION,king
 proverbs,31,4,OCCUPATION,king
+proverbs,31,15,OCCUPATION,servant
 proverbs,31,23,OCCUPATION,elder
 proverbs,31,30,PERSON,Jehovah
 proverbs,31,30,ORG,Charm
@@ -27672,6 +28484,8 @@ ecclesiastes,1,12,OCCUPATION,king
 ecclesiastes,1,16,GPE,Jerusalem
 ecclesiastes,2,3,DATE,their few days
 ecclesiastes,2,7,GPE,Jerusalem
+ecclesiastes,2,7,OCCUPATION,servant
+ecclesiastes,2,7,OCCUPATION,servant
 ecclesiastes,2,8,OCCUPATION,king
 ecclesiastes,2,9,GPE,Jerusalem
 ecclesiastes,2,12,OCCUPATION,king
@@ -27691,6 +28505,7 @@ ecclesiastes,7,10,DATE,the former days
 ecclesiastes,7,14,DATE,a good day
 ecclesiastes,7,14,DATE,the day
 ecclesiastes,7,19,ORG,Wisdom
+ecclesiastes,7,21,OCCUPATION,servant
 ecclesiastes,8,1,NORP,mans
 ecclesiastes,8,2,OCCUPATION,king
 ecclesiastes,8,4,OCCUPATION,king
@@ -27698,6 +28513,8 @@ ecclesiastes,8,8,DATE,the day
 ecclesiastes,8,15,DATE,the days
 ecclesiastes,9,9,DATE,all the days
 ecclesiastes,9,14,OCCUPATION,king
+ecclesiastes,10,7,OCCUPATION,servant
+ecclesiastes,10,7,OCCUPATION,servant
 ecclesiastes,10,16,OCCUPATION,king
 ecclesiastes,10,17,OCCUPATION,king
 ecclesiastes,10,20,OCCUPATION,king
@@ -28091,6 +28908,7 @@ isaiah,14,1,PERSON,Jacob
 isaiah,14,1,GPE,Israel
 isaiah,14,1,GPE,Jacob
 isaiah,14,2,GPE,Israel
+isaiah,14,2,OCCUPATION,servant
 isaiah,14,3,PERSON,Jehovah
 isaiah,14,3,DATE,the day
 isaiah,14,4,OCCUPATION,king
@@ -28256,6 +29074,7 @@ isaiah,20,3,PERSON,Isaiah
 isaiah,20,3,DATE,three years
 isaiah,20,3,GPE,Egypt
 isaiah,20,3,GPE,Ethiopia
+isaiah,20,3,OCCUPATION,servant
 isaiah,20,4,GPE,Assyria
 isaiah,20,4,GPE,Egypt
 isaiah,20,4,GPE,Ethiopia
@@ -28298,6 +29117,7 @@ isaiah,22,17,PERSON,Jehovah
 isaiah,22,20,PERSON,Eliakim
 isaiah,22,20,DATE,that day
 isaiah,22,20,GPE,Hilkiah
+isaiah,22,20,OCCUPATION,servant
 isaiah,22,21,GPE,Jerusalem
 isaiah,22,21,ORG,the house of Judah
 isaiah,22,22,PERSON,David
@@ -28337,6 +29157,8 @@ isaiah,23,18,PERSON,Jehovah
 isaiah,23,18,PERSON,Jehovah
 isaiah,24,1,PERSON,Jehovah
 isaiah,24,2,OCCUPATION,priest
+isaiah,24,2,OCCUPATION,servant
+isaiah,24,2,OCCUPATION,servant
 isaiah,24,3,PERSON,Jehovah
 isaiah,24,14,GPE,Jehovah
 isaiah,24,15,PERSON,Jehovah
@@ -28538,11 +29360,13 @@ isaiah,36,7,GPE,Jerusalem
 isaiah,36,8,GPE,Assyria
 isaiah,36,8,OCCUPATION,king
 isaiah,36,9,GPE,Egypt
+isaiah,36,9,OCCUPATION,servant
 isaiah,36,10,PERSON,Jehovah
 isaiah,36,10,PERSON,Jehovah
 isaiah,36,11,PERSON,Eliakim
 isaiah,36,11,PERSON,Joah
 isaiah,36,11,NORP,Jews
+isaiah,36,11,OCCUPATION,servant
 isaiah,36,12,PERSON,Rabshakeh
 isaiah,36,13,GPE,Assyria
 isaiah,36,13,ORG,Rabshakeh
@@ -28590,6 +29414,7 @@ isaiah,37,4,ORG,Rabshakeh
 isaiah,37,4,OCCUPATION,king
 isaiah,37,5,PERSON,Isaiah
 isaiah,37,5,ORG,King Hezekiah
+isaiah,37,5,OCCUPATION,servant
 isaiah,37,6,PERSON,Isaiah
 isaiah,37,6,PERSON,Jehovah
 isaiah,37,6,GPE,Assyria
@@ -28641,6 +29466,7 @@ isaiah,37,22,GPE,Jerusalem
 isaiah,37,23,GPE,Israel
 isaiah,37,24,PERSON,Jehovah
 isaiah,37,24,GPE,Lebanon
+isaiah,37,24,OCCUPATION,servant
 isaiah,37,25,GPE,Egypt
 isaiah,37,26,DATE,days
 isaiah,37,30,DATE,This year
@@ -28654,6 +29480,7 @@ isaiah,37,33,GPE,Assyria
 isaiah,37,33,OCCUPATION,king
 isaiah,37,34,GPE,Jehovah
 isaiah,37,35,PERSON,David
+isaiah,37,35,OCCUPATION,servant
 isaiah,37,36,PERSON,Jehovah
 isaiah,37,36,NORP,Assyrians
 isaiah,37,37,PERSON,Nineveh
@@ -28736,6 +29563,8 @@ isaiah,41,7,GPE,Strengthens
 isaiah,41,7,OCCUPATION,metalworker
 isaiah,41,8,PERSON,Abraham
 isaiah,41,8,GPE,Israel
+isaiah,41,8,OCCUPATION,servant
+isaiah,41,9,OCCUPATION,servant
 isaiah,41,13,PERSON,Jehovah
 isaiah,41,14,PERSON,Jacob
 isaiah,41,14,PERSON,Jehovah
@@ -28750,6 +29579,7 @@ isaiah,41,20,GPE,Israel
 isaiah,41,21,PERSON,Jehovah
 isaiah,41,21,PERSON,the King of Jacob
 isaiah,41,27,GPE,Jerusalem
+isaiah,42,1,OCCUPATION,servant
 isaiah,42,5,PERSON,Jehovah
 isaiah,42,6,PERSON,Jehovah
 isaiah,42,8,PERSON,Jehovah
@@ -28758,6 +29588,8 @@ isaiah,42,11,ORG,Kedar
 isaiah,42,12,PERSON,Jehovah
 isaiah,42,13,PERSON,Jehovah
 isaiah,42,19,PERSON,Jehovah
+isaiah,42,19,OCCUPATION,servant
+isaiah,42,19,OCCUPATION,servant
 isaiah,42,21,PERSON,Jehovah
 isaiah,42,24,PERSON,Jacob
 isaiah,42,24,PERSON,Jehovah
@@ -28770,6 +29602,7 @@ isaiah,43,3,GPE,Israel
 isaiah,43,3,GPE,Egypt
 isaiah,43,3,GPE,Ethiopia
 isaiah,43,10,PERSON,Jehovah
+isaiah,43,10,OCCUPATION,servant
 isaiah,43,11,PERSON,Jehovah
 isaiah,43,12,PERSON,Jehovah
 isaiah,43,14,PERSON,Jehovah
@@ -28784,9 +29617,11 @@ isaiah,43,22,GPE,Israel
 isaiah,43,28,PERSON,Jacob
 isaiah,43,28,GPE,Israel
 isaiah,44,1,GPE,Israel
+isaiah,44,1,OCCUPATION,servant
 isaiah,44,2,PERSON,Jehovah
 isaiah,44,2,PERSON,Jacob
 isaiah,44,2,PERSON,Jeshurun
+isaiah,44,2,OCCUPATION,servant
 isaiah,44,5,PERSON,Jehovah
 isaiah,44,5,GPE,Jacob
 isaiah,44,5,GPE,Israel
@@ -28795,6 +29630,8 @@ isaiah,44,6,PERSON,The King of Israel
 isaiah,44,6,PERSON,Jehovah
 isaiah,44,21,GPE,Israel
 isaiah,44,21,GPE,Israel
+isaiah,44,21,OCCUPATION,servant
+isaiah,44,21,OCCUPATION,servant
 isaiah,44,23,PERSON,Jehovah
 isaiah,44,23,PERSON,Jehovah
 isaiah,44,23,PERSON,Jacob
@@ -28803,6 +29640,7 @@ isaiah,44,24,PERSON,Jehovah
 isaiah,44,24,PERSON,Jehovah
 isaiah,44,26,GPE,Jerusalem
 isaiah,44,26,GPE,Judah
+isaiah,44,26,OCCUPATION,servant
 isaiah,44,28,PERSON,Cyrus
 isaiah,44,28,GPE,Jerusalem
 isaiah,44,28,OCCUPATION,shepherd
@@ -28813,6 +29651,7 @@ isaiah,45,3,PERSON,Jehovah
 isaiah,45,3,GPE,Israel
 isaiah,45,4,PERSON,Jacob
 isaiah,45,4,GPE,Israel
+isaiah,45,4,OCCUPATION,servant
 isaiah,45,5,PERSON,Jehovah
 isaiah,45,6,PERSON,Jehovah
 isaiah,45,7,PERSON,Jehovah
@@ -28865,20 +29704,25 @@ isaiah,48,17,GPE,Israel
 isaiah,48,20,PERSON,Jehovah
 isaiah,48,20,PERSON,Jacob
 isaiah,48,20,NORP,Chaldeans
+isaiah,48,20,OCCUPATION,servant
 isaiah,48,22,PERSON,Jehovah
 isaiah,49,1,PERSON,Jehovah
 isaiah,49,3,GPE,Israel
+isaiah,49,3,OCCUPATION,servant
 isaiah,49,4,PERSON,Jehovah
 isaiah,49,5,PERSON,Jehovah
 isaiah,49,5,PERSON,Jehovah
 isaiah,49,5,GPE,Israel
 isaiah,49,5,NORP,Jacob
+isaiah,49,5,OCCUPATION,servant
 isaiah,49,6,PERSON,Jacob
 isaiah,49,6,GPE,Israel
+isaiah,49,6,OCCUPATION,servant
 isaiah,49,7,PERSON,Jehovah
 isaiah,49,7,PERSON,Jehovah
 isaiah,49,7,GPE,Israel
 isaiah,49,7,GPE,Israel
+isaiah,49,7,OCCUPATION,servant
 isaiah,49,7,OCCUPATION,king
 isaiah,49,8,PERSON,Jehovah
 isaiah,49,8,DATE,a day
@@ -28900,6 +29744,7 @@ isaiah,50,5,PERSON,Jehovah
 isaiah,50,7,PERSON,Jehovah
 isaiah,50,10,PERSON,Jehovah
 isaiah,50,10,GPE,Jehovah
+isaiah,50,10,OCCUPATION,servant
 isaiah,51,1,PERSON,Jehovah
 isaiah,51,2,PERSON,Abraham
 isaiah,51,2,PERSON,Sarah
@@ -28935,12 +29780,14 @@ isaiah,52,10,PERSON,Jehovah
 isaiah,52,11,GPE,Jehovah
 isaiah,52,12,PERSON,Jehovah
 isaiah,52,12,GPE,Israel
+isaiah,52,13,OCCUPATION,servant
 isaiah,52,15,OCCUPATION,king
 isaiah,53,1,PERSON,Jehovah
 isaiah,53,6,PERSON,Jehovah
 isaiah,53,10,PERSON,Jehovahs
 isaiah,53,10,PERSON,Jehovah
 isaiah,53,10,DATE,his days
+isaiah,53,11,OCCUPATION,servant
 isaiah,54,1,PERSON,Jehovah
 isaiah,54,5,PERSON,Jehovah
 isaiah,54,5,GPE,Israel
@@ -28953,6 +29800,7 @@ isaiah,54,10,PERSON,Jehovah
 isaiah,54,13,PERSON,Jehovah
 isaiah,54,17,PERSON,Jehovah
 isaiah,54,17,GPE,Jehovah
+isaiah,54,17,OCCUPATION,servant
 isaiah,55,3,PERSON,David
 isaiah,55,5,PERSON,Jehovah
 isaiah,55,5,GPE,Israel
@@ -28968,6 +29816,7 @@ isaiah,56,5,NORP,Something
 isaiah,56,6,PERSON,Jehovah
 isaiah,56,6,PERSON,Jehovah
 isaiah,56,6,PERSON,Sabbath
+isaiah,56,6,OCCUPATION,servant
 isaiah,56,8,PERSON,Jehovah
 isaiah,56,8,GPE,Israel
 isaiah,56,11,OCCUPATION,shepherd
@@ -29062,10 +29911,12 @@ isaiah,63,7,GPE,Israel
 isaiah,63,7,ORG,Jehovahs
 isaiah,63,11,DATE,the days of old
 isaiah,63,11,DATE,The days
+isaiah,63,11,OCCUPATION,servant
 isaiah,63,11,OCCUPATION,shepherd
 isaiah,63,14,PERSON,Jehovah
 isaiah,63,16,PERSON,Abraham
 isaiah,63,16,GPE,Israel
+isaiah,63,17,OCCUPATION,servant
 isaiah,64,8,PERSON,Potter
 isaiah,64,10,GPE,Jerusalem
 isaiah,64,12,PERSON,Jehovah
@@ -29074,12 +29925,19 @@ isaiah,65,5,DATE,all day
 isaiah,65,5,ORG,Keep
 isaiah,65,7,PERSON,Jehovah
 isaiah,65,8,PERSON,Jehovah
+isaiah,65,8,OCCUPATION,servant
 isaiah,65,9,PERSON,Jacob
 isaiah,65,9,GPE,Judah
+isaiah,65,9,OCCUPATION,servant
 isaiah,65,10,PERSON,Sharon
 isaiah,65,11,PERSON,Jehovah
 isaiah,65,11,PERSON,Good Luck
 isaiah,65,11,GPE,Destiny
+isaiah,65,13,OCCUPATION,servant
+isaiah,65,13,OCCUPATION,servant
+isaiah,65,13,OCCUPATION,servant
+isaiah,65,14,OCCUPATION,servant
+isaiah,65,15,OCCUPATION,servant
 isaiah,65,18,GPE,Jerusalem
 isaiah,65,19,GPE,Jerusalem
 isaiah,65,20,DATE,a few days
@@ -29099,6 +29957,7 @@ isaiah,66,10,GPE,Jerusalem
 isaiah,66,12,PERSON,Jehovah
 isaiah,66,13,GPE,Jerusalem
 isaiah,66,14,PERSON,Jehovah
+isaiah,66,14,OCCUPATION,servant
 isaiah,66,15,PERSON,Jehovah
 isaiah,66,16,PERSON,Jehovah
 isaiah,66,16,GPE,Jehovah
@@ -29186,6 +30045,8 @@ jeremiah,2,10,ORG,Kedar
 jeremiah,2,12,GPE,Jehovah
 jeremiah,2,13,PERSON,Broken
 jeremiah,2,14,GPE,Israel
+jeremiah,2,14,OCCUPATION,servant
+jeremiah,2,14,OCCUPATION,slave
 jeremiah,2,16,ORG,Noph
 jeremiah,2,16,NORP,Tahpanes
 jeremiah,2,17,PERSON,Jehovah
@@ -29357,6 +30218,7 @@ jeremiah,7,25,DATE,the day
 jeremiah,7,25,DATE,this day
 jeremiah,7,25,DATE,each day
 jeremiah,7,25,GPE,Egypt
+jeremiah,7,25,OCCUPATION,servant
 jeremiah,7,25,OCCUPATION,prophet
 jeremiah,7,28,PERSON,Jehovah
 jeremiah,7,29,PERSON,Jehovah
@@ -29525,6 +30387,7 @@ jeremiah,13,27,GPE,Jerusalem
 jeremiah,14,1,PERSON,Jehovah
 jeremiah,14,1,PERSON,Jeremiah
 jeremiah,14,2,GPE,Jerusalem
+jeremiah,14,3,OCCUPATION,servant
 jeremiah,14,8,GPE,Israel
 jeremiah,14,10,PERSON,Jehovah
 jeremiah,14,10,PERSON,Jehovah
@@ -29712,6 +30575,7 @@ jeremiah,21,4,OCCUPATION,king
 jeremiah,21,7,PERSON,Jehovah
 jeremiah,21,7,ORG,King Zedekiah of Judah
 jeremiah,21,7,ORG,King Nebuchadnezzar of Babylon
+jeremiah,21,7,OCCUPATION,servant
 jeremiah,21,8,PERSON,Jehovah
 jeremiah,21,9,NORP,Chaldeans
 jeremiah,21,10,PERSON,Jehovah
@@ -29730,9 +30594,11 @@ jeremiah,22,2,PERSON,Jehovah
 jeremiah,22,2,PERSON,David
 jeremiah,22,2,GPE,Judah
 jeremiah,22,2,OCCUPATION,king
+jeremiah,22,2,OCCUPATION,servant
 jeremiah,22,3,PERSON,Jehovah
 jeremiah,22,4,PERSON,David
 jeremiah,22,4,OCCUPATION,king
+jeremiah,22,4,OCCUPATION,servant
 jeremiah,22,5,PERSON,Jehovah
 jeremiah,22,6,PERSON,Jehovah
 jeremiah,22,6,GPE,Lebanon
@@ -29903,12 +30769,14 @@ jeremiah,25,3,GPE,Judah
 jeremiah,25,3,ORG,Josiah
 jeremiah,25,3,OCCUPATION,king
 jeremiah,25,4,PERSON,Jehovah
+jeremiah,25,4,OCCUPATION,servant
 jeremiah,25,4,OCCUPATION,prophet
 jeremiah,25,5,PERSON,Jehovah
 jeremiah,25,7,PERSON,Jehovah
 jeremiah,25,8,PERSON,Jehovah
 jeremiah,25,9,PERSON,Jehovah
 jeremiah,25,9,ORG,King Nebuchadnezzar of Babylon
+jeremiah,25,9,OCCUPATION,servant
 jeremiah,25,11,DATE,70 years
 jeremiah,25,11,OCCUPATION,king
 jeremiah,25,12,PERSON,Jehovah
@@ -29917,6 +30785,7 @@ jeremiah,25,12,NORP,Chaldeans
 jeremiah,25,12,OCCUPATION,king
 jeremiah,25,13,PERSON,Jeremiah
 jeremiah,25,14,OCCUPATION,king
+jeremiah,25,14,OCCUPATION,slave
 jeremiah,25,15,PERSON,Jehovah
 jeremiah,25,15,GPE,Israel
 jeremiah,25,17,PERSON,Jehovah
@@ -29928,6 +30797,7 @@ jeremiah,25,18,OCCUPATION,king
 jeremiah,25,19,GPE,Egypt
 jeremiah,25,19,NORP,Pharaoh
 jeremiah,25,19,OCCUPATION,king
+jeremiah,25,19,OCCUPATION,servant
 jeremiah,25,20,GPE,Ashkelon
 jeremiah,25,20,GPE,Gaza
 jeremiah,25,20,GPE,Ashdod
@@ -29983,6 +30853,7 @@ jeremiah,26,2,PERSON,Jehovah
 jeremiah,26,2,GPE,Judah
 jeremiah,26,2,ORG,the house of Jehovah
 jeremiah,26,4,PERSON,Jehovah
+jeremiah,26,5,OCCUPATION,servant
 jeremiah,26,5,OCCUPATION,prophet
 jeremiah,26,6,NORP,Shiloh
 jeremiah,26,7,PERSON,Jeremiah
@@ -30056,7 +30927,9 @@ jeremiah,27,3,OCCUPATION,king
 jeremiah,27,3,OCCUPATION,king
 jeremiah,27,4,PERSON,Jehovah
 jeremiah,27,4,GPE,Israel
+jeremiah,27,6,OCCUPATION,servant
 jeremiah,27,7,OCCUPATION,king
+jeremiah,27,7,OCCUPATION,slave
 jeremiah,27,8,PERSON,Jehovah
 jeremiah,27,8,GPE,kingdom
 jeremiah,27,8,ORG,King Nebuchadnezzar of Babylon
@@ -30205,6 +31078,7 @@ jeremiah,29,16,OCCUPATION,king
 jeremiah,29,17,PERSON,Jehovah
 jeremiah,29,19,PERSON,Jehovah
 jeremiah,29,19,GPE,Jehovah
+jeremiah,29,19,OCCUPATION,servant
 jeremiah,29,19,OCCUPATION,prophet
 jeremiah,29,20,PERSON,Jehovah
 jeremiah,29,20,GPE,Jerusalem
@@ -30270,6 +31144,7 @@ jeremiah,30,7,PERSON,Jacob
 jeremiah,30,7,DATE,that day
 jeremiah,30,8,PERSON,Jehovah
 jeremiah,30,8,DATE,that day
+jeremiah,30,8,OCCUPATION,slave
 jeremiah,30,9,PERSON,Jehovah
 jeremiah,30,9,PERSON,David
 jeremiah,30,9,OCCUPATION,king
@@ -30277,6 +31152,7 @@ jeremiah,30,10,PERSON,Jacob
 jeremiah,30,10,PERSON,Jehovah
 jeremiah,30,10,PERSON,Jacob
 jeremiah,30,10,GPE,Israel
+jeremiah,30,10,OCCUPATION,servant
 jeremiah,30,11,PERSON,Jehovah
 jeremiah,30,12,PERSON,Jehovah
 jeremiah,30,17,PERSON,Jehovah
@@ -30488,9 +31364,11 @@ jeremiah,33,20,PERSON,Jehovah
 jeremiah,33,20,DATE,the day
 jeremiah,33,21,PERSON,David
 jeremiah,33,21,PERSON,Levitical
+jeremiah,33,21,OCCUPATION,servant
 jeremiah,33,21,OCCUPATION,king
 jeremiah,33,21,OCCUPATION,priest
 jeremiah,33,22,PERSON,David
+jeremiah,33,22,OCCUPATION,servant
 jeremiah,33,23,PERSON,Jehovah
 jeremiah,33,23,GPE,Jeremiah
 jeremiah,33,24,PERSON,Jehovah
@@ -30501,6 +31379,7 @@ jeremiah,33,26,PERSON,David
 jeremiah,33,26,PERSON,Abraham
 jeremiah,33,26,PERSON,Isaac
 jeremiah,33,26,PERSON,Jacob
+jeremiah,33,26,OCCUPATION,servant
 jeremiah,34,1,PERSON,Jeremiah
 jeremiah,34,1,GPE,Jehovah
 jeremiah,34,1,GPE,Jerusalem
@@ -30531,6 +31410,11 @@ jeremiah,34,8,PERSON,Zedekiah
 jeremiah,34,8,GPE,Jerusalem
 jeremiah,34,9,NORP,Hebrew
 jeremiah,34,9,NORP,Jew
+jeremiah,34,9,OCCUPATION,slave
+jeremiah,34,9,OCCUPATION,slave
+jeremiah,34,10,OCCUPATION,slave
+jeremiah,34,10,OCCUPATION,slave
+jeremiah,34,11,OCCUPATION,slave
 jeremiah,34,12,PERSON,Jehovah
 jeremiah,34,12,PERSON,Jeremiah
 jeremiah,34,12,GPE,Jehovah
@@ -30540,6 +31424,7 @@ jeremiah,34,13,GPE,Israel
 jeremiah,34,13,GPE,Egypt
 jeremiah,34,14,DATE,the end of seven years
 jeremiah,34,14,DATE,six years
+jeremiah,34,16,OCCUPATION,slave
 jeremiah,34,17,PERSON,Jehovah
 jeremiah,34,17,PERSON,Jehovah
 jeremiah,34,19,GPE,Judah
@@ -30581,6 +31466,7 @@ jeremiah,35,13,GPE,Judah
 jeremiah,35,13,GPE,Jerusalem
 jeremiah,35,14,PERSON,Rechab
 jeremiah,35,14,DATE,this day
+jeremiah,35,15,OCCUPATION,servant
 jeremiah,35,15,OCCUPATION,prophet
 jeremiah,35,16,PERSON,Rechab
 jeremiah,35,16,GPE,Jehonadab
@@ -30671,6 +31557,7 @@ jeremiah,36,22,OCCUPATION,king
 jeremiah,36,23,PERSON,Jehudi
 jeremiah,36,23,OCCUPATION,king
 jeremiah,36,24,OCCUPATION,king
+jeremiah,36,24,OCCUPATION,servant
 jeremiah,36,25,PERSON,Delaiah
 jeremiah,36,25,PERSON,Gemariah
 jeremiah,36,25,GPE,Elnathan
@@ -30698,6 +31585,7 @@ jeremiah,36,30,PERSON,King Jehoiakim of Judah
 jeremiah,36,30,PERSON,David
 jeremiah,36,31,GPE,Jerusalem
 jeremiah,36,31,GPE,Judah
+jeremiah,36,31,OCCUPATION,servant
 jeremiah,36,32,PERSON,Jeremiah
 jeremiah,36,32,PERSON,Jeremiahs
 jeremiah,36,32,GPE,Neriah
@@ -30710,6 +31598,7 @@ jeremiah,37,1,ORG,King Nebuchadnezzar of Babylon
 jeremiah,37,1,OCCUPATION,king
 jeremiah,37,2,PERSON,Jehovah
 jeremiah,37,2,GPE,Jeremiah
+jeremiah,37,2,OCCUPATION,servant
 jeremiah,37,2,OCCUPATION,prophet
 jeremiah,37,3,PERSON,King Zedekiah
 jeremiah,37,3,PERSON,Zephaniah
@@ -30763,6 +31652,7 @@ jeremiah,37,17,OCCUPATION,king
 jeremiah,37,17,OCCUPATION,king
 jeremiah,37,18,PERSON,Jeremiah
 jeremiah,37,18,PERSON,King Zedekiah
+jeremiah,37,18,OCCUPATION,servant
 jeremiah,37,19,OCCUPATION,prophet
 jeremiah,37,19,OCCUPATION,king
 jeremiah,37,20,GPE,Jehonathan
@@ -31124,6 +32014,7 @@ jeremiah,43,10,PERSON,Jehovah
 jeremiah,43,10,PERSON,Nebuchadnezzar
 jeremiah,43,10,GPE,Israel
 jeremiah,43,10,OCCUPATION,king
+jeremiah,43,10,OCCUPATION,servant
 jeremiah,43,11,GPE,Egypt
 jeremiah,43,12,GPE,Egypt
 jeremiah,43,12,GPE,Egypt
@@ -31143,6 +32034,7 @@ jeremiah,44,2,DATE,today
 jeremiah,44,2,GPE,Israel
 jeremiah,44,2,GPE,Jerusalem
 jeremiah,44,2,GPE,Judah
+jeremiah,44,4,OCCUPATION,servant
 jeremiah,44,4,OCCUPATION,prophet
 jeremiah,44,6,DATE,today
 jeremiah,44,6,GPE,Judah
@@ -31276,11 +32168,14 @@ jeremiah,46,25,GPE,Pharaoh
 jeremiah,46,25,OCCUPATION,king
 jeremiah,46,26,GPE,Jehovah
 jeremiah,46,26,ORG,King Nebuchadnezzar of Babylon
+jeremiah,46,26,OCCUPATION,servant
 jeremiah,46,27,PERSON,Jacob
 jeremiah,46,27,PERSON,Jacob
 jeremiah,46,27,GPE,Israel
+jeremiah,46,27,OCCUPATION,servant
 jeremiah,46,28,PERSON,Jacob
 jeremiah,46,28,PERSON,Jehovah
+jeremiah,46,28,OCCUPATION,servant
 jeremiah,47,1,GPE,Jehovah
 jeremiah,47,1,GPE,Philistines
 jeremiah,47,1,GPE,Pharaoh
@@ -31788,6 +32683,7 @@ lamentations,4,18,DATE,our days
 lamentations,4,20,GPE,Jehovah
 lamentations,5,6,GPE,Egypt
 lamentations,5,6,GPE,Assyria
+lamentations,5,8,OCCUPATION,servant
 lamentations,5,11,GPE,Judah
 lamentations,5,12,OCCUPATION,elder
 lamentations,5,14,OCCUPATION,elder
@@ -32277,6 +33173,7 @@ ezekiel,27,11,PERSON,Arvad
 ezekiel,27,13,PERSON,Javan
 ezekiel,27,13,GPE,Tubal
 ezekiel,27,13,ORG,Meshech
+ezekiel,27,13,OCCUPATION,slave
 ezekiel,27,14,ORG,Togarmah
 ezekiel,27,15,GPE,Dedan
 ezekiel,27,17,GPE,Israel
@@ -32321,6 +33218,7 @@ ezekiel,28,23,PERSON,Jehovah
 ezekiel,28,24,GPE,Israel
 ezekiel,28,25,PERSON,Jacob
 ezekiel,28,25,GPE,Israel
+ezekiel,28,25,OCCUPATION,servant
 ezekiel,28,26,PERSON,Jehovah
 ezekiel,29,1,PERSON,Jehovah
 ezekiel,29,1,DATE,the tenth year
@@ -32515,10 +33413,12 @@ ezekiel,34,13,GPE,Israel
 ezekiel,34,14,GPE,Israel
 ezekiel,34,23,PERSON,David
 ezekiel,34,23,OCCUPATION,shepherd
+ezekiel,34,23,OCCUPATION,servant
 ezekiel,34,23,OCCUPATION,shepherd
 ezekiel,34,24,PERSON,Jehovah
 ezekiel,34,24,PERSON,David
 ezekiel,34,24,PERSON,Jehovah
+ezekiel,34,24,OCCUPATION,servant
 ezekiel,34,27,PERSON,Jehovah
 ezekiel,34,30,PERSON,Jehovah
 ezekiel,34,30,GPE,Israel
@@ -32579,10 +33479,13 @@ ezekiel,37,19,GPE,Judah
 ezekiel,37,22,GPE,Israel
 ezekiel,37,22,OCCUPATION,king
 ezekiel,37,24,PERSON,David
+ezekiel,37,24,OCCUPATION,servant
 ezekiel,37,24,OCCUPATION,king
 ezekiel,37,24,OCCUPATION,shepherd
 ezekiel,37,25,PERSON,Jacob
 ezekiel,37,25,PERSON,David
+ezekiel,37,25,OCCUPATION,servant
+ezekiel,37,25,OCCUPATION,servant
 ezekiel,37,28,PERSON,Jehovah
 ezekiel,37,28,GPE,Israel
 ezekiel,38,1,PERSON,Jehovah
@@ -32609,6 +33512,7 @@ ezekiel,38,16,GPE,Israel
 ezekiel,38,17,DATE,the former days
 ezekiel,38,17,DATE,many years
 ezekiel,38,17,GPE,Israel
+ezekiel,38,17,OCCUPATION,servant
 ezekiel,38,17,OCCUPATION,prophet
 ezekiel,38,18,PERSON,Gog
 ezekiel,38,18,DATE,that day
@@ -32754,6 +33658,7 @@ ezekiel,46,13,DATE,Each day
 ezekiel,46,13,DATE,its first year
 ezekiel,46,14,PERSON,Jehovah
 ezekiel,46,17,DATE,the year
+ezekiel,46,17,OCCUPATION,servant
 ezekiel,46,19,OCCUPATION,priest
 ezekiel,46,20,OCCUPATION,priest
 ezekiel,47,8,PERSON,Arabah
@@ -32863,7 +33768,9 @@ daniel,1,11,GPE,Daniel
 daniel,1,11,GPE,Hananiah
 daniel,1,11,GPE,Mishael
 daniel,1,12,DATE,ten days
+daniel,1,12,OCCUPATION,servant
 daniel,1,13,OCCUPATION,king
+daniel,1,13,OCCUPATION,servant
 daniel,1,14,DATE,ten days
 daniel,1,15,DATE,the end of ten days
 daniel,1,15,OCCUPATION,king
@@ -32891,9 +33798,11 @@ daniel,2,3,OCCUPATION,king
 daniel,2,4,NORP,Chaldeans
 daniel,2,4,OCCUPATION,king
 daniel,2,4,OCCUPATION,king
+daniel,2,4,OCCUPATION,servant
 daniel,2,5,NORP,Chaldeans
 daniel,2,5,OCCUPATION,king
 daniel,2,7,OCCUPATION,king
+daniel,2,7,OCCUPATION,servant
 daniel,2,8,OCCUPATION,king
 daniel,2,10,NORP,Chaldeans
 daniel,2,10,NORP,Chaldean
@@ -33011,8 +33920,10 @@ daniel,3,24,OCCUPATION,king
 daniel,3,26,PERSON,Abednego
 daniel,3,26,PERSON,Abednego
 daniel,3,26,ORG,Nebuchadnezzar
+daniel,3,26,OCCUPATION,servant
 daniel,3,27,OCCUPATION,king
 daniel,3,28,PERSON,Abednego
+daniel,3,28,OCCUPATION,servant
 daniel,3,28,OCCUPATION,king
 daniel,3,29,PERSON,Abednego
 daniel,3,30,PERSON,Abednego
@@ -33141,6 +34052,7 @@ daniel,6,19,OCCUPATION,king
 daniel,6,20,PERSON,Daniel
 daniel,6,20,PERSON,Daniel
 daniel,6,20,OCCUPATION,king
+daniel,6,20,OCCUPATION,servant
 daniel,6,21,PERSON,Daniel
 daniel,6,21,OCCUPATION,king
 daniel,6,21,OCCUPATION,king
@@ -33202,6 +34114,7 @@ daniel,9,2,GPE,Jerusalem
 daniel,9,2,OCCUPATION,prophet
 daniel,9,3,PERSON,Jehovah
 daniel,9,4,PERSON,Jehovah
+daniel,9,6,OCCUPATION,servant
 daniel,9,6,OCCUPATION,prophet
 daniel,9,6,OCCUPATION,king
 daniel,9,7,DATE,today
@@ -33211,9 +34124,11 @@ daniel,9,7,GPE,Israel
 daniel,9,8,OCCUPATION,king
 daniel,9,9,PERSON,Jehovah
 daniel,9,10,PERSON,Jehovah
+daniel,9,10,OCCUPATION,servant
 daniel,9,10,OCCUPATION,prophet
 daniel,9,11,PERSON,Law
 daniel,9,11,GPE,Israel
+daniel,9,11,OCCUPATION,servant
 daniel,9,12,GPE,Jerusalem
 daniel,9,13,PERSON,Jehovah
 daniel,9,14,PERSON,Jehovah
@@ -33222,6 +34137,7 @@ daniel,9,15,DATE,this day
 daniel,9,15,GPE,Egypt
 daniel,9,16,GPE,Jerusalem
 daniel,9,16,GPE,Jerusalem
+daniel,9,17,OCCUPATION,servant
 daniel,9,19,PERSON,Jehovah
 daniel,9,20,PERSON,Jehovah
 daniel,9,20,GPE,Israel
@@ -33255,6 +34171,7 @@ daniel,10,13,GPE,Persia
 daniel,10,13,OCCUPATION,king
 daniel,10,14,DATE,the days
 daniel,10,14,DATE,the days
+daniel,10,17,OCCUPATION,servant
 daniel,10,20,GPE,Persia
 daniel,10,20,GPE,Greece
 daniel,10,21,PERSON,Michael
@@ -33601,6 +34518,8 @@ joel,2,26,PERSON,Jehovah
 joel,2,27,PERSON,Jehovah
 joel,2,27,GPE,Israel
 joel,2,29,DATE,those days
+joel,2,29,OCCUPATION,slave
+joel,2,29,OCCUPATION,slave
 joel,2,31,GPE,Jehovah
 joel,2,32,PERSON,Jehovah
 joel,2,32,PERSON,Jehovah
@@ -33712,6 +34631,7 @@ amos,3,1,GPE,Israel
 amos,3,1,GPE,Egypt
 amos,3,6,PERSON,Jehovah
 amos,3,7,PERSON,Jehovah
+amos,3,7,OCCUPATION,servant
 amos,3,7,OCCUPATION,prophet
 amos,3,9,GPE,Egypt
 amos,3,9,GPE,Samaria
@@ -34135,6 +35055,7 @@ nahum,2,2,PERSON,Jehovah
 nahum,2,2,GPE,Jacob
 nahum,2,2,GPE,Israel
 nahum,2,3,DATE,the day
+nahum,2,7,OCCUPATION,slave
 nahum,2,8,PERSON,Nineveh
 nahum,2,13,PERSON,Jehovah
 nahum,3,5,PERSON,Jehovah
@@ -34356,6 +35277,7 @@ haggai,2,23,PERSON,Jehovah
 haggai,2,23,PERSON,Jehovah
 haggai,2,23,DATE,that day
 haggai,2,23,ORG,Shealtiel
+haggai,2,23,OCCUPATION,servant
 zechariah,1,1,PERSON,Darius
 zechariah,1,1,PERSON,Jehovah
 zechariah,1,1,DATE,the eighth month
@@ -34373,6 +35295,7 @@ zechariah,1,4,GPE,Jehovah
 zechariah,1,4,OCCUPATION,prophet
 zechariah,1,5,OCCUPATION,prophet
 zechariah,1,6,PERSON,Jehovah
+zechariah,1,6,OCCUPATION,servant
 zechariah,1,6,OCCUPATION,prophet
 zechariah,1,7,PERSON,Shebat
 zechariah,1,7,PERSON,Darius
@@ -34413,6 +35336,7 @@ zechariah,2,6,GPE,Jehovah
 zechariah,2,7,ORG,Babylon
 zechariah,2,8,PERSON,Jehovah
 zechariah,2,9,PERSON,Jehovah
+zechariah,2,9,OCCUPATION,slave
 zechariah,2,10,GPE,Jehovah
 zechariah,2,11,PERSON,Jehovah
 zechariah,2,11,PERSON,Jehovah
@@ -34435,6 +35359,7 @@ zechariah,3,6,PERSON,Jehovah
 zechariah,3,6,PERSON,Joshua
 zechariah,3,7,PERSON,Jehovah
 zechariah,3,8,PERSON,Joshua
+zechariah,3,8,OCCUPATION,servant
 zechariah,3,9,PERSON,Joshua
 zechariah,3,9,PERSON,Jehovah
 zechariah,3,9,DATE,one day
@@ -34735,6 +35660,7 @@ malachi,1,4,PERSON,Jehovah
 malachi,1,5,PERSON,Jehovah
 malachi,1,5,GPE,Israel
 malachi,1,6,PERSON,Jehovah
+malachi,1,6,OCCUPATION,servant
 malachi,1,6,OCCUPATION,priest
 malachi,1,7,PERSON,Jehovah
 malachi,1,8,PERSON,Jehovah
@@ -34801,6 +35727,7 @@ malachi,4,3,PERSON,Jehovah
 malachi,4,3,DATE,the day
 malachi,4,4,GPE,Israel
 malachi,4,4,ORG,Horeb
+malachi,4,4,OCCUPATION,servant
 malachi,4,5,GPE,Jehovah
 malachi,4,5,OCCUPATION,prophet
 matthew,1,1,PERSON,Jesus Christ
@@ -35020,6 +35947,8 @@ matthew,6,10,GPE,Kingdom
 matthew,6,11,DATE,today
 matthew,6,11,DATE,this day
 matthew,6,24,ORG,Riches
+matthew,6,24,OCCUPATION,slave
+matthew,6,24,OCCUPATION,slave
 matthew,6,29,PERSON,Solomon
 matthew,6,30,DATE,today
 matthew,6,30,DATE,tomorrow
@@ -35035,7 +35964,10 @@ matthew,7,29,OCCUPATION,scribe
 matthew,8,4,PERSON,Jesus
 matthew,8,4,OCCUPATION,priest
 matthew,8,5,ORG,Capernaum
+matthew,8,6,OCCUPATION,servant
+matthew,8,8,OCCUPATION,servant
 matthew,8,9,OCCUPATION,soldier
+matthew,8,9,OCCUPATION,slave
 matthew,8,10,PERSON,Jesus
 matthew,8,10,GPE,Israel
 matthew,8,11,PERSON,Abraham
@@ -35044,6 +35976,7 @@ matthew,8,11,PERSON,Jacob
 matthew,8,11,GPE,the Kingdom of
 matthew,8,12,GPE,Kingdom
 matthew,8,13,PERSON,Jesus
+matthew,8,13,OCCUPATION,servant
 matthew,8,14,PERSON,Jesus
 matthew,8,14,PERSON,Peters
 matthew,8,17,PERSON,Isaiah
@@ -35099,7 +36032,9 @@ matthew,10,15,DATE,Judgment Day
 matthew,10,15,GPE,Sodom
 matthew,10,18,OCCUPATION,king
 matthew,10,23,GPE,Israel
+matthew,10,24,OCCUPATION,slave
 matthew,10,25,ORG,Beelzebub
+matthew,10,25,OCCUPATION,slave
 matthew,10,28,GPE,Gehenna
 matthew,10,36,NORP,mans
 matthew,10,41,NORP,mans
@@ -35149,6 +36084,7 @@ matthew,12,11,PERSON,Sabbath
 matthew,12,15,PERSON,Jesus
 matthew,12,17,PERSON,Isaiah
 matthew,12,17,OCCUPATION,prophet
+matthew,12,18,OCCUPATION,servant
 matthew,12,23,PERSON,David
 matthew,12,24,ORG,Pharisees
 matthew,12,24,ORG,Beelzebub
@@ -35174,6 +36110,8 @@ matthew,13,14,PERSON,Isaiah
 matthew,13,17,OCCUPATION,prophet
 matthew,13,19,GPE,Kingdom
 matthew,13,24,GPE,The Kingdom of the
+matthew,13,27,OCCUPATION,slave
+matthew,13,28,OCCUPATION,slave
 matthew,13,31,GPE,The Kingdom of the
 matthew,13,33,GPE,The Kingdom of the
 matthew,13,34,PERSON,Jesus
@@ -35199,6 +36137,7 @@ matthew,14,1,PERSON,Jesus
 matthew,14,1,ORG,Herod
 matthew,14,2,PERSON,John the
 matthew,14,2,NORP,Baptist
+matthew,14,2,OCCUPATION,servant
 matthew,14,3,PERSON,John
 matthew,14,3,PERSON,Herodias
 matthew,14,3,PERSON,Philip
@@ -35312,6 +36251,15 @@ matthew,18,21,PERSON,Peter
 matthew,18,22,PERSON,Jesus
 matthew,18,23,GPE,the Kingdom of the
 matthew,18,23,OCCUPATION,king
+matthew,18,23,OCCUPATION,slave
+matthew,18,26,OCCUPATION,slave
+matthew,18,27,OCCUPATION,slave
+matthew,18,28,OCCUPATION,slave
+matthew,18,28,OCCUPATION,slave
+matthew,18,29,OCCUPATION,slave
+matthew,18,31,OCCUPATION,slave
+matthew,18,32,OCCUPATION,slave
+matthew,18,33,OCCUPATION,slave
 matthew,19,1,PERSON,Jesus
 matthew,19,1,PERSON,Galilee
 matthew,19,1,GPE,Jordan
@@ -35343,6 +36291,7 @@ matthew,20,20,PERSON,Zebedee
 matthew,20,21,GPE,Kingdom
 matthew,20,22,PERSON,Jesus
 matthew,20,25,PERSON,Jesus
+matthew,20,27,OCCUPATION,slave
 matthew,20,29,GPE,Jericho
 matthew,20,30,PERSON,Jesus
 matthew,20,30,PERSON,David
@@ -35382,6 +36331,9 @@ matthew,21,28,DATE,today
 matthew,21,31,PERSON,Jesus
 matthew,21,31,GPE,the Kingdom of God
 matthew,21,32,PERSON,John
+matthew,21,34,OCCUPATION,slave
+matthew,21,35,OCCUPATION,slave
+matthew,21,36,OCCUPATION,slave
 matthew,21,42,PERSON,Jesus
 matthew,21,42,PERSON,Scriptures
 matthew,21,42,GPE,Jehovah
@@ -35391,10 +36343,16 @@ matthew,21,46,OCCUPATION,prophet
 matthew,22,1,PERSON,Jesus
 matthew,22,2,GPE,The Kingdom of the
 matthew,22,2,OCCUPATION,king
+matthew,22,3,OCCUPATION,slave
+matthew,22,4,OCCUPATION,slave
+matthew,22,6,OCCUPATION,slave
 matthew,22,7,OCCUPATION,king
+matthew,22,8,OCCUPATION,slave
+matthew,22,10,OCCUPATION,slave
 matthew,22,11,OCCUPATION,king
 matthew,22,13,ORG,Bind
 matthew,22,13,OCCUPATION,king
+matthew,22,13,OCCUPATION,servant
 matthew,22,16,ORG,Herod
 matthew,22,17,ORG,Caesar
 matthew,22,18,PERSON,Jesus
@@ -35472,9 +36430,22 @@ matthew,24,37,DATE,just as the days
 matthew,24,38,PERSON,Noah
 matthew,24,38,DATE,those days
 matthew,24,38,DATE,the day
+matthew,24,45,OCCUPATION,slave
+matthew,24,46,OCCUPATION,slave
+matthew,24,48,OCCUPATION,slave
+matthew,24,49,OCCUPATION,slave
 matthew,24,50,DATE,a day
+matthew,24,50,OCCUPATION,slave
 matthew,25,1,GPE,the Kingdom of the heavens
 matthew,25,13,DATE,the day
+matthew,25,14,OCCUPATION,slave
+matthew,25,18,OCCUPATION,slave
+matthew,25,19,OCCUPATION,slave
+matthew,25,21,OCCUPATION,slave
+matthew,25,23,OCCUPATION,slave
+matthew,25,24,OCCUPATION,slave
+matthew,25,26,OCCUPATION,slave
+matthew,25,30,OCCUPATION,slave
 matthew,25,32,OCCUPATION,shepherd
 matthew,25,34,GPE,Kingdom
 matthew,25,41,ORG,Devil
@@ -35519,6 +36490,7 @@ matthew,26,49,PERSON,Jesus
 matthew,26,50,PERSON,Jesus
 matthew,26,50,PERSON,Jesus
 matthew,26,51,PERSON,Jesus
+matthew,26,51,OCCUPATION,slave
 matthew,26,51,OCCUPATION,priest
 matthew,26,52,PERSON,Jesus
 matthew,26,54,PERSON,Scriptures
@@ -35542,6 +36514,7 @@ matthew,26,64,PERSON,Jesus
 matthew,26,65,OCCUPATION,priest
 matthew,26,69,PERSON,Peter
 matthew,26,69,PERSON,Jesus the
+matthew,26,69,OCCUPATION,servant
 matthew,26,71,PERSON,Jesus
 matthew,26,71,ORG,Nazarene
 matthew,26,73,PERSON,Peter
@@ -35917,6 +36890,7 @@ mark,10,39,PERSON,Jesus
 mark,10,41,PERSON,James
 mark,10,41,PERSON,John
 mark,10,42,PERSON,Jesus
+mark,10,44,OCCUPATION,slave
 mark,10,46,PERSON,Bartimaeus
 mark,10,46,PERSON,Timaeus
 mark,10,46,GPE,Jericho
@@ -35958,6 +36932,8 @@ mark,11,32,OCCUPATION,prophet
 mark,11,33,PERSON,Jesus
 mark,11,33,PERSON,Jesus
 mark,12,2,DATE,season
+mark,12,2,OCCUPATION,slave
+mark,12,4,OCCUPATION,slave
 mark,12,11,GPE,Jehovah
 mark,12,13,ORG,Herod
 mark,12,14,ORG,Caesar
@@ -36009,6 +36985,7 @@ mark,13,22,NORP,Christs
 mark,13,22,OCCUPATION,prophet
 mark,13,24,DATE,those days
 mark,13,32,DATE,that day
+mark,13,34,OCCUPATION,slave
 mark,13,35,DATE,the day
 mark,14,1,DATE,two days later
 mark,14,1,OCCUPATION,priest
@@ -36039,6 +37016,7 @@ mark,14,43,OCCUPATION,priest
 mark,14,43,OCCUPATION,scribe
 mark,14,43,OCCUPATION,elder
 mark,14,45,PERSON,Rabbi
+mark,14,47,OCCUPATION,slave
 mark,14,47,OCCUPATION,priest
 mark,14,48,PERSON,Jesus
 mark,14,49,PERSON,Scriptures
@@ -36060,10 +37038,12 @@ mark,14,61,OCCUPATION,priest
 mark,14,62,PERSON,Jesus
 mark,14,63,OCCUPATION,priest
 mark,14,66,PERSON,Peter
+mark,14,66,OCCUPATION,servant
 mark,14,66,OCCUPATION,priest
 mark,14,67,PERSON,Peter
 mark,14,67,PERSON,Jesus
 mark,14,67,ORG,Nazarene
+mark,14,69,OCCUPATION,servant
 mark,14,70,PERSON,Peter
 mark,14,70,NORP,Galilean
 mark,14,72,PERSON,Peter
@@ -36196,6 +37176,7 @@ luke,1,36,PERSON,Elizabeth
 luke,1,36,DATE,the sixth month
 luke,1,38,PERSON,Mary
 luke,1,38,PERSON,Jehovahs
+luke,1,38,OCCUPATION,slave
 luke,1,39,PERSON,Mary
 luke,1,39,DATE,those days
 luke,1,39,GPE,Judah
@@ -36207,7 +37188,9 @@ luke,1,41,PERSON,Elizabeth
 luke,1,45,GPE,Jehovah
 luke,1,46,PERSON,Mary
 luke,1,46,GPE,Jehovah
+luke,1,48,OCCUPATION,slave
 luke,1,54,GPE,Israel
+luke,1,54,OCCUPATION,servant
 luke,1,55,PERSON,Abraham
 luke,1,56,PERSON,Mary
 luke,1,56,DATE,about three months
@@ -36221,6 +37204,7 @@ luke,1,65,ORG,Judea
 luke,1,66,PERSON,Jehovah
 luke,1,68,GPE,Israel
 luke,1,69,PERSON,David
+luke,1,69,OCCUPATION,servant
 luke,1,70,OCCUPATION,prophet
 luke,1,73,PERSON,Abraham
 luke,1,76,GPE,Jehovah
@@ -36262,6 +37246,7 @@ luke,2,26,ORG,the Christ of Jehovah
 luke,2,27,PERSON,Jesus
 luke,2,27,PERSON,Law
 luke,2,29,PERSON,Sovereign Lord
+luke,2,29,OCCUPATION,slave
 luke,2,32,GPE,Israel
 luke,2,34,PERSON,Simeon
 luke,2,34,PERSON,Mary
@@ -36502,14 +37487,19 @@ luke,6,23,DATE,that day
 luke,6,23,OCCUPATION,prophet
 luke,6,26,OCCUPATION,prophet
 luke,7,1,ORG,Capernaum
+luke,7,2,OCCUPATION,slave
 luke,7,3,PERSON,Jesus
 luke,7,3,NORP,Jews
 luke,7,3,OCCUPATION,elder
+luke,7,3,OCCUPATION,slave
 luke,7,4,PERSON,Jesus
 luke,7,6,PERSON,Jesus
+luke,7,7,OCCUPATION,servant
 luke,7,8,OCCUPATION,soldier
+luke,7,8,OCCUPATION,slave
 luke,7,9,PERSON,Jesus
 luke,7,9,GPE,Israel
+luke,7,10,OCCUPATION,slave
 luke,7,11,ORG,Nain
 luke,7,15,PERSON,Jesus
 luke,7,16,OCCUPATION,prophet
@@ -36696,8 +37686,14 @@ luke,12,28,DATE,today
 luke,12,28,DATE,tomorrow
 luke,12,31,GPE,Kingdom
 luke,12,32,GPE,Kingdom
+luke,12,37,OCCUPATION,slave
 luke,12,41,PERSON,Peter
+luke,12,43,OCCUPATION,slave
+luke,12,45,OCCUPATION,slave
+luke,12,45,OCCUPATION,servant
 luke,12,46,DATE,a day
+luke,12,46,OCCUPATION,slave
+luke,12,47,OCCUPATION,slave
 luke,12,56,GPE,Hypocrites
 luke,13,1,PERSON,Galileans
 luke,13,1,ORG,Pilate
@@ -36748,16 +37744,27 @@ luke,14,5,PERSON,bull
 luke,14,10,PERSON,Friend
 luke,14,15,GPE,the Kingdom of God
 luke,14,16,PERSON,Jesus
+luke,14,17,OCCUPATION,slave
+luke,14,21,OCCUPATION,slave
+luke,14,21,OCCUPATION,slave
+luke,14,22,OCCUPATION,slave
+luke,14,23,OCCUPATION,slave
 luke,14,31,OCCUPATION,king
 luke,14,31,OCCUPATION,king
 luke,15,2,PERSON,Pharisees
 luke,15,2,OCCUPATION,scribe
 luke,15,13,DATE,A few days later
 luke,15,22,ORG,Quick
+luke,15,22,OCCUPATION,slave
+luke,15,26,OCCUPATION,servant
 luke,15,29,DATE,These many years
+luke,15,29,OCCUPATION,slave
 luke,16,6,DATE,50
 luke,16,7,DATE,80
 luke,16,13,ORG,Riches
+luke,16,13,OCCUPATION,servant
+luke,16,13,OCCUPATION,slave
+luke,16,13,OCCUPATION,slave
 luke,16,16,PERSON,Law
 luke,16,16,PERSON,John
 luke,16,16,GPE,the Kingdom of God
@@ -36773,6 +37780,9 @@ luke,16,25,PERSON,Child
 luke,16,25,PERSON,Lazarus
 luke,16,29,PERSON,Abraham
 luke,16,30,PERSON,Abraham
+luke,17,7,OCCUPATION,slave
+luke,17,9,OCCUPATION,slave
+luke,17,10,OCCUPATION,slave
 luke,17,11,PERSON,Galilee
 luke,17,11,GPE,Jerusalem
 luke,17,11,GPE,Samaria
@@ -36833,7 +37843,11 @@ luke,19,9,PERSON,Abraham
 luke,19,9,DATE,Today
 luke,19,11,GPE,Jerusalem
 luke,19,11,GPE,the Kingdom of God
+luke,19,13,OCCUPATION,slave
 luke,19,14,OCCUPATION,king
+luke,19,15,OCCUPATION,slave
+luke,19,17,OCCUPATION,slave
+luke,19,22,OCCUPATION,slave
 luke,19,27,OCCUPATION,king
 luke,19,28,GPE,Jerusalem
 luke,19,29,PERSON,Bethphage
@@ -36854,6 +37868,8 @@ luke,20,6,PERSON,John
 luke,20,6,OCCUPATION,prophet
 luke,20,8,PERSON,Jesus
 luke,20,10,DATE,season
+luke,20,10,OCCUPATION,slave
+luke,20,11,OCCUPATION,slave
 luke,20,19,OCCUPATION,scribe
 luke,20,19,OCCUPATION,priest
 luke,20,22,ORG,Caesar
@@ -36907,6 +37923,7 @@ luke,22,47,PERSON,Judas
 luke,22,47,PERSON,Jesus
 luke,22,48,PERSON,Jesus
 luke,22,48,PERSON,Judas
+luke,22,50,OCCUPATION,slave
 luke,22,50,OCCUPATION,priest
 luke,22,51,PERSON,Jesus
 luke,22,52,PERSON,Jesus
@@ -36916,6 +37933,7 @@ luke,22,53,DATE,the temple day after day
 luke,22,54,PERSON,Peter
 luke,22,54,OCCUPATION,priest
 luke,22,55,PERSON,Peter
+luke,22,56,OCCUPATION,servant
 luke,22,58,PERSON,Peter
 luke,22,59,NORP,Galilean
 luke,22,60,PERSON,Peter
@@ -37094,6 +38112,7 @@ john,2,3,PERSON,Jesus
 john,2,4,PERSON,Jesus
 john,2,6,NORP,Jews
 john,2,7,PERSON,Jesus
+john,2,9,OCCUPATION,servant
 john,2,11,PERSON,Jesus
 john,2,11,GPE,Cana
 john,2,12,DATE,many days
@@ -37184,6 +38203,7 @@ john,4,47,GPE,Judea
 john,4,48,PERSON,Jesus
 john,4,50,PERSON,Jesus
 john,4,50,PERSON,Jesus
+john,4,51,OCCUPATION,slave
 john,4,52,DATE,yesterday
 john,4,53,PERSON,Jesus
 john,4,54,PERSON,Jesus
@@ -37313,7 +38333,10 @@ john,8,28,PERSON,Jesus
 john,8,31,PERSON,Jesus
 john,8,31,NORP,Jews
 john,8,33,ORG,Abrahams
+john,8,33,OCCUPATION,slave
 john,8,34,PERSON,Jesus
+john,8,34,OCCUPATION,slave
+john,8,35,OCCUPATION,slave
 john,8,37,ORG,Abrahams
 john,8,39,PERSON,Abraham
 john,8,39,PERSON,Jesus
@@ -37517,6 +38540,7 @@ john,13,8,PERSON,Peter
 john,13,8,PERSON,Jesus
 john,13,9,PERSON,Simon Peter
 john,13,10,PERSON,Jesus
+john,13,16,OCCUPATION,slave
 john,13,21,PERSON,Jesus
 john,13,23,PERSON,Jesus
 john,13,23,PERSON,Jesus
@@ -37545,6 +38569,9 @@ john,14,20,DATE,that day
 john,14,22,PERSON,Judas
 john,14,22,PERSON,Iscariot
 john,14,23,PERSON,Jesus
+john,15,15,OCCUPATION,slave
+john,15,15,OCCUPATION,slave
+john,15,20,OCCUPATION,slave
 john,16,19,PERSON,Jesus
 john,16,23,DATE,that day
 john,16,26,DATE,that day
@@ -37566,7 +38593,9 @@ john,18,6,PERSON,Jesus
 john,18,7,PERSON,Jesus the Nazarene
 john,18,8,PERSON,Jesus
 john,18,10,PERSON,Simon Peter
+john,18,10,OCCUPATION,slave
 john,18,10,OCCUPATION,priest
+john,18,10,OCCUPATION,slave
 john,18,11,PERSON,Jesus
 john,18,11,PERSON,Peter
 john,18,12,PERSON,Jesus
@@ -37587,7 +38616,9 @@ john,18,16,PERSON,Peter
 john,18,16,PERSON,Peter
 john,18,16,OCCUPATION,priest
 john,18,17,PERSON,Peter
+john,18,17,OCCUPATION,servant
 john,18,18,PERSON,Peter
+john,18,18,OCCUPATION,slave
 john,18,19,PERSON,Jesus
 john,18,19,OCCUPATION,priest
 john,18,20,PERSON,Jesus
@@ -37600,6 +38631,7 @@ john,18,24,GPE,Caiaphas
 john,18,24,OCCUPATION,priest
 john,18,25,PERSON,Simon Peter
 john,18,26,PERSON,Peter
+john,18,26,OCCUPATION,slave
 john,18,26,OCCUPATION,priest
 john,18,27,PERSON,Peter
 john,18,28,PERSON,Jesus
@@ -37836,6 +38868,8 @@ acts,2,16,OCCUPATION,prophet
 acts,2,17,PERSON,God
 acts,2,17,DATE,the last days
 acts,2,18,DATE,those days
+acts,2,18,OCCUPATION,slave
+acts,2,18,OCCUPATION,slave
 acts,2,20,GPE,Jehovah
 acts,2,21,PERSON,Jehovah
 acts,2,22,PERSON,Jesus the Nazarene
@@ -37874,6 +38908,7 @@ acts,3,13,PERSON,Jacob
 acts,3,13,PERSON,Jesus
 acts,3,13,ORG,Servant
 acts,3,13,ORG,Pilate
+acts,3,13,OCCUPATION,servant
 acts,3,18,OCCUPATION,prophet
 acts,3,19,PERSON,Jehovah
 acts,3,20,PERSON,Jesus
@@ -37887,6 +38922,7 @@ acts,3,24,OCCUPATION,prophet
 acts,3,25,PERSON,Abraham
 acts,3,25,OCCUPATION,prophet
 acts,3,26,ORG,Servant
+acts,3,26,OCCUPATION,servant
 acts,4,1,ORG,Sadducees
 acts,4,1,OCCUPATION,priest
 acts,4,2,PERSON,Jesus
@@ -37922,14 +38958,18 @@ acts,4,23,OCCUPATION,priest
 acts,4,23,OCCUPATION,elder
 acts,4,24,PERSON,Sovereign Lord
 acts,4,25,PERSON,David
+acts,4,25,OCCUPATION,servant
 acts,4,26,PERSON,Jehovah
 acts,4,26,OCCUPATION,king
 acts,4,27,PERSON,Jesus
 acts,4,27,GPE,Israel
 acts,4,27,ORG,Herod
 acts,4,27,ORG,Pontius Pilate
+acts,4,27,OCCUPATION,servant
 acts,4,29,PERSON,Jehovah
+acts,4,29,OCCUPATION,slave
 acts,4,30,PERSON,Jesus
+acts,4,30,OCCUPATION,servant
 acts,4,33,PERSON,Jesus
 acts,4,36,PERSON,Joseph
 acts,4,36,ORG,Barnabas
@@ -38002,6 +39042,7 @@ acts,7,4,NORP,Chaldeans
 acts,7,6,PERSON,God
 acts,7,6,DATE,400 years
 acts,7,7,PERSON,God
+acts,7,7,OCCUPATION,slave
 acts,7,8,PERSON,Isaac
 acts,7,8,PERSON,Isaac
 acts,7,8,PERSON,Jacob
@@ -38102,6 +39143,7 @@ acts,8,16,PERSON,Jesus
 acts,8,18,PERSON,Simon
 acts,8,20,PERSON,Peter
 acts,8,22,PERSON,Jehovah
+acts,8,23,OCCUPATION,slave
 acts,8,24,PERSON,Simon
 acts,8,24,PERSON,Jehovah
 acts,8,25,PERSON,Jehovah
@@ -38210,6 +39252,7 @@ acts,10,5,PERSON,Joppa
 acts,10,5,PERSON,Simon
 acts,10,5,PERSON,Peter
 acts,10,6,PERSON,Simon
+acts,10,7,OCCUPATION,servant
 acts,10,7,OCCUPATION,soldier
 acts,10,8,PERSON,Joppa
 acts,10,9,PERSON,Peter
@@ -38319,6 +39362,7 @@ acts,12,12,PERSON,Mary
 acts,12,12,PERSON,John
 acts,12,12,PERSON,Mark
 acts,12,13,PERSON,Rhoda
+acts,12,13,OCCUPATION,servant
 acts,12,14,PERSON,Peter
 acts,12,14,PERSON,Peter
 acts,12,16,PERSON,Peter
@@ -38570,7 +39614,9 @@ acts,16,14,PERSON,Jehovah
 acts,16,14,PERSON,Paul
 acts,16,14,ORG,Lydia
 acts,16,15,GPE,Jehovah
+acts,16,16,OCCUPATION,servant
 acts,16,17,PERSON,Paul
+acts,16,17,OCCUPATION,slave
 acts,16,18,PERSON,Paul
 acts,16,18,PERSON,Jesus Christ
 acts,16,18,DATE,many days
@@ -38805,6 +39851,7 @@ acts,20,17,ORG,Miletus
 acts,20,17,OCCUPATION,elder
 acts,20,18,DATE,the first day
 acts,20,19,NORP,Jews
+acts,20,19,OCCUPATION,slave
 acts,20,21,PERSON,Greeks
 acts,20,21,PERSON,Jesus
 acts,20,21,NORP,Jews
@@ -39092,6 +40139,7 @@ acts,26,12,OCCUPATION,priest
 acts,26,14,PERSON,Saul
 acts,26,14,PERSON,Saul
 acts,26,15,PERSON,Jesus
+acts,26,16,OCCUPATION,servant
 acts,26,19,PERSON,King Agrippa
 acts,26,20,GPE,Damascus
 acts,26,20,GPE,Jerusalem
@@ -39201,6 +40249,7 @@ acts,28,31,PERSON,Jesus Christ
 acts,28,31,GPE,the Kingdom of God
 romans,1,1,PERSON,Paul
 romans,1,1,PERSON,Jesus
+romans,1,1,OCCUPATION,slave
 romans,1,2,PERSON,Scriptures
 romans,1,2,OCCUPATION,prophet
 romans,1,3,PERSON,David
@@ -39268,8 +40317,17 @@ romans,5,21,PERSON,Jesus Christ
 romans,5,21,OCCUPATION,king
 romans,5,21,OCCUPATION,king
 romans,6,3,PERSON,Jesus
+romans,6,6,OCCUPATION,slave
 romans,6,11,PERSON,Jesus
 romans,6,12,OCCUPATION,king
+romans,6,16,OCCUPATION,slave
+romans,6,16,OCCUPATION,slave
+romans,6,17,OCCUPATION,slave
+romans,6,18,OCCUPATION,slave
+romans,6,19,OCCUPATION,slave
+romans,6,19,OCCUPATION,slave
+romans,6,20,OCCUPATION,slave
+romans,6,22,OCCUPATION,slave
 romans,6,23,PERSON,Jesus
 romans,7,1,PERSON,Law
 romans,7,3,NORP,mans
@@ -39277,12 +40335,14 @@ romans,7,3,NORP,mans
 romans,7,4,PERSON,Law
 romans,7,5,PERSON,Law
 romans,7,6,PERSON,Law
+romans,7,6,OCCUPATION,slave
 romans,7,7,PERSON,Law
 romans,7,7,PERSON,Law
 romans,7,12,PERSON,Law
 romans,7,14,PERSON,Law
 romans,7,16,PERSON,Law
 romans,7,25,PERSON,Jesus Christ
+romans,7,25,OCCUPATION,slave
 romans,8,1,PERSON,Jesus
 romans,8,2,PERSON,Jesus
 romans,8,3,PERSON,Law
@@ -39302,6 +40362,7 @@ romans,9,7,ORG,Abrahams
 romans,9,9,PERSON,Sarah
 romans,9,10,PERSON,Rebekah
 romans,9,10,PERSON,Isaac
+romans,9,12,OCCUPATION,slave
 romans,9,13,PERSON,Jacob
 romans,9,17,PERSON,Pharaoh
 romans,9,24,NORP,Jews
@@ -39338,10 +40399,13 @@ romans,11,25,GPE,Israel
 romans,11,26,GPE,Israel
 romans,11,26,GPE,Jacob
 romans,11,34,PERSON,Jehovahs
+romans,12,11,OCCUPATION,slave
 romans,12,19,PERSON,Jehovah
+romans,13,6,OCCUPATION,servant
 romans,13,12,DATE,the day
 romans,13,14,PERSON,Jesus Christ
 romans,14,4,PERSON,Jehovah
+romans,14,4,OCCUPATION,servant
 romans,14,5,DATE,one day
 romans,14,6,PERSON,Jehovah
 romans,14,6,PERSON,Jehovah
@@ -39353,12 +40417,14 @@ romans,14,8,GPE,Jehovah
 romans,14,11,PERSON,Jehovah
 romans,14,14,PERSON,Jesus
 romans,14,17,GPE,the Kingdom of God
+romans,14,18,OCCUPATION,slave
 romans,15,4,PERSON,Scriptures
 romans,15,5,PERSON,Jesus
 romans,15,6,PERSON,Jesus Christ
 romans,15,11,PERSON,Praise Jehovah
 romans,15,12,PERSON,Isaiah
 romans,15,16,PERSON,Jesus
+romans,15,16,OCCUPATION,servant
 romans,15,17,PERSON,Jesus
 romans,15,19,GPE,Jerusalem
 romans,15,19,ORG,Illyricum
@@ -39401,6 +40467,7 @@ romans,16,15,PERSON,Greet Philologus
 romans,16,15,PERSON,Olympas
 romans,16,15,GPE,Julia
 romans,16,15,GPE,Nereus
+romans,16,18,OCCUPATION,slave
 romans,16,20,PERSON,Jesus
 romans,16,21,PERSON,Lucius
 romans,16,21,PERSON,Jason
@@ -39469,7 +40536,11 @@ romans,16,27,PERSON,Jesus Christ
 1 corinthians,6,10,GPE,Gods Kingdom
 1 corinthians,6,11,PERSON,Jesus Christ
 1 corinthians,7,17,PERSON,Jehovah
+1 corinthians,7,21,OCCUPATION,slave
 1 corinthians,7,22,ORG,Lords
+1 corinthians,7,22,OCCUPATION,slave
+1 corinthians,7,22,OCCUPATION,slave
+1 corinthians,7,23,OCCUPATION,slave
 1 corinthians,7,32,ORG,Lords
 1 corinthians,8,6,PERSON,Jesus Christ
 1 corinthians,9,1,PERSON,Jesus
@@ -39479,9 +40550,11 @@ romans,16,27,PERSON,Jesus Christ
 1 corinthians,9,7,OCCUPATION,soldier
 1 corinthians,9,7,OCCUPATION,shepherd
 1 corinthians,9,8,PERSON,Law
+1 corinthians,9,19,OCCUPATION,slave
 1 corinthians,9,20,NORP,Jews
 1 corinthians,9,20,NORP,Jew
 1 corinthians,9,20,NORP,Jews
+1 corinthians,9,27,OCCUPATION,slave
 1 corinthians,10,8,DATE,one day
 1 corinthians,10,9,PERSON,Jehovah
 1 corinthians,10,18,GPE,Israel
@@ -39497,6 +40570,7 @@ romans,16,27,PERSON,Jesus Christ
 1 corinthians,12,3,PERSON,Jesus
 1 corinthians,12,13,PERSON,Greeks
 1 corinthians,12,13,NORP,Jews
+1 corinthians,12,13,OCCUPATION,slave
 1 corinthians,12,27,NORP,Christs
 1 corinthians,12,28,OCCUPATION,prophet
 1 corinthians,12,29,OCCUPATION,prophet
@@ -39576,6 +40650,7 @@ romans,16,27,PERSON,Jesus Christ
 2 corinthians,3,18,GPE,Jehovah
 2 corinthians,4,5,PERSON,Jesus Christ
 2 corinthians,4,5,PERSON,Jesus
+2 corinthians,4,5,OCCUPATION,slave
 2 corinthians,4,10,PERSON,Jesus
 2 corinthians,4,10,PERSON,Jesus
 2 corinthians,4,11,PERSON,Jesus
@@ -39628,6 +40703,7 @@ galatians,1,1,PERSON,Jesus Christ
 galatians,1,2,GPE,Galatia
 galatians,1,3,PERSON,Jesus Christ
 galatians,1,6,NORP,Christs
+galatians,1,10,OCCUPATION,slave
 galatians,1,12,PERSON,Jesus Christ
 galatians,1,13,ORG,Judaism
 galatians,1,14,ORG,Judaism
@@ -39691,12 +40767,18 @@ galatians,3,26,PERSON,Jesus
 galatians,3,28,PERSON,Jesus
 galatians,3,28,NORP,Jew
 galatians,3,28,NORP,Greek
+galatians,3,28,OCCUPATION,slave
+galatians,4,1,OCCUPATION,slave
 galatians,4,2,DATE,the day
+galatians,4,7,OCCUPATION,slave
+galatians,4,9,OCCUPATION,slave
 galatians,4,10,DATE,days
 galatians,4,10,DATE,months
 galatians,4,14,PERSON,Jesus
 galatians,4,21,PERSON,Law
 galatians,4,22,PERSON,Abraham
+galatians,4,22,OCCUPATION,servant
+galatians,4,23,OCCUPATION,servant
 galatians,4,24,PERSON,Hagar
 galatians,4,25,PERSON,Hagar
 galatians,4,25,DATE,today
@@ -39705,9 +40787,13 @@ galatians,4,25,GPE,Jerusalem
 galatians,4,25,ORG,Sinai
 galatians,4,26,GPE,Jerusalem
 galatians,4,28,PERSON,Isaac
+galatians,4,30,OCCUPATION,servant
+galatians,4,30,OCCUPATION,servant
+galatians,4,31,OCCUPATION,servant
 galatians,5,2,PERSON,Paul
 galatians,5,3,PERSON,Law
 galatians,5,6,PERSON,Jesus
+galatians,5,13,OCCUPATION,slave
 galatians,5,14,PERSON,Law
 galatians,5,16,ORG,Keep
 galatians,5,21,GPE,Gods Kingdom
@@ -39715,6 +40801,7 @@ galatians,5,24,PERSON,Jesus
 galatians,6,13,PERSON,Law
 galatians,6,14,PERSON,Jesus Christ
 galatians,6,17,PERSON,Jesus
+galatians,6,17,OCCUPATION,slave
 galatians,6,18,PERSON,Jesus Christ
 ephesians,1,1,PERSON,Paul
 ephesians,1,1,PERSON,Jesus
@@ -39751,9 +40838,13 @@ ephesians,5,19,PERSON,Jehovah
 ephesians,5,20,PERSON,Jesus Christ
 ephesians,6,4,GPE,Jehovah
 ephesians,6,5,ORG,Slaves
+ephesians,6,5,OCCUPATION,slave
 ephesians,6,6,NORP,Christs
+ephesians,6,6,OCCUPATION,slave
 ephesians,6,7,PERSON,Jehovah
+ephesians,6,7,OCCUPATION,slave
 ephesians,6,8,GPE,Jehovah
+ephesians,6,8,OCCUPATION,slave
 ephesians,6,11,ORG,Devil
 ephesians,6,21,ORG,Tychicus
 ephesians,6,23,PERSON,Jesus Christ
@@ -39763,6 +40854,8 @@ philippians,1,1,PERSON,Timothy
 philippians,1,1,PERSON,Jesus
 philippians,1,1,PERSON,Jesus
 philippians,1,1,GPE,Philippi
+philippians,1,1,OCCUPATION,slave
+philippians,1,1,OCCUPATION,servant
 philippians,1,2,PERSON,Jesus Christ
 philippians,1,5,DATE,the first day
 philippians,1,6,PERSON,Jesus
@@ -39775,13 +40868,16 @@ philippians,1,19,PERSON,Jesus Christ
 philippians,1,26,PERSON,Jesus
 philippians,2,1,GPE,Christ
 philippians,2,5,PERSON,Jesus
+philippians,2,7,OCCUPATION,slave
 philippians,2,10,PERSON,Jesus
 philippians,2,11,PERSON,Jesus Christ
 philippians,2,19,PERSON,Jesus
 philippians,2,19,PERSON,Timothy
 philippians,2,21,PERSON,Jesus Christ
+philippians,2,22,OCCUPATION,slave
 philippians,2,25,ORG,Epaphroditus
 philippians,2,25,OCCUPATION,soldier
+philippians,2,25,OCCUPATION,servant
 philippians,3,3,PERSON,Jesus
 philippians,3,5,DATE,the eighth day
 philippians,3,5,GPE,Israel
@@ -39813,6 +40909,7 @@ colossians,1,3,PERSON,Jesus Christ
 colossians,1,4,PERSON,Jesus
 colossians,1,6,DATE,the day
 colossians,1,7,ORG,Epaphras
+colossians,1,7,OCCUPATION,slave
 colossians,1,9,DATE,the day
 colossians,1,10,PERSON,Jehovah
 colossians,1,13,PERSON,Son
@@ -39824,12 +40921,17 @@ colossians,3,5,GPE,Deaden
 colossians,3,11,GPE,Jew
 colossians,3,11,NORP,Greek
 colossians,3,11,NORP,Scythian
+colossians,3,11,OCCUPATION,slave
 colossians,3,13,PERSON,Jehovah
 colossians,3,16,PERSON,Jehovah
 colossians,3,17,PERSON,Jesus
 colossians,3,22,GPE,Jehovah
+colossians,3,22,OCCUPATION,slave
 colossians,3,23,PERSON,Jehovah
 colossians,3,24,PERSON,Jehovah
+colossians,3,24,OCCUPATION,slave
+colossians,4,1,OCCUPATION,slave
+colossians,4,7,OCCUPATION,slave
 colossians,4,9,ORG,Onesimus
 colossians,4,10,PERSON,Mark
 colossians,4,10,PERSON,Barnabas
@@ -39837,6 +40939,7 @@ colossians,4,11,PERSON,Jesus
 colossians,4,11,GPE,the Kingdom of God
 colossians,4,11,ORG,Justus
 colossians,4,12,PERSON,Jesus
+colossians,4,12,OCCUPATION,slave
 colossians,4,13,GPE,Laodicea
 colossians,4,13,GPE,Hierapolis
 colossians,4,14,PERSON,Luke
@@ -39855,6 +40958,7 @@ colossians,4,16,NORP,Laodiceans
 1 thessalonians,1,8,PERSON,Jehovah
 1 thessalonians,1,8,PERSON,Achaia
 1 thessalonians,1,8,GPE,Macedonia
+1 thessalonians,1,9,OCCUPATION,slave
 1 thessalonians,1,10,PERSON,Jesus
 1 thessalonians,2,2,GPE,Philippi
 1 thessalonians,2,12,GPE,Kingdom
@@ -39930,6 +41034,8 @@ colossians,4,16,NORP,Laodiceans
 1 timothy,2,14,PERSON,Adam
 1 timothy,3,6,ORG,Devil
 1 timothy,3,7,ORG,Devil
+1 timothy,3,8,OCCUPATION,servant
+1 timothy,3,12,OCCUPATION,servant
 1 timothy,3,13,PERSON,Jesus
 1 timothy,4,6,PERSON,Jesus
 1 timothy,4,14,OCCUPATION,elder
@@ -39972,6 +41078,7 @@ colossians,4,16,NORP,Laodiceans
 2 timothy,2,17,ORG,Philetus
 2 timothy,2,19,PERSON,Jehovah
 2 timothy,2,19,PERSON,Jehovah
+2 timothy,2,24,OCCUPATION,slave
 2 timothy,2,26,ORG,Devil
 2 timothy,3,1,DATE,the last days
 2 timothy,3,8,GPE,Jannes
@@ -40003,6 +41110,7 @@ colossians,4,16,NORP,Laodiceans
 2 timothy,4,21,GPE,Claudia
 titus,1,1,PERSON,Paul
 titus,1,1,PERSON,Jesus Christ
+titus,1,1,OCCUPATION,slave
 titus,1,4,PERSON,Jesus
 titus,1,4,ORG,Titus
 titus,1,5,PERSON,Crete
@@ -40010,8 +41118,10 @@ titus,1,5,OCCUPATION,elder
 titus,1,12,NORP,Cretans
 titus,1,12,OCCUPATION,prophet
 titus,1,14,NORP,Jewish
+titus,2,9,OCCUPATION,slave
 titus,2,10,PERSON,Savior
 titus,2,13,PERSON,Jesus Christ
+titus,3,3,OCCUPATION,slave
 titus,3,4,PERSON,Savior
 titus,3,6,PERSON,Jesus Christ
 titus,3,9,PERSON,Law
@@ -40032,6 +41142,8 @@ philemon,1,3,PERSON,Jesus Christ
 philemon,1,5,PERSON,Jesus
 philemon,1,9,PERSON,Paul
 philemon,1,9,PERSON,Jesus
+philemon,1,16,OCCUPATION,slave
+philemon,1,16,OCCUPATION,slave
 philemon,1,19,PERSON,Paul
 philemon,1,23,PERSON,Jesus
 philemon,1,23,ORG,Epaphras
@@ -40213,6 +41325,7 @@ hebrews,13,23,PERSON,Timothy
 hebrews,13,24,GPE,Italy
 james,1,1,PERSON,James
 james,1,1,PERSON,Jesus Christ
+james,1,1,OCCUPATION,slave
 james,1,7,GPE,Jehovah
 james,1,12,PERSON,Jehovah
 james,1,20,NORP,mans
@@ -40267,7 +41380,9 @@ james,5,17,DATE,six months
 1 peter,2,12,DATE,the day
 1 peter,2,13,ORG,Lords
 1 peter,2,13,OCCUPATION,king
+1 peter,2,16,OCCUPATION,slave
 1 peter,2,17,OCCUPATION,king
+1 peter,2,18,OCCUPATION,servant
 1 peter,2,25,OCCUPATION,shepherd
 1 peter,3,6,PERSON,Sarah
 1 peter,3,6,PERSON,Abraham
@@ -40287,6 +41402,7 @@ james,5,17,DATE,six months
 1 peter,5,13,ORG,Babylon
 2 peter,1,1,PERSON,Simon Peter
 2 peter,1,1,PERSON,Jesus Christ
+2 peter,1,1,OCCUPATION,slave
 2 peter,1,2,PERSON,Jesus
 2 peter,1,8,PERSON,Jesus Christ
 2 peter,1,11,GPE,Kingdom
@@ -40306,6 +41422,8 @@ james,5,17,DATE,six months
 2 peter,2,15,GPE,Balaam
 2 peter,2,15,ORG,Beor
 2 peter,2,16,OCCUPATION,prophet
+2 peter,2,19,OCCUPATION,slave
+2 peter,2,19,OCCUPATION,slave
 2 peter,3,2,OCCUPATION,prophet
 2 peter,3,3,DATE,the last days
 2 peter,3,4,DATE,the day
@@ -40346,6 +41464,7 @@ jude,1,1,PERSON,Jude
 jude,1,1,PERSON,Jesus Christ
 jude,1,1,PERSON,James
 jude,1,1,PERSON,Jesus
+jude,1,1,OCCUPATION,slave
 jude,1,4,PERSON,Scriptures
 jude,1,4,PERSON,Jesus Christ
 jude,1,5,PERSON,Jehovah
@@ -40370,6 +41489,8 @@ jude,1,25,PERSON,Savior
 jude,1,25,PERSON,Jesus Christ
 revelation,1,1,PERSON,Jesus Christ
 revelation,1,1,PERSON,John
+revelation,1,1,OCCUPATION,slave
+revelation,1,1,OCCUPATION,slave
 revelation,1,2,PERSON,Jesus Christ
 revelation,1,4,PERSON,John
 revelation,1,5,PERSON,Jesus Christ
@@ -40401,6 +41522,7 @@ revelation,2,14,GPE,Israel
 revelation,2,15,PERSON,Nicolaus
 revelation,2,18,PERSON,Thyatira
 revelation,2,20,PERSON,Jezebel
+revelation,2,20,OCCUPATION,slave
 revelation,2,24,GPE,Thyatira
 revelation,2,27,OCCUPATION,shepherd
 revelation,3,1,NORP,Sardis
@@ -40431,8 +41553,11 @@ revelation,5,14,OCCUPATION,elder
 revelation,6,1,ORG,Lamb
 revelation,6,8,GPE,Death
 revelation,6,10,PERSON,Sovereign Lord
+revelation,6,11,OCCUPATION,slave
 revelation,6,15,OCCUPATION,king
+revelation,6,15,OCCUPATION,slave
 revelation,6,16,NORP,Lamb
+revelation,7,3,OCCUPATION,slave
 revelation,7,4,GPE,Israel
 revelation,7,5,PERSON,Judah
 revelation,7,5,NORP,Reuben
@@ -40461,6 +41586,7 @@ revelation,9,11,OCCUPATION,king
 revelation,9,15,DATE,month
 revelation,9,15,DATE,year
 revelation,10,7,DATE,the days
+revelation,10,7,OCCUPATION,slave
 revelation,10,7,OCCUPATION,prophet
 revelation,10,11,OCCUPATION,king
 revelation,11,2,DATE,42 months
@@ -40476,6 +41602,7 @@ revelation,11,15,OCCUPATION,king
 revelation,11,16,OCCUPATION,elder
 revelation,11,17,PERSON,Jehovah
 revelation,11,17,OCCUPATION,king
+revelation,11,18,OCCUPATION,slave
 revelation,11,18,OCCUPATION,prophet
 revelation,12,5,OCCUPATION,shepherd
 revelation,12,6,DATE,"1,260 days"
@@ -40489,6 +41616,7 @@ revelation,12,16,NORP,womans
 revelation,12,17,PERSON,Jesus
 revelation,13,5,DATE,42 months
 revelation,13,8,NORP,Lamb
+revelation,13,16,OCCUPATION,slave
 revelation,13,18,NORP,mans
 revelation,14,1,NORP,Lamb
 revelation,14,3,OCCUPATION,elder
@@ -40498,6 +41626,7 @@ revelation,14,10,NORP,Lamb
 revelation,14,12,PERSON,Jesus
 revelation,15,3,PERSON,Jehovah God
 revelation,15,3,NORP,Lamb
+revelation,15,3,OCCUPATION,slave
 revelation,15,4,PERSON,Jehovah
 revelation,16,6,OCCUPATION,prophet
 revelation,16,12,OCCUPATION,king
@@ -40519,18 +41648,23 @@ revelation,18,8,PERSON,Jehovah
 revelation,18,8,DATE,one day
 revelation,18,9,OCCUPATION,king
 revelation,18,13,NORP,Indian
+revelation,18,13,OCCUPATION,slave
 revelation,18,20,OCCUPATION,prophet
 revelation,18,24,OCCUPATION,prophet
+revelation,19,2,OCCUPATION,slave
 revelation,19,4,OCCUPATION,elder
+revelation,19,5,OCCUPATION,slave
 revelation,19,6,PERSON,Praise Jah
 revelation,19,6,PERSON,Jehovah
 revelation,19,6,OCCUPATION,king
 revelation,19,7,ORG,Lamb
 revelation,19,10,PERSON,Jesus
 revelation,19,10,PERSON,Jesus
+revelation,19,10,OCCUPATION,slave
 revelation,19,15,OCCUPATION,shepherd
 revelation,19,16,OCCUPATION,king
 revelation,19,18,OCCUPATION,king
+revelation,19,18,OCCUPATION,slave
 revelation,19,19,OCCUPATION,king
 revelation,19,20,OCCUPATION,prophet
 revelation,20,2,DATE,"1,000 years"
@@ -40563,11 +41697,14 @@ revelation,21,24,OCCUPATION,king
 revelation,22,1,NORP,Lamb
 revelation,22,2,DATE,each month
 revelation,22,3,NORP,Lamb
+revelation,22,3,OCCUPATION,slave
 revelation,22,5,PERSON,Jehovah
 revelation,22,5,OCCUPATION,king
 revelation,22,6,PERSON,Jehovah
 revelation,22,6,OCCUPATION,prophet
+revelation,22,6,OCCUPATION,slave
 revelation,22,8,PERSON,John
+revelation,22,9,OCCUPATION,slave
 revelation,22,9,OCCUPATION,prophet
 revelation,22,13,PERSON,Alpha
 revelation,22,13,ORG,Omega
