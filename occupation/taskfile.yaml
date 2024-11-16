@@ -1,8 +1,86 @@
 version: 3
 
+vars:
+  setup_script:
+    sh: |
+      mkdir -p ./tmp && cat <<'EOF' > ./tmp/format_output.sh
+      #!/bin/bash
+
+      # Arguments
+      FILTER="$1"  # Filter logic for mlr
+      NOTE_FIELD="$2"  # Column to customize the note output
+
+      # Count total items
+      TOTAL=$(mlr --csv --headerless-csv-output --from bible_entities.csv \
+        filter "$FILTER" then count -n)
+
+      # If total is less than or equal to 10, display all records
+      if [ "$TOTAL" -le 10 ]; then
+        mlr --c2p --barred --from bible_entities.csv \
+          filter "$FILTER" \
+          then put '$Section="All"' \
+          then reorder -f Section,Book,Chapter,Verse,Type,Text \
+          then cat
+      else
+        # Calculate remaining records
+        REMAINDER=$((TOTAL - 10))
+
+        # Extract 10 random records
+        tenRec=$(mlr --csv --from bible_entities.csv \
+          filter "$FILTER" then sample -k 10)
+
+        {
+          echo "${tenRec}" | head -n6
+          echo "--- $REMAINDER of $TOTAL more ---,,,,"
+          echo "${tenRec}" | tail -n5
+        } | mlr --c2p --barred cat
+      fi
+      EOF
+      chmod +x ./tmp/format_output.sh
+
 tasks:
   default: task -a
+
   run: task -p generate-json extract
+  status:
+    silent: true
+    cmds:
+      - |
+        jq '
+        {
+          total_books: (.nwt | keys | length),
+          total_chapters: (.nwt | to_entries | map(.value | keys | length) | add),
+          total_verses: (.nwt | to_entries | map(.value | to_entries | map(.value | keys | length) | add) | add)
+        }' bible_data.json
+
+      - |
+        # verse count
+        verses=$(mlr --csv --implicit-csv-header --headerless-csv-output --from bible_data.csv \
+          cut -f 1,2 \
+          then count)
+
+        # book count
+        chapters=$(mlr --csv --implicit-csv-header --headerless-csv-output --from bible_data.csv \
+          cut -f 1,2 \
+          then uniq -a \
+          then count)
+
+        # books count
+        books=$(mlr --csv --implicit-csv-header --headerless-csv-output --from bible_data.csv \
+          cut -f 1 \
+          then uniq -a \
+          then count)
+        echo "$books,$chapters,$verses" | mlr --d2p --barred cat then label books,chpaters,verses
+
+  convert_2_csv:
+    cmds:
+      - |
+        jq -r '
+          .nwt | to_entries[] as $book_entry
+          | $book_entry.value | to_entries[] as $chapter_entry
+          | $chapter_entry.value | to_entries[] as $verse_entry
+          | [$book_entry.key, $chapter_entry.key, $verse_entry.key, $verse_entry.value] | @csv
+        ' bible_data.json > bible_data.csv
 
   generate-json:
     cmds:
@@ -29,61 +107,45 @@ tasks:
           --output-csv "bible_entities.csv"
 
   summary:
+    silent: true
     cmds:
       - |
         mlr --c2p --barred --from bible_entities.csv \
-          count-distinct -f Type
+          count-distinct -f Type \
+          then put '
+            $Explanation =
+              $Type == "PERSON"     ? "Names of individuals" :
+              $Type == "DATE"       ? "Explicit or implicit date expressions" :
+              $Type == "GPE"        ? "Geopolitical entities (places)" :
+              $Type == "ORG"        ? "Organizations or groups" :
+              $Type == "OCCUPATION" ? "Roles or professions" :
+              $Type == "NORP"       ? "Nationalities, religious or political groups" :
+                                      "Other";
+          ' \
+          then reorder -f Type,count,Explanation
 
   org:
     cmds:
       - |
-        mlr --c2p --barred --from bible_entities.csv \
-          filter '$Type == "ORG"' \
-            then count-distinct -f Text \
-            then label ORG_organization_or_groups,Count \
-            then head
+        ./tmp/format_output.sh '$Type == "ORG"'
+        echo Legend.ORG - Organization or groups
 
   occupation:
     cmds:
       - |
-        mlr --c2p --barred --from bible_entities.csv \
-          filter '$Type == "OCCUPATION"' \
-            then count-distinct -f Text \
-            then label occupation,count
+        ./tmp/format_output.sh '$Type == "OCCUPATION"'
 
   gpe:
     cmds:
       - |
-        mlr --c2p --barred --from bible_entities.csv \
-          filter '$Type == "GPE"' \
-            then count-distinct -f Text \
-            then label GPE_GeoPoliticalEntity,Count \
-            then head
+        ./tmp/format_output.sh '$Type == "GPE"'
+        echo Legend.GPE - GeoPoliticalEntity
 
   norp:
     cmds:
       - |
-        mlr --c2p --barred --from bible_entities.csv \
-          filter '$Type == "NORP"' \
-            then count-distinct -f Text \
-            then label NORP_Nationalities_Religions_or_Political_Groups,Count \
-            then head
-
-  names:
-    cmds:
-      - |
-        mlr --c2p --barred --from bible_entities.csv \
-          filter '$Type == "PERSON"' \
-            then count-distinct -f Text \
-            then label Names,Count \
-            then head
-
-  date:
-    cmds:
-      - |
-        mlr --c2p --barred --from bible_entities.csv \
-          filter '$Type == "DATE" && $Book == "daniel"' \
-            then head
+        ./tmp/format_output.sh '$Type == "NORP"'
+        echo Legend.NORP - Nationalities Religions or Political Groups
 
   date-summary:
     cmds:
@@ -93,3 +155,13 @@ tasks:
             then cut -f Text \
             then count-distinct -f Text \
             then head
+
+  names:
+    desc: "Fetch and format output for PERSON=Jesus"
+    cmds:
+      - ./tmp/format_output.sh '$Type == "PERSON" && $Text == "Jesus"'
+
+  date:
+    desc: "Fetch and format output for DATE=daniel"
+    cmds:
+      - ./tmp/format_output.sh '$Type == "DATE" && $Book == "daniel"'

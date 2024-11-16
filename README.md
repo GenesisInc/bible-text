@@ -28,19 +28,16 @@
 - summary of entities
 
         ❯ task summary
-        task: [summary] mlr --c2p --barred --from bible_entities.csv \
-        count-distinct -f Type
-
-        +------------+-------+
-        | Type       | count |
-        +------------+-------+
-        | PERSON     | 17662 |
-        | DATE       | 3432  |
-        | GPE        | 9478  |
-        | ORG        | 4254  |
-        | OCCUPATION | 5507  |
-        | NORP       | 1380  |
-        +------------+-------+
+        +------------+-------+----------------------------------------------+
+        | Type       | count | Explanation                                  |
+        +------------+-------+----------------------------------------------+
+        | PERSON     | 17662 | Names of individuals                         |
+        | DATE       | 3432  | Explicit or implicit date expressions        |
+        | GPE        | 9478  | Geopolitical entities (places)               |
+        | ORG        | 4254  | Organizations or groups                      |
+        | OCCUPATION | 5507  | Roles or professions                         |
+        | NORP       | 1380  | Nationalities, religious or political groups |
+        +------------+-------+----------------------------------------------+
 
 - names recorded in the bible
 
