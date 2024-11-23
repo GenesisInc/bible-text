@@ -1,42 +1,10 @@
 version: 3
 
 vars:
-  setup_script:
-    sh: |
-      mkdir -p ./tmp && cat <<'EOF' > ./tmp/format_output.sh
-      #!/bin/bash
-
-      # Arguments
-      FILTER="$1"  # Filter logic for mlr
-      NOTE_FIELD="$2"  # Column to customize the note output
-
-      # Count total items
-      TOTAL=$(mlr --csv --headerless-csv-output --from bible_entities.csv \
-        filter "$FILTER" then count -n)
-
-      # If total is less than or equal to 10, display all records
-      if [ "$TOTAL" -le 10 ]; then
-        mlr --c2p --barred --from bible_entities.csv \
-          filter "$FILTER" \
-          then put '$Section="All"' \
-          then reorder -f Section,Book,Chapter,Verse,Type,Text \
-          then cat
-      else
-        # Calculate remaining records
-        REMAINDER=$((TOTAL - 10))
-
-        # Extract 10 random records
-        tenRec=$(mlr --csv --from bible_entities.csv \
-          filter "$FILTER" then sample -k 10)
-
-        {
-          echo "${tenRec}" | head -n6
-          echo "--- $REMAINDER of $TOTAL more ---,,,,"
-          echo "${tenRec}" | tail -n5
-        } | mlr --c2p --barred cat
-      fi
-      EOF
-      chmod +x ./tmp/format_output.sh
+  setup_tmp:
+    sh: mkdir -p tmp && echo tmp
+  out: tmp/out.csv
+  show_cnt: 16
 
 tasks:
   default: task -a
@@ -125,43 +93,100 @@ tasks:
           then reorder -f Type,count,Explanation
 
   org:
+    silent: true
     cmds:
       - |
-        ./tmp/format_output.sh '$Type == "ORG"'
-        echo Legend.ORG - Organization or groups
+        mlr --csv --from bible_entities.csv  filter '$Type == "ORG"' > {{.out}}
+      - task: out
+      - echo Legend.ORG - Organization or groups
 
   occupation:
     cmds:
       - |
-        ./tmp/format_output.sh '$Type == "OCCUPATION"'
+        mlr --csv --from bible_entities.csv filter '$Type == "OCCUPATION"'  > {{.out}}
+      - task: out
+
+  occupation-summary:
+    silent: true
+    cmds:
+      - |
+        # sort by occupation
+        echo "top and bottom $(( {{.show_cnt}} / 2)) of sorted by occupation"
+        mlr --csv --from bible_entities.csv \
+          filter '$Type == "OCCUPATION"' \
+            then cut -f Text \
+            then count-distinct -f Text \
+            then label occupation,count \
+            then sort -f occupation > {{.out}}
+      - task: out
+      - |
+        # sort by count
+        printf "\n\n\ntop and bottom $(( {{.show_cnt}} / 2)) of sorted by count\n"
+        mlr --csv --from bible_entities.csv \
+          filter '$Type == "OCCUPATION"' \
+            then cut -f Text \
+            then count-distinct -f Text \
+            then label occupation,count \
+            then sort -nf count  > {{.out}}
+      - task: out
 
   gpe:
+    silent: true
     cmds:
       - |
-        ./tmp/format_output.sh '$Type == "GPE"'
-        echo Legend.GPE - GeoPoliticalEntity
+        mlr --csv --from bible_entities.csv filter '$Type == "GPE"' > {{.out}}
+      - task: out
+      - echo Legend.GPE - GeoPoliticalEntity
 
   norp:
+    silent: true
     cmds:
       - |
-        ./tmp/format_output.sh '$Type == "NORP"'
-        echo Legend.NORP - Nationalities Religions or Political Groups
+        mlr --csv --from bible_entities.csv filter '$Type == "NORP"' > {{.out}}
+      - task: out
+      - echo Legend.NORP - Nationalities Religions or Political Groups
 
   date-summary:
     cmds:
       - |
-        mlr --c2p --barred --from bible_entities.csv \
+        mlr --csv --from bible_entities.csv \
           filter '$Type == "DATE"' \
             then cut -f Text \
             then count-distinct -f Text \
-            then head
+            then head > {{.out}}
+      - task: out
 
   names:
     desc: "Fetch and format output for PERSON=Jesus"
     cmds:
-      - ./tmp/format_output.sh '$Type == "PERSON" && $Text == "Jesus"'
+      - |
+        mlr --csv --from bible_entities.csv filter '$Type == "PERSON" && $Text == "Jesus"' > {{.out}}
+      - task: out
 
   date:
+    silent: true
     desc: "Fetch and format output for DATE=daniel"
     cmds:
-      - ./tmp/format_output.sh '$Type == "DATE" && $Book == "daniel"'
+      - |
+        mlr --csv --from bible_entities.csv \
+          filter  '$Type == "DATE" && $Book == "daniel"' > {{.out}}
+      - task: out
+
+  out:
+    silent: true
+    cmds:
+      - |
+        total=$(mlr --from {{.out}} --csv --headerless-csv-output count)
+        printf "Summary:\n   Total: ${total} records\n"
+        top=$(({{.show_cnt}} / 2 + 1))
+        btm=$(({{.show_cnt}} / 2 ))
+
+        if [ "$total" -le {{.show_cnt}} ]; then
+          # For fewer than or equal to {{.show_cnt}} records, display all
+          echo "   Showing all $total records"
+          cat "{{.out}}" | mlr --c2p --barred cat -n
+        else
+          # For more than {{.show_cnt}} records, show first ${btm} and last ${btm}
+          echo "   Showing {{.show_cnt}} of $total records"
+          (head -n${top} "{{.out}}" && tail -n${btm} "{{.out}}") | mlr --c2p --barred cat -n
+        fi

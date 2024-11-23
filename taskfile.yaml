@@ -2,11 +2,11 @@ version: 3
 
 includes:
   occupation::
-    taskfile: "./person_occupation/taskfile.yaml"
+    taskfile: "./occupation/taskfile.yaml"
     ignore_error: true
     optional: true
     aliases:
-      - "pocc"
+      - "occ"
   lifespan::
     taskfile: "./lifespan/taskfile.yaml"
     ignore_error: true
