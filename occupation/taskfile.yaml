@@ -5,9 +5,23 @@ vars:
     sh: mkdir -p tmp && echo tmp
   out: tmp/out.csv
   show_cnt: 16
+  entities_csv_file: data/bible_entities.csv
+  entities_json_file: data/bible_entities.json
+  bible_data_json: data/bible_data.json
+  bible_data_csv: data/bible_data.csv
 
 tasks:
   default: task -a
+
+  ref:
+    desc: "extract bible text - example: task ref -- genesis 1:1-1:4"
+    cmds:
+      - uv run python3 bible.py --reference "{{.CLI_ARGS}}"
+
+  match:
+    desc: "find top 5 matches for a string/phrase from {{.bible_data_json}}"
+    cmds:
+      - uv run python3 bible.py --match "{{.CLI_ARGS}}" --top-n 5 --csv
 
   run: task -p generate-json extract
   status:
@@ -19,26 +33,7 @@ tasks:
           total_books: (.nwt | keys | length),
           total_chapters: (.nwt | to_entries | map(.value | keys | length) | add),
           total_verses: (.nwt | to_entries | map(.value | to_entries | map(.value | keys | length) | add) | add)
-        }' bible_data.json
-
-      - |
-        # verse count
-        verses=$(mlr --csv --implicit-csv-header --headerless-csv-output --from bible_data.csv \
-          cut -f 1,2 \
-          then count)
-
-        # book count
-        chapters=$(mlr --csv --implicit-csv-header --headerless-csv-output --from bible_data.csv \
-          cut -f 1,2 \
-          then uniq -a \
-          then count)
-
-        # books count
-        books=$(mlr --csv --implicit-csv-header --headerless-csv-output --from bible_data.csv \
-          cut -f 1 \
-          then uniq -a \
-          then count)
-        echo "$books,$chapters,$verses" | mlr --d2p --barred cat then label books,chpaters,verses
+        }' {{.bible_data_json}} | mlr --j2p --barred cat
 
   convert_2_csv:
     cmds:
@@ -48,9 +43,10 @@ tasks:
           | $book_entry.value | to_entries[] as $chapter_entry
           | $chapter_entry.value | to_entries[] as $verse_entry
           | [$book_entry.key, $chapter_entry.key, $verse_entry.key, $verse_entry.value] | @csv
-        ' bible_data.json > bible_data.csv
+        ' {{.bible_data_json}} > {{.bible_data_csv}}
 
   generate-json:
+    desc: generates json file from the 1000+ bible chapter files
     cmds:
       - |
         uv run bible.py --generate
@@ -60,25 +56,27 @@ tasks:
       - |
         uv run bible.py \
           --extract \
-          --bible-json "bible_data.json" \
-          --output-json "bible_entities.json" \
-          --output-csv "bible_entities.csv" \
+          --bible-json "{{.bible_data_json}}" \
+          --output-json "{{.entities_json_file}}" \
+          --output-csv "{{.entities_csv_file}}" \
           --books john
 
   extract:
+    desc: extract entities from {{.bible_data_json}} and write to 2 output files
     cmds:
       - |
         uv run bible.py \
           --extract \
-          --bible-json "bible_data.json" \
-          --output-json "bible_entities.json" \
-          --output-csv "bible_entities.csv"
+          --bible-json "{{.bible_data_json}}" \
+          --output-json "{{.entities_json_file}}" \
+          --output-csv "{{.entities_csv_file}}"
 
-  summary:
+  legends:
+    desc: legend summary
     silent: true
     cmds:
       - |
-        mlr --c2p --barred --from bible_entities.csv \
+        mlr --c2p --barred --from {{.entities_csv_file}} \
           count-distinct -f Type \
           then put '
             $Explanation =
@@ -93,26 +91,29 @@ tasks:
           then reorder -f Type,count,Explanation
 
   org:
+    desc: show Organizations or groups
     silent: true
     cmds:
       - |
-        mlr --csv --from bible_entities.csv  filter '$Type == "ORG"' > {{.out}}
+        mlr --csv --from {{.entities_csv_file}}  filter '$Type == "ORG"' > {{.out}}
       - task: out
       - echo Legend.ORG - Organization or groups
 
   occupation:
+    desc: show roles or professions"
     cmds:
       - |
-        mlr --csv --from bible_entities.csv filter '$Type == "OCCUPATION"'  > {{.out}}
+        mlr --csv --from {{.entities_csv_file}} filter '$Type == "OCCUPATION"'  > {{.out}}
       - task: out
 
   occupation-summary:
+    desc: show summary of roles or professions"
     silent: true
     cmds:
       - |
         # sort by occupation
         echo "top and bottom $(( {{.show_cnt}} / 2)) of sorted by occupation"
-        mlr --csv --from bible_entities.csv \
+        mlr --csv --from {{.entities_csv_file}} \
           filter '$Type == "OCCUPATION"' \
             then cut -f Text \
             then count-distinct -f Text \
@@ -122,7 +123,7 @@ tasks:
       - |
         # sort by count
         printf "\n\n\ntop and bottom $(( {{.show_cnt}} / 2)) of sorted by count\n"
-        mlr --csv --from bible_entities.csv \
+        mlr --csv --from {{.entities_csv_file}} \
           filter '$Type == "OCCUPATION"' \
             then cut -f Text \
             then count-distinct -f Text \
@@ -131,25 +132,28 @@ tasks:
       - task: out
 
   gpe:
+    desc: show Geopolitical entities (places)
     silent: true
     cmds:
       - |
-        mlr --csv --from bible_entities.csv filter '$Type == "GPE"' > {{.out}}
+        mlr --csv --from {{.entities_csv_file}} filter '$Type == "GPE"' > {{.out}}
       - task: out
       - echo Legend.GPE - GeoPoliticalEntity
 
   norp:
+    desc: show Nationalities, religious or political groups
     silent: true
     cmds:
       - |
-        mlr --csv --from bible_entities.csv filter '$Type == "NORP"' > {{.out}}
+        mlr --csv --from {{.entities_csv_file}} filter '$Type == "NORP"' > {{.out}}
       - task: out
       - echo Legend.NORP - Nationalities Religions or Political Groups
 
   date-summary:
+    desc: show dates mentioned
     cmds:
       - |
-        mlr --csv --from bible_entities.csv \
+        mlr --csv --from {{.entities_csv_file}} \
           filter '$Type == "DATE"' \
             then cut -f Text \
             then count-distinct -f Text \
@@ -157,10 +161,11 @@ tasks:
       - task: out
 
   names:
-    desc: "Fetch and format output for PERSON=Jesus"
+    desc: "show names/persons"
     cmds:
       - |
-        mlr --csv --from bible_entities.csv filter '$Type == "PERSON" && $Text == "Jesus"' > {{.out}}
+        mlr --csv --from {{.entities_csv_file}} \
+          filter '$Type == "PERSON" && $Text == "Jesus"' > {{.out}}
       - task: out
 
   date:
@@ -168,7 +173,7 @@ tasks:
     desc: "Fetch and format output for DATE=daniel"
     cmds:
       - |
-        mlr --csv --from bible_entities.csv \
+        mlr --csv --from {{.entities_csv_file}} \
           filter  '$Type == "DATE" && $Book == "daniel"' > {{.out}}
       - task: out
 

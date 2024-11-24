@@ -16,3 +16,9 @@ includes:
 
 tasks:
   default: task -a
+
+  uv-sync:
+    cmds:
+      - |
+        uv sync
+        uv run python3 -m spacy download en_core_web_sm
