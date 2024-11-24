@@ -4,7 +4,7 @@
 
 Note
 
-- Data and report you see here are NOT VERIFIED
+- Data and report you see here are UNVERIFIED
 - Expected accuracy is about 50-60%
 
 ## directories
