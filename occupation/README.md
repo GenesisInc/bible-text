@@ -1,6 +1,6 @@
 # occupation
 
-## usage
+## usage - sample reports
 
 - generate bible-data.json from files
 
@@ -182,3 +182,31 @@ Now, you have bible_entities.json bible_entities.csv with below summary of entit
             | a fourth day    | 1     |
             | a fifth day     | 1     |
             +-----------------+-------+
+
+- match
+
+    ❯ task match -- shepherd | mlr --c2p --barred cat
+        task: [match] uv run python3 bible.py --match "shepherd" --top-n 5 --csv
+        +-----------+---------+-------+---------------------------------------------------------------------------------------+
+        | book      | chapter | verse | text                                                                                  |
+        +-----------+---------+-------+---------------------------------------------------------------------------------------+
+        | john      | 10      | 14    | I am the fine shepherd. I know my sheep and my sheep know me,                         |
+        | zechariah | 11      | 15    | And Jehovah said to me: Now take the equipment of a useless shepherd.                 |
+        | john      | 10      | 2     | But the one who enters through the door is the shepherd of the sheep.                 |
+        | zechariah | 11      | 4     | This is what Jehovah my God says, Shepherd the flock meant for the slaughter,         |
+        | john      | 10      | 11    | I am the fine shepherd; the fine shepherd surrenders his life in behalf of the sheep. |
+        +-----------+---------+-------+---------------------------------------------------------------------------------------+
+
+- reference
+
+    ❯ task ref -- genesis 1:1
+        task: [ref] uv run python3 bible.py --reference "genesis 1:1"
+        In the beginning God created the heavens and the earth.
+
+    ❯ task ref -- genesis 1:1-1:6
+        task: [ref] uv run python3 bible.py --reference "genesis 1:1-1:6"
+        In the beginning God created the heavens and the earth. Now the earth was formless and desolate, and there was darkness upon the surface of the watery deep, and Gods active force was moving about over the surface of the waters. And God said: Let there be light. Then there was light. After that God saw that the light was good, and God began to divide the light from the darkness. God called the light Day, but the darkness he called Night. And there was evening and there was morning, a first day. Then God said: Let there be an expanse between the waters, and let there be a division between the waters and the waters.
+
+    ❯ task ref -- genesis 1:25-2:2
+        task: [ref] uv run python3 bible.py --reference "genesis 1:25-2:2"
+        And God went on to make the wild animals of the earth according to their kinds and the domestic animals according to their kinds and all the creeping animals of the ground according to their kinds. And God saw that it was good. Then God said: Let us make man in our image, according to our likeness, and let them have in subjection the fish of the sea and the flying creatures of the heavens and the domestic animals and all the earth and every creeping animal that is moving on the earth. And God went on to create the man in his image, in Gods image he created him; male and female he created them. Further, God blessed them, and God said to them: Be fruitful and become many, fill the earth and subdue it, and have in subjection the fish of the sea and the flying creatures of the heavens and every living creature that is moving on the earth. Then God said: Here I have given to you every seed bearing plant that is on the entire earth and every tree with seed bearing fruit. Let them serve as food for you. And to every wild animal of the earth and to every flying creature of the heavens and to everything moving on the earth in which there is life, I have given all green vegetation for food. And it was so. After that God saw everything he had made, and look! it was very good. And there was evening and there was morning, a sixth day. Thus the heavens and the earth and everything in them were completed. And by the seventh day, God had completed the work that he had been doing, and he began to rest on the seventh day from all his work that he had been doing.
