@@ -1,8 +1,11 @@
 # bible-text
 
-## analysis, about 60% accuracy
-
 [Here](./newWorldTranslation/english/2013-release/) you can see all the books of bible in text format.
+
+Note
+
+- Data and report you see here are UNVERIFIED
+- Expected accuracy is about 50-60%
 
 ## directories
 
@@ -14,5 +17,5 @@ Few ways of trying to solve the issues ended up with different folders here.
 
 ## requirements
 
-- [go-tasks/task](https://github.com/go-task/task)
+- [go-task/task](https://github.com/go-task/task)
 - [uv](https://github.com/astral-sh/uv)
