@@ -5,6 +5,7 @@ import csv
 import json
 import os
 import re
+import sys
 import unicodedata
 from multiprocessing import Pool
 
@@ -92,6 +93,65 @@ occupation_keywords = {
     "weaver",
     "winemaker",
 }
+
+
+def extract_reference(bible_json_path, reference):
+    """Extracts text for a given Bible reference."""
+    with open(bible_json_path, "r", encoding="utf-8") as file:
+        bible_data = json.load(file)
+
+    # Use the previously defined `get_bible_text` function
+    return get_bible_text(reference, bible_data)
+
+
+def get_bible_text(reference, bible_data):
+    """Extracts Bible text based on a reference string."""
+    try:
+        parts = reference.lower().split(" ")
+        book = parts[0]
+        verses = parts[1]
+
+        if "-" in verses:
+            start, end = verses.split("-")
+            start_chapter, start_verse = map(int, start.split(":"))
+            if ":" in end:
+                end_chapter, end_verse = map(int, end.split(":"))
+            else:
+                end_chapter = start_chapter
+                end_verse = int(end)
+        else:
+            start_chapter, start_verse = map(int, verses.split(":"))
+            end_chapter, end_verse = start_chapter, start_verse
+
+        result = []
+        for chapter in range(start_chapter, end_chapter + 1):
+            chapter_key = str(chapter)
+            if chapter_key not in bible_data["nwt"][book]:
+                continue
+
+            if chapter == start_chapter:
+                verse_start = start_verse
+            else:
+                verse_start = 1
+
+            if chapter == end_chapter:
+                verse_end = end_verse
+            else:
+                verse_end = max(map(int, bible_data["nwt"][book][chapter_key].keys()))
+
+            for verse in range(verse_start, verse_end + 1):
+                verse_key = str(verse)
+                if verse_key in bible_data["nwt"][book][chapter_key]:
+                    result.append(bible_data["nwt"][book][chapter_key][verse_key])
+
+        return " ".join(result)
+
+    except KeyError as e:
+        return f"Error: Missing key in Bible data - {str(e)}"
+    except ValueError as e:
+        return f"Error: Invalid reference format - {str(e)}"
+    except TypeError as e:
+        return f"Error: Type error encountered - {str(e)}"
 
 
 # Text cleaning function
@@ -269,6 +329,40 @@ def generate_bible_json(base_path, output_file):
     print(f"Bible data successfully written to {output_file}")
 
 
+def find_matches(bible_json_path, phrase, top_n=10, output_csv=False):
+    """Find top matches for a phrase in Bible text and optionally output as CSV."""
+    with open(bible_json_path, "r", encoding="utf-8") as file:
+        bible_data = json.load(file)
+
+    # Normalize phrase for case-insensitive search
+    phrase = phrase.lower()
+    matches = []
+
+    for book, chapters in bible_data["nwt"].items():
+        for chapter, verses in chapters.items():
+            for verse, text in verses.items():
+                # Case-insensitive match using regex
+                if re.search(rf"\b{re.escape(phrase)}\b", text, re.IGNORECASE):
+                    matches.append(
+                        {"book": book, "chapter": chapter, "verse": verse, "text": text}
+                    )
+
+    # Sort and limit matches
+    sorted_matches = sorted(matches, key=lambda x: len(x["text"]))[:top_n]
+
+    if output_csv:
+        # Write to stdout as CSV
+        writer = csv.DictWriter(
+            sys.stdout,
+            fieldnames=["book", "chapter", "verse", "text"],
+            quoting=csv.QUOTE_MINIMAL,
+        )
+        writer.writeheader()
+        writer.writerows(sorted_matches)
+    else:
+        return sorted_matches
+
+
 def main():
     """Main function to handle CLI."""
     parser = argparse.ArgumentParser(
@@ -281,6 +375,22 @@ def main():
         "--extract", action="store_true", help="Extract entities from Bible JSON"
     )
     parser.add_argument(
+        "--reference",
+        type=str,
+        help="Provide a Bible reference (e.g., 'Gen 1:1', 'Gen 1:10-2:3')",
+    )
+    parser.add_argument(
+        "--match",
+        type=str,
+        help="Find matches for a phrase in the Bible text",
+    )
+    parser.add_argument(
+        "--top-n",
+        type=int,
+        help="Number of top matches to display",
+        default=10,  # Default to 10 if not provided
+    )
+    parser.add_argument(
         "--base-path",
         type=str,
         help="Base path of Bible text files",
@@ -290,25 +400,30 @@ def main():
         "--bible-json",
         type=str,
         help="Path to the Bible JSON file for entity extraction",
-        default="bible_data.json",
+        default="data/bible_data.json",
     )
     parser.add_argument(
         "--output-json",
         type=str,
         help="Output JSON file path",
-        default="bible_entities.json",
+        default="data/bible_entities.json",
     )
     parser.add_argument(
         "--output-csv",
         type=str,
         help="Output CSV file path",
-        default="bible_entities.csv",
+        default="data/bible_entities.csv",
     )
     parser.add_argument(
         "--books",
         type=str,
         nargs="*",
         help="Specify one or more books to extract (e.g., genesis exodus)",
+    )
+    parser.add_argument(
+        "--csv",
+        action="store_true",
+        help="Output the results in CSV format",
     )
 
     args = parser.parse_args()
@@ -319,6 +434,18 @@ def main():
         perform_entity_extraction(
             args.bible_json, args.output_json, args.output_csv, books=args.books
         )
+    elif args.reference:
+        result = extract_reference(args.bible_json, args.reference)
+        print(result)
+    elif args.match:
+        matches = find_matches(
+            args.bible_json, args.match, top_n=args.top_n, output_csv=args.csv
+        )
+        if not args.csv:
+            for match in matches:
+                print(
+                    f"{match['book']} {match['chapter']}:{match['verse']} - {match['text']}"
+                )
     else:
         parser.print_help()
 

@@ -18,4 +18,4 @@ Few ways of trying to solve the issues ended up with different folders here.
 ## requirements
 
 - [go-task/task](https://github.com/go-task/task)
-- [uv](https://github.com/astral-sh/uv)
+- [astral-sh/uv](https://github.com/astral-sh/uv)
