@@ -214,6 +214,54 @@ Note
             | 16 | revelation | 22      | 9     | OCCUPATION | prophet  |
             +----+------------+---------+-------+------------+----------+
 
+- most frequently mentioned occupations
+
+        ❯ task top-occupations
+        Summary:
+        Total: 10 records
+        Showing all 10 records
+        +----+----------+-------+
+        | n  | Text     | count |
+        +----+----------+-------+
+        | 1  | soldier  | 76    |
+        | 2  | governor | 76    |
+        | 3  | shepherd | 129   |
+        | 4  | elder    | 188   |
+        | 5  | judge    | 287   |
+        | 6  | slave    | 309   |
+        | 7  | prophet  | 459   |
+        | 8  | servant  | 828   |
+        | 9  | priest   | 957   |
+        | 10 | king     | 2448  |
+        +----+----------+-------+
+
+- distinct occupations
+
+        ❯ task unique-occupation
+        Summary:
+        Total: 44 records
+        Showing 16 of 44 records
+        +----+-------------+-------+
+        | n  | Text        | count |
+        +----+-------------+-------+
+        | 1  | astrologer  | 8     |
+        | 2  | baker       | 11    |
+        | 3  | beggar      | 5     |
+        | 4  | carpenter   | 2     |
+        | 5  | charioteer  | 8     |
+        | 6  | cook        | 12    |
+        | 7  | cupbearer   | 13    |
+        | 8  | elder       | 188   |
+        | 9  | slave       | 309   |
+        | 10 | soldier     | 76    |
+        | 11 | spy         | 42    |
+        | 12 | stonecutter | 8     |
+        | 13 | teacher     | 64    |
+        | 14 | tentmaker   | 1     |
+        | 15 | trader      | 9     |
+        | 16 | weaver      | 4     |
+        +----+-------------+-------+
+
 - Geo Political Entities(gpe)
 
         ❯ task gpe
