@@ -104,54 +104,115 @@ def extract_reference(bible_json_path, reference):
     return get_bible_text(reference, bible_data)
 
 
+def parse_reference(reference):
+    """
+    Parses a Bible reference string into book, chapter, and verse details.
+
+    Special cases:
+    - Single-chapter books (like Jude): Prefix "1:" to standalone verse numbers or ranges.
+    """
+    reference = reference.strip()
+    if not reference:
+        raise ValueError("Invalid reference format")
+
+    # Step 1: Split by space to separate book and reference
+    parts = reference.rsplit(" ", 1)
+    if len(parts) == 1:
+        # Only the book name is provided
+        book = parts[0].lower()
+        rest = ""
+    else:
+        book = parts[0].lower()
+        rest = parts[1]  # This contains chapter:verse or a range
+
+    # Step 2: Handle single-chapter books
+    single_chapter_books = {"jude", "philemon", "2 john", "3 john"}
+    if book in single_chapter_books:
+        if "-" in rest:  # Range like "4-8"
+            start, end = rest.split("-")
+            if ":" not in start:
+                start = f"1:{start}"  # Prefix chapter 1
+            if ":" not in end:
+                end = f"1:{end}"  # Prefix chapter 1
+            rest = f"{start}-{end}"
+        elif ":" not in rest:  # Single verse like "4"
+            rest = f"1:{rest}"  # Prefix chapter 1
+
+    return book, rest
+
+
+def parse_verse_range(verses):
+    """Parses a verse range into start and end chapter/verse."""
+    if "-" in verses:
+        start, end = verses.split("-")
+        start_chapter, start_verse = map(int, start.split(":"))
+        if ":" in end:
+            end_chapter, end_verse = map(int, end.split(":"))
+        else:
+            end_chapter = start_chapter
+            end_verse = int(end)
+    elif ":" in verses:
+        start_chapter, start_verse = map(int, verses.split(":"))
+        end_chapter, end_verse = start_chapter, start_verse
+    else:
+        start_chapter = int(verses)
+        start_verse = 1
+        end_chapter, end_verse = start_chapter, None
+    return start_chapter, start_verse, end_chapter, end_verse
+
+
+def fetch_verses(bible_data, book, start_chapter, start_verse, end_chapter, end_verse):
+    """Fetches verses across chapter and verse ranges."""
+    result = []
+    for chapter in range(start_chapter, end_chapter + 1):
+        chapter_key = str(chapter)
+        if chapter_key not in bible_data["nwt"].get(book, {}):
+            continue
+
+        verse_start = start_verse if chapter == start_chapter else 1
+        verse_end = (
+            end_verse
+            if chapter == end_chapter
+            else max(map(int, bible_data["nwt"][book][chapter_key].keys()))
+        )
+
+        for verse in range(verse_start, verse_end + 1):
+            verse_key = str(verse)
+            if verse_key in bible_data["nwt"][book][chapter_key]:
+                result.append(bible_data["nwt"][book][chapter_key][verse_key])
+
+    return " ".join(result)
+
+
 def get_bible_text(reference, bible_data):
     """Extracts Bible text based on a reference string."""
     try:
-        parts = reference.lower().split(" ")
-        book = parts[0]
-        verses = parts[1]
+        book, verses = parse_reference(reference)
+        if not verses:
+            # Return the whole book
+            return fetch_entire_book(bible_data, book)
 
-        if "-" in verses:
-            start, end = verses.split("-")
-            start_chapter, start_verse = map(int, start.split(":"))
-            if ":" in end:
-                end_chapter, end_verse = map(int, end.split(":"))
-            else:
-                end_chapter = start_chapter
-                end_verse = int(end)
-        else:
-            start_chapter, start_verse = map(int, verses.split(":"))
-            end_chapter, end_verse = start_chapter, start_verse
-
-        result = []
-        for chapter in range(start_chapter, end_chapter + 1):
-            chapter_key = str(chapter)
-            if chapter_key not in bible_data["nwt"][book]:
-                continue
-
-            if chapter == start_chapter:
-                verse_start = start_verse
-            else:
-                verse_start = 1
-
-            if chapter == end_chapter:
-                verse_end = end_verse
-            else:
-                verse_end = max(map(int, bible_data["nwt"][book][chapter_key].keys()))
-
-            for verse in range(verse_start, verse_end + 1):
-                verse_key = str(verse)
-                if verse_key in bible_data["nwt"][book][chapter_key]:
-                    result.append(bible_data["nwt"][book][chapter_key][verse_key])
-
-        return " ".join(result)
-
+        start_chapter, start_verse, end_chapter, end_verse = parse_verse_range(verses)
+        return fetch_verses(
+            bible_data, book, start_chapter, start_verse, end_chapter, end_verse
+        )
     except KeyError as e:
         return f"Error: Missing key in Bible data - {str(e)}"
     except ValueError as e:
         return f"Error: Invalid reference format - {str(e)}"
     except TypeError as e:
         return f"Error: Type error encountered - {str(e)}"
+
+
+def fetch_entire_book(bible_data, book):
+    """Fetches all chapters and verses of a book."""
+    result = []
+    book_data = bible_data["nwt"].get(book, {})
+    for chapter_key in sorted(book_data.keys(), key=int):
+        chapter_data = book_data[chapter_key]
+        for _, verse_text in sorted(chapter_data.items(), key=lambda x: int(x[0])):
+            result.append(verse_text)
+    return " ".join(result)
 
 
 # Text cleaning function
@@ -330,22 +391,28 @@ def generate_bible_json(base_path, output_file):
 
 
 def find_matches(bible_json_path, phrase, top_n=10, output_csv=False):
-    """Find top matches for a phrase in Bible text and optionally output as CSV."""
+    """Find top matches for a phrase in Bible text."""
     with open(bible_json_path, "r", encoding="utf-8") as file:
         bible_data = json.load(file)
 
-    # Normalize phrase for case-insensitive search
-    phrase = phrase.lower()
-    matches = []
+    # Normalize input
+    phrase = phrase.strip().lower()  # Trim spaces and normalize case
 
+    # Regex for part-of-word or multi-word search
+    regex = rf"{re.escape(phrase)}"  # Match substring, regardless of single or multiple words
+
+    matches = []
     for book, chapters in bible_data["nwt"].items():
         for chapter, verses in chapters.items():
             for verse, text in verses.items():
-                # Case-insensitive match using regex
-                if re.search(rf"\b{re.escape(phrase)}\b", text, re.IGNORECASE):
+                # Match based on regex
+                if re.search(regex, text, re.IGNORECASE):
                     matches.append(
                         {"book": book, "chapter": chapter, "verse": verse, "text": text}
                     )
+
+    # Total matches
+    total_matches = len(matches)
 
     # Sort and limit matches
     sorted_matches = sorted(matches, key=lambda x: len(x["text"]))[:top_n]
@@ -359,7 +426,14 @@ def find_matches(bible_json_path, phrase, top_n=10, output_csv=False):
         )
         writer.writeheader()
         writer.writerows(sorted_matches)
+
+        # Print summary to stderr to separate it from CSV output
+        print(
+            f"Showing top {len(sorted_matches)} of {total_matches} matches",
+            file=sys.stderr,
+        )
     else:
+        print(f"Showing top {len(sorted_matches)} of {total_matches} matches")
         return sorted_matches
 
 
@@ -380,7 +454,7 @@ def main():
         help="Provide a Bible reference (e.g., 'Gen 1:1', 'Gen 1:10-2:3')",
     )
     parser.add_argument(
-        "--match",
+        "--search",
         type=str,
         help="Find matches for a phrase in the Bible text",
     )
@@ -437,9 +511,9 @@ def main():
     elif args.reference:
         result = extract_reference(args.bible_json, args.reference)
         print(result)
-    elif args.match:
+    elif args.search:
         matches = find_matches(
-            args.bible_json, args.match, top_n=args.top_n, output_csv=args.csv
+            args.bible_json, args.search, top_n=args.top_n, output_csv=args.csv
         )
         if not args.csv:
             for match in matches:
