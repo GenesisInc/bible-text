@@ -113,10 +113,33 @@ tasks:
       - echo Legend.ORG - Organization or groups
 
   occupation:
+    silent: true
     desc: show roles or professions"
     cmds:
       - |
         mlr --csv --from {{.entities_csv_file}} filter '$Type == "OCCUPATION"'  > {{.out}}
+      - task: out
+
+  unique-occupation:
+    silent: true
+    desc: show roles or professions"
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} \
+          filter '$Type == "OCCUPATION"' \
+          then count-distinct -f Text \
+          then sort -f Text > {{.out}}
+      - task: out
+
+  top-occupations:
+    silent: true
+    desc: show roles or professions"
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} \
+          filter '$Type == "OCCUPATION"' \
+          then count-distinct -f Text \
+          then sort -nf count then tail > {{.out}}
       - task: out
 
   occupation-summary:
