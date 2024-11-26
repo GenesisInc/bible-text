@@ -1,18 +1,14 @@
 version: 3
 
-includes:
-  occupation::
-    taskfile: "./occupation/taskfile.yaml"
-    ignore_error: true
-    optional: true
-    aliases:
-      - "occ"
-  lifespan::
-    taskfile: "./lifespan/taskfile.yaml"
-    ignore_error: true
-    optional: true
-    aliases:
-      - "life"
+vars:
+  setup_tmp:
+    sh: mkdir -p tmp && echo tmp
+  out: tmp/out.csv
+  show_cnt: 16
+  entities_csv_file: data/bible_entities.csv
+  entities_json_file: data/bible_entities.json
+  bible_data_json: data/bible_data.json
+  bible_data_csv: data/bible_data.csv
 
 tasks:
   default: task -a
@@ -22,3 +18,217 @@ tasks:
       - |
         uv sync
         uv run python3 -m spacy download en_core_web_sm
+
+  ref:
+    silent: true
+    desc: "extract bible text - example: task ref -- genesis 1:1-1:4"
+    cmds:
+      - uv run python3 bible.py --reference "{{.CLI_ARGS}}"
+
+  test:
+    cmds:
+      - |
+        uv run pytest test_bible.py
+
+  search:
+    silent: true
+    desc: "find top 5 matches for a string/phrase | examples: (1) task search -- from (2) task search -- 'from of'"
+    cmds:
+      - uv run python3 bible.py --search {{.CLI_ARGS}} --top-n 5 --csv | mlr --c2p --barred cat
+
+  run: task -p generate-json extract
+  status:
+    silent: true
+    cmds:
+      - |
+        jq '
+        {
+          total_books: (.nwt | keys | length),
+          total_chapters: (.nwt | to_entries | map(.value | keys | length) | add),
+          total_verses: (.nwt | to_entries | map(.value | to_entries | map(.value | keys | length) | add) | add)
+        }' {{.bible_data_json}} | mlr --j2p --barred cat
+
+  convert_2_csv:
+    cmds:
+      - |
+        jq -r '
+          .nwt | to_entries[] as $book_entry
+          | $book_entry.value | to_entries[] as $chapter_entry
+          | $chapter_entry.value | to_entries[] as $verse_entry
+          | [$book_entry.key, $chapter_entry.key, $verse_entry.key, $verse_entry.value] | @csv
+        ' {{.bible_data_json}} > {{.bible_data_csv}}
+
+  generate-json:
+    desc: generates json file from the 1000+ bible chapter files
+    cmds:
+      - |
+        uv run bible.py --generate
+
+  extract-sample:
+    cmds:
+      - |
+        uv run bible.py \
+          --extract \
+          --bible-json "{{.bible_data_json}}" \
+          --output-json "{{.entities_json_file}}" \
+          --output-csv "{{.entities_csv_file}}" \
+          --books john
+
+  extract:
+    desc: extract entities from {{.bible_data_json}} and write to 2 output files
+    cmds:
+      - |
+        uv run bible.py \
+          --extract \
+          --bible-json "{{.bible_data_json}}" \
+          --output-json "{{.entities_json_file}}" \
+          --output-csv "{{.entities_csv_file}}"
+
+  legends:
+    desc: legend summary
+    silent: true
+    cmds:
+      - |
+        mlr --c2p --barred --from {{.entities_csv_file}} \
+          count-distinct -f Type \
+          then put '
+            $Explanation =
+              $Type == "PERSON"     ? "Names of individuals" :
+              $Type == "DATE"       ? "Explicit or implicit date expressions" :
+              $Type == "GPE"        ? "Geopolitical entities (places)" :
+              $Type == "ORG"        ? "Organizations or groups" :
+              $Type == "OCCUPATION" ? "Roles or professions" :
+              $Type == "NORP"       ? "Nationalities, religious or political groups" :
+                                      "Other";
+          ' \
+          then reorder -f Type,count,Explanation
+
+  org:
+    desc: show Organizations or groups
+    silent: true
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}}  filter '$Type == "ORG"' > {{.out}}
+      - task: out
+      - echo Legend.ORG - Organization or groups
+
+  occupation:
+    desc: show roles or professions"
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} filter '$Type == "OCCUPATION"'  > {{.out}}
+      - task: out
+
+  occupation-summary:
+    desc: show summary of roles or professions"
+    silent: true
+    cmds:
+      - |
+        # sort by occupation
+        echo "top and bottom $(( {{.show_cnt}} / 2)) of sorted by occupation"
+        mlr --csv --from {{.entities_csv_file}} \
+          filter '$Type == "OCCUPATION"' \
+            then cut -f Text \
+            then count-distinct -f Text \
+            then label occupation,count \
+            then sort -f occupation > {{.out}}
+      - task: out
+      - |
+        # sort by count
+        printf "\n\n\ntop and bottom $(( {{.show_cnt}} / 2)) of sorted by count\n"
+        mlr --csv --from {{.entities_csv_file}} \
+          filter '$Type == "OCCUPATION"' \
+            then cut -f Text \
+            then count-distinct -f Text \
+            then label occupation,count \
+            then sort -nf count  > {{.out}}
+      - task: out
+
+  gpe:
+    desc: show Geopolitical entities (places)
+    silent: true
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} filter '$Type == "GPE"' > {{.out}}
+      - task: out
+      - echo Legend.GPE - GeoPoliticalEntity
+
+  norp:
+    desc: show Nationalities, religious or political groups
+    silent: true
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} filter '$Type == "NORP"' > {{.out}}
+      - task: out
+      - echo Legend.NORP - Nationalities Religions or Political Groups
+
+  date-summary:
+    silent: true
+    desc: show dates mentioned
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} \
+          filter '$Type == "DATE"' \
+            then cut -f Text \
+            then count-distinct -f Text \
+            then head > {{.out}}
+      - task: out
+
+  names:
+    silent: true
+    desc: "show names/persons"
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} \
+          filter '$Type == "PERSON"' > {{.out}}
+      - task: out
+
+  unique-names:
+    silent: true
+    desc: "show unique names/persons"
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} \
+          filter '$Type == "PERSON"' \
+          then count-distinct -f Text \
+          then sort -f Text > {{.out}}
+      - task: out
+
+  top-names:
+    silent: true
+    desc: "show unique names/persons"
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} \
+          filter '$Type == "PERSON"' \
+          then count-distinct -f Text \
+          then sort -nf count then tail > {{.out}}
+      - task: out
+
+  date:
+    silent: true
+    desc: "Fetch and format output for DATE=daniel"
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} \
+          filter  '$Type == "DATE" && $Book == "daniel"' > {{.out}}
+      - task: out
+
+  out:
+    silent: true
+    cmds:
+      - |
+        total=$(mlr --from {{.out}} --csv --headerless-csv-output count)
+        printf "Summary:\n   Total: ${total} records\n"
+        top=$(({{.show_cnt}} / 2 + 1))
+        btm=$(({{.show_cnt}} / 2 ))
+
+        if [ "$total" -le {{.show_cnt}} ]; then
+          # For fewer than or equal to {{.show_cnt}} records, display all
+          echo "   Showing all $total records"
+          cat "{{.out}}" | mlr --c2p --barred cat -n
+        else
+          # For more than {{.show_cnt}} records, show first ${btm} and last ${btm}
+          echo "   Showing {{.show_cnt}} of $total records"
+          (head -n${top} "{{.out}}" && tail -n${btm} "{{.out}}") | mlr --c2p --barred cat -n
+        fi
