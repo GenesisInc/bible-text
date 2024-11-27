@@ -7,3 +7,5 @@ list
 python
 __pycache__/
 local/
+*.html
+*.txt
