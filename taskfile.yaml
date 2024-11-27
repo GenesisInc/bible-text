@@ -150,7 +150,8 @@ tasks:
   ext2:
     cmds:
       - |
-        uv run python3 converter.py --input-dir bibles --output-dir data
+        # uv run python3 converter.py --input-dir bibles --output-dir data
+        uv run python3 process_bible_text.py --input-dir bibles --output-dir data
 
   load:
     cmds:
