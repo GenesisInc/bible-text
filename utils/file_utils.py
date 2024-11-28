@@ -1,5 +1,6 @@
 """ file utils"""
 
+import csv
 import json
 
 from config.book_order import BOOK_ORDER
@@ -37,3 +38,25 @@ def sort_bible_data(bible_data):
             }
             sorted_data[book] = sorted_chapters
     return sorted_data
+
+
+def save_to_csv(entities_and_occupations, output_csv_file):
+    """Saves entities and occupations data to a CSV file."""
+    with open(output_csv_file, "w", encoding="utf-8", newline="") as csv_file:
+        writer = csv.writer(csv_file)
+        writer.writerow(["Book", "Chapter", "Verse", "Type", "Text"])
+        for book, chapters in entities_and_occupations.items():
+            for chapter, verses in chapters.items():
+                for verse, data in verses.items():
+                    # Save entities
+                    for entity_type, entity_texts in data["entities"].items():
+                        for entity_text in entity_texts:
+                            writer.writerow(
+                                [book, chapter, verse, entity_type, entity_text]
+                            )
+                    # Save occupations
+                    for occupation in data["occupations"]:
+                        writer.writerow(
+                            [book, chapter, verse, "OCCUPATION", occupation]
+                        )
+    print(f"CSV results saved to {output_csv_file}")

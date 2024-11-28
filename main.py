@@ -2,7 +2,8 @@
 
 import argparse
 import json
-from extraction import bible_extractor, nwt_extractor, manipulator
+
+from extraction import bible_extractor, manipulator, nwt_extractor
 from processing import entity_extractor, search_engine
 
 
@@ -77,6 +78,12 @@ def main():
         type=str,
         nargs="*",
         help="Specify one or more books to extract entities from (e.g., genesis exodus).",
+    )
+    extract_parser.add_argument(
+        "--translation",
+        type=str,
+        default="nwt",
+        help="Bible translation, ex: nwt | asv | kj21 ",
     )
 
     # Sub-command for searching Bible text
@@ -163,8 +170,12 @@ def main():
     elif args.command == "load-kj21-asv":
         bible_extractor.extract_verses_from_txt(args.input_dir, args.output_dir)
     elif args.command == "extract-entities":
-        entity_extractor.perform_entity_extraction(
-            args.input_file, args.output_json, args.output_csv, books=args.books
+        entity_extractor.perform_entity_analysis(
+            args.input_file,
+            args.output_json,
+            args.output_csv,
+            args.translation,
+            books=args.books,
         )
     elif args.command == "search":
         matches = search_engine.find_matches(

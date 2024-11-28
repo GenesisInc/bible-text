@@ -1,10 +1,11 @@
-"""entity extraction"""
+"""entity analysis"""
 
-import csv
 import json
 from multiprocessing import Pool
 
 import spacy
+
+from utils import file_utils
 
 # Load spaCy model
 nlp = spacy.load("en_core_web_sm", disable=["parser"])
@@ -235,7 +236,7 @@ def load_bible_json(file_path):
         return json.load(json_file)
 
 
-def extract_entities_and_occupations_from_chapter(chapter_data):
+def chapter_entities_analysis(chapter_data):
     """Extracts entities and occupations for all verses in a chapter."""
     chapter_entities = {
         verse_num: {
@@ -276,58 +277,58 @@ def process_chapter(args):
     return (
         book,
         chapter_num,
-        extract_entities_and_occupations_from_chapter(chapter_data),
+        chapter_entities_analysis(chapter_data),
     )
 
 
-def perform_entity_extraction(
-    bible_file, output_json_file, output_csv_file, books=None
+def perform_entity_analysis(
+    bible_file,
+    output_json_file,
+    output_csv_file,
+    translation="nwt",
+    books=None,
 ):
     """Extracts entities and occupations from the Bible using multiprocessing."""
+    # Step 1: Load Bible data
     bible_data = load_bible_json(bible_file)
 
-    # Prepare tasks for multiprocessing
-    tasks = [
+    # Step 2: Prepare tasks for multiprocessing
+    tasks = prepare_tasks(bible_data, translation, books)
+
+    # Step 3: Process tasks in parallel
+    results = process_tasks_parallel(tasks)
+
+    # Step 4: Reorganize results into a nested JSON structure
+    entities_and_occupations = reorganize_results(results)
+
+    # Step 5: Save JSON output
+    file_utils.save_to_json(entities_and_occupations, output_json_file)
+
+    # Step 6: Save CSV output
+    file_utils.save_to_csv(entities_and_occupations, output_csv_file)
+
+
+def prepare_tasks(bible_data, translation, books):
+    """Prepares tasks for multiprocessing."""
+    return [
         (book, chapter_num, chapter_data)
-        for book, chapters in bible_data["nwt"].items()
+        for book, chapters in bible_data[translation].items()
         if not books or book in books
         for chapter_num, chapter_data in chapters.items()
     ]
 
-    # Process chapters in parallel
-    with Pool() as pool:
-        results = pool.map(process_chapter, tasks)
 
-    # Reorganize results into nested JSON structure
+def process_tasks_parallel(tasks):
+    """Processes tasks in parallel using multiprocessing."""
+    with Pool() as pool:
+        return pool.map(process_chapter, tasks)
+
+
+def reorganize_results(results):
+    """Reorganizes the results into a nested JSON structure."""
     entities_and_occupations = {}
     for book, chapter_num, chapter_data in results:
         if book not in entities_and_occupations:
             entities_and_occupations[book] = {}
         entities_and_occupations[book][chapter_num] = chapter_data
-
-    # Save JSON output
-    with open(output_json_file, "w", encoding="utf-8") as json_file:
-        json.dump(entities_and_occupations, json_file, indent=4)
-    print(
-        f"Entity and occupation extraction complete. JSON results saved to {output_json_file}"
-    )
-
-    # Save CSV output
-    with open(output_csv_file, "w", encoding="utf-8", newline="") as csv_file:
-        writer = csv.writer(csv_file)
-        writer.writerow(["Book", "Chapter", "Verse", "Type", "Text"])
-        for book, chapters in entities_and_occupations.items():
-            for chapter, verses in chapters.items():
-                for verse, data in verses.items():
-                    # Save entities
-                    for entity_type, entity_texts in data["entities"].items():
-                        for entity_text in entity_texts:
-                            writer.writerow(
-                                [book, chapter, verse, entity_type, entity_text]
-                            )
-                    # Save occupations
-                    for occupation in data["occupations"]:
-                        writer.writerow(
-                            [book, chapter, verse, "OCCUPATION", occupation]
-                        )
-    print(f"CSV results saved to {output_csv_file}")
+    return entities_and_occupations

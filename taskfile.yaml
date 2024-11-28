@@ -5,10 +5,11 @@ vars:
     sh: mkdir -p tmp && echo tmp
   out: tmp/out.csv
   show_cnt: 16
-  entities_csv_file: data/bible_entities.csv
-  entities_json_file: data/bible_entities.json
-  bible_data_json: data/nwt_bible.json
-  bible_data_csv: data/nwt_bible.csv
+  translation: kj21
+  entities_csv_file: "data/{{.translation}}_entities.csv"
+  entities_json_file: "data/{{.translation}}_entities.json"
+  bible_data_json: "data/{{.translation}}_bible.json"
+  bible_data_csv: "data/{{.translation}}_bible.csv"
   BOOKS: |
     Genesis
     Exodus
@@ -383,24 +384,28 @@ tasks:
         uv run bible.py --generate
 
   extract-sample:
+    aliases:
+      - es
     cmds:
       - |
-        uv run bible.py \
-          --extract \
-          --bible-json "{{.bible_data_json}}" \
+        uv run main.py \
+          extract-entities \
+          --input-file "{{.bible_data_json}}" \
           --output-json "{{.entities_json_file}}" \
           --output-csv "{{.entities_csv_file}}" \
-          --books john
+          --books john \
+          --translation "{{.translation}}"
 
   extract:
     desc: extract entities from {{.bible_data_json}} and write to 2 output files
     cmds:
       - |
-        uv run bible.py \
-          --extract \
-          --bible-json "{{.bible_data_json}}" \
+        uv run main.py \
+          extract-entities \
+          --input-file "{{.bible_data_json}}" \
           --output-json "{{.entities_json_file}}" \
-          --output-csv "{{.entities_csv_file}}"
+          --output-csv "{{.entities_csv_file}}" \
+          --translation "{{.translation}}"
 
   legends:
     desc: legend summary
