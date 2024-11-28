@@ -3,6 +3,7 @@
 import json
 
 from extraction.manipulator import merge_translations
+from utils import file_utils
 
 
 def test_merge_single_translation_to_multi():
@@ -20,13 +21,12 @@ def test_merge_single_translation_to_multi():
         single_translation_data = json.load(f)
 
     # Merge the single translation into the multi-translation structure
-    updated_multi_translation = merge_translations(
+    merged_translation = merge_translations(
         single_translation_data, multi_translation_data, "nwt"
     )
 
     # Save the result
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(updated_multi_translation, f, indent=4)
+    file_utils.save_to_json(merged_translation, output_path)
 
     print(f"Merged translation saved to {output_path}")
 

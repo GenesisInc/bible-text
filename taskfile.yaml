@@ -158,7 +158,18 @@ tasks:
         uv run python3 main.py \
           load-nwt \
           --base-path newWorldTranslation/english/2013-release \
-          --output-file data/multi_translation.json
+          --output-file data/nwt_bible.json
+      - task: nwt_2_csv
+
+  nwt_2_csv:
+    cmds:
+      - |
+        jq -r '
+          .nwt | to_entries[] as $book_entry
+          | $book_entry.value | to_entries[] as $chapter_entry
+          | $chapter_entry.value | to_entries[] as $verse_entry
+          | [$book_entry.key, $chapter_entry.key, $verse_entry.key, $verse_entry.value] | @csv
+        ' {{.bible_data_json}} > {{.bible_data_csv}}
 
   extract-asv:
     cmds:
@@ -364,16 +375,6 @@ tasks:
           total_chapters: (.nwt | to_entries | map(.value | keys | length) | add),
           total_verses: (.nwt | to_entries | map(.value | to_entries | map(.value | keys | length) | add) | add)
         }' {{.bible_data_json}} | mlr --j2p --barred cat
-
-  convert_2_csv:
-    cmds:
-      - |
-        jq -r '
-          .nwt | to_entries[] as $book_entry
-          | $book_entry.value | to_entries[] as $chapter_entry
-          | $chapter_entry.value | to_entries[] as $verse_entry
-          | [$book_entry.key, $chapter_entry.key, $verse_entry.key, $verse_entry.value] | @csv
-        ' {{.bible_data_json}} > {{.bible_data_csv}}
 
   generate-json:
     desc: generates json file from the 1000+ bible chapter files
