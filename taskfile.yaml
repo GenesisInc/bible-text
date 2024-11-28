@@ -7,8 +7,8 @@ vars:
   show_cnt: 16
   entities_csv_file: data/bible_entities.csv
   entities_json_file: data/bible_entities.json
-  bible_data_json: data/bible_data.json
-  bible_data_csv: data/bible_data.csv
+  bible_data_json: data/nwt_bible.json
+  bible_data_csv: data/nwt_bible.csv
   BOOKS: |
     Genesis
     Exodus
@@ -147,20 +147,30 @@ vars:
 tasks:
   default: task -a
 
-  ext2:
+  load-kjv-asv:
     cmds:
       - |
-        # uv run python3 converter.py --input-dir bibles --output-dir data
-        uv run python3 process_bible_text.py --input-dir bibles --output-dir data
+        uv run python3 main.py load-kj21-asv --input-dir bibles --output-dir data
 
-  load:
+  load-nwt:
     cmds:
       - |
-        uv run python3 converter.py \
-          --input-dir bibles \
-          --output-dir data
-          # --extracted-file data/extracted_data.json \
-          # --final-output data/normalized_bible_data.json
+        uv run python3 main.py \
+          load-nwt \
+          --base-path newWorldTranslation/english/2013-release \
+          --output-file data/multi_translation.json
+
+  extract-asv:
+    cmds:
+      - |
+        uv run python3 main.py extract-translation --translation "asv" \
+          --input-file data/multi_translation.json \
+          --output-file data/asv_bible.json
+        uv run python3 main.py extract-translation --translation "kj21" \
+          --input-file data/multi_translation.json \
+          --output-file data/kj21_bible.json
+
+  merge-nwt: uv run python3 merge_test.py
 
   dl-bibles-asv:
     silent: true
@@ -216,30 +226,30 @@ tasks:
     cmds:
       - |
         printf "number of books: "
-        jq 'keys | length' data/extracted_data.json
+        jq 'keys | length' data/multi_translation.json
 
         # printf "books:"
-        # jq 'keys' data/extracted_data.json
+        # jq 'keys' data/multi_translation.json
 
         printf "chapters in book, 3 john:  "
-        jq '."3 john" | keys | length' data/extracted_data.json
+        jq '."3 john" | keys | length' data/multi_translation.json
         printf "chapters in book, Genesis: "
-        jq '.genesis | keys | length' data/extracted_data.json
+        jq '.genesis | keys | length' data/multi_translation.json
 
         printf "verses in a chapter, 3 John 1: "
-        jq '."3 john"."1" | keys | length' data/extracted_data.json
+        jq '."3 john"."1" | keys | length' data/multi_translation.json
 
         # printf "verses from chapter, 3 John 1:"
-        # jq '."3 john"."1" | keys' data/extracted_data.json
+        # jq '."3 john"."1" | keys' data/multi_translation.json
 
         printf "total verses in bible: "
-        jq 'to_entries | map(.value | to_entries | map(.value | to_entries | length) | add) | add' data/extracted_data.json
+        jq 'to_entries | map(.value | to_entries | map(.value | to_entries | length) | add) | add' data/multi_translation.json
 
         printf "Consistency of a Specific Verse"
-        jq '."3 john"."1"."1"' data/extracted_data.json
+        jq '."3 john"."1"."1"' data/multi_translation.json
 
         printf "find null entries:"
-        jq 'to_entries | map(select(.value | to_entries | map(select(.value | to_entries | map(select(.value == null or .value == [])) | length > 0)) | length > 0))' data/extracted_data.json
+        jq 'to_entries | map(select(.value | to_entries | map(select(.value | to_entries | map(select(.value == null or .value == [])) | length > 0)) | length > 0))' data/multi_translation.json
 
   quick-analysis:
     silent: true
@@ -317,10 +327,20 @@ tasks:
         uv run python3 -m spacy download en_core_web_sm
 
   ref:
-    silent: true
+    # silent: true
     desc: "extract bible text - example: task ref -- genesis 1:1-1:4"
     cmds:
-      - uv run python3 bible.py --reference "{{.CLI_ARGS}}"
+      # - uv run python3 bible.py --reference "{{.CLI_ARGS}}"
+      - |
+        uv run python3 main.py extract-reference \
+          --input-file data/extracted_asv.json \
+          --translation "asv" \
+          --reference "{{.CLI_ARGS}}"
+
+        uv run python3 main.py extract-reference \
+          --input-file data/nwt_bible.json \
+          --translation "nwt" \
+          --reference "{{.CLI_ARGS}}"
 
   test:
     cmds:

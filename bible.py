@@ -474,7 +474,7 @@ def main():
         "--bible-json",
         type=str,
         help="Path to the Bible JSON file for entity extraction",
-        default="data/bible_data.json",
+        default="data/nwt_bible.json",
     )
     parser.add_argument(
         "--output-json",
