@@ -49,7 +49,7 @@ def extract_verses_from_txt(input_dir, output_dir):
             for chapter_file in os.listdir(book_dir):  # E.g., 1.txt, 2.txt
                 if chapter_file.endswith(".txt"):
                     file_path = os.path.join(book_dir, chapter_file)
-                    print(f"Extracting from {file_path}...")
+                    # print(f"Extracting from {file_path}...")
                     process_chapter(
                         file_path, version, book_name, is_single_chapter_book
                     )
@@ -106,6 +106,7 @@ def parse_txt_file(file_path, version, is_single_chapter_book=False):
     return verses
 
 
+## cleanup versetext extracted from html fragment/bible-gateway
 def clean_verse_text(raw_text, chapternum, versenum):
     """Clean raw text by removing chapter numbers, verse numbers, and footnotes."""
     if chapternum:

@@ -9,4 +9,8 @@ __pycache__/
 local/
 *.html
 *.txt
+*.json
 exception_list.md
+.vscode/
+.venv/
+.pytest_cache
