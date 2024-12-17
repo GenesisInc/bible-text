@@ -1,572 +1,17 @@
 version: 3
 
 vars:
-  YELLOW: \033[33m
-  RESET: \033[0;0m
   setup_tmp:
     sh: mkdir -p tmp && echo tmp
+  out: tmp/out.csv
   show_cnt: 16
-  TMP_DIR:
-    sh: mkdir -p "data/tmp" && echo "data/tmp"
-  BGW_DIR: data/bibles/bible_gateway
-  BJW_DIR: data/bibles/jw_org
-  translation: nwt
-  translations: nwt asv
-  entities_csv_file: "data/{{.translation}}_entities.csv"
-  entities_json_file: "data/{{.translation}}_entities.json"
-  bible_data_json: "data/{{.translation}}_bible.json"
-  bible_data_csv: "data/{{.translation}}_bible.csv"
-  BOOKS: |
-    Genesis
-    Exodus
-    Leviticus
-    Numbers
-    Deuteronomy
-    Joshua
-    Judges
-    Ruth
-    1 Samuel
-    2 Samuel
-    1 Kings
-    2 Kings
-    1 Chronicles
-    2 Chronicles
-    Ezra
-    Nehemiah
-    Esther
-    Job
-    Psalms
-    Proverbs
-    Ecclesiastes
-    Song of Solomon
-    Isaiah
-    Jeremiah
-    Lamentations
-    Ezekiel
-    Daniel
-    Hosea
-    Joel
-    Amos
-    Obadiah
-    Jonah
-    Micah
-    Nahum
-    Habakkuk
-    Zephaniah
-    Haggai
-    Zechariah
-    Malachi
-    Matthew
-    Mark
-    Luke
-    John
-    Acts
-    Romans
-    1 Corinthians
-    2 Corinthians
-    Galatians
-    Ephesians
-    Philippians
-    Colossians
-    1 Thessalonians
-    2 Thessalonians
-    1 Timothy
-    2 Timothy
-    Titus
-    Philemon
-    Hebrews
-    James
-    1 Peter
-    2 Peter
-    1 John
-    2 John
-    3 John
-    Jude
-    Revelation
-  CHAPTERS: |
-    Genesis:50
-    Exodus:40
-    Leviticus:27
-    Numbers:36
-    Deuteronomy:34
-    Joshua:24
-    Judges:21
-    Ruth:4
-    1 Samuel:31
-    2 Samuel:24
-    1 Kings:22
-    2 Kings:25
-    1 Chronicles:29
-    2 Chronicles:36
-    Ezra:10
-    Nehemiah:13
-    Esther:10
-    Job:42
-    Psalms:150
-    Proverbs:31
-    Ecclesiastes:12
-    Song of Solomon:8
-    Isaiah:66
-    Jeremiah:52
-    Lamentations:5
-    Ezekiel:48
-    Daniel:12
-    Hosea:14
-    Joel:3
-    Amos:9
-    Obadiah:1
-    Jonah:4
-    Micah:7
-    Nahum:3
-    Habakkuk:3
-    Zephaniah:3
-    Haggai:2
-    Zechariah:14
-    Malachi:4
-    Matthew:28
-    Mark:16
-    Luke:24
-    John:21
-    Acts:28
-    Romans:16
-    1 Corinthians:16
-    2 Corinthians:13
-    Galatians:6
-    Ephesians:6
-    Philippians:4
-    Colossians:4
-    1 Thessalonians:5
-    2 Thessalonians:3
-    1 Timothy:6
-    2 Timothy:4
-    Titus:3
-    Philemon:1
-    Hebrews:13
-    James:5
-    1 Peter:5
-    2 Peter:3
-    1 John:5
-    2 John:1
-    3 John:1
-    Jude:1
-    Revelation:22
-  BOOKS_JSON: |
-    ["Genesis","Exodus","Leviticus","Numbers","Deuteronomy","Joshua","Judges","Ruth","1 Samuel","2 Samuel","1 Kings","2 Kings","1 Chronicles","2 Chronicles","Ezra","Nehemiah","Esther","Job","Psalms","Proverbs","Ecclesiastes","Song of Solomon","Isaiah","Jeremiah","Lamentations","Ezekiel","Daniel","Hosea","Joel","Amos","Obadiah","Jonah","Micah","Nahum","Habakkuk","Zephaniah","Haggai","Zechariah","Malachi","Matthew","Mark","Luke","John","Acts","Romans","1 Corinthians","2 Corinthians","Galatians","Ephesians","Philippians","Colossians","1 Thessalonians","2 Thessalonians","1 Timothy","2 Timothy","Titus","Philemon","Hebrews","James","1 Peter","2 Peter","1 John","2 John","3 John","Jude","Revelation"]
-  CHAPTERS_JSON: |
-    {"Genesis":50,"Exodus":40,"Leviticus":27,"Numbers":36,"Deuteronomy":34,"Joshua":24,"Judges":21,"Ruth":4,"1 Samuel":31,"2 Samuel":24,"1 Kings":22,"2 Kings":25,"1 Chronicles":29,"2 Chronicles":36,"Ezra":10,"Nehemiah":13,"Esther":10,"Job":42,"Psalms":150,"Proverbs":31,"Ecclesiastes":12,"Song of Solomon":8,"Isaiah":66,"Jeremiah":52,"Lamentations":5,"Ezekiel":48,"Daniel":12,"Hosea":14,"Joel":3,"Amos":9,"Obadiah":1,"Jonah":4,"Micah":7,"Nahum":3,"Habakkuk":3,"Zephaniah":3,"Haggai":2,"Zechariah":14,"Malachi":4,"Matthew":28,"Mark":16,"Luke":24,"John":21,"Acts":28,"Romans":16,"1 Corinthians":16,"2 Corinthians":13,"Galatians":6,"Ephesians":6,"Philippians":4,"Colossians":4,"1 Thessalonians":5,"2 Thessalonians":3,"1 Timothy":6,"2 Timothy":4,"Titus":3,"Philemon":1,"Hebrews":13,"James":5,"1 Peter":5,"2 Peter":3,"1 John":5,"2 John":1,"3 John":1,"Jude":1,"Revelation":22}
-  chapters_json: |
-    {{toJson (dict
-      "Genesis" 50
-      "Exodus" 40
-      "Leviticus" 27
-      "Numbers" 36
-    )}}
-  chapters_map: "{{fromJson .chapters_json}}"
+  entities_csv_file: data/bible_entities.csv
+  entities_json_file: data/bible_entities.json
+  bible_data_json: data/bible_data.json
+  bible_data_csv: data/bible_data.csv
 
 tasks:
   default: task -a
-
-  clean-html:
-    cmds:
-      - |
-        rg 'class="v"' data/bibles/bible_gateway/jw_study/2.html | \
-          sed 's/class="v">/class="v">\n/g; s/<strong>\(.*\)<.strong>/CHAPTER \1\n1 /g; s/<[^>]*>//g; s/\+//g; s/\*//g'
-
-  get_chapters:
-    desc: Get the total chapters of a given book name.
-    vars:
-      book_name: "{{.CLI_ARGS}}"
-    cmds:
-      - echo '{{get .chapters_map .book_name}}'
-
-  split:
-    cmds:
-      - cmd: echo '{{splitArgs .CLI_ARGS | len}}'
-
-  jsonify-gateway-bibles:
-    cmds:
-      - |
-        uv run python3 main.py load-gateway \
-          --input-dir {{.BGW_DIR}} \
-          --output-dir {{.TMP_DIR}}
-
-  jsonify-jworg-bibles:
-    cmds:
-      - |
-        uv run python3 main.py \
-          load-jworg \
-          --input-dir  {{.BJW_DIR}}/nwt \
-          --output-dir {{.TMP_DIR}}
-
-  remove_0_prefix_from_files:
-    cmds:
-      - |
-        for file in **/*.txt; do
-          new_name=$(echo "$file" | sed -E 's/\/0+([1-9][0-9]*\.txt)$/\/\1/')
-          if [ "$file" != "$new_name" ]; then
-            mv "$file" "$new_name"
-          fi
-        done
-
-  jsonify-bibles:
-    cmds:
-      - task: jsonify-gateway-bibles
-      - task: jsonify-jworg-bibles
-      - task: merge-nwt
-
-  convert_2_csv:
-    silent: true
-    cmds:
-      - |
-        # convert nwt_bible.json to nwt_bible.csv
-        if [[ ! -f {{.TMP_DIR}}/nwt_bible.json ]] ; then
-          echo "file not found: {{.TMP_DIR}}/nwt_bible.json"
-          echo -e "you may need to run below dependent jobs: \n\t1. load-bibles \n\t2. extract-translation "
-          exit 1
-        fi
-        jq -r '
-          .nwt | to_entries[] as $book_entry
-          | $book_entry.value | to_entries[] as $chapter_entry
-          | $chapter_entry.value | to_entries[] as $verse_entry
-          | [$book_entry.key, $chapter_entry.key, $verse_entry.key, $verse_entry.value] | @csv
-        ' {{.TMP_DIR}}/nwt_bible.json > {{.TMP_DIR}}/nwt_bible.csv
-        echo "generated {{.TMP_DIR}}/nwt_bible.csv"
-
-        # convert asv_bible.json to asv_bible.csv
-        if [[ ! -f {{.TMP_DIR}}/asv_bible.json ]]; then
-          echo "file not found: {{.TMP_DIR}}/asv_bible.json"
-          echo -e "you may need to run below dependent jobs: \n\t1. load-bibles \n\t2. extract-translation "
-          exit 1
-        fi
-        jq -r '
-          .asv | to_entries[] as $book_entry
-          | $book_entry.value | to_entries[] as $chapter_entry
-          | $chapter_entry.value | to_entries[] as $verse_entry
-          | [$book_entry.key, $chapter_entry.key, $verse_entry.key, $verse_entry.value] | @csv
-        ' {{.TMP_DIR}}/asv_bible.json > {{.TMP_DIR}}/asv_bible.csv
-        echo "generated {{.TMP_DIR}}/asv_bible.csv"
-
-        # convert kj21_bible.json to kj21_bible.csv
-        if [[ ! -f {{.TMP_DIR}}/kj21_bible.json ]]; then
-          echo "file not found: {{.TMP_DIR}}/kj21_bible.json"
-          echo -e "you may need to run below dependent jobs: \n\t1. load-bibles \n\t2. extract-translation "
-          exit 1
-        fi
-        jq -r '
-          .kj21 | to_entries[] as $book_entry
-          | $book_entry.value | to_entries[] as $chapter_entry
-          | $chapter_entry.value | to_entries[] as $verse_entry
-          | [$book_entry.key, $chapter_entry.key, $verse_entry.key, $verse_entry.value] | @csv
-        ' {{.TMP_DIR}}/kj21_bible.json > {{.TMP_DIR}}/kj21_bible.csv
-        echo "generated {{.TMP_DIR}}/kj21_bible.csv"
-
-  merge-nwt:
-    silent: true
-    cmds:
-      - |
-        uv run python3 main.py \
-          merge-translation \
-          --input-file {{.TMP_DIR}}/nwt_bible.json \
-          --output-file {{.TMP_DIR}}/multi_translation.json \
-          --translation nwt
-
-  dl-bibles:
-    cmds:
-      - task: dl-biblegateway
-        vars: { VERSIONS: "asv" }
-      - task: dl-biblegateway
-        vars: { VERSIONS: "kj21" }
-      - task: dl-biblegateway
-        vars: { VERSIONS: "kjv" }
-      - task: dl-biblegateway
-        vars: { VERSIONS: "NOG" }
-      - task: dl-biblegateway
-        vars: { VERSIONS: "OJB" }
-
-  dl-bible-gateway:
-    silent: true
-    deps:
-      - task: biblegateway_downloader
-        vars: { VERSIONS: "ASV" }
-      - task: biblegateway_downloader
-        vars: { VERSIONS: "KJV" }
-      - task: biblegateway_downloader
-        vars: { VERSIONS: "NRSVCE" }
-      - task: jw_downloader
-        vars: { VERSION: "rh" }
-      - task: jw_downloader
-        vars: { VERSION: "bi22" }
-      - task: jw_downloader
-        vars: { VERSION: "bi10", VERSION_DIR: "KJV_1611" }
-
-  extract-bible-gateway:
-    silent: true
-    deps:
-      # - task: biblegateway_extractor
-      #   vars: { VERSIONS: "ASV" }
-      # - task: biblegateway_extractor
-      #   vars: { VERSIONS: "KJV" }
-      - task: biblegateway_extractor
-        vars: { VERSIONS: "NRSVCE" }
-
-  dl_jw_study_version:
-    desc: download study version of bible from jw.org
-    silent: true
-    cmds:
-      - |
-        for n in $(seq 5 70) ; do
-          dir="{{.BGW_DIR}}/jw_study"
-          out_file="${dir}/$((n-4)).html"
-          if [ -f "${out_file}" ]; then
-            echo "$(date +'%Y-%m-%d %H:%M:%S') already downloaded: ${out_file} "
-            continue
-          fi
-          set -x
-          URL=$(printf "https://wol.jw.org/en/wol/d/r1/lp-e/10010701%02d\n" "${n}")
-          mkdir -p "${dir}"
-          curl -k -s -o "${out_file}" -w "%{http_code}" ${URL} > /dev/null
-          set +x
-        done
-
-  jw_downloader:
-    internal: true
-    silent: true
-    cmds:
-      - |
-        # Task 1: download_html.sh
-        downloaded_now=0
-        downloaded_already=0
-        # https://wol.jw.org/en/wol/b/r1/lp-e/rh/1/2#study=discover
-        book_id=1
-
-        echo "{{.BOOKS}}" | while IFS= read -r book; do
-          [ -z "$book" ] && continue
-          DIR="{{.BGW_DIR}}/{{.VERSION_DIR}}/${book}"
-          mkdir -p "${DIR}"
-          encoded_book=$(echo "$book" | sed 's/ /%20/g') # Encode spaces
-
-          total_chapters=$(echo "{{.CHAPTERS}}" | grep -E "^${book}:" | cut -d':' -f2)
-          if [ -z "$total_chapters" ]; then
-            echo "$(date +'%Y-%m-%d %H:%M:%S') Error: No chapter count found for ${book}. Skipping."
-            continue
-          fi
-
-          for ch in $(seq 1 "$total_chapters"); do
-            URL="https://wol.jw.org/en/wol/b/r1/lp-e/{{.VERSION}}/${book_id}/${ch}#study=discover"
-            printf "\n$(date +'%Y-%m-%d %H:%M:%S') version {{.VERSION_DIR}}:${book}:${ch}, downloaded now: ${downloaded_now}, "
-            if [[ ! -f "${DIR}/${ch}.html" ]]; then
-              # printf "downloading now"
-              downloaded_now=$((downloaded_now+1))
-              curl -k -s -o "${DIR}/${ch}.html" \
-                -w "%{http_code}" \
-                ${URL} > /dev/null
-            else
-              downloaded_already=$((downloaded_already+1))
-              printf "already downloaded,"
-            fi
-          done
-          book_id=$((book_id+1))
-        done
-
-  biblegateway_downloader:
-    internal: true
-    silent: true
-    cmds:
-      - |
-        # Task 1: download_html.sh
-        downloaded_now=0
-        downloaded_already=0
-
-        echo {{.VERSIONS}} | tr ',' '\n' | while IFS= read -r version; do
-          echo "{{.BOOKS}}" | while IFS= read -r book; do
-            [ -z "$book" ] && continue
-            encoded_book=$(echo "$book" | sed 's/ /%20/g') # Encode spaces
-            mkdir -p "{{.BGW_DIR}}/${version}/${book}"
-
-            total_chapters=$(echo "{{.CHAPTERS}}" | grep -E "^${book}:" | cut -d':' -f2)
-            if [ -z "$total_chapters" ]; then
-              echo "$(date +'%Y-%m-%d %H:%M:%S') Error: No chapter count found for ${book}. Skipping."
-              continue
-            fi
-
-            for ch in $(seq 1 "$total_chapters"); do
-              printf "\n$(date +'%Y-%m-%d %H:%M:%S') version ${version}:${book}:${ch}, downloaded now: ${downloaded_now}, "
-              if [[ ! -f "{{.BGW_DIR}}/${version}/${book}/${ch}.html" ]]; then
-                # printf "downloading now"
-                downloaded_now=$((downloaded_now+1))
-                curl -k -s -o "{{.BGW_DIR}}/${version}/${book}/${ch}.html" -w "%{http_code}" \
-                  "https://www.biblegateway.com/passage/?search=${encoded_book}%20${ch}&version=${version}&interface=print" > /dev/null
-              else
-                downloaded_already=$((downloaded_already+1))
-                printf "already downloaded,"
-              fi
-            done
-          done
-        done
-
-  biblegateway_extractor:
-    internal: true
-    silent: true
-    cmds:
-      - |
-        set -e
-        count=0
-        echo "{{.VERSIONS}}" | tr ',' '\n' | while IFS= read -r version; do
-          echo "{{.BOOKS}}" | while IFS= read -r book; do
-            [ -z "$book" ] && continue
-
-            for file in "{{.BGW_DIR}}/${version}/${book}"/*.html; do
-              [ -e "$file" ] || continue
-              txt_file="${file%.html}.fragment.html"
-
-              # Validate content
-              if ! grep -q "passage-content" "$file"; then
-                echo "$(date +'%Y-%m-%d %H:%M:%S') Skipping invalid content for ${file}."
-                continue
-              fi
-
-              grep -A1 "passage-content passage-class-0" "$file" > "$txt_file"
-              count=$((count+1))
-              printf "extracted html fragment to file: [%d] %s\n" $count "$txt_file"
-            done
-          done
-        done
-
-  jsonify:
-    silent: true
-    vars:
-      VERSIONS: NRSVCE
-    cmds:
-      - |
-        set -ex
-        count=0
-        echo "{{.VERSIONS}}" | tr ',' '\n' | while IFS= read -r version; do
-          echo "{{.BOOKS}}" | while IFS= read -r book; do
-            [ -z "$book" ] && continue
-
-            for file in "{{.BGW_DIR}}/${version}/${book}"/*.html; do
-              [ -e "$file" ] || continue
-              txt_file="${file%.html}"
-
-              # Validate content
-              if ! grep -q "passage-content" "$file"; then
-                echo "$(date +'%Y-%m-%d %H:%M:%S') Skipping invalid content for ${file}."
-                continue
-              fi
-
-              grep -A1 "passage-content passage-class-0" "$file" > "$txt_file"
-              uv run python3 ext.py "$txt_file" "NRSVCE" | jq > "${txt_file}.json"
-              count=$((count+1))
-              printf "extracted verse to JSON: [%d] %s\n" $count "${txt_file}.json"
-              rm -f "$txt_file"
-            done
-          done
-        done
-
-  dl-biblegateway:
-    silent: true
-    vars:
-      VERSIONS: '{{.VERSIONS| default "ASV"}}'
-    cmds:
-      - |
-        # set -x
-        downloaded_now=0
-        downloaded_already=0
-
-        echo "{{.VERSIONS}}" | tr ',' '\n' | while IFS= read -r version; do
-          echo "{{.BOOKS}}" | while IFS= read -r book; do
-            # Skip empty lines
-            [ -z "$book" ] && continue
-            encoded_book=$(echo "$book" | sed 's/ /%20/g') # Encode spaces in book names
-            mkdir -p "{{.BGW_DIR}}/${version}/${book}"
-
-            # Fetch the total number of chapters for the book
-            total_chapters=$(echo "{{.CHAPTERS}}" | grep -E "^${book}:" | cut -d':' -f2)
-            if [ -z "$total_chapters" ]; then
-              echo "$(date +'%Y-%m-%d %H:%M:%S') Error: No chapter count found for ${book}. Skipping."
-              continue
-            fi
-
-            for ch in $(seq 1 "$total_chapters"); do
-              printf "\n$(date +'%Y-%m-%d %H:%M:%S') version ${version}:${book}:${ch}, downloaded now: ${downloaded_now}, "
-              if [[ ! -f "{{.BGW_DIR}}/${version}/${book}/${ch}.html" ]]; then
-                printf "downloading now"
-                downloaded_now=$((downloaded_now+1))
-                curl -k -s -o "{{.BGW_DIR}}/${version}/${book}/${ch}.html" -w "%{http_code}" \
-                  "https://www.biblegateway.com/passage/?search=${encoded_book}%20${ch}&version=${version}&interface=print" > /dev/null
-              else
-                downloaded_already=$((downloaded_already+1))
-                printf "already downloaded,"
-                # echo "$(date +'%Y-%m-%d %H:%M:%S') Already downloaded: ${downloaded_already}, {{.BGW_DIR}}/${version}/${book}/${ch}.html"
-                # continue
-              fi
-
-              # Validate content
-              if ! grep -q "passage-content" "{{.BGW_DIR}}/${version}/${book}/${ch}.html"; then
-                echo "$(date +'%Y-%m-%d %H:%M:%S') Stopping ${book} at Chapter ${ch} for Version ${version} (invalid content)."
-                break
-              fi
-
-              grep -A1 "passage-content passage-class-0" "{{.BGW_DIR}}/${version}/${book}/${ch}.html" > "{{.BGW_DIR}}/${version}/${book}/${ch}.txt"
-              printf " | total downloaded: $((downloaded_now+downloaded_already))"
-            done
-          done
-        done
-
-  verify-extracted-json:
-    cmds:
-      - |
-        printf "number of books: "
-        jq 'keys | length' data/multi_translation.json
-
-        # printf "books:"
-        # jq 'keys' data/multi_translation.json
-
-        printf "chapters in book, 3 john:  "
-        jq '."3 john" | keys | length' data/multi_translation.json
-        printf "chapters in book, Genesis: "
-        jq '.genesis | keys | length' data/multi_translation.json
-
-        printf "verses in a chapter, 3 John 1: "
-        jq '."3 john"."1" | keys | length' data/multi_translation.json
-
-        # printf "verses from chapter, 3 John 1:"
-        # jq '."3 john"."1" | keys' data/multi_translation.json
-
-        printf "total verses in bible: "
-        jq 'to_entries | map(.value | to_entries | map(.value | to_entries | length) | add) | add' data/multi_translation.json
-
-        printf "Consistency of a Specific Verse"
-        jq '."3 john"."1"."1"' data/multi_translation.json
-
-        printf "find null entries:"
-        jq 'to_entries | map(select(.value | to_entries | map(select(.value | to_entries | map(select(.value == null or .value == [])) | length > 0)) | length > 0))' data/multi_translation.json
-
-  quick-analysis:
-    silent: true
-    cmds:
-      - |
-        # check bibles from Bible Gateway
-        for t in $(ls {{.BGW_DIR}}) ; do
-          echo "translation: ${t}"
-          echo "files smaller than 1000 bytes:"
-          fd -HI . {{.BGW_DIR}}/${t} --size=-1000b -x ls -al
-          printf "total txt files: "
-          fd -HI . {{.BGW_DIR}}/${t} -e txt | wc -l
-          printf "total html files: "
-          fd -HI . {{.BGW_DIR}}/${t} -e html | wc -l
-          echo
-        done
-
-        # check JW bible
-        for t in $(ls {{.BJW_DIR}}) ; do
-          echo "translation: ${t}"
-          echo "files smaller than 200 bytes:"
-          fd -HI . {{.BJW_DIR}}/${t} --size=-500b -x ls -al
-          printf "total files: "
-          fd -HI . -tf {{.BJW_DIR}}/${t} | wc -l
-          echo
-        done
 
   uv-sync:
     cmds:
@@ -574,22 +19,239 @@ tasks:
         uv sync
         uv run python3 -m spacy download en_core_web_sm
 
+  ref:
+    silent: true
+    desc: "extract bible text - example: task ref -- genesis 1:1-1:4"
+    cmds:
+      - uv run python3 bible.py --reference "{{.CLI_ARGS}}"
+
   test:
     cmds:
       - |
         uv run pytest test_bible.py
 
-  counts:
+  search:
+    silent: true
+    desc: "find top 5 matches for a string/phrase | examples: (1) task search -- from (2) task search -- 'from of'"
+    cmds:
+      - uv run python3 bible.py --search {{.CLI_ARGS}} --top-n 5 --csv | mlr --c2p --barred cat
+
+  run: task -p generate-json extract
+  status:
     silent: true
     cmds:
-      - echo > tmp/status-out.csv
-      - for: { var: translations }
-        cmd: |
-          jq '
-          {
-            translation: "{{.ITEM}}",
-            total_books: (.{{.ITEM}} | keys | length),
-            total_chapters: (.{{.ITEM}} | to_entries | map(.value | keys | length) | add),
-            total_verses: (.{{.ITEM}} | to_entries | map(.value | to_entries | map(.value | keys | length) | add) | add)
-          }' {{.TMP_DIR}}/{{.ITEM}}_bible.json >> tmp/status-out.csv
-      - mlr --j2p --barred cat tmp/status-out.csv
+      - |
+        jq '
+        {
+          total_books: (.nwt | keys | length),
+          total_chapters: (.nwt | to_entries | map(.value | keys | length) | add),
+          total_verses: (.nwt | to_entries | map(.value | to_entries | map(.value | keys | length) | add) | add)
+        }' {{.bible_data_json}} | mlr --j2p --barred cat
+
+  convert_2_csv:
+    cmds:
+      - |
+        jq -r '
+          .nwt | to_entries[] as $book_entry
+          | $book_entry.value | to_entries[] as $chapter_entry
+          | $chapter_entry.value | to_entries[] as $verse_entry
+          | [$book_entry.key, $chapter_entry.key, $verse_entry.key, $verse_entry.value] | @csv
+        ' {{.bible_data_json}} > {{.bible_data_csv}}
+
+  generate-json:
+    desc: generates json file from the 1000+ bible chapter files
+    cmds:
+      - |
+        uv run bible.py --generate
+
+  extract-sample:
+    cmds:
+      - |
+        uv run bible.py \
+          --extract \
+          --bible-json "{{.bible_data_json}}" \
+          --output-json "{{.entities_json_file}}" \
+          --output-csv "{{.entities_csv_file}}" \
+          --books john
+
+  extract:
+    desc: extract entities from {{.bible_data_json}} and write to 2 output files
+    cmds:
+      - |
+        uv run bible.py \
+          --extract \
+          --bible-json "{{.bible_data_json}}" \
+          --output-json "{{.entities_json_file}}" \
+          --output-csv "{{.entities_csv_file}}"
+
+  legends:
+    desc: legend summary
+    silent: true
+    cmds:
+      - |
+        mlr --c2p --barred --from {{.entities_csv_file}} \
+          count-distinct -f Type \
+          then put '
+            $Explanation =
+              $Type == "PERSON"     ? "Names of individuals" :
+              $Type == "DATE"       ? "Explicit or implicit date expressions" :
+              $Type == "GPE"        ? "Geopolitical entities (places)" :
+              $Type == "ORG"        ? "Organizations or groups" :
+              $Type == "OCCUPATION" ? "Roles or professions" :
+              $Type == "NORP"       ? "Nationalities, religious or political groups" :
+                                      "Other";
+          ' \
+          then reorder -f Type,count,Explanation
+
+  org:
+    desc: show Organizations or groups
+    silent: true
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}}  filter '$Type == "ORG"' > {{.out}}
+      - task: out
+      - echo Legend.ORG - Organization or groups
+
+  occupation:
+    silent: true
+    desc: show roles or professions"
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} filter '$Type == "OCCUPATION"'  > {{.out}}
+      - task: out
+
+  unique-occupation:
+    silent: true
+    desc: show roles or professions"
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} \
+          filter '$Type == "OCCUPATION"' \
+          then count-distinct -f Text \
+          then sort -f Text > {{.out}}
+      - task: out
+
+  top-occupations:
+    silent: true
+    desc: show roles or professions"
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} \
+          filter '$Type == "OCCUPATION"' \
+          then count-distinct -f Text \
+          then sort -nf count then tail > {{.out}}
+      - task: out
+
+  occupation-summary:
+    desc: show summary of roles or professions"
+    silent: true
+    cmds:
+      - |
+        # sort by occupation
+        echo "top and bottom $(( {{.show_cnt}} / 2)) of sorted by occupation"
+        mlr --csv --from {{.entities_csv_file}} \
+          filter '$Type == "OCCUPATION"' \
+            then cut -f Text \
+            then count-distinct -f Text \
+            then label occupation,count \
+            then sort -f occupation > {{.out}}
+      - task: out
+      - |
+        # sort by count
+        printf "\n\n\ntop and bottom $(( {{.show_cnt}} / 2)) of sorted by count\n"
+        mlr --csv --from {{.entities_csv_file}} \
+          filter '$Type == "OCCUPATION"' \
+            then cut -f Text \
+            then count-distinct -f Text \
+            then label occupation,count \
+            then sort -nf count  > {{.out}}
+      - task: out
+
+  gpe:
+    desc: show Geopolitical entities (places)
+    silent: true
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} filter '$Type == "GPE"' > {{.out}}
+      - task: out
+      - echo Legend.GPE - GeoPoliticalEntity
+
+  norp:
+    desc: show Nationalities, religious or political groups
+    silent: true
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} filter '$Type == "NORP"' > {{.out}}
+      - task: out
+      - echo Legend.NORP - Nationalities Religions or Political Groups
+
+  date-summary:
+    silent: true
+    desc: show dates mentioned
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} \
+          filter '$Type == "DATE"' \
+            then cut -f Text \
+            then count-distinct -f Text \
+            then head > {{.out}}
+      - task: out
+
+  names:
+    silent: true
+    desc: "show names/persons"
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} \
+          filter '$Type == "PERSON"' > {{.out}}
+      - task: out
+
+  unique-names:
+    silent: true
+    desc: "show unique names/persons"
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} \
+          filter '$Type == "PERSON"' \
+          then count-distinct -f Text \
+          then sort -f Text > {{.out}}
+      - task: out
+
+  top-names:
+    silent: true
+    desc: "show unique names/persons"
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} \
+          filter '$Type == "PERSON"' \
+          then count-distinct -f Text \
+          then sort -nf count then tail > {{.out}}
+      - task: out
+
+  date:
+    silent: true
+    desc: "Fetch and format output for DATE=daniel"
+    cmds:
+      - |
+        mlr --csv --from {{.entities_csv_file}} \
+          filter  '$Type == "DATE" && $Book == "daniel"' > {{.out}}
+      - task: out
+
+  out:
+    silent: true
+    cmds:
+      - |
+        total=$(mlr --from {{.out}} --csv --headerless-csv-output count)
+        printf "Summary:\n   Total: ${total} records\n"
+        top=$(({{.show_cnt}} / 2 + 1))
+        btm=$(({{.show_cnt}} / 2 ))
+
+        if [ "$total" -le {{.show_cnt}} ]; then
+          # For fewer than or equal to {{.show_cnt}} records, display all
+          echo "   Showing all $total records"
+          cat "{{.out}}" | mlr --c2p --barred cat -n
+        else
+          # For more than {{.show_cnt}} records, show first ${btm} and last ${btm}
+          echo "   Showing {{.show_cnt}} of $total records"
+          (head -n${top} "{{.out}}" && tail -n${btm} "{{.out}}") | mlr --c2p --barred cat -n
+        fi
