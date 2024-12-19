@@ -3,10 +3,6 @@ version: 3
 vars:
   setup_tmp:
     sh: mkdir -p tmp && echo tmp
-  out: tmp/out.csv
-  show_cnt: 16
-  entities_csv_file: data/bible_entities.csv
-  entities_json_file: data/bible_entities.json
   bible_data_json: data/bible_data.json
   bible_data_csv: data/bible_data.csv
 
@@ -22,6 +18,14 @@ tasks:
 
         # uv run main.py load-jworg --input-dir data/bibles/jw_org/nwt --output-dir here
 
+  load-bibles:
+    aliases:
+      - jsonify-bibles
+    cmds:
+      - task: load-gateway
+      - task: load-jworg
+      - task: merge-nwt
+
   load-gateway:
     cmds:
       - |
@@ -30,6 +34,8 @@ tasks:
           --output-dir here
 
   merge-nwt-to-multi-translation:
+    aliases:
+      - merge-nwt
     cmds:
       - |
         uv run main.py merge-translation \
@@ -70,22 +76,3 @@ tasks:
           | $chapter_entry.value | to_entries[] as $verse_entry
           | [$book_entry.key, $chapter_entry.key, $verse_entry.key, $verse_entry.value] | @csv
         ' {{.bible_data_json}} > {{.bible_data_csv}}
-
-  out:
-    silent: true
-    cmds:
-      - |
-        total=$(mlr --from {{.out}} --csv --headerless-csv-output count)
-        printf "Summary:\n   Total: ${total} records\n"
-        top=$(({{.show_cnt}} / 2 + 1))
-        btm=$(({{.show_cnt}} / 2 ))
-
-        if [ "$total" -le {{.show_cnt}} ]; then
-          # For fewer than or equal to {{.show_cnt}} records, display all
-          echo "   Showing all $total records"
-          cat "{{.out}}" | mlr --c2p --barred cat -n
-        else
-          # For more than {{.show_cnt}} records, show first ${btm} and last ${btm}
-          echo "   Showing {{.show_cnt}} of $total records"
-          (head -n${top} "{{.out}}" && tail -n${btm} "{{.out}}") | mlr --c2p --barred cat -n
-        fi
