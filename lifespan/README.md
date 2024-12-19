@@ -1,3 +1,0 @@
-# lifespan
-
-- this may or may not work at the moment. Need to check sometime later...
