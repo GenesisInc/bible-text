@@ -4,9 +4,9 @@ import os
 import re
 
 from bs4 import BeautifulSoup
-from core.utils import file_utils
 
 from config.book_order import SINGLE_CHAPTER_BOOKS
+from core.utils import file_utils
 
 
 def normalize_book_name(book_name):
