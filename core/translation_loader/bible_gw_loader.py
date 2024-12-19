@@ -1,12 +1,12 @@
-""" bible extractor"""
+"""load gateway-bibles to a json"""
 
 import os
 import re
 
 from bs4 import BeautifulSoup
+from core.utils import file_utils
 
 from config.book_order import SINGLE_CHAPTER_BOOKS
-from utils import file_utils
 
 
 def normalize_book_name(book_name):
@@ -106,7 +106,6 @@ def parse_txt_file(file_path, version, is_single_chapter_book=False):
     return verses
 
 
-## cleanup versetext extracted from html fragment/bible-gateway
 def clean_verse_text(raw_text, chapternum, versenum):
     """Clean raw text by removing chapter numbers, verse numbers, and footnotes."""
     if chapternum:

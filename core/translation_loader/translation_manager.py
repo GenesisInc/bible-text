@@ -1,4 +1,8 @@
-"""manipulator - merge & extract json"""
+"""manage bible translations json like merge & extract"""
+
+import json
+
+from core.utils import file_utils
 
 
 def extract_translation(multi_translation_data, translation_name):
@@ -28,7 +32,7 @@ def extract_translation(multi_translation_data, translation_name):
                         translation_name
                     ]
 
-    return single_translation_data
+    return {translation_name: single_translation_data}
 
 
 def merge_translations(nwt_data, kj21_asv_data, translation):
@@ -59,3 +63,32 @@ def merge_translations(nwt_data, kj21_asv_data, translation):
                 merged_data[book][chapter][verse]["nwt"] = text
 
     return merged_data
+
+
+def test_merge_single_translation_to_multi():
+    """test_merge_single_translation_to_multi"""
+    multi_translation_path = "data/multi_translation.json"
+    single_translation_path = "data/nwt_bible.json"
+    output_path = "data/merged_translation.json"
+
+    # Load multi-translation JSON
+    with open(multi_translation_path, "r", encoding="utf-8") as f:
+        multi_translation_data = json.load(f)
+
+    # Load single-translation JSON (e.g., NWT)
+    with open(single_translation_path, "r", encoding="utf-8") as f:
+        single_translation_data = json.load(f)
+
+    # Merge the single translation into the multi-translation structure
+    merged_translation = merge_translations(
+        single_translation_data, multi_translation_data, "nwt"
+    )
+
+    # Save the result
+    file_utils.save_to_json(merged_translation, output_path)
+
+    print(f"Merged translation saved to {output_path}")
+
+
+if __name__ == "__main__":
+    test_merge_single_translation_to_multi()
