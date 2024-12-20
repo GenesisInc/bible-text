@@ -1,10 +1,149 @@
 version: 3
 
 vars:
+  TMP_DIR:
+    sh: mkdir -p "data/tmp" && echo "data/tmp"
   setup_tmp:
     sh: mkdir -p tmp && echo tmp
   bible_data_json: data/bible_data.json
   bible_data_csv: data/bible_data.csv
+  BIBLES_BASE_DIR: data/bibles
+  JW_ORG_DIR: jw_org
+  GATEWAY_DIR: bible_gateway
+  BOOKS: |
+    Genesis
+    Exodus
+    Leviticus
+    Numbers
+    Deuteronomy
+    Joshua
+    Judges
+    Ruth
+    1 Samuel
+    2 Samuel
+    1 Kings
+    2 Kings
+    1 Chronicles
+    2 Chronicles
+    Ezra
+    Nehemiah
+    Esther
+    Job
+    Psalms
+    Proverbs
+    Ecclesiastes
+    Song of Solomon
+    Isaiah
+    Jeremiah
+    Lamentations
+    Ezekiel
+    Daniel
+    Hosea
+    Joel
+    Amos
+    Obadiah
+    Jonah
+    Micah
+    Nahum
+    Habakkuk
+    Zephaniah
+    Haggai
+    Zechariah
+    Malachi
+    Matthew
+    Mark
+    Luke
+    John
+    Acts
+    Romans
+    1 Corinthians
+    2 Corinthians
+    Galatians
+    Ephesians
+    Philippians
+    Colossians
+    1 Thessalonians
+    2 Thessalonians
+    1 Timothy
+    2 Timothy
+    Titus
+    Philemon
+    Hebrews
+    James
+    1 Peter
+    2 Peter
+    1 John
+    2 John
+    3 John
+    Jude
+    Revelation
+  CHAPTERS: |
+    Genesis:50
+    Exodus:40
+    Leviticus:27
+    Numbers:36
+    Deuteronomy:34
+    Joshua:24
+    Judges:21
+    Ruth:4
+    1 Samuel:31
+    2 Samuel:24
+    1 Kings:22
+    2 Kings:25
+    1 Chronicles:29
+    2 Chronicles:36
+    Ezra:10
+    Nehemiah:13
+    Esther:10
+    Job:42
+    Psalms:150
+    Proverbs:31
+    Ecclesiastes:12
+    Song of Solomon:8
+    Isaiah:66
+    Jeremiah:52
+    Lamentations:5
+    Ezekiel:48
+    Daniel:12
+    Hosea:14
+    Joel:3
+    Amos:9
+    Obadiah:1
+    Jonah:4
+    Micah:7
+    Nahum:3
+    Habakkuk:3
+    Zephaniah:3
+    Haggai:2
+    Zechariah:14
+    Malachi:4
+    Matthew:28
+    Mark:16
+    Luke:24
+    John:21
+    Acts:28
+    Romans:16
+    1 Corinthians:16
+    2 Corinthians:13
+    Galatians:6
+    Ephesians:6
+    Philippians:4
+    Colossians:4
+    1 Thessalonians:5
+    2 Thessalonians:3
+    1 Timothy:6
+    2 Timothy:4
+    Titus:3
+    Philemon:1
+    Hebrews:13
+    James:5
+    1 Peter:5
+    2 Peter:3
+    1 John:5
+    2 John:1
+    3 John:1
+    Jude:1
+    Revelation:22
 
 tasks:
   default: task -a
@@ -14,9 +153,7 @@ tasks:
       - |
         uv run main.py load-jworg \
           --input-dir data/bibles/jw_org/nwt \
-          --output-dir data/tmp
-
-        # uv run main.py load-jworg --input-dir data/bibles/jw_org/nwt --output-dir here
+          --output-dir "{{.TMP_DIR}}"
 
   load-bibles:
     aliases:
@@ -31,7 +168,7 @@ tasks:
       - |
         uv run main.py load-gateway \
           --input-dir data/bibles/bible_gateway \
-          --output-dir here
+          --output-dir "{{.TMP_DIR}}"
 
   merge-nwt-to-multi-translation:
     aliases:
@@ -40,8 +177,8 @@ tasks:
       - |
         uv run main.py merge-translation \
           --translation nwt \
-          --input-file here/nwt_bible.json \
-          --output-file here/multi_translation.json
+          --input-file "{{.TMP_DIR}}/nwt_bible.json" \
+          --output-file "{{.TMP_DIR}}/multi_translation.json"
 
   uv-sync:
     cmds:
@@ -67,12 +204,72 @@ tasks:
           total_verses: (.nwt | to_entries | map(.value | to_entries | map(.value | keys | length) | add) | add)
         }' {{.bible_data_json}} | mlr --j2p --barred cat
 
-  convert_2_csv.moved:
+  dl-bibles:
+    cmds:
+      ## sample tasks to download multiple versions at-once
+      # - task: dl-bible
+      #   vars: { VERSIONS: "ASV,KJ21" }
+      # - task: dl-biblegateway
+      #   vars: { VERSIONS: "asv" }
+      # - task: dl-biblegateway
+      #   vars: { VERSIONS: "kj21" }
+      # - task: dl-biblegateway
+      #   vars: { VERSIONS: "kjv" }
+      # - task: dl-biblegateway
+      #   vars: { VERSIONS: "NOG" }
+      - task: dl-bible
+        vars: { VERSIONS: "OJB" }
+
+  dl-bible:
+    internal: true
+    silent: true
     cmds:
       - |
-        jq -r '
-          .nwt | to_entries[] as $book_entry
-          | $book_entry.value | to_entries[] as $chapter_entry
-          | $chapter_entry.value | to_entries[] as $verse_entry
-          | [$book_entry.key, $chapter_entry.key, $verse_entry.key, $verse_entry.value] | @csv
-        ' {{.bible_data_json}} > {{.bible_data_csv}}
+        # set -x
+        downloaded_now=0
+        downloaded_already=0
+
+        echo "{{.VERSIONS}}" | tr ',' '\n' | while IFS= read -r version; do
+          echo "{{.BOOKS}}" | while IFS= read -r book; do
+            # Skip empty lines
+            [ -z "$book" ] && continue
+            encoded_book=$(echo "$book" | sed 's/ /%20/g') # Encode spaces in book names
+            mkdir -p "bibles/${version}/${book}"
+
+            # Fetch the total number of chapters for the book
+            total_chapters=$(echo "{{.CHAPTERS}}" | grep -E "^${book}:" | cut -d':' -f2)
+            if [ -z "$total_chapters" ]; then
+              echo "$(date +'%Y-%m-%d %H:%M:%S') Error: No chapter count found for ${book}. Skipping."
+              continue
+            fi
+
+            for ch in $(seq 1 "$total_chapters"); do
+              chapter_file="{{.BIBLES_BASE_DIR}}/{{.GATEWAY_DIR}}/${version}/${book}/${ch}.html"
+              dl_status="Downloaded this run: ${downloaded_now}/$((downloaded_now+downloaded_already))"
+              printf "\n$(date +'%Y-%m-%d %H:%M:%S') ${dl_status}, processing ${version}: ${book}:${ch}"
+              if [[ ! -f "${chapter_file}" ]]; then
+                printf " | downloading now ..."
+                downloaded_now=$((downloaded_now+1))
+                search_str="${encoded_book}%20${ch}&version=${version}&interface=print"
+                curl -k -s -o "${chapter_file}" -w "%{http_code}" \
+                  "https://www.biblegateway.com/passage/?search=${search_str}" > /dev/null
+              else
+                downloaded_already=$((downloaded_already+1))
+                printf " | already downloaded ..."
+                # continue
+              fi
+
+              # Validate content
+              if ! grep -q "passage-content" "${chapter_file}"; then
+                echo "$(date +'%Y-%m-%d %H:%M:%S') Stopping ${book} at Chapter ${ch} for Version ${version} (invalid content)."
+                break
+              fi
+
+              text_file="${chapter_file%.html}.txt"
+              if [[ ! -f "${text_file}" ]]; then
+                grep -A1 "passage-content passage-class-0" "${chapter_file}" > "${text_file}"
+              fi
+              # printf " | total downloaded: $((downloaded_now+downloaded_already))"
+            done
+          done
+        done

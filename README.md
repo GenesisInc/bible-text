@@ -1,7 +1,7 @@
 # bible text - analysis & data science
 
-A hobby project to load multiple translations of bibles into a JSON file.
-Output JSON file will be used for bible analysis.
+A hobby project to download multiple translations of bibles and load texts into a JSON file.
+Output JSON will be used for bible analysis.
 
 ## requirements
 
@@ -9,7 +9,6 @@ Output JSON file will be used for bible analysis.
 - [astral-sh/uv](https://github.com/astral-sh/uv)
 - [miller](https://github.com/johnkerl/miller)
 - [jqlang/jq](https://github.com/jqlang/jq) (optional)
-- [py-nlp-spacy-uv](./README.nlp_helper.md)
 
 ## Load bible to JSON
 
@@ -18,18 +17,24 @@ If you have the bible text in files, we need to load them to a json file using b
 - generate bible-data.json from files
 
         ❯ task jsonify-bibles
-        task: [jsonify-gateway-bibles] uv run python3 main.py load-gateway \
-        --input-dir data/bibles/bible_gateway \
-        --output-dir data/tmp
+            task: [load-gateway] uv run main.py load-gateway \
+            --input-dir data/bibles/bible_gateway \
+            --output-dir data/tmp
 
-        data successfully written to data/tmp/multi_translation.json
-        task: [jsonify-jworg-bibles] uv run python3 main.py \
-        load-jworg \
-        --input-dir  data/bibles/jw_org/nwt \
-        --output-dir data/tmp
+            data successfully written to data/tmp/multi_translation.json
+            task: [load-jworg] uv run main.py load-jworg \
+            --input-dir data/bibles/jw_org/nwt \
+            --output-dir data/tmp
 
-        data successfully written to data/tmp/nwt_bible.json
-        Merged nwt translation saved to data/tmp/multi_translation.json
+            # uv run main.py load-jworg --input-dir data/bibles/jw_org/nwt --output-dir here
+
+            data successfully written to data/tmp/nwt_bible.json
+            task: [merge-nwt-to-multi-translation] uv run main.py merge-translation \
+            --translation nwt \
+            --input-file data/tmp/nwt_bible.json \
+            --output-file data/tmp/multi_translation.json
+
+            Merged nwt translation saved to data/tmp/multi_translation.json
 
 Now, you have the whole nwt bible in a file & all translations in multi-translation.json
 
