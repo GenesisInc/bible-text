@@ -36,10 +36,17 @@ def setup_load_nwt_parser(subparsers):
     )
     nwt_parser.add_argument(
         "--output-dir",
+        "--output-dir",
         type=str,
         default="data/tmp",
         help="Output dir (default: %(default)s).",
     )
+    # nwt_parser.add_argument(
+    #     "--translation",
+    #     type=str,
+    #     required=True,
+    #     help="Translation to extract (e.g., 'asv', 'kj21', 'nwt').",
+    # )
 
 
 def setup_load_gateway_parser(subparsers):
@@ -95,7 +102,9 @@ def handle_command(args):
     """Handle the parsed command."""
     if args.command == "load-jworg":
         jw_loader.generate_bible_json(
-            args.input_dir, os.path.join(args.output_dir, "nwt_bible.json")
+            args.input_dir,
+            args.output_dir,
+            "nwt",
         )
     elif args.command == "load-gateway":
         bible_gw_loader.extract_verses_from_txt(args.input_dir, args.output_dir)

@@ -209,6 +209,14 @@ tasks:
       ## sample tasks to download multiple versions at-once
       # - task: dl-bible
       #   vars: { VERSIONS: "ASV,KJ21" }
+      # - task: dl-biblegateway
+      #   vars: { VERSIONS: "asv" }
+      # - task: dl-biblegateway
+      #   vars: { VERSIONS: "kj21" }
+      # - task: dl-biblegateway
+      #   vars: { VERSIONS: "kjv" }
+      # - task: dl-biblegateway
+      #   vars: { VERSIONS: "NOG" }
       - task: dl-bible
         vars: { VERSIONS: "OJB" }
 
@@ -237,12 +245,14 @@ tasks:
 
             for ch in $(seq 1 "$total_chapters"); do
               chapter_file="{{.BIBLES_BASE_DIR}}/{{.GATEWAY_DIR}}/${version}/${book}/${ch}.html"
-              printf "\n$(date +'%Y-%m-%d %H:%M:%S') Downloaded this run: ${downloaded_now}, processing ${version}: ${book}:${ch}"
+              dl_status="Downloaded this run: ${downloaded_now}/$((downloaded_now+downloaded_already))"
+              printf "\n$(date +'%Y-%m-%d %H:%M:%S') ${dl_status}, processing ${version}: ${book}:${ch}"
               if [[ ! -f "${chapter_file}" ]]; then
                 printf " | downloading now ..."
                 downloaded_now=$((downloaded_now+1))
+                search_str="${encoded_book}%20${ch}&version=${version}&interface=print"
                 curl -k -s -o "${chapter_file}" -w "%{http_code}" \
-                  "https://www.biblegateway.com/passage/?search=${encoded_book}%20${ch}&version=${version}&interface=print" > /dev/null
+                  "https://www.biblegateway.com/passage/?search=${search_str}" > /dev/null
               else
                 downloaded_already=$((downloaded_already+1))
                 printf " | already downloaded ..."
@@ -259,7 +269,7 @@ tasks:
               if [[ ! -f "${text_file}" ]]; then
                 grep -A1 "passage-content passage-class-0" "${chapter_file}" > "${text_file}"
               fi
-              printf " | total downloaded: $((downloaded_now+downloaded_already))"
+              # printf " | total downloaded: $((downloaded_now+downloaded_already))"
             done
           done
         done

@@ -1,7 +1,7 @@
 # bible text - analysis & data science
 
-A hobby project to load multiple translations of bibles into a JSON file.
-Output JSON file will be used for bible analysis.
+A hobby project to download multiple translations of bibles and load texts into a JSON file.
+Output JSON will be used for bible analysis.
 
 ## requirements
 
