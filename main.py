@@ -59,6 +59,7 @@ def setup_load_gateway_parser(subparsers):
         "--output-dir",
         type=str,
         required=True,
+        default="data/tmp",
         help="Output directory for generated JSON files.",
     )
 
