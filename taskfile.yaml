@@ -273,3 +273,18 @@ tasks:
             done
           done
         done
+
+  quick-analysis:
+    silent: true
+    cmds:
+      - |
+        for t in KJ21 ASV ; do
+          echo "translation: ${t}"
+          echo "files smaller than 1000 bytes:"
+          fd -HI . data/bibles/bible_gateway/${t} --size=-1000b -x ls -al
+          printf "total txt files: "
+          fd -HI . data/bibles/bible_gateway/${t} -e txt | wc -l
+          printf "total html files: "
+          fd -HI . data/bibles/bible_gateway/${t} -e html | wc -l
+          echo
+        done

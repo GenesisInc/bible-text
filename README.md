@@ -3,6 +3,33 @@
 A hobby project to download multiple translations of bibles and load texts into a JSON file.
 Output JSON will be used for bible analysis.
 
+## graph flow
+<!-- markdownlint-disable MD001 MD046 -->
+
+```mermaid
+mindmap
+    root((GenesisInc))
+        1.Bible-text
+            a.Go-task download bible html fragments
+            ::icon(fa fa-book)
+            b.Writes .txt/.html to local filestore
+            c.Py reads txt/html and extract text
+            d.make structured bible.json
+            e.write JSON, CSV docs to local filestore
+        2.Bible-analysis
+            a.Read JSON, CSV docs from local filestore
+            b.Tag entities with NLP-spaCy
+            c.Write tagged entites to CSV (local filestore)
+            d.Run tests with go-tasks using below
+                task ref
+                task names
+                task date
+        3.Bible-api
+            a.Reads tagged enties from local filestore
+            b.Import Data to PSQL
+            c.Serve content over an api
+```
+
 ## requirements
 
 - [go-task/task](https://github.com/go-task/task)

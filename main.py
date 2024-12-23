@@ -2,7 +2,6 @@
 
 import argparse
 import json
-import os
 
 # from extraction import bible_extractor, manipulator, nwt_extractor
 from core.translation_loader import bible_gw_loader, jw_loader, translation_manager
@@ -41,12 +40,6 @@ def setup_load_nwt_parser(subparsers):
         default="data/tmp",
         help="Output dir (default: %(default)s).",
     )
-    # nwt_parser.add_argument(
-    #     "--translation",
-    #     type=str,
-    #     required=True,
-    #     help="Translation to extract (e.g., 'asv', 'kj21', 'nwt').",
-    # )
 
 
 def setup_load_gateway_parser(subparsers):
