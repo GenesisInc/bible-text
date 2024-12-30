@@ -1,4 +1,4 @@
-"""main"""
+"""main module."""
 
 import argparse
 import json
@@ -22,7 +22,7 @@ def setup_parsers():
 
 
 def setup_load_nwt_parser(subparsers):
-    """setup load-jworg parser"""
+    """Prepare load-jworg parser."""
     nwt_parser = subparsers.add_parser(
         "load-jworg",
         help="Load New World Translation (NWT) data into JSON format.",
@@ -43,7 +43,7 @@ def setup_load_nwt_parser(subparsers):
 
 
 def setup_load_gateway_parser(subparsers):
-    """setup load-gateway parser"""
+    """Prepare load-gateway parser."""
     gateway_parser = subparsers.add_parser(
         "load-gateway",
         help="Load bible-gateway translations from .txt files into JSON format.",
@@ -65,7 +65,7 @@ def setup_load_gateway_parser(subparsers):
 
 
 def setup_merge_translation_parser(subparsers):
-    """setup merge-translation parser"""
+    """Prepare merge-translation parser."""
     merge_parser = subparsers.add_parser(
         "merge-translation",
         help="merge a specific translation to multi-translation JSON.",
@@ -74,7 +74,7 @@ def setup_merge_translation_parser(subparsers):
         "--input-file",
         type=str,
         default="data/nwt_bible.json",
-        help="Input JSON file to merge to multi-translation.json (default: %(default)s).",
+        help="Input JSON file to merge to multi-translation.json (default: %(default)s).",  # noqa: E501
     )
     merge_parser.add_argument(
         "--translation",
@@ -102,9 +102,9 @@ def handle_command(args):
     elif args.command == "load-gateway":
         bible_gw_loader.extract_verses_from_txt(args.input_dir, args.output_dir)
     elif args.command == "merge-translation":
-        with open(args.output_file, "r", encoding="utf-8") as out:
+        with open(args.output_file, encoding="utf-8") as out:
             multi_translation_data = json.load(out)
-        with open(args.input_file, "r", encoding="utf-8") as inp:
+        with open(args.input_file, encoding="utf-8") as inp:
             input_translation_data = json.load(inp)
 
         merged_data = translation_manager.merge_translations(
@@ -119,7 +119,7 @@ def handle_command(args):
 
 
 def main():
-    """Main function to handle CLI."""
+    """Drives CLI application."""
     parser = setup_parsers()
     args = parser.parse_args()
     handle_command(args)

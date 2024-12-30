@@ -1,4 +1,4 @@
-"""configs"""
+"""configs."""
 
 # Predefined book order for sorting
 BOOK_ORDER = [

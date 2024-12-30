@@ -1,4 +1,4 @@
-""" file utils"""
+"""file utils."""
 
 import csv
 import json
@@ -8,14 +8,14 @@ from config.book_order import BOOK_ORDER
 
 def save_to_json(data, output_file):
     """Save data to a JSON file."""
-    with open(output_file, "w", encoding="utf-8") as f:
+    with open(output_file, "w") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     print(f"data successfully written to {output_file}")
 
 
 def load_from_json(input_file):
     """Load data from a JSON file."""
-    with open(input_file, "r", encoding="utf-8") as f:
+    with open(input_file) as f:
         return json.load(f)
 
 
@@ -41,8 +41,8 @@ def sort_bible_data(bible_data):
 
 
 def save_to_csv(entities_and_occupations, output_csv_file):
-    """Saves entities and occupations data to a CSV file."""
-    with open(output_csv_file, "w", encoding="utf-8", newline="") as csv_file:
+    """Save entities and occupations data to a CSV file."""
+    with open(output_csv_file, "w", newline="") as csv_file:
         writer = csv.writer(csv_file)
         writer.writerow(["Book", "Chapter", "Verse", "Type", "Text"])
         for book, chapters in entities_and_occupations.items():

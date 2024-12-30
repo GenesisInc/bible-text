@@ -1,4 +1,4 @@
-"""load jw-bibles to a json"""
+"""load jw-bibles to a json."""
 
 import json
 import os
@@ -9,14 +9,14 @@ from core.utils import file_utils
 
 
 def generate_bible_json(base_path, output_dir, translation="nwt"):
-    """Generates a structured JSON representation of Bible text files."""
+    """Generate structured JSON representation of Bible text files."""
     bible_data = {translation: {}}
     verse_pattern = r"(\d+)\u00A0"
 
     def process_chapter_file(chapter_path, chapter_number, book_name):
         """Process a single chapter file and extract verses."""
         bible_data[translation][book_name][int(chapter_number)] = {}
-        with open(chapter_path, "r", encoding="utf-8") as file:
+        with open(chapter_path, encoding="utf-8") as file:
             text = file.read()
             verses = re.split(verse_pattern, text)
             for i in range(1, len(verses), 2):
@@ -53,8 +53,7 @@ def generate_bible_json(base_path, output_dir, translation="nwt"):
 
 # Text cleaning function
 def clean_text(text):
-    """Cleans text by removing non-ASCII characters, normalizing unicode,
-    and adding spaces where needed."""
+    """Clean text by removing non-ASCII characters."""
     text = text.replace("\u2014", " ")  # Replace em dash with space
     text = "".join(
         c
@@ -67,9 +66,8 @@ def clean_text(text):
     return text
 
 
-def process_and_generate_bible_json(input_dir, output_dir):
-    """Process multiple translations of Bible text and generate both
-    individual and combined JSON files."""
+def process_and_generate_bible_json(input_dir, output_dir):  # noqa: C901
+    """Process multiple translations and generate combined, individual JSON files."""
     combined_data = {}  # To hold all translations
     verse_pattern = r"(\d+)\u00A0"
 
@@ -84,7 +82,7 @@ def process_and_generate_bible_json(input_dir, output_dir):
         if str(chapter_number) not in combined_data[translation][book_name]:
             combined_data[translation][book_name][str(chapter_number)] = {}
 
-        with open(chapter_path, "r", encoding="utf-8") as file:
+        with open(chapter_path, encoding="utf-8") as file:
             text = file.read()
             verses = re.split(verse_pattern, text)
             for i in range(1, len(verses), 2):
@@ -120,7 +118,7 @@ def process_and_generate_bible_json(input_dir, output_dir):
     def process_translation_folder(version_dir, version):
         """Process all books in a translation folder."""
         print(
-            f'process_translation_folder() "{version}" translation at "{version_dir}" dir'
+            f'process_translation_folder() "{version}" translation at "{version_dir}" dir'  # noqa: E501
         )
 
         if version not in combined_data:

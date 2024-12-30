@@ -1,4 +1,4 @@
-"""load gateway-bibles to a json"""
+"""load gateway-bibles to a json."""
 
 import os
 import re
@@ -14,7 +14,7 @@ def normalize_book_name(book_name):
     return book_name.lower().replace("-", " ")
 
 
-def extract_verses_from_txt(input_dir, output_dir):
+def extract_verses_from_txt(input_dir, output_dir):  # noqa: C901
     """Extract verses from .txt files and save as temporary JSON."""
     extracted_data = {}
 
@@ -72,7 +72,7 @@ def parse_txt_file(file_path, version, is_single_chapter_book=False):
     current_verse = None
     combined_text = ""
 
-    with open(file_path, "r", encoding="utf-8") as f:
+    with open(file_path, encoding="utf-8") as f:
         soup = BeautifulSoup(f, "html.parser")
 
     for span in soup.select(".text"):

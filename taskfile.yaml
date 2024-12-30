@@ -144,6 +144,16 @@ vars:
     3 John:1
     Jude:1
     Revelation:22
+  # merged from other taskfile - needs cleanup
+  COMMA_PAT: '
+    s/\([0-9]\),\([0-9]\)/\1\2/g;
+    s/,/ /g
+    '
+  SPACE_PAT: "s/ / /g; s/;/ /g; s/[[:space:]][[:space:]]*/ /g; s/ $//g"
+  SEMICOLON_PAT: "s/;/ /g"
+  PLAIN_BASE_DIR: ../newWorldTranslation/english/2013-release-plain-text
+  RAW_BASE_DIR: ../newWorldTranslation/english/2013-release
+  FILE_PAT: "{{.PLAIN_BASE_DIR}}/*/*"
 
 tasks:
   default: task -a
@@ -192,6 +202,7 @@ tasks:
         uv run pytest test_bible.py
 
   run: task -p generate-json extract
+  # run: task -p gen_tag gen_lifespan
 
   status:
     silent: true
@@ -288,3 +299,129 @@ tasks:
           fd -HI . data/bibles/bible_gateway/${t} -e html | wc -l
           echo
         done
+
+  clean_symbols:
+    cmds:
+      - task: semicolon
+      - task: comma
+      - task: spaces
+      - task: remove-symbols
+      - task: square-brackets
+      - task: special-cases
+
+  special_cases:
+    cmds:
+      - |
+        # Remove only leading or trailing Unicode hyphens (EN DASH and EM DASH),
+        #   but keep internal hyphens intact
+        sed -i "" 's/^[\–—]\+//; s/[\–—]\+$//' {{.FILE_PAT}}
+
+  verify-special-cases:
+    cmds:
+      - |
+        words=("—He" "—I" "2" "—Let" "Mountains" "—Sihon" "—The" "—provided" "—that" "——" "perished—the")
+
+        for word in "${words[@]}" ; do
+          echo "$word" | sed 's/^[\–—]\+//; s/[\–—]\+$//'
+        done
+
+  square-brackets_2:
+    cmds:
+      - |
+        # cleanup these words
+        #   [Ayin]In [Ayin]They [Beth]In [Beth]Who [Daleth]And [Daleth]They
+        #   [Lamed]12 [Lamed]By [Nun]He [Nun]Trustworthy [Waw]And
+        sed -i "" 's/\[.*\]//g;' {{.FILE_PAT}}
+
+  square-brackets:
+    cmds:
+      - |
+        # Remove text within square brackets
+        sed -i "" 's/\[[^]]*\]//g' {{.FILE_PAT}}
+
+  remove-unicode-symbols:
+    cmds:
+      - |
+        # Remove symbols including additional Unicode symbols
+        sed -i "" 's/[()“”.;:‘ʹ·"!?’בדויִלנכע]//g' {{.FILE_PAT}}
+
+  remove-symbols:
+    cmds:
+      - |
+        # remove other symbols
+        sed -i "" 's/[()“”.;:‘ʹ·"!?’]//g;' {{.FILE_PAT}}
+
+  spaces:
+    cmds:
+      - |
+        sed -i "" "{{.SPACE_PAT}}" {{.FILE_PAT}}
+
+  semicolon:
+    cmds:
+      - |
+        sed -i "" "{{.SEMICOLON_PAT}}" {{.FILE_PAT}}
+
+  comma:
+    cmds:
+      - |
+        sed -i "" "{{.COMMA_PAT}}" {{.FILE_PAT}}
+
+  split:
+    cmds:
+      - |
+        mkdir -p tmp
+        # Split words and numbers
+        cat {{.FILE_PAT}} | tr ' ' '\n' > analysis/words.list
+
+        # Separate numbers and words
+        grep '^[0-9]' analysis/words.list > tmp/numeric.list
+        grep '^[^0-9]' analysis/words.list > tmp/words_only.list
+
+        # Process numeric list: sort numerically and count occurrences
+        cat tmp/numeric.list | sort -n | uniq -c | sort -k2,2n > tmp/numeric-counts.list
+
+        # Process words list: sort by count (desc), then alphabetically
+        cat tmp/words_only.list | sort | uniq -c | sort -k1,1nr -k2,2 > tmp/words-counts.list
+
+        # Combine both lists: numbers first, then words
+        cat tmp/words-counts.list tmp/numeric-counts.list > analysis/word_counts.list
+
+  fix-verse-separator:
+    cmds:
+      - |
+        for file in newWorldTranslation/english/2013-release/*/*; do
+          sed -E -i '' 's/^1 /1 /' "$file"
+        done
+
+  split-2:
+    cmds:
+      - |
+        cat {{.FILE_PAT}}  | tr ' ' '\n' > analysis/words.list
+        cat analysis/words.list | sort | uniq -c | sort -n > analysis/word_counts.list
+
+  show_word_counts:
+    cmds:
+      - |
+        cat -n analysis/word_counts.list
+
+  verify_few_tasks:
+    cmds:
+      - |
+        words=("day,16" "saying,May" "10,100" "10,x" "x,10" "them,Because" "multi   spaces" "greedy one; [Nun]He")
+
+        for word in "${words[@]}" ; do
+          echo "$word" \
+            | sed "{{.COMMA_PAT}}" \
+            | sed "{{.SPACE_PAT}}"
+        done
+
+  wc:
+    cmds:
+      - |
+        wc {{.FILE_PAT}}
+
+  refresh_plain_text:
+    cmds:
+      - |
+        rm -rf {{.PLAIN_BASE_DIR}}
+        cp -r {{.RAW_BASE_DIR}} {{.PLAIN_BASE_DIR}}

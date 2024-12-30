@@ -12,6 +12,7 @@ mindmap
         1.Bible-text
             a.Go-task download bible html fragments
             ::icon(fa fa-book)
+                a1. Reachout to external websites like jw.org, bibles-gateway
             b.Writes .txt/.html to local filestore
             c.Py reads txt/html and extract text
             d.make structured bible.json
