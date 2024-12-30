@@ -5,9 +5,10 @@ vars:
     sh: mkdir -p "data/tmp" && echo "data/tmp"
   setup_tmp:
     sh: mkdir -p tmp && echo tmp
-  bible_data_json: data/bible_data.json
-  bible_data_csv: data/bible_data.csv
+  bible_data_json: data/nwt_bible.json
+  bible_data_csv: data/nwt_bible.csv
   BIBLES_BASE_DIR: data/bibles
+  MULTI_BIBLE: data/multi_translation.json
   JW_ORG_DIR: jw_org
   GATEWAY_DIR: bible_gateway
   BOOKS: |
@@ -158,6 +159,33 @@ vars:
 tasks:
   default: task -a
 
+  fix-nog-elohim:
+    cmds:
+      - |
+        # # fix spaces around Elohim:
+        sed -E -i '' 's/([a-zA-Z0-9])Elohim([a-zA-Z0-9])/\1 Elohim \2/g;
+          s/([a-zA-Z0-9])Elohim/\1 Elohim/g;
+          s/Elohim([a-zA-Z0-9])/Elohim \1/g' data/multi_translation.json
+
+  test:
+    cmds:
+      - task changed_files -- 3m
+      - task: load-bibles
+      - task changed_files -- 3m
+
+  changed_files:
+    vars:
+      duration: '{{default "5m" .CLI_ARGS}}'
+    cmds:
+      - |
+        fd -HI . -tf  \
+          --changed-within={{.duration}} \
+          --exclude .ruff_cache \
+          --exclude .git \
+          --exclude .pytest_cache \
+          --exclude "*.log" \
+          --exclude __pycache__
+
   load-jworg:
     cmds:
       - |
@@ -195,11 +223,6 @@ tasks:
       - |
         uv sync
         uv run python3 -m spacy download en_core_web_sm
-
-  test:
-    cmds:
-      - |
-        uv run pytest test_bible.py
 
   run: task -p generate-json extract
   # run: task -p gen_tag gen_lifespan

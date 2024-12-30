@@ -9,7 +9,7 @@ from config.book_order import BOOK_ORDER
 def save_to_json(data, output_file):
     """Save data to a JSON file."""
     with open(output_file, "w") as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
+        json.dump(data, f, ensure_ascii=True, indent=4)
     print(f"data successfully written to {output_file}")
 
 
