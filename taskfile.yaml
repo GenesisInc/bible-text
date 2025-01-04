@@ -238,21 +238,82 @@ tasks:
           total_verses: (.nwt | to_entries | map(.value | to_entries | map(.value | keys | length) | add) | add)
         }' {{.bible_data_json}} | mlr --j2p --barred cat
 
-  dl-bibles:
+  load_jw_nwt_study:
     cmds:
-      ## sample tasks to download multiple versions at-once
-      # - task: dl-bible
-      #   vars: { VERSIONS: "ASV,KJ21" }
-      # - task: dl-biblegateway
-      #   vars: { VERSIONS: "asv" }
-      # - task: dl-biblegateway
-      #   vars: { VERSIONS: "kj21" }
-      # - task: dl-biblegateway
-      #   vars: { VERSIONS: "kjv" }
-      # - task: dl-biblegateway
-      #   vars: { VERSIONS: "NOG" }
+      - |
+        uv run python main.py load-nwt-study \
+        --input-dir data/bibles/jw_org/study \
+        --output-dir data/bibles/jw_org/study \
+        --translation "nwt-study"
+        # --validate
+
+  dl_jw_nwt_study:
+    cmds:
+      - |
+        out_dir="data/bibles/jw_org/study"
+        mkdir -p "${out_dir}"
+
+        # Dynamically generate line numbers for the BOOKS list
+        echo -e "{{.BOOKS}}" | cat -n | while read -r line_num book_name; do
+            seq_num=$((line_num + 4))  # Add 4 to start from 5
+            padded=$(printf "%02d" "$seq_num")  # Zero-pad sequence number
+
+            # Replace spaces with underscores or hyphens in book names
+            clean_book_name=$(echo "$book_name" | sed 's/ /_/g')
+
+            # Ensure the loop stops when out of books
+            if [ -z "$clean_book_name" ]; then
+                break
+            fi
+
+            out_text="${out_dir}/${clean_book_name}.txt"
+            out_html="${out_dir}/${clean_book_name}.html"
+
+            # Check the size of the existing HTML file
+            if [ -f "${out_html}" ]; then
+                file_size=$(stat -f%z "${out_html}")  # Use -f%z for file size on macOS/BSD
+                if [ "$file_size" -ge 1024 ]; then
+                    echo "Skipping download for ${clean_book_name}: HTML file already exists and is >= 1KB." | tee -a debug.log
+                    continue
+                fi
+            fi
+
+            # Fetch content using curl
+            url="https://wol.jw.org/en/wol/d/r1/lp-e/10010701${padded}"
+            echo "Fetching: ${url}" | tee -a debug.log
+
+            if ! curl -s "${url}" -o "${out_html}"; then
+                echo "Failed to fetch HTML for ${clean_book_name}. Skipping." | tee -a debug.log
+                continue
+            fi
+
+            # Extract relevant content with htmlq
+            if ! cat "${out_html}" | htmlq --text ".v" >"${out_text}"; then
+                echo "Failed to extract content for ${clean_book_name}. Skipping." | tee -a debug.log
+                continue
+            fi
+
+            echo "Saved to: ${out_text}" | tee -a debug.log
+        done
+
+  dl-bibles:
+    deps:
+      - task: dl-bible
+        vars: { VERSIONS: "ASV,KJ21" }
+      - task: dl-bible
+        vars: { VERSIONS: "asv" }
+      - task: dl-bible
+        vars: { VERSIONS: "kj21" }
+      - task: dl-bible
+        vars: { VERSIONS: "kjv" }
+      - task: dl-bible
+        vars: { VERSIONS: "NOG" }
       - task: dl-bible
         vars: { VERSIONS: "OJB" }
+    cmds:
+      - |
+        echo "ran all in parallel as dependent tasks"
+      ## sample tasks to download multiple versions at-once
 
   dl-bible:
     internal: true
@@ -280,18 +341,18 @@ tasks:
             for ch in $(seq 1 "$total_chapters"); do
               chapter_file="{{.BIBLES_BASE_DIR}}/{{.GATEWAY_DIR}}/${version}/${book}/${ch}.html"
               dl_status="Downloaded this run: ${downloaded_now}/$((downloaded_now+downloaded_already))"
-              printf "\n$(date +'%Y-%m-%d %H:%M:%S') ${dl_status}, processing ${version}: ${book}:${ch}"
+              msg="\n$(date +'%Y-%m-%d %H:%M:%S') ${dl_status}, processing ${version}: ${book}:${ch}"
               if [[ ! -f "${chapter_file}" ]]; then
-                printf " | downloading now ..."
+                msg+=" | downloading now ..."
                 downloaded_now=$((downloaded_now+1))
                 search_str="${encoded_book}%20${ch}&version=${version}&interface=print"
                 curl -k -s -o "${chapter_file}" -w "%{http_code}" \
                   "https://www.biblegateway.com/passage/?search=${search_str}" > /dev/null
               else
                 downloaded_already=$((downloaded_already+1))
-                printf " | already downloaded ..."
-                # continue
+                msg+=" | already downloaded ..."
               fi
+              # printf "${msg}"
 
               # Validate content
               if ! grep -q "passage-content" "${chapter_file}"; then
@@ -303,7 +364,6 @@ tasks:
               if [[ ! -f "${text_file}" ]]; then
                 grep -A1 "passage-content passage-class-0" "${chapter_file}" > "${text_file}"
               fi
-              # printf " | total downloaded: $((downloaded_now+downloaded_already))"
             done
           done
         done

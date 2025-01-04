@@ -1,3 +1,4 @@
+# bible-text/core/translation_loader/bible_gw_loader.py
 """load gateway-bibles to a json."""
 
 import os

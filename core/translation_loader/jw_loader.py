@@ -1,3 +1,4 @@
+# bible-text/core/translation_loader/jw_loader.py
 """load jw-bibles to a json."""
 
 import json

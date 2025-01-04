@@ -1,10 +1,16 @@
+# bible-text/main.py
 """main module."""
 
 import argparse
 import json
 
 # from extraction import bible_extractor, manipulator, nwt_extractor
-from core.translation_loader import bible_gw_loader, jw_loader, translation_manager
+from core.translation_loader import (
+    bible_gw_loader,
+    jw_loader,
+    nwt_study,
+    translation_manager,
+)
 
 
 def setup_parsers():
@@ -15,6 +21,7 @@ def setup_parsers():
     subparsers = parser.add_subparsers(title="Commands", dest="command")
 
     setup_load_nwt_parser(subparsers)
+    setup_load_nwt_study_parser(subparsers)
     setup_load_gateway_parser(subparsers)
     setup_merge_translation_parser(subparsers)
 
@@ -39,6 +46,37 @@ def setup_load_nwt_parser(subparsers):
         type=str,
         default="data/tmp",
         help="Output dir (default: %(default)s).",
+    )
+
+
+def setup_load_nwt_study_parser(subparsers):
+    """Prepare load-jworg parser."""
+    nwt_parser = subparsers.add_parser(
+        "load-nwt-study",
+        help="Load New World Translation (NWT) study bible data into JSON format.",
+    )
+    nwt_parser.add_argument(
+        "--input-dir",
+        type=str,
+        default="data/bibles/jw_org/study",
+        help="Base path for NWT Bible text files (default: %(default)s).",
+    )
+    nwt_parser.add_argument(
+        "--output-dir",
+        type=str,
+        default="data/tmp",
+        help="Output dir (default: %(default)s).",
+    )
+    nwt_parser.add_argument(
+        "--translation",
+        type=str,
+        default="nwt-study",
+        help="Output dir (default: %(default)s",
+    )
+    nwt_parser.add_argument(
+        "--validate",
+        action="store_true",
+        help="Validate generated JSON files (default: False).",
     )
 
 
@@ -99,6 +137,15 @@ def handle_command(args):
             args.output_dir,
             "nwt",
         )
+    elif args.command == "load-nwt-study":
+        nwt_study.convert_all_books(
+            args.input_dir,
+            args.output_dir,
+            args.translation,
+        )
+        if args.validate:
+            nwt_study.validate_json_files(args.output_dir, args.translation)
+
     elif args.command == "load-gateway":
         bible_gw_loader.extract_verses_from_txt(args.input_dir, args.output_dir)
     elif args.command == "merge-translation":

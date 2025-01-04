@@ -1,3 +1,4 @@
+# bible-text/core/translation_loader/translation_manager.py
 """manage bible translations json like merge & extract."""
 
 import json

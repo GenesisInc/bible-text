@@ -1,3 +1,4 @@
+# bible-text/config/book_order.py
 """configs."""
 
 # Predefined book order for sorting

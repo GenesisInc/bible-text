@@ -1,4 +1,4 @@
-# bible-analysis/core/utils/logger_utils.py
+# bible-text/core/utils/logger_utils.py
 """logger."""
 
 import logging

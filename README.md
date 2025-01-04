@@ -37,6 +37,7 @@ mindmap
 - [astral-sh/uv](https://github.com/astral-sh/uv)
 - [miller](https://github.com/johnkerl/miller)
 - [jqlang/jq](https://github.com/jqlang/jq) (optional)
+- [htmlq](https://github.com/mgdm/htmlq) - `brew install htmlq`
 
 ## Load bible to JSON
 
@@ -73,6 +74,12 @@ Now, you have the whole nwt bible in a file & all translations in multi-translat
 - [exo](https://wol.jw.org/en/wol/d/r1/lp-e/1001070106)
 - [lev](https://wol.jw.org/en/wol/d/r1/lp-e/1001070107)
 - [job](https://wol.jw.org/en/wol/d/r1/lp-e/1001070170)
+
+sample downloads would look like below
+
+    http 'https://wol.jw.org/en/wol/d/r1/lp-e/1001070105' | htmlq --text .v > gen.v.txt
+
+    http 'https://wol.jw.org/en/wol/d/r1/lp-e/1001070106' | htmlq --text .v > exo.v.txt
 
 ## asv
 
