@@ -239,6 +239,9 @@ tasks:
         }' {{.bible_data_json}} | mlr --j2p --barred cat
 
   load_jw_nwt_study:
+    silent: true
+    # deps:
+    #   - dl_jw_nwt_study
     cmds:
       - |
         uv run python main.py load-nwt-study \
@@ -247,9 +250,52 @@ tasks:
         --translation "nwt-study"
         # --validate
 
-  dl_jw_nwt_study:
+  process_nwt_study:
+    cmds:
+      - task: dl_jw_nwt_study
+      - task: load_jw_nwt_study
+      - task: verify_nwt_study
+
+  verify_nwt_study:
+    silent: true
     cmds:
       - |
+        json_file="data/tmp/nwt-study-bible.json"
+        echo total chapter.1 verse.1 are:
+        jq '.["nwt-study"] | to_entries | map(select(.value["1"]["1"] != null)) | length' ${json_file}
+
+        echo "total chatpers"
+        jq '.["nwt-study"] | to_entries | map(.value | keys | length) | add' ${json_file}
+        echo total verses
+        jq '[.["nwt-study"][] | .[] | keys | length] | add' ${json_file}
+
+        echo "total text lines"
+        cat data/bibles/jw_org/study/*.txt | wc -l
+
+  clean_jw_nwt_study:
+    cmds:
+      - |
+        rm -f data/bibles/jw_org/study/*.txt data/bibles/jw_org/study/*.json
+        echo "removed all *.txt and *.json"
+        ls data/bibles/jw_org/study/
+
+  dl_jw_nwt_study:
+    silent: true
+    cmds:
+      - |
+        process_bible_text() {
+            local input_file=$1
+            local output_file=$2
+
+            # Process the input file
+            cat "${input_file}" | \
+                htmlq --text ".v" | \
+                tr '\n' ' ' | \
+                sed -E 's/([0-9]+) /\n\1 /g' | \
+                sed -E 's/([0-9]+) /\n\1 /g' | \
+                sed '/^ *$/d' > "${output_file}"  # Remove blank lines
+        }
+
         out_dir="data/bibles/jw_org/study"
         mkdir -p "${out_dir}"
 
@@ -272,28 +318,28 @@ tasks:
             # Check the size of the existing HTML file
             if [ -f "${out_html}" ]; then
                 file_size=$(stat -f%z "${out_html}")  # Use -f%z for file size on macOS/BSD
-                if [ "$file_size" -ge 1024 ]; then
+                if [ "$file_size" -le 1024 ]; then
+                  # Fetch content using curl
+                  url="https://wol.jw.org/en/wol/d/r1/lp-e/10010701${padded}"
+                  echo "Fetching: ${url}" | tee -a debug.log
+
+                  if ! curl -s "${url}" -o "${out_html}"; then
+                      echo "Failed to fetch HTML for ${clean_book_name}. Skipping." | tee -a debug.log
+                      # continue
+                  fi
+                else
                     echo "Skipping download for ${clean_book_name}: HTML file already exists and is >= 1KB." | tee -a debug.log
-                    continue
+                    # continue
                 fi
             fi
 
-            # Fetch content using curl
-            url="https://wol.jw.org/en/wol/d/r1/lp-e/10010701${padded}"
-            echo "Fetching: ${url}" | tee -a debug.log
-
-            if ! curl -s "${url}" -o "${out_html}"; then
-                echo "Failed to fetch HTML for ${clean_book_name}. Skipping." | tee -a debug.log
+            # Simplified condition
+            if ! process_bible_text "${out_html}" "${out_text}"; then
+                echo "Failed to process content for ${clean_book_name}. Skipping text generation." | tee -a debug.log
                 continue
             fi
 
-            # Extract relevant content with htmlq
-            if ! cat "${out_html}" | htmlq --text ".v" >"${out_text}"; then
-                echo "Failed to extract content for ${clean_book_name}. Skipping." | tee -a debug.log
-                continue
-            fi
-
-            echo "Saved to: ${out_text}" | tee -a debug.log
+            echo "Saved processed text to: ${out_text}" | tee -a debug.log
         done
 
   dl-bibles:

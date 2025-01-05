@@ -5,6 +5,7 @@ __pycache__/
 .vscode/
 *.html
 data/bibles/*/*/*/*.json
+data/bibles/*/*/*.json
 data/newWorldTranslation/
 *.txt
 local/
