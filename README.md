@@ -75,12 +75,6 @@ Now, you have the whole nwt bible in a file & all translations in multi-translat
 - [lev](https://wol.jw.org/en/wol/d/r1/lp-e/1001070107)
 - [job](https://wol.jw.org/en/wol/d/r1/lp-e/1001070170)
 
-sample downloads would look like below
-
-    http 'https://wol.jw.org/en/wol/d/r1/lp-e/1001070105' | htmlq --text .v > gen.v.txt
-
-    http 'https://wol.jw.org/en/wol/d/r1/lp-e/1001070106' | htmlq --text .v > exo.v.txt
-
 ## asv
 
 some ASV translation links
